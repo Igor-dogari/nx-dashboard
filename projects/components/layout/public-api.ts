@@ -7,4 +7,3 @@ export * from './layout-sidebar/layout-sidebar.component';
 export * from './layout-aside/layout-aside.component';
 export * from './layout-api.service';
 export * from './types';
-export * from './layout.store';

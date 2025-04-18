@@ -1,12 +1,13 @@
-import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
+import { updateState, withDevtools } from '@angular-architects/ngrx-toolkit';
+import { signalStore, withMethods, withState } from '@ngrx/signals';
 
-export interface GlobalState {
+export interface GlobalStoreState {
   screenLoading: boolean;
   sidebarHidden: boolean;
   pageTitle: string;
 }
 
-const initialGlobalState: GlobalState = {
+const initialGlobalState: GlobalStoreState = {
   screenLoading: true,
   sidebarHidden: false,
   pageTitle: ''
@@ -15,14 +16,15 @@ const initialGlobalState: GlobalState = {
 export const GlobalStore = signalStore(
   { providedIn: 'root' },
   withState(initialGlobalState),
+  withDevtools('Global'),
   withMethods((store) => ({
     setScreenLoading(isLoading: boolean) {
-      patchState(store, {
+      updateState(store, 'setScreenLoading', {
         screenLoading: isLoading
       });
     },
     setPageTitle(pageTitle: string) {
-      patchState(store, {
+      updateState(store, 'setPageTitle', {
         pageTitle
       });
     }

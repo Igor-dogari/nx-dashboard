@@ -8,5 +8,4 @@ export * from './breadcrumb-separator-def.directive';
 export * from './breadcrumb-active-item-def.directive';
 export * from './breadcrumb-item-icon.directive';
 export * from './breadcrumb-item-icon-def.directive';
-export * from './breadcrumbs.store';
 

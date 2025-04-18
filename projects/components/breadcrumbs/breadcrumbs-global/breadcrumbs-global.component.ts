@@ -1,15 +1,23 @@
-import { booleanAttribute, Component, computed, contentChild, inject, input, TemplateRef } from '@angular/core';
+import {
+  booleanAttribute,
+  Component,
+  computed,
+  contentChild,
+  inject,
+  input,
+  TemplateRef,
+} from '@angular/core';
 import { Breadcrumb } from '../types';
 import { RouterLink } from '@angular/router';
-import { BreadcrumbItemComponent } from '../breadcrumb-item/breadcrumb-item.component';
-import { BreadcrumbSeparatorComponent } from '../breadcrumb-separator/breadcrumb-separator.component';
-import { BreadcrumbTitleComponent } from '../breadcrumb-title/breadcrumb-title.component';
+import { BreadcrumbItemComponent } from '@elementar-ui/components/breadcrumbs';
+import { BreadcrumbSeparatorComponent } from '@elementar-ui/components/breadcrumbs';
+import { BreadcrumbTitleComponent } from '@elementar-ui/components/breadcrumbs';
 import { BreadcrumbsComponent } from '../breadcrumbs/breadcrumbs.component';
-import { BreadcrumbsStore } from '../breadcrumbs.store';
-import { BreadcrumbItemIconDefDirective } from '../breadcrumb-item-icon-def.directive';
+import { BreadcrumbItemIconDefDirective } from '@elementar-ui/components/breadcrumbs';
 import { BreadcrumbItemIconDirective } from '../breadcrumb-item-icon.directive';
 import { MatIcon } from '@angular/material/icon';
 import { NgTemplateOutlet } from '@angular/common';
+import { BreadcrumbsStore } from '../../../../src/app/store';
 
 @Component({
   selector: 'emr-breadcrumbs-global',
@@ -22,13 +30,13 @@ import { NgTemplateOutlet } from '@angular/common';
     RouterLink,
     BreadcrumbItemIconDirective,
     MatIcon,
-    NgTemplateOutlet
+    NgTemplateOutlet,
   ],
   templateUrl: './breadcrumbs-global.component.html',
   styleUrl: './breadcrumbs-global.component.scss',
   host: {
-    'class': 'emr-breadcrumbs-global',
-  }
+    class: 'emr-breadcrumbs-global',
+  },
 })
 export class BreadcrumbsGlobalComponent {
   private _breadcrumbsStore = inject(BreadcrumbsStore);
@@ -38,7 +46,7 @@ export class BreadcrumbsGlobalComponent {
     return this._breadcrumbsStore.breadcrumbs();
   });
   lastItemAsLink = input(false, {
-    transform: booleanAttribute
+    transform: booleanAttribute,
   });
   separator = input('/');
 

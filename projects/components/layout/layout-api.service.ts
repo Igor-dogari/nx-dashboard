@@ -1,19 +1,20 @@
 import { EventEmitter, inject, Injectable } from '@angular/core';
 import { LayoutSidebarVisibilityChange } from './types';
-import { LayoutSidebarStore } from './layout.store';
+import { LayoutSidebarStore } from '../../../src/app/store';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LayoutApiService {
   private _layoutSidebarStore = inject<any>(LayoutSidebarStore);
-  readonly sidebarVisibility = new EventEmitter<LayoutSidebarVisibilityChange>();
+  readonly sidebarVisibility =
+    new EventEmitter<LayoutSidebarVisibilityChange>();
 
   hideSidebar(layoutId: string): void {
     this._layoutSidebarStore.showSidebarVisibility(layoutId, false);
     this.sidebarVisibility.emit({
       layoutId,
-      shown: false
+      shown: false,
     });
   }
 
@@ -21,12 +22,14 @@ export class LayoutApiService {
     this._layoutSidebarStore.showSidebarVisibility(layoutId, true);
     this.sidebarVisibility.emit({
       layoutId,
-      shown: true
+      shown: true,
     });
   }
 
   toggleSidebar(layoutId: string): void {
-    this.isSidebarShown(layoutId) ? this.hideSidebar(layoutId) : this.showSidebar(layoutId);
+    this.isSidebarShown(layoutId)
+      ? this.hideSidebar(layoutId)
+      : this.showSidebar(layoutId);
   }
 
   isSidebarShown(layoutId: string): boolean {

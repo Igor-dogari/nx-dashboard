@@ -1,16 +1,16 @@
 import { Component, computed, inject } from '@angular/core';
-import { IncidentsStore } from '../incidents.store';
 import { IncidentsComponent } from '../incidents/incidents.component';
 import { MatIcon } from '@angular/material/icon';
-import { IncidentsTitleComponent } from '../incidents-title/incidents-title.component';
-import { IncidentDetailsComponent } from '../incident-details/incident-details.component';
-import { IncidentsBarComponent } from '../incidents-bar/incidents-bar.component';
-import { IncidentsDescriptionComponent } from '../incidents-description/incidents-description.component';
+import { IncidentsTitleComponent } from '@elementar-ui/components/incidents';
+import { IncidentDetailsComponent } from '@elementar-ui/components/incidents';
+import { IncidentsBarComponent } from '@elementar-ui/components/incidents';
+import { IncidentsDescriptionComponent } from '@elementar-ui/components/incidents';
 import { IncidentsToggleIconDirective } from '../incidents-toggle-icon.directive';
-import { IncidentTitleComponent } from '../incident-title/incident-title.component';
+import { IncidentTitleComponent } from '@elementar-ui/components/incidents';
 import { IncidentCloseDirective } from '../incident-close.directive';
 import { IncidentComponent } from '../incident/incident.component';
-import { IncidentsListComponent } from '../incidents-list/incidents-list.component';
+import { IncidentsListComponent } from '@elementar-ui/components/incidents';
+import { IncidentsStore } from '../../../../src/app/store';
 
 @Component({
   selector: 'emr-incidents-container,emr-incidents-global',
@@ -26,14 +26,14 @@ import { IncidentsListComponent } from '../incidents-list/incidents-list.compone
     IncidentTitleComponent,
     IncidentsListComponent,
     IncidentCloseDirective,
-    IncidentComponent
+    IncidentComponent,
   ],
   templateUrl: './incidents-container.component.html',
   styleUrl: './incidents-container.component.scss',
   host: {
-    'class': 'emr-incidents-global',
-    '[class.is-active]': 'hasIncidents()'
-  }
+    class: 'emr-incidents-global',
+    '[class.is-active]': 'hasIncidents()',
+  },
 })
 export class IncidentsContainerComponent {
   protected _incidentsStore = inject(IncidentsStore);

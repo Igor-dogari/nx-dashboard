@@ -37,7 +37,7 @@
   <emr-panel-body>
     <emr-data-view class="px-10"
                    [columnDefs]="columnDefs"
-                   [data]="data"
+                   [data]="customersStore.customerEntities()"
                    [paginator]="paginator"
                    [cellRenderers]="cellRenderers"
                    [search]="search"

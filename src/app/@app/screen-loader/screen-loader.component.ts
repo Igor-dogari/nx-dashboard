@@ -4,19 +4,17 @@ import {
   ElementRef,
   inject,
   Input,
-  viewChild
+  viewChild,
 } from '@angular/core';
 import { getState } from '@ngrx/signals';
 import { LogoComponent } from '@elementar-ui/components/logo';
-import { GlobalState, GlobalStore } from '@elementar-ui/components/core';
+import { GlobalStore, GlobalStoreState } from '../../store';
 
 @Component({
   selector: 'app-screen-loader',
-  imports: [
-    LogoComponent
-  ],
+  imports: [LogoComponent],
   templateUrl: './screen-loader.component.html',
-  styleUrl: './screen-loader.component.scss'
+  styleUrl: './screen-loader.component.scss',
 })
 export class ScreenLoaderComponent {
   private _globalStore = inject(GlobalStore);
@@ -33,9 +31,9 @@ export class ScreenLoaderComponent {
   readonly _loaderElement = viewChild.required<ElementRef>('loader');
 
   constructor() {
-    const initialState = getState<GlobalState>(this._globalStore);
+    const initialState = getState<GlobalStoreState>(this._globalStore);
     effect(() => {
-      const currentState = getState<GlobalState>(this._globalStore);
+      const currentState = getState<GlobalStoreState>(this._globalStore);
 
       if (initialState.screenLoading === currentState.screenLoading) {
         return;

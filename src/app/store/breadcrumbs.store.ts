@@ -1,5 +1,6 @@
-import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
-import { Breadcrumb } from './types';
+import { signalStore, withMethods, withState } from '@ngrx/signals';
+import { Breadcrumb } from '@elementar-ui/components/breadcrumbs/types';
+import { updateState, withDevtools } from '@angular-architects/ngrx-toolkit';
 
 export interface BreadcrumbsState {
   breadcrumbs: Breadcrumb[],
@@ -12,9 +13,10 @@ const initialState: BreadcrumbsState = {
 export const BreadcrumbsStore = signalStore(
   { providedIn: 'root' },
   withState(initialState),
+  withDevtools('Breadcrumbs'),
   withMethods((store) => ({
     setBreadcrumbs(breadcrumbs: Breadcrumb[]): void {
-      patchState(store, {
+      updateState(store, 'setBreadcrumbs', {
         breadcrumbs
       });
     }

@@ -1,7 +1,7 @@
 import { Component, computed, inject, output } from '@angular/core';
-import { AnnouncementStore } from '../announcement.store';
 import { Announcement } from '../types';
-import { AnnouncementComponent } from '../announcement/announcement.component';
+import { AnnouncementComponent } from '@elementar-ui/components/announcement';
+import { AnnouncementStore } from '../../../../src/app/store';
 
 @Component({
   selector: 'emr-announcement-global',

@@ -1,4 +1,5 @@
-import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
+import { updateState, withDevtools } from '@angular-architects/ngrx-toolkit';
+import { signalStore, withMethods, withState } from '@ngrx/signals';
 
 type VisibilityState = {
   [propName: string]: boolean;
@@ -11,9 +12,10 @@ const initialState: VisibilityState = {
 export const LayoutSidebarStore = signalStore(
   { providedIn: 'root' },
   withState(initialState),
+  withDevtools('LayoutSidebar'),
   withMethods((store) => ({
     showSidebarVisibility(layoutId: string, isShown: boolean): void {
-      patchState(store, {
+      updateState(store, 'showSidebar', {
         [layoutId]: isShown
       });
     }

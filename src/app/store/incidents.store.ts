@@ -1,5 +1,6 @@
-import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
-import { Incident } from './types';
+import { signalStore, withMethods, withState } from '@ngrx/signals';
+import { Incident } from '@elementar-ui/components/incidents/types';
+import { updateState, withDevtools } from '@angular-architects/ngrx-toolkit';
 
 export interface IncidentsState {
   incidents: Incident[],
@@ -16,14 +17,15 @@ const initialState: IncidentsState = {
 export const IncidentsStore = signalStore(
   { providedIn: 'root' },
   withState(initialState),
+  withDevtools('Incidents'),
   withMethods((store) => ({
     show(state: IncidentsState): void {
-      patchState(store, {
+      updateState(store, 'showIncidents', {
         ...state
       });
     },
     hide(): void {
-      patchState(store, {
+      updateState(store, 'hideIncidents', {
         incidents: []
       });
     }
