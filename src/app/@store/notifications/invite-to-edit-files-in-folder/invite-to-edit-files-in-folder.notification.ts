@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { DicebearComponent } from '@elementar-ui/components/avatar';
+import { DicebearComponent } from '../../../../../projects/components/avatar';
 import { Notification } from '@elementar-ui/components/notifications';
 
 @Component({

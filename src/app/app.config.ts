@@ -25,7 +25,7 @@ import {
   ENVIRONMENT,
   EnvironmentService,
   PageTitleStrategyService,
-} from '@elementar-ui/components/core';
+} from '../../projects/components/core';
 import { GlobalStore, LayoutSidebarStore } from './store';
 
 export const appConfig: ApplicationConfig = {

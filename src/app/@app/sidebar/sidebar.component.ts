@@ -23,11 +23,11 @@ import {
   SidebarNavItemIconDirective
 } from '@elementar-ui/components/sidebar';
 import { LogoComponent } from '@elementar-ui/components/logo';
-import { DicebearComponent } from '@elementar-ui/components/avatar';
+import { DicebearComponent } from '../../../../projects/components/avatar';
 import {
   SidebarNavGroupToggleIconDirective
 } from '@elementar-ui/components/sidebar/sidebar-nav-group-toggle-icon.directive';
-import { OrderByPipe } from '@elementar-ui/components/core';
+import { OrderByPipe } from '../../../../projects/components/core';
 
 @Component({
   selector: 'app-sidebar',

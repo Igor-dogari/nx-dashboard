@@ -112,7 +112,6 @@ export class PostListComponent implements OnInit {
       visible: true,
     },
   ];
-  data: Post[] = [];
   selectedRows: Post[] = [];
   cellRenderers: DataViewCellRenderer[] = [
     {

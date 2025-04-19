@@ -5,7 +5,7 @@ import {
   AlertCloseDirective,
   AlertComponent,
   AlertTitleDirective
-} from '@elementar-ui/components/alert';
+} from 'projects/shared/alert';
 
 @Component({
   selector: 'app-alert-actions-example',

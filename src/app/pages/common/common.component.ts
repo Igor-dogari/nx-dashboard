@@ -8,9 +8,9 @@ import {
   LayoutHeaderComponent,
   LayoutSidebarComponent,
   LayoutTopbarComponent,
-} from '@elementar-ui/components/layout';
-import { AnnouncementGlobalComponent } from '@elementar-ui/components/announcement';
-import { IncidentsContainerComponent } from '@elementar-ui/components/incidents';
+} from '../../../../projects/components/layout';
+import { AnnouncementGlobalComponent } from '../../../../projects/components/announcement';
+import { IncidentsContainerComponent } from '../../../../projects/components/incidents';
 
 @Component({
   imports: [

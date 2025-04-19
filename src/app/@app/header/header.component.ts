@@ -7,8 +7,8 @@ import { MatDivider } from '@angular/material/divider';
 import { MatTooltip } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
 import { AssistantSearchComponent, NotificationsPopoverComponent } from '@store/header';
-import { DicebearComponent } from '@elementar-ui/components/avatar';
-import { SoundEffectDirective, ThemeManagerService } from '@elementar-ui/components/core';
+import { DicebearComponent } from '../../../../projects/components/avatar';
+import { SoundEffectDirective, ThemeManagerService } from '../../../../projects/components/core';
 import { PopoverTriggerForDirective } from '@elementar-ui/components/popover';
 import { LayoutApiService } from '@elementar-ui/components/layout';
 

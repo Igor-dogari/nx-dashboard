@@ -1,6 +1,11 @@
 import { signalStore, withMethods, withState } from '@ngrx/signals';
-import { Incident } from '@elementar-ui/components/incidents/types';
 import { updateState, withDevtools } from '@angular-architects/ngrx-toolkit';
+
+export interface Incident {
+  id: any;
+  title: string;
+  details?: string;
+}
 
 export interface IncidentsState {
   incidents: Incident[],

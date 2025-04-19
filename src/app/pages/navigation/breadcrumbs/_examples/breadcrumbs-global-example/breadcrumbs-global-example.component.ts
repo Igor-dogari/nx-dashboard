@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import {
-  BreadcrumbItemIconDefDirective,
+  // BreadcrumbItemIconDefDirective,
   BreadcrumbsGlobalComponent,
 } from '@elementar-ui/components/breadcrumbs';
 import { MatButton } from '@angular/material/button';
@@ -13,7 +13,7 @@ import { BreadcrumbsStore } from '../../../../../store';
     BreadcrumbsGlobalComponent,
     MatButton,
     IconComponent,
-    BreadcrumbItemIconDefDirective,
+    // BreadcrumbItemIconDefDirective,
   ],
   templateUrl: './breadcrumbs-global-example.component.html',
   styleUrl: './breadcrumbs-global-example.component.scss',

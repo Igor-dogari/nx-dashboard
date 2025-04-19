@@ -9,7 +9,7 @@ import {
   InactivityTrackerService,
   ScreenLoaderService, SeoService,
   ThemeManagerService
-} from '@elementar-ui/components/core';
+} from '../../projects/components/core';
 
 @Component({
   selector: 'app-root',

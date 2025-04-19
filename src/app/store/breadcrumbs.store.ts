@@ -1,13 +1,21 @@
 import { signalStore, withMethods, withState } from '@ngrx/signals';
-import { Breadcrumb } from '@elementar-ui/components/breadcrumbs/types';
 import { updateState, withDevtools } from '@angular-architects/ngrx-toolkit';
 
+export interface Breadcrumb {
+  id: any;
+  name?: string;
+  title?: string;
+  type: 'link' | 'separator' | null | string;
+  icon?: string;
+  route?: string;
+}
+
 export interface BreadcrumbsState {
-  breadcrumbs: Breadcrumb[],
+  breadcrumbs: Breadcrumb[];
 }
 
 const initialState: BreadcrumbsState = {
-  breadcrumbs: []
+  breadcrumbs: [],
 };
 
 export const BreadcrumbsStore = signalStore(
@@ -17,8 +25,8 @@ export const BreadcrumbsStore = signalStore(
   withMethods((store) => ({
     setBreadcrumbs(breadcrumbs: Breadcrumb[]): void {
       updateState(store, 'setBreadcrumbs', {
-        breadcrumbs
+        breadcrumbs,
       });
-    }
-  }))
+    },
+  })),
 );

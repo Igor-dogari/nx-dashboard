@@ -1,28 +1,26 @@
 import {
   booleanAttribute,
-  Component, effect,
+  Component,
+  effect,
   ElementRef,
   inject,
   input,
   output,
-  Renderer2
+  Renderer2,
 } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
-import { AnnouncementVariant } from '../types';
+import { AnnouncementVariant } from '../../../../src/app/store';
 
 @Component({
   selector: 'emr-announcement',
   exportAs: 'emrAnnouncement',
-  imports: [
-    MatIcon,
-    MatIconButton
-  ],
+  imports: [MatIcon, MatIconButton],
   templateUrl: './announcement.component.html',
   styleUrl: './announcement.component.scss',
   host: {
-    'class': 'emr-announcement'
-  }
+    class: 'emr-announcement',
+  },
 })
 export class AnnouncementComponent {
   private _elementRef = inject(ElementRef);
@@ -31,14 +29,18 @@ export class AnnouncementComponent {
   variant = input<AnnouncementVariant>('neutral');
   iconName = input('');
   closable = input(false, {
-    transform: booleanAttribute
+    transform: booleanAttribute,
   });
 
   readonly closed = output<void>();
 
   constructor() {
     effect(() => {
-      this._renderer.setAttribute(this._elementRef.nativeElement, 'data-variant', this.variant() || 'neutral');
+      this._renderer.setAttribute(
+        this._elementRef.nativeElement,
+        'data-variant',
+        this.variant() || 'neutral',
+      );
     });
   }
 

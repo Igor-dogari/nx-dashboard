@@ -10,7 +10,7 @@ import {
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
-import { ThemeManagerService } from '@elementar-ui/components/core';
+import { ThemeManagerService } from '../../../../../projects/components/core';
 import { Dashboard, DASHBOARD, Widget } from '@elementar-ui/components/dashboard';
 
 @Component({

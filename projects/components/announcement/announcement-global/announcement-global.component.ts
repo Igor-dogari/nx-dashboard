@@ -1,16 +1,13 @@
 import { Component, computed, inject, output } from '@angular/core';
-import { Announcement } from '../types';
-import { AnnouncementComponent } from '@elementar-ui/components/announcement';
-import { AnnouncementStore } from '../../../../src/app/store';
+import { AnnouncementComponent } from '../announcement/announcement.component';
+import { Announcement, AnnouncementStore } from '../../../../src/app/store';
 
 @Component({
   selector: 'emr-announcement-global',
   exportAs: 'emrAnnouncementGlobal',
-  imports: [
-    AnnouncementComponent
-  ],
+  imports: [AnnouncementComponent],
   templateUrl: './announcement-global.component.html',
-  styleUrl: './announcement-global.component.scss'
+  styleUrl: './announcement-global.component.scss',
 })
 export class AnnouncementGlobalComponent {
   private _announcementStore = inject(AnnouncementStore);

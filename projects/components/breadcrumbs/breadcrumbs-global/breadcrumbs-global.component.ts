@@ -7,17 +7,16 @@ import {
   input,
   TemplateRef,
 } from '@angular/core';
-import { Breadcrumb } from '../types';
 import { RouterLink } from '@angular/router';
-import { BreadcrumbItemComponent } from '@elementar-ui/components/breadcrumbs';
-import { BreadcrumbSeparatorComponent } from '@elementar-ui/components/breadcrumbs';
-import { BreadcrumbTitleComponent } from '@elementar-ui/components/breadcrumbs';
+import { BreadcrumbItemComponent } from '../breadcrumb-item/breadcrumb-item.component';
+import { BreadcrumbSeparatorComponent } from '../breadcrumb-separator/breadcrumb-separator.component';
+import { BreadcrumbTitleComponent } from '../breadcrumb-title/breadcrumb-title.component';
 import { BreadcrumbsComponent } from '../breadcrumbs/breadcrumbs.component';
-import { BreadcrumbItemIconDefDirective } from '@elementar-ui/components/breadcrumbs';
+import { BreadcrumbItemIconDefDirective } from '../breadcrumb-item-icon-def.directive';
 import { BreadcrumbItemIconDirective } from '../breadcrumb-item-icon.directive';
 import { MatIcon } from '@angular/material/icon';
 import { NgTemplateOutlet } from '@angular/common';
-import { BreadcrumbsStore } from '../../../../src/app/store';
+import { Breadcrumb, BreadcrumbsStore } from '../../../../src/app/store';
 
 @Component({
   selector: 'emr-breadcrumbs-global',

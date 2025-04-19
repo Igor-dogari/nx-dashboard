@@ -1,15 +1,15 @@
 import { Component, computed, inject } from '@angular/core';
 import { IncidentsComponent } from '../incidents/incidents.component';
 import { MatIcon } from '@angular/material/icon';
-import { IncidentsTitleComponent } from '@elementar-ui/components/incidents';
-import { IncidentDetailsComponent } from '@elementar-ui/components/incidents';
-import { IncidentsBarComponent } from '@elementar-ui/components/incidents';
-import { IncidentsDescriptionComponent } from '@elementar-ui/components/incidents';
+import { IncidentsTitleComponent } from '../incidents-title/incidents-title.component';
+import { IncidentDetailsComponent } from '../incident-details/incident-details.component';
+import { IncidentsBarComponent } from '../incidents-bar/incidents-bar.component';
+import { IncidentsDescriptionComponent } from '../incidents-description/incidents-description.component';
 import { IncidentsToggleIconDirective } from '../incidents-toggle-icon.directive';
-import { IncidentTitleComponent } from '@elementar-ui/components/incidents';
+import { IncidentTitleComponent } from '../incident-title/incident-title.component';
 import { IncidentCloseDirective } from '../incident-close.directive';
 import { IncidentComponent } from '../incident/incident.component';
-import { IncidentsListComponent } from '@elementar-ui/components/incidents';
+import { IncidentsListComponent } from '../incidents-list/incidents-list.component';
 import { IncidentsStore } from '../../../../src/app/store';
 
 @Component({

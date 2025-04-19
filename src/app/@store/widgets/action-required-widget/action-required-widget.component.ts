@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { ActionRequiredComponent } from '@elementar-ui/components/action-required';
+import { ActionRequiredComponent } from 'projects/shared/action-required';
 import { DASHBOARD, Dashboard, Widget } from '@elementar-ui/components/dashboard';
 
 export interface ActionRequiredWidget extends Widget {

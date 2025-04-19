@@ -1,6 +1,13 @@
 import { signalStore, withMethods, withState } from '@ngrx/signals';
 import { updateState, withDevtools } from '@angular-architects/ngrx-toolkit';
-import { Announcement } from '@elementar-ui/components/announcement';
+
+export type AnnouncementVariant = 'neutral' | 'negative' | 'warning' | 'positive' | 'informative' | string;
+
+export interface Announcement {
+  iconName?: string;
+  variant: AnnouncementVariant;
+  message: string;
+}
 
 export interface AnnouncementState {
   announcement: Announcement | null;

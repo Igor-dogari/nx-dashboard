@@ -26,7 +26,7 @@ import {
   CommentEditorFooterBarComponent,
   CommentEditorToolbarComponent
 } from '@elementar-ui/components/comment-editor';
-import { SafeHtmlPipe } from '@elementar-ui/components/core';
+import { SafeHtmlPipe } from '../../../../../../projects/components/core';
 import {
   MatAccordion,
   MatExpansionPanel,

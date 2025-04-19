@@ -12,7 +12,7 @@ import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { LineChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
 import { Dashboard, DASHBOARD, Widget } from '@elementar-ui/components/dashboard';
-import { ThemeManagerService } from '@elementar-ui/components/core';
+import { ThemeManagerService } from '../../../../../projects/components/core';
 
 @Component({
   selector: 'emr-visitor-insights-widget',
