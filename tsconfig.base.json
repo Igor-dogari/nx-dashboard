@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["./src/app/@app/*"],
+      "@elementar-ui/components": ["./projects/components"],
+      "@elementar-ui/components/*": ["./projects/components/*"],
+      "@meta/*": ["./src/app/@meta/*"],
+      "@store/*": ["./src/app/@store/*"]
+    }
+  }
+}

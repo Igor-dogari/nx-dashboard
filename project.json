@@ -1,0 +1,139 @@
+{
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "name": "elementar-admin",
+  "projectType": "application",
+  "generators": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  },
+  "sourceRoot": "src",
+  "prefix": "app",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "src/**/*.ts",
+          "src/**/*.html",
+          "src/**/*.scss"
+        ]
+      }
+    },
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "options": {
+        "outputPath": "dist/elementar-admin",
+        "index": "src/index.html",
+        "browser": "src/main.ts",
+        "polyfills": [
+          "zone.js",
+          "@angular/localize/init"
+        ],
+        "tsConfig": "tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "public"
+          },
+          {
+            "glob": "**/_examples/**",
+            "input": "src/app/pages",
+            "output": "_docs"
+          }
+        ],
+        "styles": [
+          "src/styles.scss",
+          {
+            "input": "src/styles/rose-red.scss",
+            "inject": false,
+            "bundleName": "rose-red"
+          },
+          {
+            "input": "src/styles/magenta-violet.scss",
+            "inject": false,
+            "bundleName": "magenta-violet"
+          },
+          {
+            "input": "src/styles/cyan-orange.scss",
+            "inject": false,
+            "bundleName": "cyan-orange"
+          }
+        ],
+        "scripts": [
+          "node_modules/prismjs/prism.js",
+          "node_modules/prismjs/components/prism-css.min.js",
+          "node_modules/prismjs/components/prism-typescript.min.js"
+        ],
+        "server": "src/main.server.ts",
+        "ssr": {
+          "entry": "src/server.ts"
+        },
+        "outputMode": "server"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "24kb"
+            }
+          ],
+          "outputHashing": "all",
+          "fileReplacements": [
+            {
+              "replace": "src/environments/environment.ts",
+              "with": "src/environments/environment.prod.ts"
+            }
+          ]
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "elementar-admin:build:production"
+        },
+        "development": {
+          "buildTarget": "elementar-admin:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "elementar-admin:build"
+      }
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "polyfills": [
+          "zone.js",
+          "zone.js/testing"
+        ],
+        "tsConfig": "tsconfig.spec.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "public"
+          }
+        ],
+        "styles": [
+          "src/styles.scss"
+        ],
+        "scripts": []
+      }
+    }
+  }
+}
