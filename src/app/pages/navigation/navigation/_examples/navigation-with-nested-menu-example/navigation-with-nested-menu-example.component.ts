@@ -5,7 +5,7 @@ import {
   NavigationGroupComponent, NavigationGroupMenuComponent, NavigationGroupToggleComponent,
   NavigationGroupToggleIconDirective,
   NavigationItemComponent
-} from '@elementar-ui/components/navigation';
+} from 'core';
 
 @Component({
   selector: 'app-navigation-with-nested-menu-example',

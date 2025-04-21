@@ -2,9 +2,9 @@ import { Component, inject } from '@angular/core';
 import {
   // BreadcrumbItemIconDefDirective,
   BreadcrumbsGlobalComponent,
-} from '@elementar-ui/components/breadcrumbs';
+} from 'core';
 import { MatButton } from '@angular/material/button';
-import { IconComponent } from '@elementar-ui/components/icon';
+import { IconComponent } from 'core';
 import { BreadcrumbsStore } from '../../../../../store';
 
 @Component({

@@ -1,4 +1,11 @@
-import { afterNextRender, Component, ElementRef, inject, input, viewChild } from '@angular/core';
+import {
+  afterNextRender,
+  Component,
+  ElementRef,
+  inject,
+  input,
+  viewChild,
+} from '@angular/core';
 import * as echarts from 'echarts/core';
 import {
   DatasetComponent,
@@ -6,19 +13,19 @@ import {
   LegendComponent,
   TitleComponent,
   ToolboxComponent,
-  TooltipComponent, TransformComponent
+  TooltipComponent,
+  TransformComponent,
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { LineChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
-import { Dashboard, DASHBOARD, Widget } from '@elementar-ui/components/dashboard';
-import { ThemeManagerService } from '../../../../../projects/components/core';
+import { Dashboard, DASHBOARD, ThemeManagerService, Widget } from 'core';
 
 @Component({
   selector: 'emr-visitor-insights-widget',
   imports: [],
   templateUrl: './visitor-insights-widget.component.html',
-  styleUrl: './visitor-insights-widget.component.scss'
+  styleUrl: './visitor-insights-widget.component.scss',
 })
 export class VisitorInsightsWidgetComponent {
   private _elementRef = inject(ElementRef);
@@ -43,7 +50,7 @@ export class VisitorInsightsWidgetComponent {
         LabelLayout,
         LineChart,
         UniversalTransition,
-        CanvasRenderer
+        CanvasRenderer,
       ]);
       const monthNames = [];
 
@@ -56,48 +63,51 @@ export class VisitorInsightsWidgetComponent {
 
       const option = {
         tooltip: {
-          trigger: 'axis'
+          trigger: 'axis',
         },
         legend: {
-          data: ['Loyal Customers', 'New Customers', 'Unique Customers']
+          data: ['Loyal Customers', 'New Customers', 'Unique Customers'],
         },
         grid: {
           top: '44px',
           left: '30px',
           right: '34px',
           bottom: '30px',
-          containLabel: true
+          containLabel: true,
         },
         xAxis: {
           type: 'category',
           boundaryGap: false,
-          data: monthNames
+          data: monthNames,
         },
         yAxis: {
-          type: 'value'
+          type: 'value',
         },
         series: [
           {
             name: 'Loyal Customers',
             type: 'line',
             stack: 'Total',
-            data: [120, 132, 101, 30, 100, 66, 100]
+            data: [120, 132, 101, 30, 100, 66, 100],
           },
           {
             name: 'New Customers',
             type: 'line',
             stack: 'Total',
-            data: [220, 182, 191, 200, 220, 180, 160]
+            data: [220, 182, 191, 200, 220, 180, 160],
           },
           {
             name: 'Unique Customers',
             type: 'line',
             stack: 'Total',
-            data: [150, 232, 201, 160, 140, 190, 230]
-          }
-        ]
+            data: [150, 232, 201, 160, 140, 190, 230],
+          },
+        ],
       };
-      const chart = echarts.init(this._chartRef().nativeElement, this._themeManager.getPreferredColorScheme());
+      const chart = echarts.init(
+        this._chartRef().nativeElement,
+        this._themeManager.getPreferredColorScheme(),
+      );
       chart.setOption(option);
       this._observer = new ResizeObserver(() => chart.resize());
       this._observer.observe(this._elementRef.nativeElement);

@@ -4,7 +4,7 @@ import {
   LayoutBodyComponent,
   LayoutComponent,
   LayoutSidebarComponent
-} from '@elementar-ui/components/layout';
+} from 'core';
 
 @Component({
   selector: 'app-layout-aside-example',

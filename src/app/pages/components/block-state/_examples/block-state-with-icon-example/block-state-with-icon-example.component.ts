@@ -3,8 +3,8 @@ import { MatIcon } from '@angular/material/icon';
 import {
   BlockStateComponent,
   BlockStateContentComponent,
-  BlockStateIconComponent
-} from '@elementar-ui/components/block-state';
+  BlockStateIconComponent,
+} from 'core';
 
 @Component({
   selector: 'app-block-state-with-icon-example',
@@ -12,11 +12,9 @@ import {
     BlockStateComponent,
     BlockStateContentComponent,
     MatIcon,
-    BlockStateIconComponent
+    BlockStateIconComponent,
   ],
   templateUrl: './block-state-with-icon-example.component.html',
-  styleUrl: './block-state-with-icon-example.component.scss'
+  styleUrl: './block-state-with-icon-example.component.scss',
 })
-export class BlockStateWithIconExampleComponent {
-
-}
+export class BlockStateWithIconExampleComponent {}

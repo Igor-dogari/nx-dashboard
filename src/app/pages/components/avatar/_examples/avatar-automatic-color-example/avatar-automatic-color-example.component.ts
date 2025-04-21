@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { AvatarComponent, AvatarGroupComponent, AvatarTotalComponent } from '@elementar-ui/components/avatar';
+import {
+  AvatarComponent,
+  AvatarGroupComponent,
+  AvatarTotalComponent,
+} from 'core';
 
 @Component({
   selector: 'app-avatar-automatic-color-example',
@@ -8,11 +12,9 @@ import { AvatarComponent, AvatarGroupComponent, AvatarTotalComponent } from '@el
     MatIcon,
     AvatarComponent,
     AvatarTotalComponent,
-    AvatarGroupComponent
+    AvatarGroupComponent,
   ],
   templateUrl: './avatar-automatic-color-example.component.html',
-  styleUrl: './avatar-automatic-color-example.component.scss'
+  styleUrl: './avatar-automatic-color-example.component.scss',
 })
-export class AvatarAutomaticColorExampleComponent {
-
-}
+export class AvatarAutomaticColorExampleComponent {}

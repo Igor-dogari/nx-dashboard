@@ -3,8 +3,7 @@ import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton } from '@angular/material/button';
 import { MatRipple } from '@angular/material/core';
-import { DicebearComponent } from '../../../../../projects/components/avatar';
-import { HorizontalDividerComponent } from '@elementar-ui/components/divider';
+import { DicebearComponent, HorizontalDividerComponent } from 'core';
 
 @Component({
   selector: 'app-workspaces-select',
@@ -15,10 +14,10 @@ import { HorizontalDividerComponent } from '@elementar-ui/components/divider';
     DicebearComponent,
     HorizontalDividerComponent,
     MatButton,
-    MatRipple
+    MatRipple,
   ],
   templateUrl: './workspaces-select.component.html',
-  styleUrl: './workspaces-select.component.scss'
+  styleUrl: './workspaces-select.component.scss',
 })
 export class WorkspacesSelectComponent {
   workspaces = input<any[]>([]);

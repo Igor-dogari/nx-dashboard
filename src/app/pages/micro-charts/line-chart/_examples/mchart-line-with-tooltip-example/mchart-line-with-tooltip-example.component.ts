@@ -4,7 +4,7 @@ import {
   MchartTooltipBodyComponent,
   MchartTooltipComponent,
   MchartTooltipTitleComponent
-} from '@elementar-ui/components/micro-chart';
+} from 'core';
 
 @Component({
   selector: 'app-mchart-line-with-tooltip-example',

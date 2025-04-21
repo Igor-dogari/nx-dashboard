@@ -1,15 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { InitialsPipe } from '../../../../../../projects/components/core';
-import { AvatarComponent } from '../../../../../../projects/components/avatar';
+import { AvatarComponent, InitialsPipe } from 'core';
 
 @Component({
   selector: 'app-dv-author-renderer',
-  imports: [
-    InitialsPipe,
-    AvatarComponent
-  ],
+  imports: [InitialsPipe, AvatarComponent],
   templateUrl: './dv-author-renderer.component.html',
-  styleUrl: './dv-author-renderer.component.scss'
+  styleUrl: './dv-author-renderer.component.scss',
 })
 export class DvAuthorRendererComponent {
   @Input()

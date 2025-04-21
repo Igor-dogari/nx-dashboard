@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import {
+  AvatarComponent,
   SuggestionBlockComponent,
   SuggestionComponent,
-  SuggestionIconDirective, SuggestionsComponent, SuggestionThumbDirective
-} from '@elementar-ui/components/suggestions';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
+  SuggestionIconDirective,
+  SuggestionsComponent,
+  SuggestionThumbDirective,
+} from 'core';
 
 @Component({
   selector: 'app-basic-suggestions-example',
@@ -18,10 +20,9 @@ import { AvatarComponent } from '@elementar-ui/components/avatar';
     SuggestionIconDirective,
     SuggestionThumbDirective,
     SuggestionsComponent,
-    AvatarComponent
+    AvatarComponent,
   ],
   templateUrl: './basic-suggestions-example.component.html',
-  styleUrl: './basic-suggestions-example.component.scss'
+  styleUrl: './basic-suggestions-example.component.scss',
 })
-export class BasicSuggestionsExampleComponent {
-}
+export class BasicSuggestionsExampleComponent {}

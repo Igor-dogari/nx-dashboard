@@ -1,24 +1,32 @@
-import { afterNextRender, Component, ElementRef, inject, input, OnDestroy, viewChild } from '@angular/core';
+import {
+  afterNextRender,
+  Component,
+  ElementRef,
+  inject,
+  input,
+  OnDestroy,
+  viewChild,
+} from '@angular/core';
 import * as echarts from 'echarts/core';
 import { LineChart } from 'echarts/charts';
 import {
   DatasetComponent,
-  GridComponent, LegendComponent,
-  TitleComponent, ToolboxComponent,
+  GridComponent,
+  LegendComponent,
+  TitleComponent,
+  ToolboxComponent,
   TooltipComponent,
-  TransformComponent
+  TransformComponent,
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
-import { ThemeManagerService } from '../../../../../projects/components/core';
-import { Dashboard, DASHBOARD, Widget } from '@elementar-ui/components/dashboard';
+import { Dashboard, DASHBOARD, ThemeManagerService, Widget } from 'core';
 
 @Component({
   selector: 'emr-purchases-by-channels-widget',
-  imports: [
-  ],
+  imports: [],
   templateUrl: './purchases-by-channels-widget.component.html',
-  styleUrl: './purchases-by-channels-widget.component.scss'
+  styleUrl: './purchases-by-channels-widget.component.scss',
 })
 export class PurchasesByChannelsWidgetComponent implements OnDestroy {
   private _elementRef = inject(ElementRef);
@@ -38,7 +46,12 @@ export class PurchasesByChannelsWidgetComponent implements OnDestroy {
       endDate.setTime(startDate.getTime());
       endDate.setDate(endDate.getDate() + 6);
       const dateRange = this.getDatesRange(startDate, endDate);
-      const categoryData = dateRange.map(date => date.getDate() + ' ' + date.toLocaleString('default', { month: 'short' }));
+      const categoryData = dateRange.map(
+        (date) =>
+          date.getDate() +
+          ' ' +
+          date.toLocaleString('default', { month: 'short' }),
+      );
 
       echarts.use([
         ToolboxComponent,
@@ -51,52 +64,55 @@ export class PurchasesByChannelsWidgetComponent implements OnDestroy {
         LabelLayout,
         LineChart,
         UniversalTransition,
-        CanvasRenderer
+        CanvasRenderer,
       ]);
       const option = {
         tooltip: {
-          trigger: 'axis'
+          trigger: 'axis',
         },
         legend: {
-          data: ['Direct', 'Organic', 'Social']
+          data: ['Direct', 'Organic', 'Social'],
         },
         grid: {
           top: '44px',
           left: '30px',
           right: '34px',
           bottom: '30px',
-          containLabel: true
+          containLabel: true,
         },
         xAxis: {
           type: 'category',
           boundaryGap: false,
-          data: categoryData
+          data: categoryData,
         },
         yAxis: {
-          type: 'value'
+          type: 'value',
         },
         series: [
           {
             name: 'Direct',
             type: 'line',
             stack: 'Total',
-            data: [120, 132, 101, 30, 100, 66, 100]
+            data: [120, 132, 101, 30, 100, 66, 100],
           },
           {
             name: 'Organic',
             type: 'line',
             stack: 'Total',
-            data: [220, 182, 191, 200, 220, 180, 160]
+            data: [220, 182, 191, 200, 220, 180, 160],
           },
           {
             name: 'Social',
             type: 'line',
             stack: 'Total',
-            data: [150, 232, 201, 160, 140, 190, 230]
-          }
-        ]
+            data: [150, 232, 201, 160, 140, 190, 230],
+          },
+        ],
       };
-      const chart = echarts.init(this._chartRef().nativeElement, this._themeManager.getPreferredColorScheme());
+      const chart = echarts.init(
+        this._chartRef().nativeElement,
+        this._themeManager.getPreferredColorScheme(),
+      );
       chart.setOption(option);
       this._observer = new ResizeObserver(() => chart.resize());
       this._observer.observe(this._elementRef.nativeElement);

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IconComponent } from '@elementar-ui/components/icon';
+import { IconComponent } from 'core';
 
 @Component({
   selector: 'app-circle-flags-example',

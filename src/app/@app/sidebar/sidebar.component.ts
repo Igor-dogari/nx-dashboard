@@ -7,27 +7,25 @@ import { v7 as uuid } from 'uuid';
 import { MatIconButton } from '@angular/material/button';
 import { ToolbarComponent } from '@store/sidebar';
 import {
+  SidebarComponent as EmrSidebarComponent,
   SidebarBodyComponent,
   SidebarCompactViewModeDirective,
   SidebarFooterComponent,
   SidebarFullViewModeDirective,
   SidebarHeaderComponent,
   SidebarNavComponent,
-  SidebarComponent as EmrSidebarComponent,
+  DicebearComponent,
+  LogoComponent,
   SidebarNavGroupComponent,
   SidebarNavItemComponent,
   SidebarNavHeadingComponent,
   SidebarNavItemBadgeDirective,
+  SidebarNavGroupToggleIconDirective,
   SidebarNavGroupToggleComponent,
   SidebarNavGroupMenuComponent,
-  SidebarNavItemIconDirective
-} from '@elementar-ui/components/sidebar';
-import { LogoComponent } from '@elementar-ui/components/logo';
-import { DicebearComponent } from '../../../../projects/components/avatar';
-import {
-  SidebarNavGroupToggleIconDirective
-} from '@elementar-ui/components/sidebar/sidebar-nav-group-toggle-icon.directive';
-import { OrderByPipe } from '../../../../projects/components/core';
+  SidebarNavItemIconDirective,
+  OrderByPipe,
+} from 'core';
 
 @Component({
   selector: 'app-sidebar',
@@ -53,14 +51,14 @@ import { OrderByPipe } from '../../../../projects/components/core';
     SidebarNavGroupToggleComponent,
     SidebarNavGroupMenuComponent,
     SidebarNavItemIconDirective,
-    OrderByPipe
+    OrderByPipe,
   ],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
   host: {
-    'class': 'sidebar',
-    '[class.compact]': 'compact'
-  }
+    class: 'sidebar',
+    '[class.compact]': 'compact',
+  },
 })
 export class SidebarComponent implements OnInit {
   router = inject(Router);
@@ -80,33 +78,33 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Analytics',
-          link: '/pages/dashboard/analytics'
+          link: '/pages/dashboard/analytics',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Basic',
-          link: '/pages/dashboard/basic'
+          link: '/pages/dashboard/basic',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Ecommerce',
-          link: '/pages/dashboard/ecommerce'
+          link: '/pages/dashboard/ecommerce',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Finance',
-          link: '/pages/dashboard/finance'
+          link: '/pages/dashboard/finance',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Explore',
-          link: '/pages/dashboard/explore'
-        }
-      ]
+          link: '/pages/dashboard/explore',
+        },
+      ],
     },
     {
       type: 'group',
@@ -117,25 +115,25 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Colors',
-          link: '/pages/customization/colors'
+          link: '/pages/customization/colors',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Prebuilt Themes',
-          link: '/pages/customization/themes'
+          link: '/pages/customization/themes',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Typography',
-          link: '/pages/customization/typography'
-        }
-      ]
+          link: '/pages/customization/typography',
+        },
+      ],
     },
     {
       type: 'heading',
-      name: 'Features'
+      name: 'Features',
     },
     {
       key: 'navigation',
@@ -147,27 +145,27 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Navigation',
-          link: '/pages/navigation/navigation'
+          link: '/pages/navigation/navigation',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Breadcrumbs',
-          link: '/pages/navigation/breadcrumbs'
+          link: '/pages/navigation/breadcrumbs',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Tab Panel',
-          link: '/pages/navigation/tab-panel'
+          link: '/pages/navigation/tab-panel',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Rail Navigation',
-          link: '/pages/navigation/rail-nav'
+          link: '/pages/navigation/rail-nav',
         },
-      ]
+      ],
     },
     {
       type: 'group',
@@ -178,81 +176,81 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Autocomplete',
-          link: '/pages/forms/autocomplete'
+          link: '/pages/forms/autocomplete',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Input',
-          link: '/pages/forms/input'
+          link: '/pages/forms/input',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Buttons',
-          link: '/pages/forms/buttons'
+          link: '/pages/forms/buttons',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Password Strength',
-          link: '/pages/forms/password-strength'
+          link: '/pages/forms/password-strength',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Slide Toggle',
-          link: '/pages/forms/slide-toggle'
+          link: '/pages/forms/slide-toggle',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Checkbox',
-          link: '/pages/forms/checkbox'
+          link: '/pages/forms/checkbox',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Radio',
-          link: '/pages/forms/radio'
+          link: '/pages/forms/radio',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Select',
-          link: '/pages/forms/select'
+          link: '/pages/forms/select',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Segmented',
-          link: '/pages/forms/segmented'
+          link: '/pages/forms/segmented',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Pin Input',
-          link: '/pages/forms/pin-input'
+          link: '/pages/forms/pin-input',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Number Input',
-          link: '/pages/forms/number-input'
+          link: '/pages/forms/number-input',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Button Toggle',
-          link: '/pages/forms/button-toggle'
+          link: '/pages/forms/button-toggle',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Phone Input',
-          link: '/pages/forms/phone-input'
-        }
-      ]
+          link: '/pages/forms/phone-input',
+        },
+      ],
     },
     {
       type: 'group',
@@ -264,351 +262,351 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Action Required',
-          link: '/pages/components/action-required'
+          link: '/pages/components/action-required',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Alert',
-          link: '/pages/components/alert'
+          link: '/pages/components/alert',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Bottom Sheet',
-          link: '/pages/components/bottom-sheet'
+          link: '/pages/components/bottom-sheet',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Card',
-          link: '/pages/components/card'
+          link: '/pages/components/card',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Card Overlay',
-          link: '/pages/components/card-overlay'
+          link: '/pages/components/card-overlay',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Carousel',
-          link: '/pages/components/carousel'
+          link: '/pages/components/carousel',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Cookie Popup',
-          link: '/pages/components/cookie-popup'
+          link: '/pages/components/cookie-popup',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Incidents',
-          link: '/pages/components/incidents'
+          link: '/pages/components/incidents',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Expand',
-          link: '/pages/components/expand'
+          link: '/pages/components/expand',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Content Fade',
-          link: '/pages/components/content-fade'
+          link: '/pages/components/content-fade',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Icon',
-          link: '/pages/components/icon'
+          link: '/pages/components/icon',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Emoji Picker',
-          link: '/pages/components/emoji-picker'
+          link: '/pages/components/emoji-picker',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Badge',
-          link: '/pages/components/badge'
+          link: '/pages/components/badge',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Avatar',
-          link: '/pages/components/avatar'
+          link: '/pages/components/avatar',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Block State',
-          link: '/pages/components/block-state'
+          link: '/pages/components/block-state',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Chips',
-          link: '/pages/components/chips'
+          link: '/pages/components/chips',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Datepicker',
-          link: '/pages/components/datepicker'
+          link: '/pages/components/datepicker',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Timepicker',
-          link: '/pages/components/timepicker'
+          link: '/pages/components/timepicker',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Tabs',
-          link: '/pages/components/tabs'
+          link: '/pages/components/tabs',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Menu',
-          link: '/pages/components/menu'
+          link: '/pages/components/menu',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Paginator',
-          link: '/pages/components/paginator'
+          link: '/pages/components/paginator',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Popover',
-          link: '/pages/components/popover'
+          link: '/pages/components/popover',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Tooltip',
-          link: '/pages/components/tooltip'
+          link: '/pages/components/tooltip',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Gauge',
-          link: '/pages/components/gauge'
+          link: '/pages/components/gauge',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Slider',
-          link: '/pages/components/slider'
+          link: '/pages/components/slider',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Table',
-          link: '/pages/components/table'
+          link: '/pages/components/table',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Data View',
-          link: '/pages/components/dataview'
+          link: '/pages/components/dataview',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Timeline',
-          link: '/pages/components/timeline'
+          link: '/pages/components/timeline',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Dialog',
-          link: '/pages/components/dialog'
+          link: '/pages/components/dialog',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Upload',
-          link: '/pages/components/upload'
+          link: '/pages/components/upload',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Panel',
-          link: '/pages/components/panel'
+          link: '/pages/components/panel',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Resizable Container',
-          link: '/pages/components/resizable-container'
+          link: '/pages/components/resizable-container',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Snackbar',
-          link: '/pages/components/snackbar'
+          link: '/pages/components/snackbar',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Command Bar',
-          link: '/pages/components/command-bar'
+          link: '/pages/components/command-bar',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Color Picker',
-          link: '/pages/components/color-picker'
+          link: '/pages/components/color-picker',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Brand Colors',
-          link: '/pages/components/brand-colors'
+          link: '/pages/components/brand-colors',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Divider',
-          link: '/pages/components/divider'
+          link: '/pages/components/divider',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Skeleton',
-          link: '/pages/components/skeleton'
+          link: '/pages/components/skeleton',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Filter Builder',
-          link: '/pages/components/filter-builder'
+          link: '/pages/components/filter-builder',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Expansion Panel',
-          link: '/pages/components/expansion-panel'
+          link: '/pages/components/expansion-panel',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'List',
-          link: '/pages/components/list'
+          link: '/pages/components/list',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Progress Bar',
-          link: '/pages/components/progress-bar'
+          link: '/pages/components/progress-bar',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Progress Spinner',
-          link: '/pages/components/progress-spinner'
+          link: '/pages/components/progress-spinner',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Stepper',
-          link: '/pages/components/stepper'
+          link: '/pages/components/stepper',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Toolbar',
-          link: '/pages/components/toolbar'
+          link: '/pages/components/toolbar',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Tree',
-          link: '/pages/components/tree'
+          link: '/pages/components/tree',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Layout',
-          link: '/pages/components/layout'
+          link: '/pages/components/layout',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Suggestions',
-          link: '/pages/components/suggestions'
+          link: '/pages/components/suggestions',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Announcement',
-          link: '/pages/components/announcement'
+          link: '/pages/components/announcement',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Marquee',
-          link: '/pages/components/marquee'
+          link: '/pages/components/marquee',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Sidebar',
-          link: '/pages/components/sidebar'
+          link: '/pages/components/sidebar',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Confirm',
-          link: '/pages/components/confirm'
+          link: '/pages/components/confirm',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Thumbnail Maker',
-          link: '/pages/components/thumbnail-maker'
+          link: '/pages/components/thumbnail-maker',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Image Viewer',
-          link: '/pages/components/image-viewer'
+          link: '/pages/components/image-viewer',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Image Resizer',
-          link: '/pages/components/image-resizer'
+          link: '/pages/components/image-resizer',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Comment Editor',
-          link: '/pages/components/comment-editor'
+          link: '/pages/components/comment-editor',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Text Editor',
-          link: '/pages/components/text-editor'
+          link: '/pages/components/text-editor',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Screen Loader',
-          link: '/pages/components/screen-loader'
+          link: '/pages/components/screen-loader',
         },
-      ]
+      ],
     },
     {
       type: 'group',
@@ -619,21 +617,21 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Line Chart',
-          link: '/pages/micro-charts/line-chart'
+          link: '/pages/micro-charts/line-chart',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Bar Chart',
-          link: '/pages/micro-charts/bar-chart'
+          link: '/pages/micro-charts/bar-chart',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Pie Chart',
-          link: '/pages/micro-charts/pie-chart'
-        }
-      ]
+          link: '/pages/micro-charts/pie-chart',
+        },
+      ],
     },
     {
       type: 'group',
@@ -644,37 +642,37 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Selects',
-          link: '/pages/store/selects'
+          link: '/pages/store/selects',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Widgets',
-          link: '/pages/store/widgets'
+          link: '/pages/store/widgets',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Skeleton',
-          link: '/pages/store/skeleton'
+          link: '/pages/store/skeleton',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Sidebar Widgets',
-          link: '/pages/store/sidebar-widgets'
+          link: '/pages/store/sidebar-widgets',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Notifications',
-          link: '/pages/store/notifications'
+          link: '/pages/store/notifications',
         },
       ],
     },
     {
       type: 'heading',
-      name: 'Pages'
+      name: 'Pages',
     },
     {
       type: 'group',
@@ -685,21 +683,21 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Messenger',
-          link: '/pages/applications/messenger'
+          link: '/pages/applications/messenger',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'File Manager',
-          link: '/pages/applications/file-manager'
+          link: '/pages/applications/file-manager',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Kanban Board',
-          link: '/pages/applications/kanban-board'
-        }
-      ]
+          link: '/pages/applications/kanban-board',
+        },
+      ],
     },
     {
       type: 'group',
@@ -710,45 +708,45 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Sign In',
-          link: '/auth/sign-in'
+          link: '/auth/sign-in',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Sign Up',
-          link: '/auth/signup'
+          link: '/auth/signup',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Forgot Password',
-          link: '/auth/forgot-password'
+          link: '/auth/forgot-password',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Password Reset',
-          link: '/auth/password-reset'
+          link: '/auth/password-reset',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Set New Password',
-          link: '/auth/set-new-password'
+          link: '/auth/set-new-password',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Done',
-          link: '/auth/done'
+          link: '/auth/done',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Create Account',
-          link: '/auth/create-account'
+          link: '/auth/create-account',
         },
-      ]
+      ],
     },
     {
       type: 'group',
@@ -759,9 +757,9 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Talent Profile',
-          link: '/pages/user-profile/talent-profile'
-        }
-      ]
+          link: '/pages/user-profile/talent-profile',
+        },
+      ],
     },
     {
       type: 'group',
@@ -772,15 +770,15 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Settings',
-          link: '/pages/account/settings'
+          link: '/pages/account/settings',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Notifications',
-          link: '/pages/account/notifications'
-        }
-      ]
+          link: '/pages/account/notifications',
+        },
+      ],
     },
     {
       type: 'group',
@@ -791,15 +789,15 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Basic',
-          link: '/pages/pricing/basic'
+          link: '/pages/pricing/basic',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Membership Plans',
-          link: '/pages/pricing/membership-plans'
-        }
-      ]
+          link: '/pages/pricing/membership-plans',
+        },
+      ],
     },
     {
       type: 'group',
@@ -810,9 +808,9 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Post List',
-          link: '/pages/content/posts/list'
-        }
-      ]
+          link: '/pages/content/posts/list',
+        },
+      ],
     },
     {
       type: 'group',
@@ -823,27 +821,27 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Not Found (404)',
-          link: '/error/not-found'
+          link: '/error/not-found',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Not Found 1 (404)',
-          link: '/error/not-found-1'
+          link: '/error/not-found-1',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Server Error (500)',
-          link: '/error/internal-server-error'
+          link: '/error/internal-server-error',
         },
         {
           key: uuid(),
           type: 'link',
           name: 'Forbidden (401)',
-          link: '/error/forbidden'
-        }
-      ]
+          link: '/error/forbidden',
+        },
+      ],
     },
     {
       type: 'group',
@@ -854,16 +852,16 @@ export class SidebarComponent implements OnInit {
           key: uuid(),
           type: 'link',
           name: 'Pending Email Activation',
-          link: '/pages/service-pages/pending-email-activation'
-        }
-      ]
+          link: '/pages/service-pages/pending-email-activation',
+        },
+      ],
     },
   ];
   navItemLinks: any[] = [];
   activeKey: null | string = null;
 
   ngOnInit() {
-    this.navItems.forEach(navItem => {
+    this.navItems.forEach((navItem) => {
       this.navItemLinks.push(navItem);
 
       if (navItem.children) {
@@ -872,29 +870,27 @@ export class SidebarComponent implements OnInit {
     });
     this._activateLink();
     this.router.events
-      .pipe(
-        filter(event => event instanceof NavigationEnd)
-      )
+      .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
         this._activateLink();
-      })
-    ;
+      });
   }
 
   private _activateLink() {
-    const activeLink = this.navItemLinks.find(
-      navItem => {
-        if (navItem.link === this.location.path()) {
-          return true;
-        }
-
-        if (navItem.type === 'group') {
-          return (this.location.path() !== '/' && this.location.path().includes(navItem.link as string));
-        }
-
-        return false;
+    const activeLink = this.navItemLinks.find((navItem) => {
+      if (navItem.link === this.location.path()) {
+        return true;
       }
-    );
+
+      if (navItem.type === 'group') {
+        return (
+          this.location.path() !== '/' &&
+          this.location.path().includes(navItem.link as string)
+        );
+      }
+
+      return false;
+    });
 
     if (activeLink) {
       this.activeKey = activeLink.key;

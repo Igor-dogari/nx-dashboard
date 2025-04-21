@@ -3,8 +3,7 @@ import { MatBadge } from '@angular/material/badge';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
 import { MatTooltip } from '@angular/material/tooltip';
-import { HorizontalDividerComponent } from '@elementar-ui/components/divider';
-import { DicebearComponent } from '@elementar-ui/components/avatar';
+import { DicebearComponent, HorizontalDividerComponent } from 'core';
 
 @Component({
   selector: 'emr-sidebar-toolbar',
@@ -14,10 +13,10 @@ import { DicebearComponent } from '@elementar-ui/components/avatar';
     MatIconButton,
     MatTooltip,
     DicebearComponent,
-    HorizontalDividerComponent
+    HorizontalDividerComponent,
   ],
   templateUrl: './toolbar.component.html',
-  styleUrl: './toolbar.component.scss'
+  styleUrl: './toolbar.component.scss',
 })
 export class ToolbarComponent {
   subscription = 'Free';

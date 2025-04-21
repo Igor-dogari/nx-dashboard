@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import {
-  IncidentCloseDirective, IncidentComponent, IncidentDetailsComponent,
-  IncidentIconDirective, IncidentsBarComponent, IncidentsComponent,
-  IncidentsDescriptionComponent, IncidentsListComponent,
+  IncidentCloseDirective,
+  IncidentComponent,
+  IncidentDetailsComponent,
+  IncidentIconDirective,
+  IncidentsBarComponent,
+  IncidentsComponent,
+  IncidentsDescriptionComponent,
+  IncidentsListComponent,
   IncidentsTitleComponent,
-  IncidentsToggleIconDirective, IncidentTitleComponent
-} from '../../../../../../../projects/components/incidents';
+  IncidentsToggleIconDirective,
+  IncidentTitleComponent,
+} from 'core';
 
 @Component({
   selector: 'app-basic-incidents-example',
@@ -22,20 +28,20 @@ import {
     IncidentComponent,
     IncidentsListComponent,
     IncidentsBarComponent,
-    IncidentsComponent
+    IncidentsComponent,
   ],
   templateUrl: './basic-incidents-example.component.html',
-  styleUrl: './basic-incidents-example.component.scss'
+  styleUrl: './basic-incidents-example.component.scss',
 })
 export class BasicIncidentsExampleComponent {
   incidents = [
     {
       title: 'Maintenance work on the DNS API',
-      details: '1 minute ago'
+      details: '1 minute ago',
     },
     {
       title: 'Maintenance work on the DNS API',
-      details: '2 days ago'
-    }
+      details: '2 days ago',
+    },
   ];
 }

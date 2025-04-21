@@ -11,7 +11,7 @@ import {
   NotificationListComponent,
   NotificationPropsDirective,
   Notification
-} from '@elementar-ui/components/notifications';
+} from 'core';
 
 @Component({
   imports: [

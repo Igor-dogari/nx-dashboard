@@ -6,7 +6,7 @@ import {
   LayoutHeaderComponent,
   LayoutSidebarComponent,
   LayoutTopbarComponent,
-} from '@elementar-ui/components/layout';
+} from 'core';
 import { AnnouncementComponent } from 'core';
 
 @Component({

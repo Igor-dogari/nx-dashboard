@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import {
   BreadcrumbItemComponent,
-  BreadcrumbItemIconDirective, BreadcrumbsComponent,
-  BreadcrumbSeparatorComponent
-} from '@elementar-ui/components/breadcrumbs';
+  BreadcrumbItemIconDirective,
+  BreadcrumbsComponent,
+  BreadcrumbSeparatorComponent,
+} from 'core';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
@@ -13,11 +14,9 @@ import { MatIcon } from '@angular/material/icon';
     BreadcrumbItemIconDirective,
     BreadcrumbItemComponent,
     BreadcrumbSeparatorComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
   ],
   templateUrl: './breadcrumbs-with-icons-example.component.html',
-  styleUrl: './breadcrumbs-with-icons-example.component.scss'
+  styleUrl: './breadcrumbs-with-icons-example.component.scss',
 })
-export class BreadcrumbsWithIconsExampleComponent {
-
-}
+export class BreadcrumbsWithIconsExampleComponent {}

@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
 import {
-  TimelineAttributesComponent, TimelineComponent,
-  TimelineDescriptionComponent, TimelineHeaderComponent, TimelineItemComponent,
-  TimelineTitleComponent
-} from '@elementar-ui/components/timeline';
+  AvatarComponent,
+  TimelineAttributesComponent,
+  TimelineComponent,
+  TimelineDescriptionComponent,
+  TimelineHeaderComponent,
+  TimelineItemComponent,
+  TimelineTitleComponent,
+} from 'core';
 
 @Component({
   selector: 'app-basic-timeline-example',
@@ -15,10 +18,9 @@ import {
     TimelineTitleComponent,
     TimelineItemComponent,
     TimelineHeaderComponent,
-    TimelineComponent
+    TimelineComponent,
   ],
   templateUrl: './basic-timeline-example.component.html',
-  styleUrl: './basic-timeline-example.component.scss'
+  styleUrl: './basic-timeline-example.component.scss',
 })
-export class BasicTimelineExampleComponent {
-}
+export class BasicTimelineExampleComponent {}

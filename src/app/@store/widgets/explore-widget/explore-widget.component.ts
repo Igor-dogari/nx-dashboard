@@ -1,7 +1,7 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatRipple } from '@angular/material/core';
-import { DASHBOARD, Dashboard, Widget } from '@elementar-ui/components/dashboard';
+import { DASHBOARD, Dashboard, Widget } from 'core';
 
 export interface ExploreWidget extends Widget {
   title: string;

@@ -3,14 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '@app/header/header.component';
 import { SidebarComponent } from '@app/sidebar/sidebar.component';
 import {
+  AnnouncementGlobalComponent,
+  IncidentsContainerComponent,
   LayoutBodyComponent,
   LayoutComponent,
   LayoutHeaderComponent,
   LayoutSidebarComponent,
   LayoutTopbarComponent,
-} from '../../../../projects/components/layout';
-import { IncidentsContainerComponent } from '../../../../projects/components/incidents';
-import { AnnouncementGlobalComponent } from 'core';
+} from 'core';
 
 @Component({
   imports: [

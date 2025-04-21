@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { MatAnchor, MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatTooltip } from '@angular/material/tooltip';
-import { IconComponent } from '@elementar-ui/components/icon';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
+import { AvatarComponent, IconComponent } from 'core';
 
 interface Person {
   avatarUrl: string;
@@ -19,10 +18,10 @@ interface Person {
     MatTooltip,
     IconComponent,
     MatAnchor,
-    AvatarComponent
+    AvatarComponent,
   ],
   templateUrl: './talent-profile.component.html',
-  styleUrl: './talent-profile.component.scss'
+  styleUrl: './talent-profile.component.scss',
 })
 export class TalentProfileComponent {
   followed = false;
@@ -30,50 +29,50 @@ export class TalentProfileComponent {
     {
       avatarUrl: 'assets/avatars/5.svg',
       name: 'Beaulah Hansmann',
-      occupation: 'CEO of amazing company'
+      occupation: 'CEO of amazing company',
     },
     {
       avatarUrl: 'assets/avatars/6.svg',
       name: 'Laree Alaman',
-      occupation: 'CEO of amazing company'
+      occupation: 'CEO of amazing company',
     },
     {
       avatarUrl: 'assets/avatars/7.svg',
       name: 'Tom Hearron',
-      occupation: 'Software engineer'
-    }
+      occupation: 'Software engineer',
+    },
   ];
   languages = [
     {
       name: 'English',
-      level: 'Native'
+      level: 'Native',
     },
     {
       name: 'German',
-      level: 'Fluent'
+      level: 'Fluent',
     },
     {
       name: 'Spanish',
-      level: 'Basic'
-    }
+      level: 'Basic',
+    },
   ];
   skills = [
     {
       name: 'Typescript',
-      level: 'Good'
+      level: 'Good',
     },
     {
       name: 'Angular',
-      level: 'Medium'
+      level: 'Medium',
     },
     {
       name: 'Rest API',
-      level: 'Good'
+      level: 'Good',
     },
     {
       name: 'NestJS',
-      level: 'Medium'
-    }
+      level: 'Medium',
+    },
   ];
 
   follow(): void {

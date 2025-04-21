@@ -4,8 +4,8 @@ import {
   BlockStateActionsComponent,
   BlockStateComponent,
   BlockStateContentComponent,
-  BlockStateTitleComponent
-} from '@elementar-ui/components/block-state';
+  BlockStateTitleComponent,
+} from 'core';
 
 @Component({
   selector: 'app-block-state-with-actions-example',
@@ -14,11 +14,9 @@ import {
     BlockStateContentComponent,
     BlockStateTitleComponent,
     BlockStateActionsComponent,
-    MatButton
+    MatButton,
   ],
   templateUrl: './block-state-with-actions-example.component.html',
-  styleUrl: './block-state-with-actions-example.component.scss'
+  styleUrl: './block-state-with-actions-example.component.scss',
 })
-export class BlockStateWithActionsExampleComponent {
-
-}
+export class BlockStateWithActionsExampleComponent {}

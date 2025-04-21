@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MchartLineComponent } from '@elementar-ui/components/micro-chart';
+import { MchartLineComponent } from 'core';
 import { ShuffleArrayPipe } from '@meta/shuffle-array.pipe';
 
 @Component({

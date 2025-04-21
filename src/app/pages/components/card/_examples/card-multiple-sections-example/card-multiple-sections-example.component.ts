@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import {
   MatCard,
-  MatCardActions, MatCardAvatar,
+  MatCardActions,
+  MatCardAvatar,
   MatCardContent,
   MatCardHeader,
-  MatCardImage, MatCardSubtitle,
-  MatCardTitle
+  MatCardImage,
+  MatCardSubtitle,
+  MatCardTitle,
 } from '@angular/material/card';
 import { MatButton } from '@angular/material/button';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
+import { AvatarComponent } from 'core';
 
 @Component({
   selector: 'app-card-multiple-sections-example',
@@ -22,11 +24,9 @@ import { AvatarComponent } from '@elementar-ui/components/avatar';
     MatCardTitle,
     MatCardAvatar,
     MatCardSubtitle,
-    AvatarComponent
+    AvatarComponent,
   ],
   templateUrl: './card-multiple-sections-example.component.html',
-  styleUrl: './card-multiple-sections-example.component.scss'
+  styleUrl: './card-multiple-sections-example.component.scss',
 })
-export class CardMultipleSectionsExampleComponent {
-
-}
+export class CardMultipleSectionsExampleComponent {}

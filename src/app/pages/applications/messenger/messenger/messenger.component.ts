@@ -5,6 +5,14 @@ import { MatButton, MatIconButton } from '@angular/material/button';
 import { DatePipe } from '@angular/common';
 import { MatTooltip } from '@angular/material/tooltip';
 import {
+  MatAccordion,
+  MatExpansionPanel,
+  MatExpansionPanelTitle,
+  MatExpansionPanelHeader,
+} from '@angular/material/expansion';
+import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
+import {
+  AvatarPresenceIndicator,
   CommentEditorBubbleMenuComponent,
   CommentEditorCommandBlockquoteDirective,
   CommentEditorCommandBoldDirective,
@@ -24,19 +32,13 @@ import {
   CommentEditorComponent,
   CommentEditorDividerComponent,
   CommentEditorFooterBarComponent,
-  CommentEditorToolbarComponent
-} from '@elementar-ui/components/comment-editor';
-import { SafeHtmlPipe } from '../../../../../../projects/components/core';
-import {
-  MatAccordion,
-  MatExpansionPanel,
-  MatExpansionPanelTitle,
-  MatExpansionPanelHeader
-} from '@angular/material/expansion';
-import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
-import { ImageViewerDirective, ImageViewerPictureDirective } from '@elementar-ui/components/image-viewer';
-import { HorizontalDividerComponent } from '@elementar-ui/components/divider';
-import { AvatarPresenceIndicator, DicebearComponent } from '@elementar-ui/components/avatar';
+  CommentEditorToolbarComponent,
+  DicebearComponent,
+  HorizontalDividerComponent,
+  ImageViewerDirective,
+  ImageViewerPictureDirective,
+  SafeHtmlPipe,
+} from 'core';
 
 interface MessengerMessage {
   id: any;
@@ -118,10 +120,10 @@ interface MessengerMember {
     MatMenuTrigger,
     ImageViewerPictureDirective,
     ImageViewerDirective,
-    HorizontalDividerComponent
+    HorizontalDividerComponent,
   ],
   templateUrl: './messenger.component.html',
-  styleUrl: './messenger.component.scss'
+  styleUrl: './messenger.component.scss',
 })
 export class MessengerComponent {
   threads: MessengerThread[] = [
@@ -132,7 +134,7 @@ export class MessengerComponent {
         avatarUrl: '',
         name: 'Alejandra Cubides',
         id: 1,
-        presenceIndicator: 'away'
+        presenceIndicator: 'away',
       },
       members: [
         {
@@ -140,19 +142,21 @@ export class MessengerComponent {
           name: 'Alejandra Cubides',
           id: 1,
           presenceIndicator: 'away',
-          status: 'Busy'
+          status: 'Busy',
         },
         {
           avatarUrl: '',
           name: 'Pavel Salauyou',
           id: 2,
           presenceIndicator: 'online',
-          status: 'At home'
-        }
+          status: 'At home',
+        },
       ],
       unreadMessagesCount: 2,
-      title: 'Looking for an Angular expert to upgrade angular project to the latest version',
-      lastMessage: 'Angular itself is easy to upgrade, most problems arise with third-party libraries and deprecated code.',
+      title:
+        'Looking for an Angular expert to upgrade angular project to the latest version',
+      lastMessage:
+        'Angular itself is easy to upgrade, most problems arise with third-party libraries and deprecated code.',
       createdAt: new Date('Nov 09, 2024'),
       messages: [
         {
@@ -162,11 +166,11 @@ export class MessengerComponent {
             avatarUrl: '',
             name: 'Alejandra Cubides',
             id: 1,
-            presenceIndicator: 'away'
+            presenceIndicator: 'away',
           },
           content: `Hey! How’s work going for you these days?`,
           createdAt: new Date('Nov 09, 2024'),
-          isDelivered: true
+          isDelivered: true,
         },
         {
           id: 2,
@@ -175,11 +179,11 @@ export class MessengerComponent {
             avatarUrl: '',
             name: 'Pavel Salauyou',
             id: 2,
-            presenceIndicator: 'online'
+            presenceIndicator: 'online',
           },
           content: `It’s been pretty good, actually. I just started a new position in project management, so I’m still learning the ropes. What about you?`,
           createdAt: new Date('Nov 09, 2024'),
-          isDelivered: false
+          isDelivered: false,
         },
         {
           id: 3,
@@ -188,11 +192,11 @@ export class MessengerComponent {
             avatarUrl: '',
             name: 'Pavel Salauyou',
             id: 2,
-            presenceIndicator: 'online'
+            presenceIndicator: 'online',
           },
           content: `What about you?`,
           createdAt: new Date('Nov 09, 2024'),
-          isDelivered: false
+          isDelivered: false,
         },
         {
           id: 4,
@@ -201,11 +205,11 @@ export class MessengerComponent {
             avatarUrl: '',
             name: 'Alejandra Cubides',
             id: 1,
-            presenceIndicator: 'away'
+            presenceIndicator: 'away',
           },
           content: `Nice! Congrats on the new role! Things are busy on my end—I’m still with the same company, but my team got a lot of new projects recently.`,
           createdAt: new Date(),
-          isDelivered: false
+          isDelivered: false,
         },
         {
           id: 4,
@@ -214,11 +218,11 @@ export class MessengerComponent {
             avatarUrl: '',
             name: 'Alejandra Cubides',
             id: 1,
-            presenceIndicator: 'away'
+            presenceIndicator: 'away',
           },
           content: `What’s your day-to-day like in the new role?`,
           createdAt: new Date(),
-          isDelivered: false
+          isDelivered: false,
         },
         {
           id: 5,
@@ -227,7 +231,7 @@ export class MessengerComponent {
             avatarUrl: '',
             name: 'Alejandra Cubides',
             id: 1,
-            presenceIndicator: 'away'
+            presenceIndicator: 'away',
           },
           content: {
             fileName: 'Terms & Conditions',
@@ -235,10 +239,10 @@ export class MessengerComponent {
             pagesCount: 12,
             fileSize: '11MB',
             downloadLink: '',
-            iconUrl: '/assets/file/pdf1.svg'
+            iconUrl: '/assets/file/pdf1.svg',
           },
           createdAt: new Date(),
-          isDelivered: false
+          isDelivered: false,
         },
         {
           id: 5,
@@ -247,15 +251,15 @@ export class MessengerComponent {
             avatarUrl: '',
             name: 'Alejandra Cubides',
             id: 1,
-            presenceIndicator: 'away'
+            presenceIndicator: 'away',
           },
           content: {
-            src: '/assets/image/image.jpg'
+            src: '/assets/image/image.jpg',
           },
           createdAt: new Date(),
-          isDelivered: false
+          isDelivered: false,
         },
-      ]
+      ],
     },
     {
       id: 2,
@@ -264,11 +268,13 @@ export class MessengerComponent {
         avatarUrl: '',
         name: 'Pavel Salauyou',
         id: 2,
-        presenceIndicator: 'online'
+        presenceIndicator: 'online',
       },
       unreadMessagesCount: 0,
-      title: 'Looking for an Angular expert to upgrade angular project to the latest version',
-      lastMessage: 'Angular itself is easy to upgrade, most problems arise with third-party libraries and deprecated code.',
+      title:
+        'Looking for an Angular expert to upgrade angular project to the latest version',
+      lastMessage:
+        'Angular itself is easy to upgrade, most problems arise with third-party libraries and deprecated code.',
       createdAt: new Date(),
       messages: [
         {
@@ -278,7 +284,7 @@ export class MessengerComponent {
             avatarUrl: '',
             name: 'Alejandra Cubides',
             id: 1,
-            presenceIndicator: 'away'
+            presenceIndicator: 'away',
           },
           content: {
             fileName: 'Terms & Conditions',
@@ -286,10 +292,10 @@ export class MessengerComponent {
             pagesCount: 12,
             fileSize: '11MB',
             downloadLink: '',
-            iconUrl: '/assets/file/pdf1.svg'
+            iconUrl: '/assets/file/pdf1.svg',
           },
           createdAt: new Date(),
-          isDelivered: false
+          isDelivered: false,
         },
       ],
       members: [
@@ -298,17 +304,17 @@ export class MessengerComponent {
           name: 'Alejandra Cubides',
           id: 1,
           presenceIndicator: 'away',
-          status: 'Busy'
+          status: 'Busy',
         },
         {
           avatarUrl: '',
           name: 'Pavel Salauyou',
           id: 2,
           presenceIndicator: 'online',
-          status: 'At home'
-        }
-      ]
-    }
+          status: 'At home',
+        },
+      ],
+    },
   ];
   sidebarActive = true;
   selectedThread: MessengerThread = this.threads[0];
@@ -325,7 +331,10 @@ export class MessengerComponent {
     this.sidebarActive = !this.sidebarActive;
   }
 
-  isNeedToShowTimeSeparator(messages: MessengerMessage[], index: number): boolean {
+  isNeedToShowTimeSeparator(
+    messages: MessengerMessage[],
+    index: number,
+  ): boolean {
     if (index === 0) {
       return false;
     }
@@ -348,10 +357,11 @@ export class MessengerComponent {
     const currentMessage = messages[index];
     const prevCreatedAt = new Date(prevMessage.createdAt);
     const currentCreatedAt = new Date(currentMessage.createdAt);
-    return prevMessage.sender.id === currentMessage.sender.id &&
+    return (
+      prevMessage.sender.id === currentMessage.sender.id &&
       prevCreatedAt.getMonth() === currentCreatedAt.getMonth() &&
       prevCreatedAt.getFullYear() === currentCreatedAt.getFullYear() &&
       prevCreatedAt.getDate() === currentCreatedAt.getDate()
-    ;
+    );
   }
 }

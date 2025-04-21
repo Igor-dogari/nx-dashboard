@@ -1,19 +1,13 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
-import { DASHBOARD, Dashboard, Widget } from '@elementar-ui/components/dashboard';
+import { AvatarComponent, DASHBOARD, Dashboard, Widget } from 'core';
 
 @Component({
   selector: 'emr-tasks-in-progress-widget',
-  imports: [
-    MatButton,
-    MatIcon,
-    MatIconButton,
-    AvatarComponent
-  ],
+  imports: [MatButton, MatIcon, MatIconButton, AvatarComponent],
   templateUrl: './tasks-in-progress-widget.component.html',
-  styleUrl: './tasks-in-progress-widget.component.scss'
+  styleUrl: './tasks-in-progress-widget.component.scss',
 })
 export class TasksInProgressWidgetComponent implements OnInit {
   private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });

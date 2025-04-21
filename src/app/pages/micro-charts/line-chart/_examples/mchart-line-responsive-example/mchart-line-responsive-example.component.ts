@@ -4,8 +4,8 @@ import {
   MchartLineComponent,
   MchartTooltipBodyComponent,
   MchartTooltipComponent, MchartTooltipTitleComponent
-} from '@elementar-ui/components/micro-chart';
-import { ResizableContainerComponent } from '@elementar-ui/components/resizable-container';
+} from 'core';
+import { ResizableContainerComponent } from 'core';
 
 @Component({
   selector: 'app-mchart-line-responsive-example',

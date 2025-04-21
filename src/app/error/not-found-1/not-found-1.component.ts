@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LogoComponent } from '@elementar-ui/components/logo';
+import { LogoComponent } from 'core';
 import { MatButton } from '@angular/material/button';
 import { RouterLink } from '@angular/router';
 import { MatIcon } from '@angular/material/icon';

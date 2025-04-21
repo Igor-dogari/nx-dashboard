@@ -6,11 +6,17 @@ import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
 import { MatDivider } from '@angular/material/divider';
 import { MatTooltip } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
-import { AssistantSearchComponent, NotificationsPopoverComponent } from '@store/header';
-import { DicebearComponent } from '../../../../projects/components/avatar';
-import { SoundEffectDirective, ThemeManagerService } from '../../../../projects/components/core';
-import { PopoverTriggerForDirective } from '@elementar-ui/components/popover';
-import { LayoutApiService } from '@elementar-ui/components/layout';
+import {
+  AssistantSearchComponent,
+  NotificationsPopoverComponent,
+} from '@store/header';
+import {
+  DicebearComponent,
+  LayoutApiService,
+  PopoverTriggerForDirective,
+  SoundEffectDirective,
+  ThemeManagerService,
+} from 'core';
 
 @Component({
   selector: 'app-header',
@@ -30,20 +36,20 @@ import { LayoutApiService } from '@elementar-ui/components/layout';
     MatAnchor,
     SoundEffectDirective,
     NotificationsPopoverComponent,
-    PopoverTriggerForDirective
+    PopoverTriggerForDirective,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   host: {
-    'class': 'block w-full'
-  }
+    class: 'block w-full',
+  },
 })
 export class HeaderComponent {
   protected _themeManager = inject(ThemeManagerService);
   private _layoutApi = inject(LayoutApiService);
 
-  sidebarShown= computed(() => {
-    return this._layoutApi.isSidebarShown('root')
+  sidebarShown = computed(() => {
+    return this._layoutApi.isSidebarShown('root');
   });
 
   toggleSidebar(): void {

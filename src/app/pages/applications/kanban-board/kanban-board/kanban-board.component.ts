@@ -1,15 +1,21 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton, MatIconButton } from '@angular/material/button';
-import { KanbanColumn, KanbanItem, KanbanItemDefDirective, KanbanBoardComponent as EmrKanbanBoardComponent } from '@elementar-ui/components/kanban-board';
-import { PanelBodyComponent, PanelComponent, PanelHeaderComponent } from '@elementar-ui/components/panel';
 import {
   AvatarComponent,
   AvatarGroupComponent,
   AvatarTotalComponent,
-  DicebearComponent
-} from '@elementar-ui/components/avatar';
-import { SegmentedButtonComponent, SegmentedComponent } from '@elementar-ui/components/segmented';
+  DicebearComponent,
+  KanbanItem,
+  KanbanItemDefDirective,
+  PanelBodyComponent,
+  PanelComponent,
+  PanelHeaderComponent,
+  SegmentedButtonComponent,
+  SegmentedComponent,
+  KanbanBoardComponent as EmrKanbanBoardComponent,
+  KanbanColumn,
+} from 'core';
 
 interface TaskPriority {
   id: any;
@@ -22,12 +28,12 @@ interface TaskItem extends KanbanItem {
   reporter: {
     id: any;
     name: string;
-  },
+  };
   assignee: {
     id: any;
     name: string;
-  },
-  priority: TaskPriority
+  };
+  priority: TaskPriority;
 }
 
 @Component({
@@ -46,10 +52,10 @@ interface TaskItem extends KanbanItem {
     SegmentedComponent,
     KanbanItemDefDirective,
     DicebearComponent,
-    EmrKanbanBoardComponent
+    EmrKanbanBoardComponent,
   ],
   templateUrl: './kanban-board.component.html',
-  styleUrl: './kanban-board.component.scss'
+  styleUrl: './kanban-board.component.scss',
 })
 export class KanbanBoardComponent {
   priorities: TaskPriority[] = [
@@ -69,8 +75,8 @@ export class KanbanBoardComponent {
       id: 1,
       name: 'High',
       type: 'high',
-      color: '#e74c3c'
-    }
+      color: '#e74c3c',
+    },
   ];
   columns: KanbanColumn<TaskItem>[] = [
     {
@@ -83,106 +89,106 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[1]
+          priority: this.priorities[1],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
-        }
-      ]
+          priority: this.priorities[2],
+        },
+      ],
     },
     {
       id: 2,
@@ -194,15 +200,15 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[0]
-        }
-      ]
+          priority: this.priorities[0],
+        },
+      ],
     },
     {
       id: 3,
@@ -214,81 +220,79 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
+          priority: this.priorities[2],
         },
         {
           name: 'Fix UI bug',
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou'
+            name: 'Pavel Salauyou',
           },
-          priority: this.priorities[2]
-        }
-      ]
+          priority: this.priorities[2],
+        },
+      ],
     },
     {
       id: 4,
       name: 'Done',
       color: '#22c55e',
-      items: [
-      ]
+      items: [],
     },
     {
       id: 5,
       name: 'Custom',
       color: '#2d22c5',
-      items: [
-      ]
-    }
+      items: [],
+    },
   ];
 }

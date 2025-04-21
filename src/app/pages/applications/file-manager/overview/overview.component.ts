@@ -13,8 +13,7 @@ import { FileListLayoutComponent } from '../_layout/file-list-layout/file-list-l
 import { FileLargeListLayoutComponent } from '../_layout/file-large-list-layout/file-large-list-layout.component';
 import { FileGridLayoutComponent } from '../_layout/file-grid-layout/file-grid-layout.component';
 import { File, FileSelectedEvent } from '../types';
-import { MenuOptionGroupDirective } from '../../../../../../projects/components/core';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
+import { AvatarComponent, MenuOptionGroupDirective } from 'core';
 
 @Component({
   imports: [
@@ -37,17 +36,17 @@ import { AvatarComponent } from '@elementar-ui/components/avatar';
     FileLargeListLayoutComponent,
     FileGridLayoutComponent,
     MatButton,
-    AvatarComponent
+    AvatarComponent,
   ],
   templateUrl: './overview.component.html',
-  styleUrl: './overview.component.scss'
+  styleUrl: './overview.component.scss',
 })
 export class OverviewComponent {
   private _fb = inject(FormBuilder);
 
   settingsForm = this._fb.group({
     layout: ['grid'],
-    filePreview: ['fullscreen']
+    filePreview: ['fullscreen'],
   });
   starredIds: string[] = ['4'];
   files: File[] = [
@@ -57,7 +56,7 @@ export class OverviewComponent {
       size: 1000000,
       name: 'My folder',
       isShared: true,
-      itemsCount: 38
+      itemsCount: 38,
     },
     {
       id: '2',
@@ -65,7 +64,7 @@ export class OverviewComponent {
       size: 1000000,
       name: 'Work',
       isShared: false,
-      itemsCount: 12
+      itemsCount: 12,
     },
     {
       id: '3',
@@ -73,7 +72,7 @@ export class OverviewComponent {
       size: 1000000,
       name: 'Photos',
       isShared: false,
-      itemsCount: 299
+      itemsCount: 299,
     },
     {
       id: '4',
@@ -83,7 +82,7 @@ export class OverviewComponent {
       thumbnailUrl: 'https://placehold.co/200x200/FFFFFF/000000/png',
       extension: 'jpg',
       isShared: false,
-      itemsCount: 1
+      itemsCount: 1,
     },
     {
       id: '5',
@@ -92,8 +91,8 @@ export class OverviewComponent {
       name: 'New Archive',
       extension: 'zip',
       isShared: false,
-      itemsCount: 22
-    }
+      itemsCount: 22,
+    },
   ];
   selectedFiles: File[] = [];
 

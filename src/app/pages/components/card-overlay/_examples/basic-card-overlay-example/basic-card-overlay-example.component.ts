@@ -5,11 +5,16 @@ import {
   MatCardAvatar,
   MatCardContent,
   MatCardHeader,
-  MatCardImage, MatCardSubtitle, MatCardTitle
+  MatCardImage,
+  MatCardSubtitle,
+  MatCardTitle,
 } from '@angular/material/card';
-import { CardOverlayComponent, CardOverlayContainerDirective } from '@elementar-ui/components/card-overlay';
 import { MatButton } from '@angular/material/button';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
+import {
+  AvatarComponent,
+  CardOverlayComponent,
+  CardOverlayContainerDirective,
+} from 'core';
 
 @Component({
   selector: 'app-basic-card-overlay-example',
@@ -26,11 +31,9 @@ import { AvatarComponent } from '@elementar-ui/components/avatar';
     MatCardImage,
     MatCardSubtitle,
     MatCardTitle,
-    CardOverlayContainerDirective
+    CardOverlayContainerDirective,
   ],
   templateUrl: './basic-card-overlay-example.component.html',
-  styleUrl: './basic-card-overlay-example.component.scss'
+  styleUrl: './basic-card-overlay-example.component.scss',
 })
-export class BasicCardOverlayExampleComponent {
-
-}
+export class BasicCardOverlayExampleComponent {}

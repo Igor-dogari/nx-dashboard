@@ -12,24 +12,24 @@ import {
   DataViewEmptyDataDirective,
   DataViewEmptyFilterResultsDirective,
   DataViewRowSelectionEvent,
-} from '@elementar-ui/components/data-view';
+} from 'core';
 import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
 import {
   BlockStateComponent,
   BlockStateContentComponent,
   BlockStateIconComponent,
-} from '@elementar-ui/components/block-state';
+} from 'core';
 import {
   PanelBodyComponent,
   PanelComponent,
   PanelFooterComponent,
   PanelHeaderComponent,
-} from '@elementar-ui/components/panel';
-import { VerticalDividerComponent } from '@elementar-ui/components/divider';
+} from 'core';
+import { VerticalDividerComponent } from 'core';
 import {
   SegmentedButtonComponent,
   SegmentedComponent,
-} from '@elementar-ui/components/segmented';
+} from 'core';
 import { CustomersStore } from '../../../store';
 
 export interface User {

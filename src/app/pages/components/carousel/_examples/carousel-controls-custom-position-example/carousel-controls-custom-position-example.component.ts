@@ -6,7 +6,7 @@ import {
   CarouselComponent,
   CarouselNextDirective,
   CarouselPreviousDirective
-} from '@elementar-ui/components/carousel';
+} from 'core';
 
 @Component({
   selector: 'app-carousel-controls-custom-position-example',

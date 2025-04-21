@@ -5,7 +5,7 @@ import { MatRipple } from '@angular/material/core';
 import { MatButton } from '@angular/material/button';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { DASHBOARD, Dashboard, Widget } from '@elementar-ui/components/dashboard';
+import { DASHBOARD, Dashboard, Widget } from 'core';
 
 @Component({
   selector: 'emr-exchange-widget',

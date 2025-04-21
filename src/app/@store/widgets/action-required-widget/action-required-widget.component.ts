@@ -4,7 +4,7 @@ import {
   DASHBOARD,
   Dashboard,
   Widget,
-} from '@elementar-ui/components/dashboard';
+} from 'core';
 import { ActionRequiredComponent } from 'core';
 
 export interface ActionRequiredWidget extends Widget {

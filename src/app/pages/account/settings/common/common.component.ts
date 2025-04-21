@@ -2,8 +2,8 @@ import { Component, inject, OnInit } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { filter } from 'rxjs';
 import { Location } from '@angular/common';
-import { LayoutBodyComponent, LayoutComponent, LayoutSidebarComponent } from '@elementar-ui/components/layout';
-import { NavigationComponent, NavigationItemComponent } from '@elementar-ui/components/navigation';
+import { LayoutBodyComponent, LayoutComponent, LayoutSidebarComponent } from 'core';
+import { NavigationComponent, NavigationItemComponent } from 'core';
 
 export interface NavItem {
   name: string;

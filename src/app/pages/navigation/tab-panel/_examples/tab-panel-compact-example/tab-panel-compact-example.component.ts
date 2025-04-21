@@ -1,15 +1,20 @@
 import { Component } from '@angular/core';
 import { MatTooltip } from '@angular/material/tooltip';
 import {
+  AvatarComponent,
+  HorizontalDividerComponent,
+  IconComponent,
   TabPanelAsideComponent,
-  TabPanelAsideContentDirective, TabPanelBodyComponent, TabPanelComponent,
-  TabPanelCustomItemComponent, TabPanelFooterComponent, TabPanelHeaderComponent,
+  TabPanelAsideContentDirective,
+  TabPanelBodyComponent,
+  TabPanelComponent,
+  TabPanelCustomItemComponent,
+  TabPanelFooterComponent,
+  TabPanelHeaderComponent,
   TabPanelItemComponent,
-  TabPanelItemIconDirective, TabPanelNavComponent
-} from '@elementar-ui/components/tab-panel';
-import { IconComponent } from '@elementar-ui/components/icon';
-import { HorizontalDividerComponent } from '@elementar-ui/components/divider';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
+  TabPanelItemIconDirective,
+  TabPanelNavComponent,
+} from 'core';
 
 @Component({
   selector: 'app-tab-panel-compact-example',
@@ -27,11 +32,9 @@ import { AvatarComponent } from '@elementar-ui/components/avatar';
     TabPanelFooterComponent,
     TabPanelBodyComponent,
     TabPanelHeaderComponent,
-    TabPanelComponent
+    TabPanelComponent,
   ],
   templateUrl: './tab-panel-compact-example.component.html',
-  styleUrl: './tab-panel-compact-example.component.scss'
+  styleUrl: './tab-panel-compact-example.component.scss',
 })
-export class TabPanelCompactExampleComponent {
-
-}
+export class TabPanelCompactExampleComponent {}

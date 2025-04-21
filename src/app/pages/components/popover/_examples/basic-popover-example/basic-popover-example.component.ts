@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
-import { PopoverComponent, PopoverTriggerForDirective } from '@elementar-ui/components/popover';
+import { PopoverComponent, PopoverTriggerForDirective } from 'core';
 
 @Component({
   selector: 'app-basic-popover-example',

@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
-import { AvatarComponent } from '@elementar-ui/components/avatar';
+import { AvatarComponent } from 'core';
 
 @Component({
   selector: 'app-avatar-sizes-example',
   templateUrl: './avatar-sizes-example.component.html',
-  imports: [
-    AvatarComponent
-  ],
-  styleUrl: './avatar-sizes-example.component.scss'
+  imports: [AvatarComponent],
+  styleUrl: './avatar-sizes-example.component.scss',
 })
-export class AvatarSizesExampleComponent {
-
-}
+export class AvatarSizesExampleComponent {}

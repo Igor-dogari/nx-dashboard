@@ -4,8 +4,8 @@ import { RouterLink } from '@angular/router';
 import { MatAnchor, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatRipple } from '@angular/material/core';
-import { PopoverComponent } from '@elementar-ui/components/popover';
-import { NotificationDefDirective, NotificationListComponent, Notification } from '@elementar-ui/components/notifications';
+import { PopoverComponent } from 'core';
+import { NotificationDefDirective, NotificationListComponent, Notification } from 'core';
 
 @Component({
   selector: 'emr-notifications-popover',

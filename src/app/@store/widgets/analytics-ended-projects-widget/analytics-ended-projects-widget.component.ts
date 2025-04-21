@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, Dashboard } from '@elementar-ui/components/dashboard';
+import { DASHBOARD, Dashboard } from 'core';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
 
