@@ -3,9 +3,9 @@ import {
   LayoutBodyComponent,
   LayoutComponent,
   LayoutHeaderComponent,
-  LayoutTopbarComponent
+  LayoutTopbarComponent,
 } from '@elementar-ui/components/layout';
-import { AnnouncementComponent } from '@elementar-ui/components/announcement';
+import { AnnouncementComponent } from 'core';
 
 @Component({
   selector: 'app-layout-header-with-topbar-example',
@@ -14,11 +14,9 @@ import { AnnouncementComponent } from '@elementar-ui/components/announcement';
     LayoutComponent,
     LayoutHeaderComponent,
     LayoutTopbarComponent,
-    AnnouncementComponent
+    AnnouncementComponent,
   ],
   templateUrl: './layout-header-with-topbar-example.component.html',
-  styleUrl: './layout-header-with-topbar-example.component.scss'
+  styleUrl: './layout-header-with-topbar-example.component.scss',
 })
-export class LayoutHeaderWithTopbarExampleComponent {
-
-}
+export class LayoutHeaderWithTopbarExampleComponent {}

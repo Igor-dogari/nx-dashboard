@@ -1,13 +1,13 @@
 import { Directive, HostListener, inject } from '@angular/core';
 import { ALERT } from './alert.properties';
-import { AlertComponent } from './alert/alert.component';
+import { AlertComponent } from 'core';
 
 @Directive({
-    selector: '[emrAlertClose]',
-    exportAs: 'emrAlertClose',
-    host: {
-        'class': 'emr-alert-close'
-    }
+  selector: '[emrAlertClose]',
+  exportAs: 'emrAlertClose',
+  host: {
+    class: 'emr-alert-close',
+  },
 })
 export class AlertCloseDirective {
   private _alert = inject<AlertComponent>(ALERT);

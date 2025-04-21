@@ -1,6 +1,11 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { ActionRequiredComponent } from 'projects/shared/action-required';
-import { DASHBOARD, Dashboard, Widget } from '@elementar-ui/components/dashboard';
+// import { ActionRequiredComponent } from 'projects/shared/action-required';
+import {
+  DASHBOARD,
+  Dashboard,
+  Widget,
+} from '@elementar-ui/components/dashboard';
+import { ActionRequiredComponent } from 'core';
 
 export interface ActionRequiredWidget extends Widget {
   iconName?: string;
@@ -12,14 +17,12 @@ export interface ActionRequiredWidget extends Widget {
 @Component({
   selector: 'emr-action-required-widget',
   exportAs: 'emrActionRequiredWidget',
-  imports: [
-    ActionRequiredComponent
-  ],
+  imports: [ActionRequiredComponent],
   templateUrl: './action-required-widget.component.html',
   styleUrl: './action-required-widget.component.css',
   host: {
-    'class': 'emr-action-required-widget'
-  }
+    class: 'emr-action-required-widget',
+  },
 })
 export class ActionRequiredWidgetComponent implements OnInit {
   private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });

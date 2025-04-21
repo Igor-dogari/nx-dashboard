@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
-import { AlertComponent } from 'projects/shared/alert';
+import { AlertComponent } from 'core';
 
 @Component({
   selector: 'app-alert-with-border-example',
-  imports: [
-    AlertComponent
-  ],
+  imports: [AlertComponent],
   templateUrl: './alert-with-border-example.component.html',
-  styleUrl: './alert-with-border-example.component.scss'
+  styleUrl: './alert-with-border-example.component.scss',
 })
-export class AlertWithBorderExampleComponent {
-
-}
+export class AlertWithBorderExampleComponent {}

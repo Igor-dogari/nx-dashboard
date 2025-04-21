@@ -4,8 +4,8 @@ import {
   AlertActionDirective,
   AlertCloseDirective,
   AlertComponent,
-  AlertTitleDirective
-} from 'projects/shared/alert';
+  AlertTitleDirective,
+} from '../../../../../../../libs/src/lib/core/alert';
 
 @Component({
   selector: 'app-alert-actions-example',
@@ -14,11 +14,9 @@ import {
     AlertActionDirective,
     AlertCloseDirective,
     AlertComponent,
-    AlertTitleDirective
+    AlertTitleDirective,
   ],
   templateUrl: './alert-actions-example.component.html',
-  styleUrl: './alert-actions-example.component.scss'
+  styleUrl: './alert-actions-example.component.scss',
 })
-export class AlertActionsExampleComponent {
-
-}
+export class AlertActionsExampleComponent {}

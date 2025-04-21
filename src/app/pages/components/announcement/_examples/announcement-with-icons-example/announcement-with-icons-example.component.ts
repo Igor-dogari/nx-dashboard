@@ -1,14 +1,10 @@
 import { Component } from '@angular/core';
-import { AnnouncementComponent } from '@elementar-ui/components/announcement';
+import { AnnouncementComponent } from 'core';
 
 @Component({
   selector: 'app-announcement-with-icons-example',
-  imports: [
-    AnnouncementComponent
-  ],
+  imports: [AnnouncementComponent],
   templateUrl: './announcement-with-icons-example.component.html',
-  styleUrl: './announcement-with-icons-example.component.scss'
+  styleUrl: './announcement-with-icons-example.component.scss',
 })
-export class AnnouncementWithIconsExampleComponent {
-
-}
+export class AnnouncementWithIconsExampleComponent {}

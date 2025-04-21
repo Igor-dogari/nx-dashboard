@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { ActionRequiredComponent } from 'projects/shared/action-required';
+import { ActionRequiredComponent } from 'core';
 
 @Component({
   selector: 'app-basic-action-required-example',
-  imports: [
-    ActionRequiredComponent
-  ],
+  imports: [ActionRequiredComponent],
   templateUrl: './basic-action-required-example.component.html',
-  styleUrl: './basic-action-required-example.component.scss'
+  styleUrl: './basic-action-required-example.component.scss',
 })
 export class BasicActionRequiredExampleComponent {
   onButtonClicked() {

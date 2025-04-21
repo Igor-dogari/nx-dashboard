@@ -1,13 +1,15 @@
+import { CommonModule } from '@angular/common';
 import { Component, input, output } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
-  selector: 'emr-action-required',
+  selector: 'lib-emr-action-required',
   exportAs: 'emrActionRequired',
   imports: [
     MatButton,
-    MatIcon
+    MatIcon,
+    CommonModule
   ],
   templateUrl: './action-required.component.html',
   styleUrl: './action-required.component.scss',

@@ -9,8 +9,8 @@ import {
   LayoutSidebarComponent,
   LayoutTopbarComponent,
 } from '../../../../projects/components/layout';
-import { AnnouncementGlobalComponent } from '../../../../projects/components/announcement';
 import { IncidentsContainerComponent } from '../../../../projects/components/incidents';
+import { AnnouncementGlobalComponent } from 'core';
 
 @Component({
   imports: [
@@ -23,9 +23,8 @@ import { IncidentsContainerComponent } from '../../../../projects/components/inc
     LayoutHeaderComponent,
     LayoutTopbarComponent,
     IncidentsContainerComponent,
-    AnnouncementGlobalComponent
+    AnnouncementGlobalComponent,
   ],
-  templateUrl: './common.component.html'
+  templateUrl: './common.component.html',
 })
-export class CommonComponent {
-}
+export class CommonComponent {}

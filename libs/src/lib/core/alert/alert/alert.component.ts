@@ -6,28 +6,35 @@ import {
   Input,
   OnInit,
   Renderer2,
-  contentChild, TemplateRef, input, numberAttribute, effect, output, OnChanges, SimpleChanges
+  contentChild,
+  TemplateRef,
+  input,
+  numberAttribute,
+  effect,
+  output,
+  OnChanges,
+  SimpleChanges,
 } from '@angular/core';
 import { ALERT, AlertVariant } from '../alert.properties';
 import { AlertIconDirective } from '../alert-icon.directive';
-import { NgTemplateOutlet } from '@angular/common';
+import { CommonModule, NgTemplateOutlet } from '@angular/common';
 
 @Component({
   selector: 'emr-alert',
   exportAs: 'emrAlert',
-  imports: [NgTemplateOutlet],
+  imports: [NgTemplateOutlet, CommonModule],
   templateUrl: './alert.component.html',
   styleUrl: './alert.component.scss',
   providers: [
     {
       provide: ALERT,
-      useExisting: AlertComponent
-    }
+      useExisting: AlertComponent,
+    },
   ],
   host: {
-    'class': 'emr-alert',
+    class: 'emr-alert',
     '[class.is-bordered]': 'bordered()',
-  }
+  },
 })
 export class AlertComponent {
   private _renderer = inject(Renderer2);
@@ -35,10 +42,10 @@ export class AlertComponent {
   readonly iconRef = contentChild(AlertIconDirective);
 
   autoClose = input(null, {
-    transform: numberAttribute
+    transform: numberAttribute,
   });
   bordered = input(false, {
-    transform: booleanAttribute
+    transform: booleanAttribute,
   });
   variant = input<AlertVariant>('default');
 
@@ -47,7 +54,11 @@ export class AlertComponent {
 
   constructor() {
     effect(() => {
-      this._renderer.setAttribute(this._elementRef.nativeElement, 'emr-alert-variant', this.variant());
+      this._renderer.setAttribute(
+        this._elementRef.nativeElement,
+        'emr-alert-variant',
+        this.variant(),
+      );
 
       clearTimeout(this._autoCloseTimeout);
 
@@ -63,7 +74,7 @@ export class AlertComponent {
 
   get api() {
     return {
-      close: () => this._close()
+      close: () => this._close(),
     };
   }
 
