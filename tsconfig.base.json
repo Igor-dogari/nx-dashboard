@@ -10,8 +10,6 @@
     "baseUrl": ".",
     "paths": {
       "@app/*": ["./src/app/@app/*"],
-      "@elementar-ui/components": ["./projects/components"],
-      "@elementar-ui/components/*": ["./projects/components/*"],
       "@meta/*": ["./src/app/@meta/*"],
       "@store/*": ["./src/app/@store/*"],
       "core": ["libs/src/index.ts"]

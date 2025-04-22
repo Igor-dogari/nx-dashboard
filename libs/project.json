@@ -2,8 +2,13 @@
   "name": "core",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/src",
-  "prefix": "lib",
+  "prefix": "emr",
   "projectType": "library",
+  "generators": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  },
   "tags": [],
   "targets": {
     "build": {
@@ -30,7 +35,14 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint"
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/src/**/*.ts",
+          "libs/src/**/*.html",
+          "libs/src/**/*.scss"
+        ]
+      }
     }
   }
 }

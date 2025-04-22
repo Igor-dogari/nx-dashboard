@@ -22,7 +22,6 @@
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
     "build": "nx build",
-    "build:components:prod": "nx build components --configuration production",
     "build:prod": "nx build --configuration production",
     "serve:ssr:elementar-admin": "node dist/elementar-admin/server/server.mjs",
     "changelog": "auto-changelog -p && git add CHANGELOG.md",
