@@ -1,5 +1,5 @@
 import { Component, model } from '@angular/core';
-import { DataViewColumnDef, DataViewComponent } from 'core';
+import { DataViewColumnDef, DataViewComponent } from '@core';
 import { MatRadioButton, MatRadioGroup } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 

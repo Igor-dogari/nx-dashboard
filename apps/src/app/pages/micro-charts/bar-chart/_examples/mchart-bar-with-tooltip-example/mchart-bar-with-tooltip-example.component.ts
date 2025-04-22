@@ -4,7 +4,7 @@ import {
   MchartBarComponent,
   MchartTooltipBodyComponent,
   MchartTooltipComponent, MchartTooltipTitleComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-mchart-bar-with-tooltip-example',

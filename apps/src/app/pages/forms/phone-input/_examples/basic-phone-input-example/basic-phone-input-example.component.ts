@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MatError, MatFormField, MatLabel } from '@angular/material/form-field';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { PhoneInputComponent, phoneValidator } from 'core';
+import { PhoneInputComponent, phoneValidator } from '@core';
 
 @Component({
   selector: 'app-basic-phone-input-example',

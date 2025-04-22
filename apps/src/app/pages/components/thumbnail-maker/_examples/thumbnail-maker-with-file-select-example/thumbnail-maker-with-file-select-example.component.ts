@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
-import { ThumbnailMakerComponent } from 'core';
-import { UploadFileSelectedEvent, UploadTriggerDirective } from 'core';
+import { ThumbnailMakerComponent } from '@core';
+import { UploadFileSelectedEvent, UploadTriggerDirective } from '@core';
 
 @Component({
   selector: 'app-thumbnail-maker-with-file-select-example',

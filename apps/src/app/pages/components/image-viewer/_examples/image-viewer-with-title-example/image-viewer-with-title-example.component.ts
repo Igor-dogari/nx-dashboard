@@ -5,7 +5,7 @@ import {
   ImageViewerPictureDescriptionDirective,
   ImageViewerPictureDirective,
   ImageViewerPictureTitleDirective
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-image-viewer-with-title-example',

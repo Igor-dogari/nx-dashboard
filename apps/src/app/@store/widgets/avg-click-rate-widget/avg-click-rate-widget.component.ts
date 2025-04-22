@@ -2,7 +2,7 @@ import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatRipple } from '@angular/material/core';
 import { MatTooltip } from '@angular/material/tooltip';
-import { DASHBOARD, Dashboard, Widget } from 'core';
+import { DASHBOARD, Dashboard, Widget } from '@core';
 
 @Component({
   selector: 'emr-avg-click-rate-widget',

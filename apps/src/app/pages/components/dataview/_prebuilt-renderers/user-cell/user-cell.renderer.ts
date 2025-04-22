@@ -3,7 +3,7 @@ import {
   DataViewCellRendererComponent,
   DataViewColumnDef,
   DicebearComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-user-cell',

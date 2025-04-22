@@ -12,7 +12,7 @@ import {
   IncidentsTitleComponent,
   IncidentsToggleIconDirective,
   IncidentTitleComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-incidents-example',

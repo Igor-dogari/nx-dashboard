@@ -3,8 +3,8 @@ import {
   BlockStateComponent,
   BlockStateContentComponent,
   BlockStateIconComponent
-} from 'core';
-import { IconComponent } from 'core';
+} from '@core';
+import { IconComponent } from '@core';
 
 @Component({
   selector: 'app-block-state-with-custom-icon-example',

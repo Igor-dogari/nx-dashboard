@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { DicebearComponent, Notification } from 'core';
+import { DicebearComponent, Notification } from '@core';
 
 @Component({
   selector: 'emr-mentioned-in-comment',

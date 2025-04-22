@@ -9,7 +9,7 @@ import {
   TimelineItemIndicatorDirective,
   TimelineTimestampComponent,
   TimelineTitleComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-timeline-with-cutsom-indicator-example',

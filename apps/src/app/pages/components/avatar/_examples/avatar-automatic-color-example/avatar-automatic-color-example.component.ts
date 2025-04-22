@@ -4,7 +4,7 @@ import {
   AvatarComponent,
   AvatarGroupComponent,
   AvatarTotalComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-avatar-automatic-color-example',

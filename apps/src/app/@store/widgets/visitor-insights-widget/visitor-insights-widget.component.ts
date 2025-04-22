@@ -19,7 +19,7 @@ import {
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { LineChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
-import { Dashboard, DASHBOARD, ThemeManagerService, Widget } from 'core';
+import { Dashboard, DASHBOARD, ThemeManagerService, Widget } from '@core';
 
 @Component({
   selector: 'emr-visitor-insights-widget',

@@ -10,7 +10,7 @@ import {
   LayoutHeaderComponent,
   LayoutSidebarComponent,
   LayoutTopbarComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   imports: [

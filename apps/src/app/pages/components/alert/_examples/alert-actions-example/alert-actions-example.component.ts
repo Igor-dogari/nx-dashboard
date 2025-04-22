@@ -4,8 +4,8 @@ import {
   AlertActionDirective,
   AlertCloseDirective,
   AlertComponent,
-  AlertTitleDirective,
-} from '../../../../../../../../libs/src/lib/core/alert';
+  AlertTitleDirective
+} from 'libs/dashboard/core/src/lib/alert';
 
 @Component({
   selector: 'app-alert-actions-example',

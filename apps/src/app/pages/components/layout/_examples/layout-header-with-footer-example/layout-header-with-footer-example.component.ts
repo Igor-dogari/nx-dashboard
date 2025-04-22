@@ -4,7 +4,7 @@ import {
   LayoutComponent,
   LayoutFooterComponent,
   LayoutHeaderComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-layout-header-with-footer-example',

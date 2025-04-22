@@ -10,7 +10,7 @@ import {
   MatCardTitle,
 } from '@angular/material/card';
 import { MatButton } from '@angular/material/button';
-import { AvatarComponent } from 'core';
+import { AvatarComponent } from '@core';
 
 @Component({
   selector: 'app-card-multiple-sections-example',

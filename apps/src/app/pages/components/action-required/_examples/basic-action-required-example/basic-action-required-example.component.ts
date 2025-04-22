@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActionRequiredComponent } from 'core';
+import { ActionRequiredComponent } from '@core';
 
 @Component({
   selector: 'app-basic-action-required-example',

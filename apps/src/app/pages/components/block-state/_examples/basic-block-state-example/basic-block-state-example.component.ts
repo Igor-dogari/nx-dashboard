@@ -3,7 +3,7 @@ import {
   BlockStateComponent,
   BlockStateContentComponent,
   BlockStateTitleComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-block-state-example',

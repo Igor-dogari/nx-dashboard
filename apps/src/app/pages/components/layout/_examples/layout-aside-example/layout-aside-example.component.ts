@@ -4,7 +4,7 @@ import {
   LayoutBodyComponent,
   LayoutComponent,
   LayoutSidebarComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-layout-aside-example',

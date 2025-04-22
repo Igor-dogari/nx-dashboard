@@ -3,7 +3,7 @@ import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
-import { HorizontalDividerComponent } from 'core';
+import { HorizontalDividerComponent } from '@core';
 
 @Component({
   imports: [

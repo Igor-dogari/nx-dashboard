@@ -6,13 +6,13 @@ import {
   TabPanelItemComponent,
   TabPanelItemIconDirective,
   TabPanelItemTextComponent, TabPanelNavComponent
-} from 'core';
+} from '@core';
 import {
   PanelBodyComponent,
   PanelComponent,
   PanelFooterComponent,
   PanelHeaderComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-tab-panel-with-panels-inside-example',

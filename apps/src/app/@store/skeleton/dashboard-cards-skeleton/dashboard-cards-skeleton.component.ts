@@ -1,5 +1,5 @@
 import { Component, input, numberAttribute } from '@angular/core';
-import { SkeletonBlockComponent, SkeletonComponent, SkeletonLineComponent } from 'core';
+import { SkeletonBlockComponent, SkeletonComponent, SkeletonLineComponent } from '@core';
 
 @Component({
   selector: 'emr-dashboard-cards-skeleton',

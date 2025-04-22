@@ -6,7 +6,7 @@ import {
   CarouselComponent,
   CarouselNextDirective,
   CarouselPreviousDirective
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-carousel-example',

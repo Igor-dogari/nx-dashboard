@@ -13,8 +13,8 @@ import {
   SidebarNavGroupToggleIconDirective,
   SidebarNavHeadingComponent, SidebarNavItemComponent,
   SidebarNavItemIconDirective
-} from 'core';
-import { IconComponent } from 'core';
+} from '@core';
+import { IconComponent } from '@core';
 
 @Component({
   selector: 'app-sidebar-with-custom-icons-example',

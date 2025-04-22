@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AvatarComponent, AvatarGroupComponent } from 'core';
+import { AvatarComponent, AvatarGroupComponent } from '@core';
 
 @Component({
   selector: 'app-grouped-avatars-example',

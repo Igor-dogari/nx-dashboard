@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RailNavComponent, RailNavItemComponent } from 'core';
+import { RailNavComponent, RailNavItemComponent } from '@core';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({

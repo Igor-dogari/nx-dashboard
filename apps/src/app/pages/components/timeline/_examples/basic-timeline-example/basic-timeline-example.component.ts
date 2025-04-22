@@ -7,7 +7,7 @@ import {
   TimelineHeaderComponent,
   TimelineItemComponent,
   TimelineTitleComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-timeline-example',

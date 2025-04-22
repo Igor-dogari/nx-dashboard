@@ -4,8 +4,8 @@ import {
   MchartLineComponent,
   MchartTooltipBodyComponent,
   MchartTooltipComponent, MchartTooltipTitleComponent
-} from 'core';
-import { ResizableContainerComponent } from 'core';
+} from '@core';
+import { ResizableContainerComponent } from '@core';
 
 @Component({
   selector: 'app-mchart-line-responsive-example',

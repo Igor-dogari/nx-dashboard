@@ -8,7 +8,7 @@ import {
   TimelineItemComponent,
   TimelineTimestampComponent,
   TimelineTitleComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-timeline-timestamp-example',

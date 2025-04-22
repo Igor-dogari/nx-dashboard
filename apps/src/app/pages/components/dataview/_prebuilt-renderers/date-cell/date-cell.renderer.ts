@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { DataViewCellRendererComponent } from 'core';
+import { DataViewCellRendererComponent } from '@core';
 import { DatePipe } from '@angular/common';
 
 @Component({

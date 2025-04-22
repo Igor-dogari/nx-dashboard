@@ -1,7 +1,7 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { AvatarComponent, DASHBOARD, Dashboard, Widget } from 'core';
+import { AvatarComponent, DASHBOARD, Dashboard, Widget } from '@core';
 
 @Component({
   selector: 'emr-tasks-in-progress-widget',

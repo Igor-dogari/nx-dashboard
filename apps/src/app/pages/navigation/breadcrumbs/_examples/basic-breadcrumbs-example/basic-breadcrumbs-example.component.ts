@@ -3,7 +3,7 @@ import {
   BreadcrumbItemComponent,
   BreadcrumbsComponent,
   BreadcrumbSeparatorComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-breadcrumbs-example',

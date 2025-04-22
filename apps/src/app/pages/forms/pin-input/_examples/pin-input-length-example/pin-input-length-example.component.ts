@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PinInputComponent } from 'core';
+import { PinInputComponent } from '@core';
 
 @Component({
   selector: 'app-pin-input-length-example',

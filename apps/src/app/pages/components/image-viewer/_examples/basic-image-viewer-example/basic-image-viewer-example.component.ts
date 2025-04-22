@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ImageViewerDirective, ImageViewerPictureDirective } from 'core';
+import { ImageViewerDirective, ImageViewerPictureDirective } from '@core';
 
 @Component({
   selector: 'app-basic-image-viewer-example',

@@ -20,11 +20,11 @@ import {
   CommentEditorCommandUnsetLinkDirective,
   CommentEditorCommandToggleToolbarDirective,
   CommentEditorFooterBarComponent
-} from 'core';
+} from '@core';
 import { MatIconButton } from '@angular/material/button';
 import { MatTooltip } from '@angular/material/tooltip';
-import { SafeHtmlPipe } from 'core';
-import { IconComponent } from 'core';
+import { SafeHtmlPipe } from '@core';
+import { IconComponent } from '@core';
 
 @Component({
   selector: 'app-comment-editor-with-custom-icons-example',

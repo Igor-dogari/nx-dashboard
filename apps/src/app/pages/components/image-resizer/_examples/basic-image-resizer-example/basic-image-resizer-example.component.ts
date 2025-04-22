@@ -3,7 +3,7 @@ import {
   ImageResizedEvent,
   ImageResizerComponent,
   ImageResizerImageDirective
-} from 'core';
+} from '@core';
 import { JsonPipe } from '@angular/common';
 
 @Component({

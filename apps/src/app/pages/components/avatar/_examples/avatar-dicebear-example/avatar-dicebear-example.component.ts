@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AvatarGroupComponent, DicebearComponent } from 'core';
+import { AvatarGroupComponent, DicebearComponent } from '@core';
 
 @Component({
   selector: 'app-avatar-dicebear-example',

@@ -4,8 +4,8 @@ import {
   MchartTooltipBodyComponent,
   MchartTooltipComponent,
   MchartTooltipTitleComponent
-} from 'core';
-import { Dashboard, DASHBOARD, Widget } from 'core';
+} from '@core';
+import { Dashboard, DASHBOARD, Widget } from '@core';
 
 @Component({
   selector: 'emr-total-tasks-widget',

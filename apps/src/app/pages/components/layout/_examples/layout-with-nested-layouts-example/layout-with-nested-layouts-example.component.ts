@@ -6,8 +6,8 @@ import {
   LayoutHeaderComponent,
   LayoutSidebarComponent,
   LayoutTopbarComponent,
-} from 'core';
-import { AnnouncementComponent } from 'core';
+} from '@core';
+import { AnnouncementComponent } from '@core';
 
 @Component({
   selector: 'app-layout-with-nested-layouts-example',

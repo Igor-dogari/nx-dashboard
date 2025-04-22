@@ -5,7 +5,7 @@ import {
   BlockStateComponent,
   BlockStateContentComponent,
   BlockStateTitleComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-block-state-with-actions-example',

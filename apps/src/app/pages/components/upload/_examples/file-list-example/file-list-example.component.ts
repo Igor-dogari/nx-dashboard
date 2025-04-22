@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { FileComponent, FileControlComponent, FileListComponent } from 'core';
+import { FileComponent, FileControlComponent, FileListComponent } from '@core';
 
 export interface File {
   name: string,

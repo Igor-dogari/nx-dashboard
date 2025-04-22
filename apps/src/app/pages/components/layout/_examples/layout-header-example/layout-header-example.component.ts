@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LayoutBodyComponent, LayoutComponent, LayoutHeaderComponent } from 'core';
+import { LayoutBodyComponent, LayoutComponent, LayoutHeaderComponent } from '@core';
 
 @Component({
   selector: 'app-layout-header-example',

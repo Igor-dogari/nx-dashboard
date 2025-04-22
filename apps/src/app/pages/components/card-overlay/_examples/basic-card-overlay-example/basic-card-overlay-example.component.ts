@@ -14,7 +14,7 @@ import {
   AvatarComponent,
   CardOverlayComponent,
   CardOverlayContainerDirective,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-card-overlay-example',

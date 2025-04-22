@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MarqueeComponent } from 'core';
+import { MarqueeComponent } from '@core';
 
 @Component({
   selector: 'app-marquee-reverse-example',

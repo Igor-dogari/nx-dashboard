@@ -4,8 +4,8 @@ import {
   LayoutComponent,
   LayoutHeaderComponent,
   LayoutTopbarComponent,
-} from 'core';
-import { AnnouncementComponent } from 'core';
+} from '@core';
+import { AnnouncementComponent } from '@core';
 
 @Component({
   selector: 'app-layout-header-with-topbar-example',

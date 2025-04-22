@@ -38,7 +38,7 @@ import {
   ImageViewerDirective,
   ImageViewerPictureDirective,
   SafeHtmlPipe,
-} from 'core';
+} from '@core';
 
 interface MessengerMessage {
   id: any;

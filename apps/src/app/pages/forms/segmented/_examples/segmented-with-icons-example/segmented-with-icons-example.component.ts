@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { SegmentedButtonComponent, SegmentedComponent } from 'core';
+import { SegmentedButtonComponent, SegmentedComponent } from '@core';
 
 @Component({
   selector: 'app-segmented-with-icons-example',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ExpandComponent } from 'core';
+import { ExpandComponent } from '@core';
 
 @Component({
   selector: 'app-expand-show-button-if-expanded-example',

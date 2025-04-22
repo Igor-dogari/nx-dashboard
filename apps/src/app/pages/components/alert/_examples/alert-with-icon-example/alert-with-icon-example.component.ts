@@ -3,7 +3,7 @@ import { MatIcon } from '@angular/material/icon';
 import {
   AlertComponent,
   AlertIconDirective,
-} from '../../../../../../../../libs/src/lib/core/alert';
+} from 'libs/dashboard/core/src/lib/alert';
 
 @Component({
   selector: 'app-alert-with-icon-example',

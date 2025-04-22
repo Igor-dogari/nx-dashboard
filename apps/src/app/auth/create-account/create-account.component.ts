@@ -4,10 +4,10 @@ import { MatButton } from '@angular/material/button';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
 import { RouterLink } from '@angular/router';
-import { HorizontalDividerComponent } from 'core';
-import { PhoneInputComponent, phoneValidator } from 'core';
-import { PasswordStrengthComponent } from 'core';
-import { LogoComponent } from 'core';
+import { HorizontalDividerComponent } from '@core';
+import { PhoneInputComponent, phoneValidator } from '@core';
+import { PasswordStrengthComponent } from '@core';
+import { LogoComponent } from '@core';
 
 @Component({
   selector: 'app-create-account',

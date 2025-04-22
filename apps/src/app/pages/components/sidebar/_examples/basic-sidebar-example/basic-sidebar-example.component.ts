@@ -11,12 +11,12 @@ import {
   SidebarNavHeadingComponent,
   SidebarNavItemComponent,
   SidebarNavItemIconDirective
-} from 'core';
+} from '@core';
 import { v7 as uuid } from 'uuid';
 import { MatIcon } from '@angular/material/icon';
 import {
   SidebarNavGroupToggleIconDirective
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-sidebar-example',

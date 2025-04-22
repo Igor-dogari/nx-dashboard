@@ -5,7 +5,7 @@ import {
   CookiePopupAcceptType,
   CookiePopupComponent,
   CookiePopupTitleDirective
-} from 'core';
+} from '@core';
 import { MatButton } from '@angular/material/button';
 
 @Component({

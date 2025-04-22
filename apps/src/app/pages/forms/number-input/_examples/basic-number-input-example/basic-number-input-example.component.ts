@@ -1,6 +1,6 @@
 import { Component, model } from '@angular/core';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
-import { NumberInputComponent } from 'core';
+import { NumberInputComponent } from '@core';
 import { FormsModule } from '@angular/forms';
 
 @Component({

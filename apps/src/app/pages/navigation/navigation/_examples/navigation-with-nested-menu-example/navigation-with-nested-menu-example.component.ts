@@ -5,7 +5,7 @@ import {
   NavigationGroupComponent, NavigationGroupMenuComponent, NavigationGroupToggleComponent,
   NavigationGroupToggleIconDirective,
   NavigationItemComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-navigation-with-nested-menu-example',

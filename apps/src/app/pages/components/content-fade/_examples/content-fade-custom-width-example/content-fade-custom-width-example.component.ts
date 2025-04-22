@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ContentFadeComponent } from 'core';
+import { ContentFadeComponent } from '@core';
 
 @Component({
   selector: 'app-content-fade-custom-width-example',

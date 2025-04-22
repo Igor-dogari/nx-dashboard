@@ -3,7 +3,7 @@ import {
   NavigationComponent,
   NavigationHeadingComponent,
   NavigationItemComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-navigation-with-heading-example',

@@ -3,7 +3,7 @@ import {
   AvatarComponent,
   AvatarGroupComponent,
   AvatarTotalComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-grouped-and-total-avatars-example',

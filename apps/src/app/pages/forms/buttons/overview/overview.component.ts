@@ -20,12 +20,12 @@ import {
 import {
   ButtonsExtendedFabExampleComponent
 } from '../_examples/buttons-extended-fab-example/buttons-extended-fab-example.component';
-import { ScrollSpyNavComponent, ScrollSpyOnComponent, ScrollSpyTitleComponent } from 'core';
+import { ScrollSpyNavComponent, ScrollSpyOnComponent, ScrollSpyTitleComponent } from '@core';
 import {
   BreadcrumbItemComponent,
   BreadcrumbsComponent,
   BreadcrumbSeparatorComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-overview',

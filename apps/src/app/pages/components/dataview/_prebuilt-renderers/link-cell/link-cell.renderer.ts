@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
-import { DataViewCellRendererComponent } from 'core';
-import { ContentFadeComponent } from 'core';
+import { DataViewCellRendererComponent } from '@core';
+import { ContentFadeComponent } from '@core';
 
 @Component({
   selector: 'app-link-cell',

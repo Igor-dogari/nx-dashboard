@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SegmentedButtonComponent, SegmentedComponent } from 'core';
+import { SegmentedButtonComponent, SegmentedComponent } from '@core';
 
 @Component({
   selector: 'app-segmented-disabled-example',

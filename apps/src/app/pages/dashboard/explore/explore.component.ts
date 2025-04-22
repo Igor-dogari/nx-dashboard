@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DashboardComponent, Widget, WidgetConfig } from 'core';
+import { DashboardComponent, Widget, WidgetConfig } from '@core';
 
 @Component({
   selector: 'app-explore',
@@ -79,7 +79,7 @@ export class ExploreComponent {
       description: 'Find the perfect mentor to support your business.',
     },
     {
-      id: 4,
+      id: 14,
       type: 'explore-widget',
       columns: 4,
       iconName: 'menu_book',

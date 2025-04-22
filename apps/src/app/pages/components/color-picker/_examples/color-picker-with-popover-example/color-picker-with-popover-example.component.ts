@@ -3,7 +3,7 @@ import {
   ColorPickerComponent,
   ColorPickerThumbnailComponent,
   ColorPickerTriggerForDirective
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-color-picker-with-popover-example',

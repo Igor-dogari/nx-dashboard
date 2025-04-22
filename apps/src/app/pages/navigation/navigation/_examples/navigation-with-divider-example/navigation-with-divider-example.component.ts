@@ -3,7 +3,7 @@ import {
   NavigationComponent,
   NavigationDividerComponent,
   NavigationItemComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-navigation-with-divider-example',

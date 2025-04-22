@@ -5,7 +5,7 @@ import {
   DecreaseControlDirective,
   IncreaseControlDirective,
   NumberInputComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-number-input-custom-controls-example',

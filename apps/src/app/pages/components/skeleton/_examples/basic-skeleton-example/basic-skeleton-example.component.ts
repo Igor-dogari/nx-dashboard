@@ -4,7 +4,7 @@ import {
   SkeletonCircleComponent,
   SkeletonComponent,
   SkeletonLineComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-skeleton-example',

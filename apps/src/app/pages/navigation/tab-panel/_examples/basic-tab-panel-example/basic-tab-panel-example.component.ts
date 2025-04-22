@@ -6,7 +6,7 @@ import {
   TabPanelItemComponent,
   TabPanelItemIconDirective,
   TabPanelItemTextComponent, TabPanelNavComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-tab-panel-example',

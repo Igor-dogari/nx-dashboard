@@ -5,7 +5,7 @@ import { MatInput } from '@angular/material/input';
 import { Router, RouterLink } from '@angular/router';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatIcon } from '@angular/material/icon';
-import { LogoComponent } from 'core';
+import { LogoComponent } from '@core';
 
 @Component({
   selector: 'app-forgot-password',

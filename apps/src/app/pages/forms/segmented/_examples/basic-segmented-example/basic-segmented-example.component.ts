@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SegmentedButtonComponent, SegmentedComponent } from 'core';
+import { SegmentedButtonComponent, SegmentedComponent } from '@core';
 
 @Component({
   selector: 'app-basic-segmented-example',

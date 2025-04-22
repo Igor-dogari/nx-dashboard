@@ -3,7 +3,7 @@ import {
   ImageViewerDirective,
   ImageViewerPictureCaptionDirective, ImageViewerPictureDescriptionDirective,
   ImageViewerPictureDirective
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-image-viewer-with-caption-and-description-example',

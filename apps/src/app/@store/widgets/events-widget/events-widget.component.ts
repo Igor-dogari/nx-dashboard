@@ -6,7 +6,7 @@ import {
   DASHBOARD,
   Dashboard,
   Widget,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'emr-events-widget',

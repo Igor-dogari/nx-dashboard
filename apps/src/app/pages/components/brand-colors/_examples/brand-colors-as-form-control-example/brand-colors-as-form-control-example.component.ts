@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BrandColorsComponent } from 'core';
+import { BrandColorsComponent } from '@core';
 import { FormsModule } from '@angular/forms';
 
 @Component({

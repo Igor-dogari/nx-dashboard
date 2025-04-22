@@ -12,24 +12,24 @@ import {
   DataViewEmptyDataDirective,
   DataViewEmptyFilterResultsDirective,
   DataViewRowSelectionEvent,
-} from 'core';
+} from '@core';
 import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
 import {
   BlockStateComponent,
   BlockStateContentComponent,
   BlockStateIconComponent,
-} from 'core';
+} from '@core';
 import {
   PanelBodyComponent,
   PanelComponent,
   PanelFooterComponent,
   PanelHeaderComponent,
-} from 'core';
-import { VerticalDividerComponent } from 'core';
+} from '@core';
+import { VerticalDividerComponent } from '@core';
 import {
   SegmentedButtonComponent,
   SegmentedComponent,
-} from 'core';
+} from '@core';
 import { CustomersStore } from '../../../store';
 
 export interface User {

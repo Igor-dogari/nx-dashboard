@@ -4,7 +4,7 @@ import {
   LayoutComponent,
   LayoutHeaderComponent,
   LayoutSidebarComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-layout-header-with-sidebar-example',

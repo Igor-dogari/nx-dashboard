@@ -22,7 +22,7 @@ import {
   TextEditorCommandYoutubeDirective,
   TextEditorComponent, TextEditorDividerComponent,
   TextEditorFloatingMenuComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-text-editor-floating-menu-example',

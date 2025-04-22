@@ -3,7 +3,7 @@ import {
   BlockStateComponent,
   BlockStateContentComponent,
   BlockStateImageComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-block-state-with-image-example',

@@ -4,7 +4,7 @@ import {
   NavigationComponent,
   NavigationItemComponent,
   NavigationItemIconDirective
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-navigation-with-icons-example',

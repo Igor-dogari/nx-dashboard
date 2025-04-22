@@ -4,7 +4,7 @@ import {
   BlockStateComponent,
   BlockStateContentComponent,
   BlockStateIconComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-block-state-with-icon-example',

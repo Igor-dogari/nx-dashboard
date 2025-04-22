@@ -8,7 +8,7 @@ import {
   SuggestionIconDirective,
   SuggestionsComponent,
   SuggestionThumbDirective,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-suggestions-example',

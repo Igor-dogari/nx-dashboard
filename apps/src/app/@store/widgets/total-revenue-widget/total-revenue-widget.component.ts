@@ -1,6 +1,6 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { Dashboard, DASHBOARD, Widget } from 'core';
+import { Dashboard, DASHBOARD, Widget } from '@core';
 
 @Component({
   selector: 'emr-total-revenue-widget',

@@ -20,7 +20,7 @@ import {
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
-import { Dashboard, DASHBOARD, ThemeManagerService, Widget } from 'core';
+import { Dashboard, DASHBOARD, ThemeManagerService, Widget } from '@core';
 
 @Component({
   selector: 'emr-purchases-by-channels-widget',

@@ -18,7 +18,7 @@ import {
   SuggestionIconDirective,
   SuggestionsComponent,
   SuggestionThumbDirective,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'emr-assistant-search',

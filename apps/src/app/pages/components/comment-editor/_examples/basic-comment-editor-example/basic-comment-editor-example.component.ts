@@ -19,8 +19,8 @@ import {
   CommentEditorCommandUnsetLinkDirective,
   CommentEditorCommandEditLinkDirective,
   CommentEditorCommandToggleToolbarDirective, CommentEditorFooterBarComponent
-} from 'core';
-import { SafeHtmlPipe } from 'core';
+} from '@core';
+import { SafeHtmlPipe } from '@core';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
 import { MatTooltip } from '@angular/material/tooltip';

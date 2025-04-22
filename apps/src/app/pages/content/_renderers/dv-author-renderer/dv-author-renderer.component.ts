@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { AvatarComponent, InitialsPipe } from 'core';
+import { AvatarComponent, InitialsPipe } from '@core';
 
 @Component({
   selector: 'app-dv-author-renderer',

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
-import { PasswordStrengthComponent } from 'core';
+import { PasswordStrengthComponent } from '@core';
 
 @Component({
   selector: 'app-basic-password-strength-example',

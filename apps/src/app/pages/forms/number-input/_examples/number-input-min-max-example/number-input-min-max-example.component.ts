@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { FormBuilder, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { NumberInputComponent } from 'core';
+import { NumberInputComponent } from '@core';
 
 @Component({
   selector: 'app-number-input-min-max-example',

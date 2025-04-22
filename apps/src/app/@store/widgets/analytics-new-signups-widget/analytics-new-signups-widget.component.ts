@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, Dashboard } from 'core';
+import { DASHBOARD, Dashboard } from '@core';
 
 @Component({
   selector: 'app-analytics-new-signups-widget',

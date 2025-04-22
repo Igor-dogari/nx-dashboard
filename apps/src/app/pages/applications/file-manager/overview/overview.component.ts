@@ -13,7 +13,7 @@ import { FileListLayoutComponent } from '../_layout/file-list-layout/file-list-l
 import { FileLargeListLayoutComponent } from '../_layout/file-large-list-layout/file-large-list-layout.component';
 import { FileGridLayoutComponent } from '../_layout/file-grid-layout/file-grid-layout.component';
 import { File, FileSelectedEvent } from '../types';
-import { AvatarComponent, MenuOptionGroupDirective } from 'core';
+import { AvatarComponent, MenuOptionGroupDirective } from '@core';
 
 @Component({
   imports: [

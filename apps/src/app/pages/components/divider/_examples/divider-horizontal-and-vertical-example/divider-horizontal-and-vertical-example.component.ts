@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HorizontalDividerComponent, VerticalDividerComponent } from 'core';
+import { HorizontalDividerComponent, VerticalDividerComponent } from '@core';
 
 @Component({
   selector: 'app-divider-horizontal-and-vertical-example',

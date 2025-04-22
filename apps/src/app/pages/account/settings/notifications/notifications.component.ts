@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
-import { HorizontalDividerComponent } from 'core';
+import { HorizontalDividerComponent } from '@core';
 
 @Component({
   selector: 'app-notifications',

@@ -4,7 +4,7 @@ import {
   PanelComponent,
   PanelFooterComponent,
   PanelHeaderComponent
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-panel-example',

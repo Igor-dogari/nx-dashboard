@@ -7,7 +7,7 @@ import {
   viewChild,
 } from '@angular/core';
 import { getState } from '@ngrx/signals';
-import { LogoComponent } from 'core';
+import { LogoComponent } from '@core';
 import { GlobalStore, GlobalStoreState } from '../../store';
 
 @Component({

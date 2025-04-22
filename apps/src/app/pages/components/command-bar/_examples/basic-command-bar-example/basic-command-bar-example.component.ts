@@ -10,7 +10,7 @@ import {
   CommandBarComponent,
   CommandBarDividerComponent,
   CommandBarPosition
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-basic-command-bar-example',

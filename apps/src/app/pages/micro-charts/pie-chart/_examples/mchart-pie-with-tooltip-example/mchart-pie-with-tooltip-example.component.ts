@@ -4,7 +4,7 @@ import {
   MchartTooltipBodyComponent,
   MchartTooltipComponent,
   MchartTooltipTitleComponent
-} from 'core';
+} from '@core';
 import { ShuffleArrayPipe } from '../../../../../@meta/shuffle-array.pipe';
 
 @Component({

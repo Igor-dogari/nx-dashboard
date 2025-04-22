@@ -10,7 +10,7 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { ScreenLoaderComponent } from './@app/screen-loader/screen-loader.component';
 import { isPlatformBrowser } from '@angular/common';
 import { filter } from 'rxjs';
-import { PageLoadingBarComponent } from 'core';
+import { PageLoadingBarComponent } from '@core';
 import {
   AnalyticsService,
   EnvironmentService,
@@ -18,7 +18,7 @@ import {
   ScreenLoaderService,
   SeoService,
   ThemeManagerService,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-root',

@@ -15,7 +15,7 @@ import {
   SegmentedComponent,
   KanbanBoardComponent as EmrKanbanBoardComponent,
   KanbanColumn,
-} from 'core';
+} from '@core';
 
 interface TaskPriority {
   id: any;

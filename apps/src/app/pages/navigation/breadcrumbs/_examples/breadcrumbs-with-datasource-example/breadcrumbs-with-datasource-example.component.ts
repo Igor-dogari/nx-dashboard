@@ -5,7 +5,7 @@ import {
   BreadcrumbItemComponent,
   BreadcrumbItemDefDirective, BreadcrumbsComponent,
   BreadcrumbSeparatorComponent, BreadcrumbSeparatorDefDirective
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-breadcrumbs-with-datasource-example',

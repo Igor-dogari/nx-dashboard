@@ -25,7 +25,7 @@ import {
   SidebarNavGroupMenuComponent,
   SidebarNavItemIconDirective,
   OrderByPipe,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'lib-sidebar',

@@ -3,7 +3,7 @@ import {
   BreadcrumbItemComponent,
   BreadcrumbItemIconDirective, BreadcrumbsComponent, BreadcrumbSeparatorComponent,
   BreadcrumbTitleComponent
-} from 'core';
+} from '@core';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({

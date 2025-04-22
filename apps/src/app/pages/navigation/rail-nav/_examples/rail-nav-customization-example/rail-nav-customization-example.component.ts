@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { RailNavComponent, RailNavItemComponent } from 'core';
+import { RailNavComponent, RailNavItemComponent } from '@core';
 
 @Component({
   selector: 'app-rail-nav-customization-example',

@@ -11,7 +11,7 @@ import {
   NotificationListComponent,
   NotificationPropsDirective,
   Notification
-} from 'core';
+} from '@core';
 
 @Component({
   imports: [

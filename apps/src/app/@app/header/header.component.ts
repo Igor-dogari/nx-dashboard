@@ -16,7 +16,7 @@ import {
   PopoverTriggerForDirective,
   SoundEffectDirective,
   ThemeManagerService,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-header',

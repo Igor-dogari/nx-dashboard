@@ -11,7 +11,7 @@ import {
   SidebarNavHeadingComponent,
   SidebarNavItemComponent,
   SidebarNavItemIconDirective
-} from 'core';
+} from '@core';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 import { v7 as uuid } from 'uuid';

@@ -14,7 +14,7 @@ import {
   AvatarComponent,
   CardOverlayComponent,
   CardOverlayContainerDirective,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-card-overlay-with-blur-example',

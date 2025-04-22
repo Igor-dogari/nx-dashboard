@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ThumbnailMakerComponent } from 'core';
+import { ThumbnailMakerComponent } from '@core';
 import { MatButton } from '@angular/material/button';
 
 @Component({

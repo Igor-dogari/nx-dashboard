@@ -4,8 +4,8 @@ import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
 import { RouterLink } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { HorizontalDividerComponent } from 'core';
-import { LogoComponent } from 'core';
+import { HorizontalDividerComponent } from '@core';
+import { LogoComponent } from '@core';
 
 @Component({
   imports: [

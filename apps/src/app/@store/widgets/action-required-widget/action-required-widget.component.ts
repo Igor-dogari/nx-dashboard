@@ -4,8 +4,8 @@ import {
   DASHBOARD,
   Dashboard,
   Widget,
-} from 'core';
-import { ActionRequiredComponent } from 'core';
+} from '@core';
+import { ActionRequiredComponent } from '@core';
 
 export interface ActionRequiredWidget extends Widget {
   iconName?: string;

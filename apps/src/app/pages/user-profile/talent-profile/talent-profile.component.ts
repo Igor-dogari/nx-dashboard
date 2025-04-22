@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatAnchor, MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatTooltip } from '@angular/material/tooltip';
-import { AvatarComponent, IconComponent } from 'core';
+import { AvatarComponent, IconComponent } from '@core';
 
 interface Person {
   avatarUrl: string;

@@ -25,7 +25,7 @@ import {
   ENVIRONMENT,
   EnvironmentService,
   PageTitleStrategyService,
-} from 'core';
+} from '@core';
 import { GlobalStore, LayoutSidebarStore } from './store';
 
 export const appConfig: ApplicationConfig = {

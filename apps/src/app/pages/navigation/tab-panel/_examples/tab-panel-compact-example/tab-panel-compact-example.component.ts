@@ -14,7 +14,7 @@ import {
   TabPanelItemComponent,
   TabPanelItemIconDirective,
   TabPanelNavComponent,
-} from 'core';
+} from '@core';
 
 @Component({
   selector: 'app-tab-panel-compact-example',

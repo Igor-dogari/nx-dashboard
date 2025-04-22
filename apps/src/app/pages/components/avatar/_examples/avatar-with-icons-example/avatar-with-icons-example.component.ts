@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { AvatarComponent } from 'core';
+import { AvatarComponent } from '@core';
 
 @Component({
   selector: 'app-avatar-with-icons-example',

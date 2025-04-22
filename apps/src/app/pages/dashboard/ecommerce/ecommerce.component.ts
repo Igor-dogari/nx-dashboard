@@ -12,7 +12,7 @@ import {
   DashboardChartWidgetSkeletonComponent,
   DashboardStatsWidgetSkeletonComponent
 } from '../../../@store/skeleton';
-import { DashboardComponent, Widget, WidgetConfig } from 'core';
+import { DashboardComponent, Widget, WidgetConfig } from '@core';
 
 @Component({
   selector: 'app-ecommerce',
