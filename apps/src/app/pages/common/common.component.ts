@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../../@app/header/header.component';
-import { SidebarComponent } from '../../@app/sidebar/sidebar.component';
+import { LibSidebarComponent } from '../../@app/lib-sidebar/lib-sidebar.component';
 import {
   AnnouncementGlobalComponent,
   IncidentsContainerComponent,
@@ -16,7 +16,7 @@ import {
   imports: [
     RouterOutlet,
     HeaderComponent,
-    SidebarComponent,
+    LibSidebarComponent,
     LayoutComponent,
     LayoutBodyComponent,
     LayoutSidebarComponent,

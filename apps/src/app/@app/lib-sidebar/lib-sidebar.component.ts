@@ -28,7 +28,7 @@ import {
 } from 'core';
 
 @Component({
-  selector: 'app-sidebar',
+  selector: 'lib-sidebar',
   imports: [
     MatIcon,
     RouterLink,
@@ -53,14 +53,14 @@ import {
     SidebarNavItemIconDirective,
     OrderByPipe,
   ],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss',
+  templateUrl: './lib-sidebar.component.html',
+  styleUrl: './lib-sidebar.component.scss',
   host: {
     class: 'sidebar',
     '[class.compact]': 'compact',
   },
 })
-export class SidebarComponent implements OnInit {
+export class LibSidebarComponent implements OnInit {
   router = inject(Router);
   location = inject(Location);
   height: string | null = '200px';
