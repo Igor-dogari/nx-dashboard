@@ -7,16 +7,16 @@
       "style": "scss"
     }
   },
-  "sourceRoot": "src",
+  "sourceRoot": "apps",
   "prefix": "app",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "src/**/*.ts",
-          "src/**/*.html",
-          "src/**/*.scss"
+          "apps/src/**/*.ts",
+          "apps/src/**/*.html",
+          "apps/src/**/*.scss"
         ]
       }
     },
@@ -24,8 +24,8 @@
       "executor": "@angular-devkit/build-angular:application",
       "options": {
         "outputPath": "dist/elementar-admin",
-        "index": "src/index.html",
-        "browser": "src/main.ts",
+        "index": "apps/src/index.html",
+        "browser": "apps/src/main.ts",
         "polyfills": [
           "zone.js",
           "@angular/localize/init"
@@ -39,24 +39,24 @@
           },
           {
             "glob": "**/_examples/**",
-            "input": "src/app/pages",
+            "input": "apps/src/app/pages",
             "output": "_docs"
           }
         ],
         "styles": [
-          "src/styles.scss",
+          "apps/src/styles.scss",
           {
-            "input": "src/styles/rose-red.scss",
+            "input": "apps/src/styles/rose-red.scss",
             "inject": false,
             "bundleName": "rose-red"
           },
           {
-            "input": "src/styles/magenta-violet.scss",
+            "input": "apps/src/styles/magenta-violet.scss",
             "inject": false,
             "bundleName": "magenta-violet"
           },
           {
-            "input": "src/styles/cyan-orange.scss",
+            "input": "apps/src/styles/cyan-orange.scss",
             "inject": false,
             "bundleName": "cyan-orange"
           }
@@ -66,9 +66,9 @@
           "node_modules/prismjs/components/prism-css.min.js",
           "node_modules/prismjs/components/prism-typescript.min.js"
         ],
-        "server": "src/main.server.ts",
+        "server": "apps/src/main.server.ts",
         "ssr": {
-          "entry": "src/server.ts"
+          "entry": "apps/src/server.ts"
         },
         "outputMode": "server"
       },
@@ -83,8 +83,8 @@
           "outputHashing": "all",
           "fileReplacements": [
             {
-              "replace": "src/environments/environment.ts",
-              "with": "src/environments/environment.prod.ts"
+              "replace": "apps/src/environments/environment.ts",
+              "with": "apps/src/environments/environment.prod.ts"
             }
           ]
         },
@@ -130,7 +130,7 @@
           }
         ],
         "styles": [
-          "src/styles.scss"
+          "apps/src/styles.scss"
         ],
         "scripts": []
       }
