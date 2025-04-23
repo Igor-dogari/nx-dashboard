@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CustomerSatisfactionWidgetComponent } from '../../../../../@store/widgets';
+import { CustomerSatisfactionWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-customer-satisfaction-example',

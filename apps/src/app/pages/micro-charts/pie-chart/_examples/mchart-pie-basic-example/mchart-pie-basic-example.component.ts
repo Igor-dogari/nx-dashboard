@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MchartPieComponent } from '@core';
-import { ShuffleArrayPipe } from '../../../../../@meta/shuffle-array.pipe';
+import { ShuffleArrayPipe } from '@shared';
 import { MatButton } from '@angular/material/button';
 import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { PageComponent } from '../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../@meta/page/page-content.directive';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
 import { MatIconButton } from '@angular/material/button';
-import { InviteToEditFilesInFolderNotification, MentionedInCommentNotification } from '../../../@store/notifications';
+import { InviteToEditFilesInFolderNotification, MentionedInCommentNotification } from '../../../@widgets/notifications';
 import {
   NotificationControlsDefDirective,
   NotificationDefDirective,

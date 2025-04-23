@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {
   DashboardChartWidgetSkeletonComponent
-} from '../../../../../@store/skeleton';
+} from '../../../../../@widgets/skeleton';
 
 @Component({
     selector: 'app-dashboard-chart-example',

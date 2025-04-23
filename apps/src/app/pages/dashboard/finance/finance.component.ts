@@ -7,7 +7,7 @@ import { MatRipple } from '@angular/material/core';
 import {
   Transaction,
   TransactionsWidgetComponent
-} from '../../../@store/widgets';
+} from '../../../@widgets/widgets';
 
 @Component({
   imports: [

@@ -15,27 +15,27 @@ export class ExploreComponent {
       type: 'explore-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/explore-widget/explore-widget.component').then(c => c.ExploreWidgetComponent)
+        import('../../../@widgets/widgets/explore-widget/explore-widget.component').then(c => c.ExploreWidgetComponent)
     },
     {
       type: 'heading-widget',
       skeleton: null,
       plain: true,
       component: () =>
-        import('../../../@store/widgets/heading-widget/heading-widget.component').then(c => c.HeadingWidgetComponent)
+        import('../../../@widgets/widgets/heading-widget/heading-widget.component').then(c => c.HeadingWidgetComponent)
     },
     {
       type: 'action-required-widget',
       skeleton: null,
       plain: true,
       component: () =>
-        import('../../../@store/widgets/action-required-widget/action-required-widget.component').then(c => c.ActionRequiredWidgetComponent)
+        import('../../../@widgets/widgets/action-required-widget/action-required-widget.component').then(c => c.ActionRequiredWidgetComponent)
     },
     {
       type: 'article-snippet-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/article-snippet-widget/article-snippet-widget.component').then(c => c.ArticleSnippetWidgetComponent)
+        import('../../../@widgets/widgets/article-snippet-widget/article-snippet-widget.component').then(c => c.ArticleSnippetWidgetComponent)
     },
   ];
   widgets: Widget[] = [

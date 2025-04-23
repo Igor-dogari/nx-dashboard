@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ShuffleArrayPipe } from '../../../../../@meta/shuffle-array.pipe';
+import { ShuffleArrayPipe } from '@shared';
 import { ResizableContainerComponent } from '@core';
 import { MchartBarComponent } from '@core';
 

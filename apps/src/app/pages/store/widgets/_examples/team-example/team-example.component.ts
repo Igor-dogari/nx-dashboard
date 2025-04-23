@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TeamWidgetComponent } from '../../../../../@store/widgets';
+import { TeamWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-team-example',

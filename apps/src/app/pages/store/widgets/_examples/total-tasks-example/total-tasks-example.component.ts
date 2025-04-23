@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TotalTasksWidgetComponent } from '../../../../../@store/widgets';
+import { TotalTasksWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-total-tasks-example',

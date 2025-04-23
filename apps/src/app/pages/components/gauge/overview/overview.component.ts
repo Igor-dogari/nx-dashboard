@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '../../../../@meta/playground/playground.component';
+import { PlaygroundComponent } from '@shared';
 import { BasicGaugeExampleComponent } from '../_examples/basic-gauge-example/basic-gauge-example.component';
 import {
   GaugeWithValueExampleComponent
@@ -10,8 +10,8 @@ import {
 import {
   GaugeCustomStrokeWidthExampleComponent
 } from '../_examples/gauge-custom-stroke-width-example/gauge-custom-stroke-width-example.component';
-import { PageComponent } from '../../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../../@meta/page/page-content.directive';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
 
 @Component({
   imports: [

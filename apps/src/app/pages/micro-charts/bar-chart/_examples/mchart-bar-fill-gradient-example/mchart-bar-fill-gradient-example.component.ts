@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MchartBarComponent } from '@core';
-import { ShuffleArrayPipe } from '../../../../../@meta/shuffle-array.pipe';
+import { ShuffleArrayPipe } from '@shared';
 
 @Component({
   selector: 'app-mchart-bar-fill-gradient-example',

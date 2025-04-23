@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PageComponent } from '../../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../../@meta/page/page-content.directive';
-import { PlaygroundComponent } from '../../../../@meta/playground/playground.component';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
+import { PlaygroundComponent } from '@shared';
 import {
   MchartBarBasicExampleComponent
 } from '../_examples/mchart-bar-basic-example/mchart-bar-basic-example.component';

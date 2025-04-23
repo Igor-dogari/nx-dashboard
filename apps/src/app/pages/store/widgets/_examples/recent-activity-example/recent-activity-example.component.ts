@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RecentActivityWidgetComponent } from '../../../../../@store/widgets';
+import { RecentActivityWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-recent-activity-example',

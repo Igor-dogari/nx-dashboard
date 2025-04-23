@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MyInvestmentsComponent } from '../../../../../@store/widgets';
+import { MyInvestmentsComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-my-investments-example',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AvgClickRateWidgetComponent } from '../../../../../@store/widgets';
+import { AvgClickRateWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-avg-click-rate-example',

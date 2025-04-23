@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TodaySalesWidgetComponent } from '../../../../../@store/widgets';
+import { TodaySalesWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-today-sales-example',

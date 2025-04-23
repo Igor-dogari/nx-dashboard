@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '../../../../@meta/playground/playground.component';
+import { PlaygroundComponent } from '@shared';
 import {
   BasicDatepickerExampleComponent
 } from '../_examples/basic-datepicker-example/basic-datepicker-example.component';
@@ -15,8 +15,8 @@ import {
 import {
   BasicDateRangePickerExampleComponent
 } from '../_examples/basic-date-range-picker-example/basic-date-range-picker-example.component';
-import { PageComponent } from '../../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../../@meta/page/page-content.directive';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
 
 @Component({
   selector: 'app-overview',

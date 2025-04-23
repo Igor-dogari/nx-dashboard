@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '../../../../@meta/playground/playground.component';
+import { PlaygroundComponent } from '@shared';
 import {
   BasicBreadcrumbsExampleComponent
 } from '../_examples/basic-breadcrumbs-example/basic-breadcrumbs-example.component';
@@ -12,8 +12,8 @@ import {
 import {
   BreadcrumbsWithTitlesExampleComponent
 } from '../_examples/breadcrumbs-with-titles-example/breadcrumbs-with-titles-example.component';
-import { PageComponent } from '../../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../../@meta/page/page-content.directive';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
 import {
   BreadcrumbsWithLastItemAsLinkExampleComponent
 } from '../_examples/breadcrumbs-with-last-item-as-link-example/breadcrumbs-with-last-item-as-link-example.component';

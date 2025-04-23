@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UniqueVisitorsWidgetComponent } from '../../../../../@store/widgets';
+import { UniqueVisitorsWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-unique-visitors-example',

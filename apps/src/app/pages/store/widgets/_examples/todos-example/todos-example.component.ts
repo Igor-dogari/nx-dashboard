@@ -1,5 +1,5 @@
 import { Component, inject, input } from '@angular/core';
-import { TodosWidgetComponent } from '../../../../../@store/widgets';
+import { TodosWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
   selector: 'app-todos-example',

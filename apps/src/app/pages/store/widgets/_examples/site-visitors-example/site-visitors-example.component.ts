@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SiteVisitorsWidgetComponent } from '../../../../../@store/widgets';
+import { SiteVisitorsWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-site-visitors-example',

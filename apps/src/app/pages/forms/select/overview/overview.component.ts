@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '../../../../@meta/playground/playground.component';
+import { PlaygroundComponent } from '@shared';
 import { BasicSelectExampleComponent } from '../_examples/basic-select-example/basic-select-example.component';
 import { GetSetValueExampleComponent } from '../_examples/get-set-value-example/get-set-value-example.component';
 import {
@@ -14,8 +14,8 @@ import {
   MultipleSelectionExampleComponent
 } from '../_examples/multiple-selection-example/multiple-selection-example.component';
 import { CustomTriggerExampleComponent } from '../_examples/custom-trigger-example/custom-trigger-example.component';
-import { PageComponent } from '../../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../../@meta/page/page-content.directive';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
 
 @Component({
     selector: 'app-overview',

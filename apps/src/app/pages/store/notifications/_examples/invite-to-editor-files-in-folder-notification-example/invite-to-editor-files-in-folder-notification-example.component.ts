@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InviteToEditFilesInFolderNotification } from '../../../../../@store/notifications';
+import { InviteToEditFilesInFolderNotification } from '../../../../../@widgets/notifications';
 import { NotificationDefDirective, NotificationListComponent, Notification } from '@core';
 
 @Component({

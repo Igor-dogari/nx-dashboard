@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '../../../../@meta/playground/playground.component';
+import { PlaygroundComponent } from '@shared';
 import {
   BasicNavigationExampleComponent
 } from '../_examples/basic-navigation-example/basic-navigation-example.component';
@@ -18,8 +18,8 @@ import {
 import {
   NavigationSecondaryThemeExampleComponent
 } from '../_examples/navigation-secondary-theme-example/navigation-secondary-theme-example.component';
-import { PageComponent } from '../../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../../@meta/page/page-content.directive';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
 import {
   NavigationWithBadgesExampleComponent
 } from '../_examples/navigation-with-badges-example/navigation-with-badges-example.component';

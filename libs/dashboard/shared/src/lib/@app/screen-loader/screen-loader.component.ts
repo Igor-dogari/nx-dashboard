@@ -26,7 +26,7 @@ export class ScreenLoaderComponent {
   srcDark = 'assets/screen-loader-dark.svg';
 
   @Input()
-  loadingText: string;
+  loadingText!: string;
 
   readonly _loaderElement = viewChild.required<ElementRef>('loader');
 

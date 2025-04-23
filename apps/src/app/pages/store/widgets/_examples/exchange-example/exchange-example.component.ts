@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ExchangeWidgetComponent } from '../../../../../@store/widgets';
+import { ExchangeWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-exchange-example',

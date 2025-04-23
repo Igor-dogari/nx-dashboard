@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TasksInProgressWidgetComponent } from '../../../../../@store/widgets';
+import { TasksInProgressWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-tasks-in-progress-example',

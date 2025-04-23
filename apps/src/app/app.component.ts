@@ -7,7 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { ScreenLoaderComponent } from '@app';
+import { ScreenLoaderComponent } from '@shared';
 import { isPlatformBrowser } from '@angular/common';
 import { filter } from 'rxjs';
 import { PageLoadingBarComponent } from '@core';

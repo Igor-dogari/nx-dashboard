@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AvgOpenRateWidgetComponent } from '../../../../../@store/widgets';
+import { AvgOpenRateWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-avg-open-rate-example',

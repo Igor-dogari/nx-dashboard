@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TotalRevenueWidgetComponent } from '../../../../../@store/widgets';
+import { TotalRevenueWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-total-revenue-example',

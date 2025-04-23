@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DashboardStatsWidgetSkeletonComponent } from '../../../../../@store/skeleton';
+import { DashboardStatsWidgetSkeletonComponent } from '../../../../../@widgets/skeleton';
 
 @Component({
     selector: 'app-dashboard-example',

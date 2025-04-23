@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PaymentInformationWidgetComponent } from '../../../../../@store/widgets';
+import { PaymentInformationWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-payment-information-example',

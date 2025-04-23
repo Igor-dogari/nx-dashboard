@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { VisitDurationWidgetComponent } from '../../../../../@store/widgets';
+import { VisitDurationWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-visit-duration-example',

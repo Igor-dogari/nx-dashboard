@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PageComponent } from '../../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../../@meta/page/page-content.directive';
-import { PlaygroundComponent } from '../../../../@meta/playground/playground.component';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
+import { PlaygroundComponent } from '@shared';
 import { DashboardCardsExampleComponent } from '../_examples/dashboard-cards-example/dashboard-cards-example.component';
 import { DashboardChartExampleComponent } from '../_examples/dashboard-chart-example/dashboard-chart-example.component';
 import { DashboardExampleComponent } from '../_examples/dashboard-example/dashboard-example.component';

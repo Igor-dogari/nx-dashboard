@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EventsWidgetComponent } from '../../../../../@store/widgets';
+import { EventsWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-events-example',

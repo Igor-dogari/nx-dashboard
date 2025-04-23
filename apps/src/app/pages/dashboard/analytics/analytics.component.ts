@@ -14,98 +14,98 @@ export class AnalyticsComponent {
       type: 'analytics-total-users-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-total-users-widget/analytics-total-users-widget.component')
+        import('../../../@widgets/widgets/analytics-total-users-widget/analytics-total-users-widget.component')
           .then(c => c.AnalyticsTotalUsersWidgetComponent)
     },
     {
       type: 'analytics-active-users-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-active-users-widget/analytics-active-users-widget.component')
+        import('../../../@widgets/widgets/analytics-active-users-widget/analytics-active-users-widget.component')
           .then(c => c.AnalyticsActiveUsersWidgetComponent)
     },
     {
       type: 'analytics-new-signups-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-new-signups-widget/analytics-new-signups-widget.component')
+        import('../../../@widgets/widgets/analytics-new-signups-widget/analytics-new-signups-widget.component')
           .then(c => c.AnalyticsNewSignupsWidgetComponent)
     },
     {
       type: 'analytics-conversion-rate-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-conversion-rate-widget/analytics-conversion-rate-widget.component')
+        import('../../../@widgets/widgets/analytics-conversion-rate-widget/analytics-conversion-rate-widget.component')
           .then(c => c.AnalyticsConversionRateWidgetComponent)
     },
     {
       type: 'analytics-total-projects-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-total-projects-widget/analytics-total-projects-widget.component')
+        import('../../../@widgets/widgets/analytics-total-projects-widget/analytics-total-projects-widget.component')
           .then(c => c.AnalyticsTotalProjectsWidgetComponent)
     },
     {
       type: 'analytics-ended-projects-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-ended-projects-widget/analytics-ended-projects-widget.component')
+        import('../../../@widgets/widgets/analytics-ended-projects-widget/analytics-ended-projects-widget.component')
           .then(c => c.AnalyticsEndedProjectsWidgetComponent)
     },
     {
       type: 'analytics-running-projects-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-running-projects-widget/analytics-running-projects-widget.component')
+        import('../../../@widgets/widgets/analytics-running-projects-widget/analytics-running-projects-widget.component')
           .then(c => c.AnalyticsRunningProjectsWidgetComponent)
     },
     {
       type: 'analytics-pending-projects-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-pending-projects-widget/analytics-pending-projects-widget.component')
+        import('../../../@widgets/widgets/analytics-pending-projects-widget/analytics-pending-projects-widget.component')
           .then(c => c.AnalyticsPendingProjectsWidgetComponent)
     },
     {
       type: 'analytics-followers-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-followers-widget/analytics-followers-widget.component')
+        import('../../../@widgets/widgets/analytics-followers-widget/analytics-followers-widget.component')
           .then(c => c.AnalyticsFollowersWidgetComponent)
     },
     {
       type: 'analytics-likes-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-likes-widget/analytics-likes-widget.component')
+        import('../../../@widgets/widgets/analytics-likes-widget/analytics-likes-widget.component')
           .then(c => c.AnalyticsLikesWidgetComponent)
     },
     {
       type: 'analytics-comments-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-comments-widget/analytics-comments-widget.component')
+        import('../../../@widgets/widgets/analytics-comments-widget/analytics-comments-widget.component')
           .then(c => c.AnalyticsCommentsWidgetComponent)
     },
     {
       type: 'analytics-avg-order-value-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-avg-order-value-widget/analytics-avg-order-value-widget.component')
+        import('../../../@widgets/widgets/analytics-avg-order-value-widget/analytics-avg-order-value-widget.component')
           .then(c => c.AnalyticsAvgOrderValueWidgetComponent)
     },
     {
       type: 'analytics-total-orders-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-total-orders-widget/analytics-total-orders-widget.component')
+        import('../../../@widgets/widgets/analytics-total-orders-widget/analytics-total-orders-widget.component')
           .then(c => c.AnalyticsTotalOrdersWidgetComponent)
     },
     {
       type: 'analytics-gross-revenue-widget',
       skeleton: null,
       component: () =>
-        import('../../../@store/widgets/analytics-gross-revenue-widget/analytics-gross-revenue-widget.component')
+        import('../../../@widgets/widgets/analytics-gross-revenue-widget/analytics-gross-revenue-widget.component')
           .then(c => c.AnalyticsGrossRevenueWidgetComponent)
     },
   ];

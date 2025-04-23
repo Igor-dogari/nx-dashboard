@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { WorkspacesSelectComponent } from '../../../../../@store/selects';
+import { WorkspacesSelectComponent } from '../../../../../@widgets/selects';
 
 @Component({
   selector: 'app-workspace-select-example',

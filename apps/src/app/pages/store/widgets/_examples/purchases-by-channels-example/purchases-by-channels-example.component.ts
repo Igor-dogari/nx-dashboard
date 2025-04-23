@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PurchasesByChannelsWidgetComponent } from '../../../../../@store/widgets';
+import { PurchasesByChannelsWidgetComponent } from '../../../../../@widgets/widgets';
 
 @Component({
     selector: 'app-purchases-by-channels-example',

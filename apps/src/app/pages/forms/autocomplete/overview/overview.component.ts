@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { PlaygroundComponent } from '../../../../@meta/playground/playground.component';
+import { PlaygroundComponent } from '@shared';
 import { map, Observable, startWith } from 'rxjs';
 import {
   AutocompleteFilterExampleComponent
@@ -15,8 +15,8 @@ import {
   AutoHighlightFirstPersonExampleComponent
 } from '../_examples/auto-highlight-first-person-example/auto-highlight-first-person-example.component';
 import { OptionGroupsExampleComponent } from '../_examples/option-groups-example/option-groups-example.component';
-import { PageComponent } from '../../../../@meta/page/page.component';
-import { PageContentDirective } from '../../../../@meta/page/page-content.directive';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
 
 @Component({
   imports: [
