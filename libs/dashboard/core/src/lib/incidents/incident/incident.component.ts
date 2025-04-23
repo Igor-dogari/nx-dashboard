@@ -1,6 +1,6 @@
 import { Component, inject, input } from '@angular/core';
 import { MatIconButton } from '@angular/material/button';
-import { IncidentsStore } from '../../../../../../../apps/src/app/store';
+import { IncidentsStore } from '@shared';
 
 let incidentId = 0;
 

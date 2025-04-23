@@ -10,7 +10,7 @@ import { IncidentTitleComponent } from '../incident-title/incident-title.compone
 import { IncidentCloseDirective } from '../incident-close.directive';
 import { IncidentComponent } from '../incident/incident.component';
 import { IncidentsListComponent } from '../incidents-list/incidents-list.component';
-import { IncidentsStore } from '../../../../../../../apps/src/app/store';
+import { IncidentsStore } from '@shared';
 
 @Component({
   selector: 'emr-incidents-container,emr-incidents-global',

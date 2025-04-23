@@ -1,5 +1,5 @@
 import { inject, Injectable } from '@angular/core';
-import { GlobalStore } from '../../../../../../../apps/src/app/store';
+import { GlobalStore } from '@shared';
 
 @Injectable({
   providedIn: 'root',

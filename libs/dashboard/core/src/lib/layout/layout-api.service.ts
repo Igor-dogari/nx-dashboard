@@ -1,6 +1,6 @@
 import { EventEmitter, inject, Injectable } from '@angular/core';
 import { LayoutSidebarVisibilityChange } from './types';
-import { LayoutSidebarStore } from '../../../../../../apps/src/app/store';
+import { LayoutSidebarStore } from '@shared';
 
 @Injectable({
   providedIn: 'root',

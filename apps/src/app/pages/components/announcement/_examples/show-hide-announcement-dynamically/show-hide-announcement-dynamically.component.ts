@@ -1,6 +1,6 @@
 import { Component, computed, inject } from '@angular/core';
 import { MatButton } from '@angular/material/button';
-import { AnnouncementStore } from '../../../../../store/announcement.store';
+import { AnnouncementStore } from '@shared';
 
 @Component({
   selector: 'app-show-hide-announcement-dynamically',

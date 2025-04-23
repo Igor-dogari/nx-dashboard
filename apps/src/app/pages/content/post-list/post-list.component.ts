@@ -3,7 +3,12 @@ import { MatPaginator } from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
+import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
+import { CustomersStore } from '@shared';
 import {
+  BlockStateComponent,
+  BlockStateContentComponent,
+  BlockStateIconComponent,
   DataViewActionBarComponent,
   DataViewActionBarDirective,
   DataViewCellRenderer,
@@ -12,25 +17,14 @@ import {
   DataViewEmptyDataDirective,
   DataViewEmptyFilterResultsDirective,
   DataViewRowSelectionEvent,
-} from '@core';
-import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
-import {
-  BlockStateComponent,
-  BlockStateContentComponent,
-  BlockStateIconComponent,
-} from '@core';
-import {
   PanelBodyComponent,
   PanelComponent,
   PanelFooterComponent,
   PanelHeaderComponent,
-} from '@core';
-import { VerticalDividerComponent } from '@core';
-import {
   SegmentedButtonComponent,
   SegmentedComponent,
+  VerticalDividerComponent,
 } from '@core';
-import { CustomersStore } from '../../../store';
 
 export interface User {
   id: string;

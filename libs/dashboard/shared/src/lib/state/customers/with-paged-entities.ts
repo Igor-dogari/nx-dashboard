@@ -18,8 +18,8 @@ import {
   withEntities,
 } from '@ngrx/signals/entities';
 import { withLoading } from './with-loading';
-import { Post } from '../../pages/content/post-list/post-list.component';
 import { updateState } from '@angular-architects/ngrx-toolkit';
+import { Post } from '../../../../../../../apps/src/app/pages/content/post-list/post-list.component';
 
 export interface CustomerInterface {
   id: number;

@@ -7,6 +7,7 @@ import {
 import {
   provideRouter,
   TitleStrategy,
+  withEnabledBlockingInitialNavigation,
   withViewTransitions,
 } from '@angular/router';
 
@@ -26,12 +27,13 @@ import {
   EnvironmentService,
   PageTitleStrategyService,
 } from '@core';
-import { GlobalStore, LayoutSidebarStore } from './store';
+import { GlobalStore, LayoutSidebarStore } from '@shared';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withViewTransitions()),
+    // provideRouter(routes, withViewTransitions()),
+    provideRouter(routes, withEnabledBlockingInitialNavigation()),
     provideClientHydration(withEventReplay()),
     provideAnimationsAsync(),
     provideHttpClient(withFetch()),

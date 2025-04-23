@@ -2,8 +2,8 @@ import { inject, Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { lastValueFrom, map, Observable, of } from 'rxjs';
 import { CustomerInterface } from '../state/customers/with-paged-entities';
+import { Post } from '../../../../../../apps/src/app/pages/content/post-list/post-list.component';
 // import { customers } from './data';
-import { Post } from '../pages/content/post-list/post-list.component';
 
 export interface LoadResponse {
   content: CustomerInterface[];
@@ -13,7 +13,7 @@ export interface LoadResponse {
 
 @Injectable({ providedIn: 'root' })
 export class CustomersService {
-  #baseUrl = '/customers';
+  // #baseUrl = '/customers';
   #http = inject(HttpClient);
   // #customerStore = inject(CustomersStore);
 
