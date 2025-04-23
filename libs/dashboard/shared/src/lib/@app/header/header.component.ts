@@ -9,7 +9,7 @@ import { RouterLink } from '@angular/router';
 import {
   AssistantSearchComponent,
   NotificationsPopoverComponent,
-} from '../../@store/header';
+} from '../../../../../../../apps/src/app/@store/header';
 import {
   DicebearComponent,
   LayoutApiService,

@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@app/*": ["./src/app/@app/*"],
+      "@app": ["libs/dashboard/shared/src/index.ts"],
       "@meta/*": ["./src/app/@meta/*"],
       "@shared": ["libs/dashboard/shared/src/index.ts"],
       "@store/*": ["./src/app/@store/*"],
