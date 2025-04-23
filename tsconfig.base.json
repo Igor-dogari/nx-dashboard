@@ -10,7 +10,7 @@
     "baseUrl": ".",
     "paths": {
       "@shared": ["libs/dashboard/shared/src/index.ts"],
-      "@widgets/*": ["./src/app/@widgets/*"],
+      "@core/pages": ["libs/dashboard/core/src/lib/pages/index.ts"],
       "@core": ["libs/dashboard/core/src/index.ts"]
     }
   }
