@@ -10,7 +10,6 @@ import {
   withEnabledBlockingInitialNavigation,
   withViewTransitions,
 } from '@angular/router';
-
 import { routes } from './app.routes';
 import {
   provideClientHydration,
@@ -32,8 +31,11 @@ import { GlobalStore, LayoutSidebarStore } from '@shared';
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    // provideRouter(routes, withViewTransitions()),
-    provideRouter(routes, withEnabledBlockingInitialNavigation()),
+    provideRouter(
+      routes,
+      withEnabledBlockingInitialNavigation(),
+      withViewTransitions(),
+    ),
     provideClientHydration(withEventReplay()),
     provideAnimationsAsync(),
     provideHttpClient(withFetch()),
@@ -43,7 +45,7 @@ export const appConfig: ApplicationConfig = {
       const envService = inject(EnvironmentService);
       const globalStore = inject(GlobalStore);
       const layoutSidebarStore = inject(LayoutSidebarStore);
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve) => {
         layoutSidebarStore.showSidebarVisibility('root', true); // show or hide main sidebar on initial state
         globalStore.setPageTitle(envService.getValue('pageTitle'));
         resolve(true);
