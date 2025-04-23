@@ -2,8 +2,24 @@ import { inject, Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { lastValueFrom, map, Observable, of } from 'rxjs';
 import { CustomerInterface } from '../state/customers/with-paged-entities';
-import { Post } from '../../../../../../apps/src/app/pages/content/post-list/post-list.component';
 // import { customers } from './data';
+
+export interface User {
+  id: string;
+  username: string;
+  name: string;
+  email: string;
+  avatarUrl: string;
+}
+
+interface Post {
+  id: string;
+  title: string;
+  author: User;
+  status: string;
+  createdAt: Date;
+  publishedAt?: Date;
+}
 
 export interface LoadResponse {
   content: CustomerInterface[];

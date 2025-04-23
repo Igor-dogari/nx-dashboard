@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from '@shared';
-import { LibSidebarComponent } from '@shared';
+import { HeaderComponent, LibSidebarComponent } from '@shared';
 import {
   AnnouncementGlobalComponent,
   IncidentsContainerComponent,

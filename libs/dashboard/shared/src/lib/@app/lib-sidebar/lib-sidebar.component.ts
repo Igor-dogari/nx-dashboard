@@ -5,7 +5,7 @@ import { filter } from 'rxjs';
 import { Location } from '@angular/common';
 import { v7 as uuid } from 'uuid';
 import { MatIconButton } from '@angular/material/button';
-import { ToolbarComponent } from '../../../../../../../apps/src/app/@widgets/sidebar';
+import { ToolbarComponent } from '@core';
 import {
   SidebarComponent as EmrSidebarComponent,
   SidebarBodyComponent,

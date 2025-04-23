@@ -19,7 +19,6 @@ import {
 } from '@ngrx/signals/entities';
 import { withLoading } from './with-loading';
 import { updateState } from '@angular-architects/ngrx-toolkit';
-import { Post } from '../../../../../../../apps/src/app/pages/content/post-list/post-list.component';
 
 export interface CustomerInterface {
   id: number;
@@ -33,6 +32,23 @@ export interface WithPagedEntityState {
   page: number;
   total: number;
   selectedId: number | undefined;
+}
+
+interface User {
+  id: string;
+  username: string;
+  name: string;
+  email: string;
+  avatarUrl: string;
+}
+
+interface Post {
+  id: string;
+  title: string;
+  author: User;
+  status: string;
+  createdAt: Date;
+  publishedAt?: Date;
 }
 
 export const customerConfig = entityConfig({
