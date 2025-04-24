@@ -19,14 +19,7 @@ import {
 } from '@ngrx/signals/entities';
 import { withLoading } from './with-loading';
 import { updateState } from '@angular-architects/ngrx-toolkit';
-
-export interface CustomerInterface {
-  id: number;
-  firstname: string;
-  name: string;
-  country: string;
-  birthdate: string;
-}
+import { PostInterface } from '@models';
 
 export interface WithPagedEntityState {
   page: number;
@@ -34,33 +27,16 @@ export interface WithPagedEntityState {
   selectedId: number | undefined;
 }
 
-interface User {
-  id: string;
-  username: string;
-  name: string;
-  email: string;
-  avatarUrl: string;
-}
-
-interface Post {
-  id: string;
-  title: string;
-  author: User;
-  status: string;
-  createdAt: Date;
-  publishedAt?: Date;
-}
-
 export const customerConfig = entityConfig({
   // entity: type<CustomerInterface>(),
-  entity: type<Post>(),
+  entity: type<PostInterface>(),
   collection: 'customer',
   selectId: (customer) => customer.id,
 });
 
 export const withPagedEntities = (
   Loader: ProviderToken<{
-    load: (page: number) => Observable<Post[]>;
+    load: (page: number) => Observable<PostInterface[]>;
     // load: (page: number) => Observable<{
     //   content: CustomerInterface[];
     //   page: number;
@@ -129,7 +105,7 @@ export const withPagedEntities = (
         unselect() {
           patchState(state, { selectedId: undefined });
         },
-        upsertCustomer(value: Post) {
+        upsertCustomer(value: PostInterface) {
           patchState(state, upsertEntity(value, customerConfig));
         },
       };

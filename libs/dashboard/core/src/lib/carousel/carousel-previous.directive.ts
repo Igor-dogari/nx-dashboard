@@ -1,18 +1,19 @@
 import { Directive, HostListener, inject, input, OnInit } from '@angular/core';
-import { CAROUSEL, CarouselInterface } from './types';
+import { CAROUSEL } from './types';
+import { CarouselInterface } from '@models';
 
 @Directive({
   selector: '[emrCarouselPrevious]',
   exportAs: 'emrCarouselPrevious',
   standalone: true,
   host: {
-    'class': 'emr-carousel-previous',
-    '[attr.disabled]': '_carousel?.api.isPreviousDisabled() ? true : null'
-  }
+    class: 'emr-carousel-previous',
+    '[attr.disabled]': '_carousel?.api.isPreviousDisabled() ? true : null',
+  },
 })
 export class CarouselPreviousDirective implements OnInit {
   protected _carousel = inject<CarouselInterface>(CAROUSEL, {
-    optional: true
+    optional: true,
   });
 
   carousel = input<CarouselInterface | null>(null);

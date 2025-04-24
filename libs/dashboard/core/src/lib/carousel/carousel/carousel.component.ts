@@ -5,7 +5,8 @@ import {
   ElementRef, input,
   viewChild
 } from '@angular/core';
-import { CAROUSEL, CAROUSEL_CARD, CarouselApiInterface, CarouselCardInterface } from '../types';
+import { CAROUSEL, CAROUSEL_CARD } from '../types';
+import { CarouselApiInterface, CarouselCardInterface } from '@models';
 
 @Component({
   selector: 'emr-carousel',

@@ -5,6 +5,7 @@ import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
 import { CustomersStore } from '@shared';
+import { PostInterface } from '@models';
 import {
   BlockStateComponent,
   BlockStateContentComponent,
@@ -25,23 +26,6 @@ import {
   SegmentedComponent,
   VerticalDividerComponent,
 } from '@core';
-
-export interface User {
-  id: string;
-  username: string;
-  name: string;
-  email: string;
-  avatarUrl: string;
-}
-
-export interface Post {
-  id: string;
-  title: string;
-  author: User;
-  status: string;
-  createdAt: Date;
-  publishedAt?: Date;
-}
 
 @Component({
   imports: [
@@ -106,7 +90,7 @@ export class PostListComponent implements OnInit {
       visible: true,
     },
   ];
-  selectedRows: Post[] = [];
+  selectedRows: PostInterface[] = [];
   cellRenderers: DataViewCellRenderer[] = [
     {
       dataRenderer: 'author',
@@ -131,11 +115,11 @@ export class PostListComponent implements OnInit {
     // }
   }
 
-  rowSelectionChanged(event: DataViewRowSelectionEvent<Post>): void {
+  rowSelectionChanged(event: DataViewRowSelectionEvent<PostInterface>): void {
     // console.log(event.checked);
   }
 
-  selectionChanged(rows: Post[]): void {
+  selectionChanged(rows: PostInterface[]): void {
     this.selectedRows = rows;
   }
 
