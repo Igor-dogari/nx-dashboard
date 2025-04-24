@@ -13,12 +13,12 @@ import {
 import { isPlatformServer, NgTemplateOutlet } from '@angular/common';
 import { FilterBuilderOperationDefDirective } from '../filter-builder-operation-def.directive';
 import {
-  FilterBuilderCondition,
-  FilterBuilderFieldDataSourceItem,
-  FilterBuilderFieldDef,
-  FilterBuilderGroup,
+  FilterBuilderConditionInterface,
+  FilterBuilderFieldDataSourceItemInterface,
+  FilterBuilderFieldDefInterface,
+  FilterBuilderGroupInterface,
   FilterBuilderItemType
-} from '../types';
+} from '@models';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenuTrigger, MatMenu, MatMenuItem } from '@angular/material/menu';
 import { FormsModule } from '@angular/forms';
@@ -59,15 +59,15 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
   protected _platformId = inject(PLATFORM_ID);
   protected _isServer = isPlatformServer(this._platformId);
   protected _operationAllowedTypesMap: Map<string, string[]> = new Map();
-  private _resetMethodMap: { [prop: string]: (condition: FilterBuilderCondition) => void } = {
+  private _resetMethodMap: { [prop: string]: (condition: FilterBuilderConditionInterface) => void } = {
     '_resetStringValue': this._resetStringValue,
     '_resetBooleanValue': this._resetBooleanValue,
     '_resetArrayValue': this._resetArrayValue,
     '_resetNumberValue': this._resetNumberValue,
   };
 
-  value = input<FilterBuilderGroup[]>([]);
-  fieldDefs = input<FilterBuilderFieldDef[]>([]);
+  value = input<FilterBuilderGroupInterface[]>([]);
+  fieldDefs = input<FilterBuilderFieldDefInterface[]>([]);
   categories = input([]);
   groupOperations = input([
     {
@@ -86,11 +86,11 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
   readonly _customOperationDefs = contentChildren(FilterBuilderOperationDefDirective);
   protected _operationDefs: FilterBuilderOperationDefDirective[] = [];
 
-  readonly valueChanged = output<FilterBuilderGroup[]>();
+  readonly valueChanged = output<FilterBuilderGroupInterface[]>();
 
-  protected _value: FilterBuilderGroup[] = [];
+  protected _value: FilterBuilderGroupInterface[] = [];
   protected _operations: any[] = [];
-  protected editItem: FilterBuilderCondition | undefined;
+  protected editItem: FilterBuilderConditionInterface | undefined;
 
   ngOnInit() {
     if (this.value().length) {
@@ -123,7 +123,7 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     this._cdr.detectChanges();
   }
 
-  addCondition(targetGroup?: FilterBuilderGroup) {
+  addCondition(targetGroup?: FilterBuilderGroupInterface) {
     const value = !targetGroup ? this._value : targetGroup.value;
     value.push(
       {
@@ -132,7 +132,7 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     );
   }
 
-  addGroup(targetGroup?: FilterBuilderGroup) {
+  addGroup(targetGroup?: FilterBuilderGroupInterface) {
     const value = !targetGroup ? this._value : targetGroup.value;
     value.push(
       {
@@ -142,7 +142,7 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     );
   }
 
-  getConditionField(dataField: string): FilterBuilderFieldDef | undefined {
+  getConditionField(dataField: string): FilterBuilderFieldDefInterface | undefined {
     return this.fieldDefs().find(field => field.dataField === dataField);
   }
 
@@ -150,12 +150,12 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     return this._operations.find(operation => operation.id === id);
   }
 
-  getSelectedGroupOperationName(targetGroup?: FilterBuilderGroup): string {
+  getSelectedGroupOperationName(targetGroup?: FilterBuilderGroupInterface): string {
     const groupLogicalOperatorId = targetGroup ? targetGroup.logicalOperator : this._logicalOperator
     return this.groupOperations().find(groupOperator => groupOperator.id === groupLogicalOperatorId)?.name || '';
   }
 
-  selectConditionField(item: FilterBuilderCondition, field: FilterBuilderFieldDef): void {
+  selectConditionField(item: FilterBuilderConditionInterface, field: FilterBuilderFieldDefInterface): void {
     this.editItem = undefined;
     let allowedTypes = this._operationAllowedTypesMap.get(field.dataType) as string[];
     item['value'][1] = allowedTypes[0];
@@ -163,7 +163,7 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     this._emitChangeEvent();
   }
 
-  operationChanged(item: FilterBuilderCondition, operation: string): void {
+  operationChanged(item: FilterBuilderConditionInterface, operation: string): void {
     this.editItem = undefined;
     const oldOperation = item['value'][1];
 
@@ -195,7 +195,7 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
   isOperationAllowedForCondition(dataField: string, operationId: string): boolean {
     const fieldDef = this.fieldDefs().find(f =>
       f.dataField === dataField
-    ) as FilterBuilderFieldDef;
+    ) as FilterBuilderFieldDefInterface;
 
     let allowedTypes = this._operationAllowedTypesMap.get(fieldDef.dataType);
 
@@ -206,17 +206,17 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     return allowedTypes.includes(operationId);
   }
 
-  modifyValue(item: FilterBuilderCondition): void {
+  modifyValue(item: FilterBuilderConditionInterface): void {
     this.editItem = item;
   }
 
-  getFieldType(item: FilterBuilderCondition): string {
+  getFieldType(item: FilterBuilderConditionInterface): string {
     return (this.fieldDefs().find(f =>
       f.dataField === item['value'][0]
-    ) as FilterBuilderFieldDef).dataType;
+    ) as FilterBuilderFieldDefInterface).dataType;
   }
 
-  isValueNotEmpty(item: FilterBuilderCondition): boolean {
+  isValueNotEmpty(item: FilterBuilderConditionInterface): boolean {
     if (this.getFieldType(item) === 'array') {
       if (item['value'][1] === 'equals') {
         return item['value'][2] !== null && item['value'][2] !== '';
@@ -239,14 +239,14 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     }, delay);
   }
 
-  getOptions(item: FilterBuilderCondition): FilterBuilderFieldDataSourceItem[] {
+  getOptions(item: FilterBuilderConditionInterface): FilterBuilderFieldDataSourceItemInterface[] {
     const fieldDef = this._getFieldDef(item);
-    return fieldDef.lookup?.dataSource as FilterBuilderFieldDataSourceItem[];
+    return fieldDef.lookup?.dataSource as FilterBuilderFieldDataSourceItemInterface[];
   }
 
-  getDataSourceItemNameById(item: FilterBuilderCondition, dataSourceItemId: string): string {
+  getDataSourceItemNameById(item: FilterBuilderConditionInterface, dataSourceItemId: string): string {
     const fieldDef = this._getFieldDef(item);
-    return (fieldDef.lookup?.dataSource as FilterBuilderFieldDataSourceItem[]).find(
+    return (fieldDef.lookup?.dataSource as FilterBuilderFieldDataSourceItemInterface[]).find(
       item => item.id === dataSourceItemId
     )?.name || '';
   }
@@ -280,11 +280,11 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     return operation.operationName()?.templateRef as TemplateRef<any>;
   }
 
-  protected _isGroup(item: FilterBuilderItemType): item is FilterBuilderGroup {
+  protected _isGroup(item: FilterBuilderItemType): item is FilterBuilderGroupInterface {
     return 'logicalOperator' in item;
   }
 
-  protected _isCondition(item: FilterBuilderItemType): item is FilterBuilderCondition {
+  protected _isCondition(item: FilterBuilderItemType): item is FilterBuilderConditionInterface {
     return !('logicalOperator' in item);
   }
 
@@ -303,29 +303,29 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     }
   }
 
-  private _getFieldDef(condition: FilterBuilderCondition): FilterBuilderFieldDef {
+  private _getFieldDef(condition: FilterBuilderConditionInterface): FilterBuilderFieldDefInterface {
     return  this.fieldDefs().find(f =>
       f.dataField === condition['value'][0]
-    ) as FilterBuilderFieldDef;
+    ) as FilterBuilderFieldDefInterface;
   }
 
-  private _resetValue(field: FilterBuilderFieldDef, condition: FilterBuilderCondition): void {
+  private _resetValue(field: FilterBuilderFieldDefInterface, condition: FilterBuilderConditionInterface): void {
     const fieldDef = this.fieldDefs().find(f =>
       f.dataField === field.dataField
-    ) as FilterBuilderFieldDef;
+    ) as FilterBuilderFieldDefInterface;
     const resetMethod = '_reset' + this._capitalizeFirstLetter(fieldDef.dataType) + 'Value';
     this._resetMethodMap[resetMethod](condition);
   }
 
-  private _resetStringValue(condition: FilterBuilderCondition): void {
+  private _resetStringValue(condition: FilterBuilderConditionInterface): void {
     condition['value'][2] = '';
   }
 
-  private _resetNumberValue(condition: FilterBuilderCondition): void {
+  private _resetNumberValue(condition: FilterBuilderConditionInterface): void {
     condition['value'][2] = null;
   }
 
-  private _resetArrayValue(condition: FilterBuilderCondition): void {
+  private _resetArrayValue(condition: FilterBuilderConditionInterface): void {
     if (condition['value'][1] === 'equals') {
       condition['value'][2] = null;
     } else {
@@ -333,7 +333,7 @@ export class FilterBuilderComponent implements OnInit, AfterViewInit {
     }
   }
 
-  private _resetBooleanValue(condition: FilterBuilderCondition): void {
+  private _resetBooleanValue(condition: FilterBuilderConditionInterface): void {
     condition['value'][2] = false;
   }
 

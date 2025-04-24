@@ -1,8 +1,8 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { DASHBOARD, Dashboard, Widget } from '@core';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@models';
 
-export interface HeadingWidget extends Widget {
+export interface HeadingWidget extends WidgetInterface {
   title: string;
   viewMore?: {
     link: string;
@@ -20,7 +20,7 @@ export interface HeadingWidget extends Widget {
   styleUrl: './heading-widget.component.css'
 })
 export class HeadingWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
   widget = input.required<HeadingWidget>();
 

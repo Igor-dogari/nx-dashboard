@@ -4,7 +4,7 @@ import {
   MchartTooltipComponent,
   MchartTooltipTitleComponent
 } from '@core';
-import { Dashboard, DASHBOARD, Widget } from '@core';
+import { DashboardInterface, DASHBOARD, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-total-projects-widget',
@@ -18,12 +18,12 @@ import { Dashboard, DASHBOARD, Widget } from '@core';
   styleUrl: './total-projects-widget.component.scss'
 })
 export class TotalProjectsWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
   data = [47, 54, 38, 24, 65, 37];
   labels = ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   ngOnInit() {
     if (this._dashboard && this.widget()) {

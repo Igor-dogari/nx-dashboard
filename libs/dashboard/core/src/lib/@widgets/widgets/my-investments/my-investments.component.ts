@@ -3,7 +3,7 @@ import { MatIcon } from '@angular/material/icon';
 import { MatRipple } from '@angular/material/core';
 import { RouterLink } from '@angular/router';
 import { MatList, MatListItem } from '@angular/material/list';
-import { DASHBOARD, Widget } from '@core';
+import { DASHBOARD, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-my-investments',
@@ -20,7 +20,7 @@ import { DASHBOARD, Widget } from '@core';
 export class MyInvestmentsComponent implements OnInit {
   private _dashboard = inject<any>(DASHBOARD, { optional: true });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   ngOnInit() {
     if (this._dashboard && this.widget()) {

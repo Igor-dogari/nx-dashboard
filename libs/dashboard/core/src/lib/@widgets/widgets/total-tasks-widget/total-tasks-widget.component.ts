@@ -5,7 +5,7 @@ import {
   MchartTooltipComponent,
   MchartTooltipTitleComponent
 } from '@core';
-import { Dashboard, DASHBOARD, Widget } from '@core';
+import { DashboardInterface, DASHBOARD, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-total-tasks-widget',
@@ -22,9 +22,9 @@ export class TotalTasksWidgetComponent implements OnInit {
   data = [47, 54, 38, 24, 65, 37];
   labels = ['Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'];
 
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   ngOnInit() {
     if (this._dashboard && this.widget()) {

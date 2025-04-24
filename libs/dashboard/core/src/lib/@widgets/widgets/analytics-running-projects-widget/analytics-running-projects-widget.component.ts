@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, Dashboard } from '@core';
+import { DASHBOARD, DashboardInterface } from '@models';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
 
@@ -13,7 +13,7 @@ import { MatIconButton } from '@angular/material/button';
   styleUrl: './analytics-running-projects-widget.component.scss'
 })
 export class AnalyticsRunningProjectsWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
   widget = input<any>();
 

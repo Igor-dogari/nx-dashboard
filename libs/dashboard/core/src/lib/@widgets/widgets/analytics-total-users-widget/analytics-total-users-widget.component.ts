@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, Dashboard } from '@core';
+import { DASHBOARD, DashboardInterface } from '@models';
 
 @Component({
   selector: 'app-analytics-total-users-widget',
@@ -8,7 +8,7 @@ import { DASHBOARD, Dashboard } from '@core';
   styleUrl: './analytics-total-users-widget.component.scss'
 })
 export class AnalyticsTotalUsersWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
   widget = input<any>();
 

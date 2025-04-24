@@ -5,7 +5,7 @@ import { MatRipple } from '@angular/material/core';
 import { MatButton } from '@angular/material/button';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { DASHBOARD, Dashboard, Widget } from '@core';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-exchange-widget',
@@ -22,9 +22,9 @@ import { DASHBOARD, Dashboard, Widget } from '@core';
 export class ExchangeWidgetComponent implements OnInit {
   private _fb = inject(FormBuilder);
   private _destroyRef = inject(DestroyRef);
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   conversionFromRate: number = 1.3275;
   conversionToRate: number = 0.7532;

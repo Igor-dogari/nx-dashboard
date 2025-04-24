@@ -2,12 +2,12 @@ import { Component, inject, input, OnInit } from '@angular/core';
 // import { ActionRequiredComponent } from 'projects/shared/action-required';
 import {
   DASHBOARD,
-  Dashboard,
-  Widget,
-} from '@core';
+  DashboardInterface,
+  WidgetInterface,
+} from '@models';
 import { ActionRequiredComponent } from '@core';
 
-export interface ActionRequiredWidget extends Widget {
+export interface ActionRequiredWidget extends WidgetInterface {
   iconName?: string;
   description: string;
   buttonText: string;
@@ -25,7 +25,7 @@ export interface ActionRequiredWidget extends Widget {
   },
 })
 export class ActionRequiredWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
   widget = input<ActionRequiredWidget>();
 

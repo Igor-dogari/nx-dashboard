@@ -1,95 +1,114 @@
 import { Component } from '@angular/core';
-import { DashboardComponent, Widget, WidgetConfig } from '@core';
+import { WidgetInterface, WidgetConfigInterface } from '@models';
+import { DashboardComponent } from '@core';
 
 @Component({
-  imports: [
-    DashboardComponent
-  ],
+  imports: [DashboardComponent],
   templateUrl: './basic.component.html',
-  styleUrl: './basic.component.scss'
+  styleUrl: './basic.component.scss',
 })
 export class BasicComponent {
-  configs: WidgetConfig[] = [
+  configs: WidgetConfigInterface[] = [
     {
       type: 'total-subscribers-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/total-subscribers-widget/total-subscribers-widget.component').then(c => c.TotalSubscribersWidgetComponent)
+        import(
+          '../../../@widgets/widgets/total-subscribers-widget/total-subscribers-widget.component'
+        ).then((c) => c.TotalSubscribersWidgetComponent),
     },
     {
       type: 'avg-open-rate-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/avg-open-rate-widget/avg-open-rate-widget.component').then(c => c.AvgOpenRateWidgetComponent)
+        import(
+          '../../../@widgets/widgets/avg-open-rate-widget/avg-open-rate-widget.component'
+        ).then((c) => c.AvgOpenRateWidgetComponent),
     },
     {
       type: 'avg-click-rate-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/avg-click-rate-widget/avg-click-rate-widget.component').then(c => c.AvgClickRateWidgetComponent)
+        import(
+          '../../../@widgets/widgets/avg-click-rate-widget/avg-click-rate-widget.component'
+        ).then((c) => c.AvgClickRateWidgetComponent),
     },
     {
       type: 'unique-visitors-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/unique-visitors-widget/unique-visitors-widget.component').then(c => c.UniqueVisitorsWidgetComponent)
+        import(
+          '../../../@widgets/widgets/unique-visitors-widget/unique-visitors-widget.component'
+        ).then((c) => c.UniqueVisitorsWidgetComponent),
     },
     {
       type: 'total-tasks-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/total-tasks-widget/total-tasks-widget.component').then(c => c.TotalTasksWidgetComponent)
+        import(
+          '../../../@widgets/widgets/total-tasks-widget/total-tasks-widget.component'
+        ).then((c) => c.TotalTasksWidgetComponent),
     },
     {
       type: 'total-projects-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/total-projects-widget/total-projects-widget.component').then(c => c.TotalProjectsWidgetComponent)
+        import(
+          '../../../@widgets/widgets/total-projects-widget/total-projects-widget.component'
+        ).then((c) => c.TotalProjectsWidgetComponent),
     },
     {
       type: 'events-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/events-widget/events-widget.component').then(c => c.EventsWidgetComponent)
+        import(
+          '../../../@widgets/widgets/events-widget/events-widget.component'
+        ).then((c) => c.EventsWidgetComponent),
     },
     {
       type: 'team-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/team-widget/team-widget.component').then(c => c.TeamWidgetComponent)
+        import(
+          '../../../@widgets/widgets/team-widget/team-widget.component'
+        ).then((c) => c.TeamWidgetComponent),
     },
     {
       type: 'tasks-in-progress-widget',
       component: () =>
-        import('../../../@widgets/widgets/tasks-in-progress-widget/tasks-in-progress-widget.component').then(c => c.TasksInProgressWidgetComponent)
+        import(
+          '../../../@widgets/widgets/tasks-in-progress-widget/tasks-in-progress-widget.component'
+        ).then((c) => c.TasksInProgressWidgetComponent),
     },
     {
       type: 'todos-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/todos-widget/todos-widget.component').then(c => c.TodosWidgetComponent)
-    }
+        import(
+          '../../../@widgets/widgets/todos-widget/todos-widget.component'
+        ).then((c) => c.TodosWidgetComponent),
+    },
   ];
-  widgets: Widget[] = [
+  widgets: WidgetInterface[] = [
     {
       id: 1,
       type: 'total-subscribers-widget',
-      columns: 3
+      columns: 3,
     },
     {
       id: 2,
       type: 'avg-open-rate-widget',
-      columns: 3
+      columns: 3,
     },
     {
       id: 3,
       type: 'avg-click-rate-widget',
-      columns: 3
+      columns: 3,
     },
     {
       id: 4,
       type: 'unique-visitors-widget',
-      columns: 3
+      columns: 3,
     },
     {
       id: 5,
@@ -97,7 +116,7 @@ export class BasicComponent {
       columns: 3,
       skeleton: {
         minHeight: '260px',
-      }
+      },
     },
     {
       id: 6,
@@ -105,7 +124,7 @@ export class BasicComponent {
       columns: 3,
       skeleton: {
         minHeight: '260px',
-      }
+      },
     },
     {
       id: 7,
@@ -113,7 +132,7 @@ export class BasicComponent {
       columns: 3,
       skeleton: {
         minHeight: '260px',
-      }
+      },
     },
     {
       id: 8,
@@ -121,7 +140,7 @@ export class BasicComponent {
       columns: 3,
       skeleton: {
         minHeight: '260px',
-      }
+      },
     },
     {
       id: 9,
@@ -129,7 +148,7 @@ export class BasicComponent {
       columns: 6,
       skeleton: {
         minHeight: '400px',
-      }
+      },
     },
     {
       id: 10,
@@ -137,7 +156,7 @@ export class BasicComponent {
       columns: 6,
       skeleton: {
         minHeight: '400px',
-      }
-    }
+      },
+    },
   ];
 }

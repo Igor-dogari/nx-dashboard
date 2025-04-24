@@ -4,15 +4,16 @@ import {
   MatDateRangeInput,
   MatDateRangePicker,
   MatEndDate,
-  MatStartDate
+  MatStartDate,
 } from '@angular/material/datepicker';
 import { MatFormField, MatSuffix } from '@angular/material/form-field';
 import {
   DashboardCardsSkeletonComponent,
   DashboardChartWidgetSkeletonComponent,
-  DashboardStatsWidgetSkeletonComponent
+  DashboardComponent,
+  DashboardStatsWidgetSkeletonComponent,
 } from '@core';
-import { DashboardComponent, Widget, WidgetConfig } from '@core';
+import { WidgetInterface, WidgetConfigInterface } from '@models';
 
 @Component({
   selector: 'app-ecommerce',
@@ -24,90 +25,101 @@ import { DashboardComponent, Widget, WidgetConfig } from '@core';
     MatDatepickerToggle,
     MatFormField,
     MatSuffix,
-    DashboardComponent
+    DashboardComponent,
   ],
   templateUrl: './ecommerce.component.html',
-  styleUrl: './ecommerce.component.scss'
+  styleUrl: './ecommerce.component.scss',
 })
 export class EcommerceComponent {
-  configs: WidgetConfig[] = [
+  configs: WidgetConfigInterface[] = [
     {
       type: 'total-revenue-widget',
       skeleton: DashboardStatsWidgetSkeletonComponent,
       component: () =>
-        import('../../../@widgets/widgets/total-revenue-widget/total-revenue-widget.component').then(c => c.TotalRevenueWidgetComponent)
+        import(
+          '../../../@widgets/widgets/total-revenue-widget/total-revenue-widget.component'
+        ).then((c) => c.TotalRevenueWidgetComponent),
     },
     {
       type: 'site-visitors-widget',
       skeleton: DashboardStatsWidgetSkeletonComponent,
       component: () =>
-        import('../../../@widgets/widgets/site-visitors-widget/site-visitors-widget.component').then(c => c.SiteVisitorsWidgetComponent)
+        import(
+          '../../../@widgets/widgets/site-visitors-widget/site-visitors-widget.component'
+        ).then((c) => c.SiteVisitorsWidgetComponent),
     },
     {
       type: 'visit-duration-widget',
       skeleton: DashboardStatsWidgetSkeletonComponent,
       component: () =>
-        import('../../../@widgets/widgets/visit-duration-widget/visit-duration-widget.component').then(c => c.VisitDurationWidgetComponent)
+        import(
+          '../../../@widgets/widgets/visit-duration-widget/visit-duration-widget.component'
+        ).then((c) => c.VisitDurationWidgetComponent),
     },
     {
       type: 'purchases-by-channels-widget',
       skeleton: DashboardChartWidgetSkeletonComponent,
       component: () =>
-        import('../../../@widgets/widgets/purchases-by-channels-widget/purchases-by-channels-widget.component')
-          .then(c => c.PurchasesByChannelsWidgetComponent)
+        import(
+          '../../../@widgets/widgets/purchases-by-channels-widget/purchases-by-channels-widget.component'
+        ).then((c) => c.PurchasesByChannelsWidgetComponent),
     },
     {
       type: 'visitor-insights-widget',
       skeleton: DashboardChartWidgetSkeletonComponent,
       component: () =>
-        import('../../../@widgets/widgets/visitor-insights-widget/visitor-insights-widget.component')
-          .then(c => c.VisitorInsightsWidgetComponent)
+        import(
+          '../../../@widgets/widgets/visitor-insights-widget/visitor-insights-widget.component'
+        ).then((c) => c.VisitorInsightsWidgetComponent),
     },
     {
       type: 'today-sales-widget',
       skeleton: DashboardCardsSkeletonComponent,
       component: () =>
-        import('../../../@widgets/widgets/today-sales-widget/today-sales-widget.component')
-          .then(c => c.TodaySalesWidgetComponent)
+        import(
+          '../../../@widgets/widgets/today-sales-widget/today-sales-widget.component'
+        ).then((c) => c.TodaySalesWidgetComponent),
     },
     {
       type: 'exchange-widget',
       component: () =>
-        import('../../../@widgets/widgets/exchange-widget/exchange-widget.component')
-          .then(c => c.ExchangeWidgetComponent)
+        import(
+          '../../../@widgets/widgets/exchange-widget/exchange-widget.component'
+        ).then((c) => c.ExchangeWidgetComponent),
     },
     {
       type: 'customer-satisfaction-widget',
       component: () =>
-        import('../../../@widgets/widgets/customer-satisfaction-widget/customer-satisfaction-widget.component')
-          .then(c => c.CustomerSatisfactionWidgetComponent)
+        import(
+          '../../../@widgets/widgets/customer-satisfaction-widget/customer-satisfaction-widget.component'
+        ).then((c) => c.CustomerSatisfactionWidgetComponent),
     },
   ];
-  widgets: Widget[] = [
+  widgets: WidgetInterface[] = [
     {
       id: 1,
       type: 'total-revenue-widget',
-      columns: 3
+      columns: 3,
     },
     {
       id: 2,
       type: 'site-visitors-widget',
-      columns: 3
+      columns: 3,
     },
     {
       id: 3,
       type: 'visit-duration-widget',
-      columns: 3
+      columns: 3,
     },
     {
       id: 4,
       type: 'purchases-by-channels-widget',
-      columns: 6
+      columns: 6,
     },
     {
       id: 5,
       type: 'visitor-insights-widget',
-      columns: 6
+      columns: 6,
     },
     {
       id: 6,
@@ -119,16 +131,16 @@ export class EcommerceComponent {
       type: 'exchange-widget',
       columns: 3,
       skeleton: {
-        minHeight: '300px'
-      }
+        minHeight: '300px',
+      },
     },
     {
       id: 8,
       type: 'customer-satisfaction-widget',
       columns: 4,
       skeleton: {
-        minHeight: '300px'
-      }
+        minHeight: '300px',
+      },
     },
   ];
 }

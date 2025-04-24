@@ -1,7 +1,8 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { AvatarComponent, DASHBOARD, Dashboard, Widget } from '@core';
+import { AvatarComponent } from '@core';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-tasks-in-progress-widget',
@@ -10,9 +11,11 @@ import { AvatarComponent, DASHBOARD, Dashboard, Widget } from '@core';
   styleUrl: './tasks-in-progress-widget.component.scss',
 })
 export class TasksInProgressWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, {
+    optional: true,
+  });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   ngOnInit() {
     if (this._dashboard && this.widget()) {

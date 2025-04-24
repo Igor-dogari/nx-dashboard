@@ -20,7 +20,8 @@ import {
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
-import { Dashboard, DASHBOARD, ThemeManagerService, Widget } from '@core';
+import { DashboardInterface, DASHBOARD, WidgetInterface } from '@models';
+import { ThemeManagerService } from '../../../core';
 
 @Component({
   selector: 'emr-purchases-by-channels-widget',
@@ -31,12 +32,14 @@ import { Dashboard, DASHBOARD, ThemeManagerService, Widget } from '@core';
 export class PurchasesByChannelsWidgetComponent implements OnDestroy {
   private _elementRef = inject(ElementRef);
   private _themeManager = inject(ThemeManagerService);
-  private _observer: ResizeObserver;
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _observer!: ResizeObserver;
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, {
+    optional: true,
+  });
 
   readonly _chartRef = viewChild.required('chartRef', { read: ElementRef });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   constructor() {
     afterNextRender(() => {

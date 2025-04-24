@@ -1,49 +1,57 @@
 import { Component } from '@angular/core';
-import { DashboardComponent, Widget, WidgetConfig } from '@core';
+import { DashboardComponent } from '@core';
+import { WidgetConfigInterface, WidgetInterface } from '@models';
 
 @Component({
   selector: 'app-explore',
-  imports: [
-    DashboardComponent
-  ],
+  imports: [DashboardComponent],
   templateUrl: './explore.component.html',
-  styleUrl: './explore.component.scss'
+  styleUrl: './explore.component.scss',
 })
 export class ExploreComponent {
-  configs: WidgetConfig[] = [
+  configs: WidgetConfigInterface[] = [
     {
       type: 'explore-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/explore-widget/explore-widget.component').then(c => c.ExploreWidgetComponent)
+        import(
+          '../../../@widgets/widgets/explore-widget/explore-widget.component'
+        ).then((c) => c.ExploreWidgetComponent),
     },
     {
       type: 'heading-widget',
       skeleton: null,
       plain: true,
       component: () =>
-        import('../../../@widgets/widgets/heading-widget/heading-widget.component').then(c => c.HeadingWidgetComponent)
+        import(
+          '../../../@widgets/widgets/heading-widget/heading-widget.component'
+        ).then((c) => c.HeadingWidgetComponent),
     },
     {
       type: 'action-required-widget',
       skeleton: null,
       plain: true,
       component: () =>
-        import('../../../@widgets/widgets/action-required-widget/action-required-widget.component').then(c => c.ActionRequiredWidgetComponent)
+        import(
+          '../../../@widgets/widgets/action-required-widget/action-required-widget.component'
+        ).then((c) => c.ActionRequiredWidgetComponent),
     },
     {
       type: 'article-snippet-widget',
       skeleton: null,
       component: () =>
-        import('../../../@widgets/widgets/article-snippet-widget/article-snippet-widget.component').then(c => c.ArticleSnippetWidgetComponent)
+        import(
+          '../../../@widgets/widgets/article-snippet-widget/article-snippet-widget.component'
+        ).then((c) => c.ArticleSnippetWidgetComponent),
     },
   ];
-  widgets: Widget[] = [
+  widgets: WidgetInterface[] = [
     {
       id: 20,
       type: 'action-required-widget',
       columns: 12,
-      description: 'Please provide your company details to access our services seamlessly, whether forming a new company or adding existing information.',
+      description:
+        'Please provide your company details to access our services seamlessly, whether forming a new company or adding existing information.',
       buttonText: 'Fix the problem',
     },
     {
@@ -102,7 +110,7 @@ export class ExploreComponent {
       viewMore: {
         name: 'Browse all',
         link: '/pages/content/posts/list',
-      }
+      },
     },
     {
       id: 7,
@@ -124,7 +132,8 @@ export class ExploreComponent {
       id: 9,
       type: 'article-snippet-widget',
       columns: 4,
-      title: 'How to retrieve values from all types of HTML Inputs in JavaScript',
+      title:
+        'How to retrieve values from all types of HTML Inputs in JavaScript',
       imagePreviewUrl: 'assets/widgets/article-snippet-preview.png',
       publishedAt: new Date(),
     },

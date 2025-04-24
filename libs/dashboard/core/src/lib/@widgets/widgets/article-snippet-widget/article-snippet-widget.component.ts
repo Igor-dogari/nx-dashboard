@@ -1,9 +1,9 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatRipple } from '@angular/material/core';
 import { DatePipe } from '@angular/common';
-import { DASHBOARD, Dashboard, Widget } from '@core';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@models';
 
-export interface ArticleSnippetWidget extends Widget {
+export interface ArticleSnippetWidget extends WidgetInterface {
   title: string;
   publishedAt: Date | string;
   imagePreviewUrl: string;
@@ -19,7 +19,7 @@ export interface ArticleSnippetWidget extends Widget {
   styleUrl: './article-snippet-widget.component.css'
 })
 export class ArticleSnippetWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
   widget = input.required<ArticleSnippetWidget>();
 

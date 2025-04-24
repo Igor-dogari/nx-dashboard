@@ -1,6 +1,6 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { Dashboard, DASHBOARD, Widget } from '@core';
+import { DashboardInterface, DASHBOARD, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-visit-duration-widget',
@@ -11,9 +11,9 @@ import { Dashboard, DASHBOARD, Widget } from '@core';
   styleUrl: './visit-duration-widget.component.scss'
 })
 export class VisitDurationWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   ngOnInit() {
     if (this._dashboard && this.widget()) {

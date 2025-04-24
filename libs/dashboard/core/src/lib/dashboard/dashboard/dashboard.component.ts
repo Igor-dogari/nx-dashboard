@@ -6,9 +6,9 @@ import {
   signal
 } from '@angular/core';
 import {
-  Widget,
-  DASHBOARD, WidgetConfig
-} from '../types';
+  WidgetInterface,
+  DASHBOARD, WidgetConfigInterface
+} from '@models';
 import { AsyncPipe, NgComponentOutlet } from '@angular/common';
 import { WidgetSkeletonComponent } from '../widget-skeleton/widget-skeleton.component';
 
@@ -36,8 +36,8 @@ export class DashboardComponent implements OnInit {
   protected _skeletonMap = new Map<string, any>();
   protected _componentsMap = new Map<string, any>();
 
-  configs = input<WidgetConfig[]>([]);
-  widgets = input<Widget[]>([]);
+  configs = input<WidgetConfigInterface[]>([]);
+  widgets = input<WidgetInterface[]>([]);
 
   protected _allLoaded = signal(false);
   protected _loadedWidgetsCount = signal(0);
@@ -55,8 +55,8 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  protected getWidgetConfig(type: string): WidgetConfig {
-    return this.configs().find(config => config.type === type) as WidgetConfig;
+  protected getWidgetConfig(type: string): WidgetConfigInterface {
+    return this.configs().find(config => config.type === type) as WidgetConfigInterface;
   }
 
   protected getSkeletonComponent(type: string): any {

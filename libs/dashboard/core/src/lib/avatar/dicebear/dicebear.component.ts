@@ -9,18 +9,10 @@ import { createAvatar } from '@dicebear/core';
 import { identicon, initials } from '@dicebear/collection';
 import { v7 as uuid } from 'uuid';
 import { SafeHtmlPipe } from '../../core';
-
-export interface Preset {
-  style: any,
-  options?: {
-    scale?: number;
-    backgroundColor?: string[];
-    fontWeight?: number;
-  }
-}
+import { PresetInterface } from '@models';
 
 const alreadyLoadedImages: string[] = [];
-const presets: {[prop: string]: Preset} = {
+const presets: {[prop: string]: PresetInterface} = {
   'identicon': {
     style: identicon,
     options: {

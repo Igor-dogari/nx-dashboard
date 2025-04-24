@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, Widget } from '@core';
+import { DASHBOARD, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-bank-credit-card',
@@ -10,7 +10,7 @@ import { DASHBOARD, Widget } from '@core';
 export class BankCreditCardComponent implements OnInit {
   private _dashboard = inject<any>(DASHBOARD, { optional: true });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   ngOnInit() {
     if (this._dashboard && this.widget()) {

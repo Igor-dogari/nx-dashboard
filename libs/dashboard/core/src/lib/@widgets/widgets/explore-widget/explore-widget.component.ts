@@ -1,9 +1,9 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatRipple } from '@angular/material/core';
-import { DASHBOARD, Dashboard, Widget } from '@core';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@models';
 
-export interface ExploreWidget extends Widget {
+export interface ExploreWidget extends WidgetInterface {
   title: string;
   description: string;
   iconName: string;
@@ -20,7 +20,7 @@ export interface ExploreWidget extends Widget {
   styleUrl: './explore-widget.component.css'
 })
 export class ExploreWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
   widget = input.required<ExploreWidget>();
 

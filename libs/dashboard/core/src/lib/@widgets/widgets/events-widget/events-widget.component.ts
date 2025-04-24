@@ -3,10 +3,8 @@ import {
   AvatarComponent,
   AvatarGroupComponent,
   AvatarTotalComponent,
-  DASHBOARD,
-  Dashboard,
-  Widget,
 } from '@core';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-events-widget',
@@ -15,9 +13,11 @@ import {
   styleUrl: './events-widget.component.scss',
 })
 export class EventsWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, {
+    optional: true,
+  });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   ngOnInit() {
     if (this._dashboard && this.widget()) {

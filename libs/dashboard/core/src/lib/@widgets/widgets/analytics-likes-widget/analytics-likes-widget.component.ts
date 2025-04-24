@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, Dashboard } from '@core';
+import { DASHBOARD, DashboardInterface } from '@models';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
@@ -11,7 +11,7 @@ import { MatIcon } from '@angular/material/icon';
   styleUrl: './analytics-likes-widget.component.scss'
 })
 export class AnalyticsLikesWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
   widget = input<any>();
 

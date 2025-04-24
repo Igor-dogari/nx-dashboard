@@ -1,22 +1,19 @@
 import { Component } from '@angular/core';
 import { JsonPipe } from '@angular/common';
+import { FilterBuilderComponent } from '@core';
 import {
-  FilterBuilderComponent,
-  FilterBuilderFieldDef,
-  FilterBuilderGroup
-} from '@core';
+  FilterBuilderFieldDefInterface,
+  FilterBuilderGroupInterface,
+} from '@models';
 
 @Component({
   selector: 'app-basic-filter-builder-example',
-  imports: [
-    JsonPipe,
-    FilterBuilderComponent
-  ],
+  imports: [JsonPipe, FilterBuilderComponent],
   templateUrl: './basic-filter-builder-example.component.html',
-  styleUrl: './basic-filter-builder-example.component.scss'
+  styleUrl: './basic-filter-builder-example.component.scss',
 })
 export class BasicFilterBuilderExampleComponent {
-  value: FilterBuilderGroup[] = [
+  value: FilterBuilderGroupInterface[] = [
     {
       logicalOperator: 'or',
       value: [
@@ -27,24 +24,24 @@ export class BasicFilterBuilderExampleComponent {
             //   value: ['category', 'equals', 'televisions']
             // },
             {
-              value: ['price', 'isBetween', [2000, 4000]]
-            }
-          ]
-        }
-      ]
-    }
+              value: ['price', 'isBetween', [2000, 4000]],
+            },
+          ],
+        },
+      ],
+    },
   ];
-  fieldDefs: FilterBuilderFieldDef[] = [
+  fieldDefs: FilterBuilderFieldDefInterface[] = [
     {
       name: 'Name',
       dataType: 'string',
-      dataField: 'name'
+      dataField: 'name',
     },
     {
       name: 'Price',
       format: 'currency',
       dataType: 'number',
-      dataField: 'price'
+      dataField: 'price',
     },
     {
       dataType: 'array',
@@ -54,23 +51,23 @@ export class BasicFilterBuilderExampleComponent {
         dataSource: [
           {
             id: 'video-players',
-            name: 'Video Players'
+            name: 'Video Players',
           },
           {
             id: 'televisions',
-            name: 'Televisions'
+            name: 'Televisions',
           },
           {
             id: 'monitors',
-            name: 'Monitors'
+            name: 'Monitors',
           },
           {
             id: 'projectors',
-            name: 'Projectors'
+            name: 'Projectors',
           },
           {
             id: 'automation',
-            name: 'Automation'
+            name: 'Automation',
           },
         ],
       },

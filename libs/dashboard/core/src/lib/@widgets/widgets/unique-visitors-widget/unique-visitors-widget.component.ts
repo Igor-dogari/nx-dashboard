@@ -2,7 +2,7 @@ import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatRipple } from '@angular/material/core';
 import { MatTooltip } from '@angular/material/tooltip';
-import { DASHBOARD, Dashboard, Widget } from '@core';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@models';
 
 @Component({
   selector: 'emr-unique-visitors-widget',
@@ -15,9 +15,9 @@ import { DASHBOARD, Dashboard, Widget } from '@core';
   styleUrl: './unique-visitors-widget.component.scss'
 })
 export class UniqueVisitorsWidgetComponent implements OnInit {
-  private _dashboard = inject<Dashboard>(DASHBOARD, { optional: true });
+  private _dashboard = inject<DashboardInterface>(DASHBOARD, { optional: true });
 
-  widget = input<Widget>();
+  widget = input<WidgetInterface>();
 
   ngOnInit() {
     if (this._dashboard && this.widget()) {

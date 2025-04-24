@@ -4,15 +4,16 @@ import { ComponentPortal } from '@angular/cdk/portal';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { PictureRef } from './picture-ref';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
-import { IMAGE_VIEWER_PICTURE_DATA, IMAGE_VIEWER_PICTURE_REF, PictureOptions } from './types';
+import { IMAGE_VIEWER_PICTURE_DATA, IMAGE_VIEWER_PICTURE_REF } from './types';
+import { PictureOptionsInterface } from '@models';
 
 @Directive({
   selector: '[emrImageViewer]',
   exportAs: 'emrImageViewer',
   standalone: true,
   host: {
-    'class': 'emr-image-viewer',
-  }
+    class: 'emr-image-viewer',
+  },
 })
 export class ImageViewerDirective {
   private _overlay = inject(Overlay);
@@ -21,36 +22,37 @@ export class ImageViewerDirective {
 
   get api() {
     return {
-      open: (options: PictureOptions): PictureRef => this._open(options)
-    }
+      open: (options: PictureOptionsInterface): PictureRef =>
+        this._open(options),
+    };
   }
 
-  private _open(options: PictureOptions): PictureRef {
+  private _open(options: PictureOptionsInterface): PictureRef {
     const pictureRef = new PictureRef();
     const overlayRef = this._overlay.create({
       positionStrategy: this._overlay.position().global(),
-      hasBackdrop: true
+      hasBackdrop: true,
     });
     const injector = Injector.create({
       providers: [
         {
           provide: IMAGE_VIEWER_PICTURE_REF,
-          useValue: pictureRef
+          useValue: pictureRef,
         },
         {
           provide: IMAGE_VIEWER_PICTURE_DATA,
-          useValue: options
-        }
+          useValue: options,
+        },
       ],
-      parent: this._injector
+      parent: this._injector,
     });
     const portal = new ComponentPortal(ImageViewerComponent, null, injector);
     overlayRef.attach(portal);
-    pictureRef.closed.pipe(
-      takeUntilDestroyed(this._destroyRef)
-    ).subscribe(() => {
-      overlayRef.detach();
-    });
+    pictureRef.closed
+      .pipe(takeUntilDestroyed(this._destroyRef))
+      .subscribe(() => {
+        overlayRef.detach();
+      });
     return pictureRef;
   }
 }
