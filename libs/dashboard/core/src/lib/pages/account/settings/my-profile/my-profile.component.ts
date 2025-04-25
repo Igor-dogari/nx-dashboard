@@ -11,10 +11,10 @@ import { AvatarComponent } from '@core';
 export class MyProfileComponent {
   dateFormats = ['MM/DD/YYYY', 'DD/MM/YYYY', 'YYYY-MM-DD'];
   myProfile = {
-    firstName: 'Pavel',
-    lastName: 'Salauyou',
-    username: '@pavel.salauyou',
-    email: 'pavel.salauyou@example.com',
+    firstName: 'Igor',
+    lastName: 'Dogari',
+    username: '@Igor.Dogari',
+    email: 'Igor.Dogari@example.com',
     jobTitle: 'Team Lead',
     bio: 'Senior Angular Developer',
     phoneNumber: '+1(23)4567890',

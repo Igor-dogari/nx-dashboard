@@ -146,7 +146,7 @@ export class MessengerComponent {
         },
         {
           avatarUrl: '',
-          name: 'Pavel Salauyou',
+          name: 'Igor Dogari',
           id: 2,
           presenceIndicator: 'online',
           status: 'At home',
@@ -177,7 +177,7 @@ export class MessengerComponent {
           type: 'default',
           sender: {
             avatarUrl: '',
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
             id: 2,
             presenceIndicator: 'online',
           },
@@ -190,7 +190,7 @@ export class MessengerComponent {
           type: 'default',
           sender: {
             avatarUrl: '',
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
             id: 2,
             presenceIndicator: 'online',
           },
@@ -266,7 +266,7 @@ export class MessengerComponent {
       membersCount: 2,
       sender: {
         avatarUrl: '',
-        name: 'Pavel Salauyou',
+        name: 'Igor Dogari',
         id: 2,
         presenceIndicator: 'online',
       },
@@ -308,7 +308,7 @@ export class MessengerComponent {
         },
         {
           avatarUrl: '',
-          name: 'Pavel Salauyou',
+          name: 'Igor Dogari',
           id: 2,
           presenceIndicator: 'online',
           status: 'At home',

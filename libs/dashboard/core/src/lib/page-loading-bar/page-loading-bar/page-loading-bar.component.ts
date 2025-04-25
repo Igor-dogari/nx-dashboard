@@ -30,7 +30,7 @@ export class PageLoadingBarComponent implements OnInit {
 
   protected visible = false;
   protected value = 0;
-  private _subscription: Subscription;
+  private _subscription!: Subscription;
 
   ngOnInit(): void {
     this._router.events
@@ -61,13 +61,19 @@ export class PageLoadingBarComponent implements OnInit {
 
           return loading < 100 ? loading : 100;
         })
-      ).subscribe(_result => {
-        this.value = _result;
-        this._cdr.markForCheck();
-      }, _ => {
-      }, () => {
-        this.visible = false;
-        this._cdr.markForCheck();
+      ).subscribe({
+        next: _result => {
+          this.value = _result;
+          this._cdr.markForCheck();
+        },
+        error: () => {
+          this.visible = false;
+          this._cdr.markForCheck();
+        },
+        complete: () => {
+          this.visible = false;
+          this._cdr.markForCheck();
+        }
       })
     ;
     this.visible = true;

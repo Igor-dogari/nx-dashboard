@@ -9,11 +9,11 @@
     ]
   },
   "files": [
-    "apps/src/main.ts",
-    "apps/src/main.server.ts",
-    "apps/src/server.ts"
+    "apps/elementar/src/main.ts",
+    "apps/elementar/src/main.server.ts",
+    "apps/elementar/src/server.ts"
   ],
   "include": [
-    "apps/src/**/*.d.ts"
+    "apps/elementar/src/**/*.d.ts"
   ]
 }

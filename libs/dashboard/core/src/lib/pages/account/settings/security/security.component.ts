@@ -18,7 +18,7 @@ import { HorizontalDividerComponent } from '@core';
 })
 export class SecurityComponent {
   securityProfile = {
-    email: 'pavel.salauyou@gmail.com',
+    email: 'Igor.Dogari@gmail.com',
     isEmailVerified: false,
     mfaConfigured: false,
     mfaEnabled: false

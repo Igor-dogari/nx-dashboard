@@ -42,7 +42,7 @@ testem.log
 .DS_Store
 Thumbs.db
 
-apps/src/environments/environment.prod.ts
+apps/elementar/src/environments/environment.prod.ts
 
 publish-library.sh
 create-schematics.sh

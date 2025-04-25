@@ -31,11 +31,12 @@ export class ScreenLoaderComponent {
   readonly _loaderElement = viewChild.required<ElementRef>('loader');
 
   constructor() {
-    const initialState = getState<GlobalStoreState>(this._globalStore);
+    const screenLoading = this._globalStore.screenLoading();
+
     effect(() => {
       const currentState = getState<GlobalStoreState>(this._globalStore);
 
-      if (initialState.screenLoading === currentState.screenLoading) {
+      if (screenLoading === currentState.screenLoading) {
         return;
       }
 

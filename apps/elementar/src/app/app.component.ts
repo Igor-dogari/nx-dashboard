@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
           setTimeout(() => {
             this._screenLoader.hide();
             this.pageLoaded.set(true);
-          }, 3000);
+          }, 300);
         });
 
       this._analyticsService.trackPageViews();

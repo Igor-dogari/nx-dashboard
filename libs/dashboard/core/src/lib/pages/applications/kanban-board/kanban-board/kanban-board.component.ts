@@ -89,11 +89,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[1],
         },
@@ -102,11 +102,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -115,11 +115,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -128,11 +128,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -141,11 +141,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -154,11 +154,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -167,11 +167,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -180,11 +180,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -200,11 +200,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[0],
         },
@@ -220,11 +220,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -233,11 +233,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -246,11 +246,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -259,11 +259,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },
@@ -272,11 +272,11 @@ export class KanbanBoardComponent {
           position: 1,
           reporter: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           assignee: {
             id: 1,
-            name: 'Pavel Salauyou',
+            name: 'Igor Dogari',
           },
           priority: this.priorities[2],
         },

@@ -24,11 +24,11 @@ export class TransactionsExampleComponent {
       },
       sender: {
         id: 1,
-        name: 'Pavel Salauyou'
+        name: 'Igor Dogari'
       },
       recipient: {
         id: 1,
-        name: 'Pavel Salauyou'
+        name: 'Igor Dogari'
       }
     },
     {
@@ -44,11 +44,11 @@ export class TransactionsExampleComponent {
       },
       sender: {
         id: 1,
-        name: 'Pavel Salauyou'
+        name: 'Igor Dogari'
       },
       recipient: {
         id: 1,
-        name: 'Pavel Salauyou'
+        name: 'Igor Dogari'
       }
     },
     {
@@ -64,11 +64,11 @@ export class TransactionsExampleComponent {
       },
       sender: {
         id: 1,
-        name: 'Pavel Salauyou'
+        name: 'Igor Dogari'
       },
       recipient: {
         id: 1,
-        name: 'Pavel Salauyou'
+        name: 'Igor Dogari'
       }
     },
     {
@@ -84,11 +84,11 @@ export class TransactionsExampleComponent {
       },
       sender: {
         id: 1,
-        name: 'Pavel Salauyou'
+        name: 'Igor Dogari'
       },
       recipient: {
         id: 1,
-        name: 'Pavel Salauyou'
+        name: 'Igor Dogari'
       }
     },
   ];

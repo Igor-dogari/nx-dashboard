@@ -104,8 +104,8 @@ export class BillingComponent implements AfterViewInit {
   dataSource = new MatTableDataSource(TABLE_DATA);
   displayedColumns = ['invoiceId', 'date', 'amount', 'status', 'invoice'];
   billingInfo = {
-    firstName: 'Pavel',
-    lastName: 'Salauyou',
+    firstName: 'Igor',
+    lastName: 'Dogari',
     address: 'Abbey Street 87',
     country: 'United Kingdom',
     city: 'London'

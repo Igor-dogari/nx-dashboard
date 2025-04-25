@@ -1,14 +1,14 @@
 {
-  "name": "elementar-admin",
-  "description": "Elementar Admin - Free and open source Angular admin panel based on Material 3 and Tailwind",
+  "name": "elementar",
+  "description": "Elementar - Panel based on Material 3 and Tailwind",
   "version": "1.0.0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elementarlabs/elementar-admin/issues"
+    "url": "https://github.com"
   },
-  "homepage": "https://elementarui.com",
+  "homepage": "https://element.com",
   "keywords": [
-    "elementar admin",
+    "elementar",
     "angular admin",
     "admin panel",
     "angular dashboard",
@@ -23,7 +23,7 @@
     "test": "nx test",
     "build": "nx build",
     "build:prod": "nx build --configuration production",
-    "serve:ssr:elementar-admin": "node dist/elementar-admin/server/server.mjs",
+    "serve:ssr:elementar": "node dist/elementar/server/server.mjs",
     "changelog": "auto-changelog -p && git add CHANGELOG.md",
     "prepare": "husky"
   },

@@ -9,7 +9,7 @@
     ]
   },
   "include": [
-    "apps/src/**/*.spec.ts",
-    "apps/src/**/*.d.ts"
+    "apps/elementar/src/**/*.spec.ts",
+    "apps/elementar/src/**/*.d.ts"
   ]
 }

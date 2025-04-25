@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/nx/schemas/project-schema.json",
-  "name": "elementar-admin",
+  "name": "elementar",
   "projectType": "application",
   "generators": {
     "@schematics/angular:component": {
@@ -14,18 +14,18 @@
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/src/**/*.ts",
-          "apps/src/**/*.html",
-          "apps/src/**/*.scss"
+          "apps/elementar/src/**/*.ts",
+          "apps/elementar/src/**/*.html",
+          "apps/elementar/src/**/*.scss"
         ]
       }
     },
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "options": {
-        "outputPath": "dist/elementar-admin",
-        "index": "apps/src/index.html",
-        "browser": "apps/src/main.ts",
+        "outputPath": "dist/elementar",
+        "index": "apps/elementar/src/index.html",
+        "browser": "apps/elementar/src/main.ts",
         "polyfills": [
           "zone.js",
           "@angular/localize/init"
@@ -39,24 +39,24 @@
           },
           {
             "glob": "**/_examples/**",
-            "input": "apps/src/app/pages",
+            "input": "apps/elementar/src/app/pages",
             "output": "_docs"
           }
         ],
         "styles": [
-          "apps/src/styles.scss",
+          "apps/elementar/src/styles.scss",
           {
-            "input": "apps/src/styles/rose-red.scss",
+            "input": "apps/elementar/src/styles/rose-red.scss",
             "inject": false,
             "bundleName": "rose-red"
           },
           {
-            "input": "apps/src/styles/magenta-violet.scss",
+            "input": "apps/elementar/src/styles/magenta-violet.scss",
             "inject": false,
             "bundleName": "magenta-violet"
           },
           {
-            "input": "apps/src/styles/cyan-orange.scss",
+            "input": "apps/elementar/src/styles/cyan-orange.scss",
             "inject": false,
             "bundleName": "cyan-orange"
           }
@@ -66,9 +66,9 @@
           "node_modules/prismjs/components/prism-css.min.js",
           "node_modules/prismjs/components/prism-typescript.min.js"
         ],
-        "server": "apps/src/main.server.ts",
+        "server": "apps/elementar/src/main.server.ts",
         "ssr": {
-          "entry": "apps/src/server.ts"
+          "entry": "apps/elementar/src/server.ts"
         },
         "outputMode": "server"
       },
@@ -83,8 +83,8 @@
           "outputHashing": "all",
           "fileReplacements": [
             {
-              "replace": "apps/src/environments/environment.ts",
-              "with": "apps/src/environments/environment.prod.ts"
+              "replace": "apps/elementar/src/environments/environment.ts",
+              "with": "apps/elementar/src/environments/environment.prod.ts"
             }
           ]
         },
@@ -100,10 +100,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "elementar-admin:build:production"
+          "buildTarget": "elementar:build:production"
         },
         "development": {
-          "buildTarget": "elementar-admin:build:development"
+          "buildTarget": "elementar:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -111,7 +111,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "elementar-admin:build"
+        "buildTarget": "elementar:build"
       }
     },
     "test": {
@@ -130,7 +130,7 @@
           }
         ],
         "styles": [
-          "apps/src/styles.scss"
+          "apps/elementar/src/styles.scss"
         ],
         "scripts": []
       }

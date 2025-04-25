@@ -21,5 +21,5 @@ import { DicebearComponent, HorizontalDividerComponent } from '@core';
 export class ToolbarComponent {
   subscription = 'Free';
   email = 'elementarlabs@gmail.com';
-  name = 'Pavel Salauyou';
+  name = 'Igor Dogari';
 }
