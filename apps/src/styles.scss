@@ -1,4 +1,7 @@
-@use "../../libs/dashboard/core/src/lib/styles/themes/default";
+@use '../../libs/dashboard/core/src/lib/styles/themes/default';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .emr-logo {
   text-transform: uppercase;
