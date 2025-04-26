@@ -5,10 +5,9 @@ import { Component } from '@angular/core';
   exportAs: 'emrSidebarHeader',
   templateUrl: './sidebar-header.component.html',
   styleUrl: './sidebar-header.component.scss',
+  standalone: true,
   host: {
-    'class': 'emr-sidebar-header',
-  }
+    class: 'emr-sidebar-header',
+  },
 })
-export class SidebarHeaderComponent {
-
-}
+export class SidebarHeaderComponent {}

@@ -24,13 +24,14 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 @Directive({
   selector: '[emrPopoverTriggerFor]',
   exportAs: 'emrPopoverTriggerFor',
+  standalone: true,
   host: {
-    'class': 'emr-popover-trigger-for',
+    class: 'emr-popover-trigger-for',
     '[class.emr-popover-trigger-for--is-open]': 'api.isOpen()',
     '(click)': '_handleClick()',
     '(mouseenter)': '_handleMouseover()',
-    '(mouseleave)': '_handleMouseout()'
-  }
+    '(mouseleave)': '_handleMouseout()',
+  },
 })
 export class PopoverTriggerForDirective implements OnInit, OnDestroy {
   private _overlay = inject(Overlay);
@@ -46,12 +47,12 @@ export class PopoverTriggerForDirective implements OnInit, OnDestroy {
   private _closeDelay = 500;
 
   popoverTemplateRef = input.required<TemplateRef<unknown>>({
-    alias: 'emrPopoverTriggerFor'
+    alias: 'emrPopoverTriggerFor',
   });
   trigger = input<PopoverTrigger>('click');
   position = input<PopoverPosition>('below-center');
   delay = input(500, {
-    transform: numberAttribute
+    transform: numberAttribute,
   });
   origin = input<FlexibleConnectedPositionStrategyOrigin>();
 
@@ -87,10 +88,9 @@ export class PopoverTriggerForDirective implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.closed
-      .subscribe(() => {
-        this._closed.emit();
-      });
+    this.closed.subscribe(() => {
+      this._closed.emit();
+    });
   }
 
   ngOnDestroy() {
@@ -138,15 +138,14 @@ export class PopoverTriggerForDirective implements OnInit, OnDestroy {
       this._overlayRef
         .outsidePointerEvents()
         .pipe(takeUntilDestroyed(this._destroyRef))
-        .subscribe(event => {
+        .subscribe((event) => {
           const target = _getEventTarget(event) as Element;
           const element = this._elementRef.nativeElement;
 
           if (target !== element && !element.contains(target)) {
             this._close();
           }
-        })
-      ;
+        });
     }
   }
 
@@ -155,7 +154,7 @@ export class PopoverTriggerForDirective implements OnInit, OnDestroy {
       this.popoverTemplateRef(),
       this._viewContainerRef,
       null,
-      this._injector
+      this._injector,
     );
 
     return this._popoverPortal;
@@ -165,23 +164,24 @@ export class PopoverTriggerForDirective implements OnInit, OnDestroy {
     return new OverlayConfig({
       positionStrategy: this._getOverlayPositionStrategy(),
       scrollStrategy: this._overlay.scrollStrategies.reposition(),
-      direction: this._directionality || undefined
+      direction: this._directionality || undefined,
     });
   }
 
   private _getOverlayPositionStrategy(): FlexibleConnectedPositionStrategy {
-    const origin = (this.origin() ? this.origin() : this._elementRef) as FlexibleConnectedPositionStrategyOrigin;
+    const origin = (
+      this.origin() ? this.origin() : this._elementRef
+    ) as FlexibleConnectedPositionStrategyOrigin;
     return this._overlay
       .position()
       .flexibleConnectedTo(origin)
       .setOrigin(origin)
       .withGrowAfterOpen()
-      .withPositions(this._getOverlayPositions())
-    ;
+      .withPositions(this._getOverlayPositions());
   }
 
   private _getOverlayPositions(): ConnectedPosition[] {
-    return (new PositionManager()).build(this.position());
+    return new PositionManager().build(this.position());
   }
 
   private _setType() {
@@ -200,38 +200,26 @@ export class PopoverTriggerForDirective implements OnInit, OnDestroy {
   private _subscribeToHostMouseleave() {
     if (this.trigger() === 'hover' && this._overlayRef) {
       fromEvent(this._elementRef.nativeElement, 'mouseleave')
-        .pipe(
-          takeUntil(this._closed),
-          takeUntilDestroyed(this._destroyRef)
-        )
-        .subscribe(event => {
+        .pipe(takeUntil(this._closed), takeUntilDestroyed(this._destroyRef))
+        .subscribe((event) => {
           this._closeTimeout = setTimeout(() => {
             this._close();
           }, this._closeDelay);
-        })
-      ;
+        });
       const popoverElement = this._overlayRef.overlayElement;
       fromEvent(popoverElement, 'mouseenter')
-        .pipe(
-          takeUntil(this._closed),
-          takeUntilDestroyed(this._destroyRef)
-        )
-        .subscribe(event => {
+        .pipe(takeUntil(this._closed), takeUntilDestroyed(this._destroyRef))
+        .subscribe((event) => {
           clearTimeout(this._closeTimeout);
           this._closeTimeout = null;
-        })
-      ;
+        });
       fromEvent(popoverElement, 'mouseleave')
-        .pipe(
-          takeUntil(this._closed),
-          takeUntilDestroyed(this._destroyRef)
-        )
-        .subscribe(event => {
+        .pipe(takeUntil(this._closed), takeUntilDestroyed(this._destroyRef))
+        .subscribe((event) => {
           this._closeTimeout = setTimeout(() => {
             this._close();
           }, this._closeDelay);
-        })
-      ;
+        });
     }
   }
 }

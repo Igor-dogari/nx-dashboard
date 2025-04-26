@@ -5,10 +5,9 @@ import { Component } from '@angular/core';
   exportAs: 'emrLayoutHeader',
   templateUrl: './layout-header.component.html',
   styleUrl: './layout-header.component.scss',
+  standalone: true,
   host: {
-    'class': 'emr-layout-header',
-  }
+    class: 'emr-layout-header',
+  },
 })
-export class LayoutHeaderComponent {
-
-}
+export class LayoutHeaderComponent {}

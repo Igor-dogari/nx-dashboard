@@ -2,7 +2,8 @@ import {
   booleanAttribute,
   Component,
   forwardRef,
-  input, OnInit
+  input,
+  OnInit,
 } from '@angular/core';
 import { AVATAR_ACCESSOR, AvatarPresenceIndicator } from '../types';
 import { createAvatar } from '@dicebear/core';
@@ -12,21 +13,28 @@ import { SafeHtmlPipe } from '../../core';
 import { PresetInterface } from '@models';
 
 const alreadyLoadedImages: string[] = [];
-const presets: {[prop: string]: PresetInterface} = {
-  'identicon': {
+const presets: { [prop: string]: PresetInterface } = {
+  identicon: {
     style: identicon,
     options: {
       scale: 55,
-      backgroundColor: ['cbebf7', 'ebe1fc', 'd1f9db', 'f7e4e7', 'fce8d4', 'dcfcf9']
-    }
+      backgroundColor: [
+        'cbebf7',
+        'ebe1fc',
+        'd1f9db',
+        'f7e4e7',
+        'fce8d4',
+        'dcfcf9',
+      ],
+    },
   },
-  'initials': {
+  initials: {
     style: initials,
     options: {
       scale: 75,
-      fontWeight: 500
-    }
-  }
+      fontWeight: 500,
+    },
+  },
 };
 
 @Component({
@@ -38,22 +46,21 @@ const presets: {[prop: string]: PresetInterface} = {
     {
       provide: AVATAR_ACCESSOR,
       useExisting: forwardRef(() => DicebearComponent),
-      multi: true
-    }
+      multi: true,
+    },
   ],
-  imports: [
-    SafeHtmlPipe
-  ],
+  imports: [SafeHtmlPipe],
+  standalone: true,
   host: {
-    'class': 'emr-avatar emr-dicebear',
+    class: 'emr-avatar emr-dicebear',
     '[class.is-clickable]': 'clickable()',
     '[class.has-loaded-image]': 'src() && imageLoaded',
-  }
+  },
 })
 export class DicebearComponent implements OnInit {
   src = input<string>();
   clickable = input(false, {
-    transform: booleanAttribute
+    transform: booleanAttribute,
   });
   key = input<any>();
   preset = input<string>('identicon');
@@ -71,7 +78,7 @@ export class DicebearComponent implements OnInit {
     const preset = presets[this.preset()];
     const avatar = createAvatar(preset.style, {
       seed: this.key() || '',
-      ...preset.options
+      ...preset.options,
     });
     this.svg = avatar.toString().replace('viewboxMask', uuid());
   }

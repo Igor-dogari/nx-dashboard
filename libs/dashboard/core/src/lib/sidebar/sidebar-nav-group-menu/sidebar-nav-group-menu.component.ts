@@ -20,10 +20,11 @@ import { SidebarNavStore } from '../sidebar.store';
   templateUrl: './sidebar-nav-group-menu.component.html',
   styleUrl: './sidebar-nav-group-menu.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
   host: {
-    'class': 'emr-sidebar-nav-group-menu',
-    '[class.is-active]': 'active'
-  }
+    class: 'emr-sidebar-nav-group-menu',
+    '[class.is-active]': 'active',
+  },
 })
 export class SidebarNavGroupMenuComponent implements AfterContentInit {
   readonly navigation = inject<SidebarNavComponent>(SIDEBAR_NAVIGATION);
@@ -32,7 +33,9 @@ export class SidebarNavGroupMenuComponent implements AfterContentInit {
   private _destroyRef = inject(DestroyRef);
   private _navStore = inject(SidebarNavStore);
 
-  readonly _items = contentChildren(SidebarNavItemComponent, { descendants: true });
+  readonly _items = contentChildren(SidebarNavItemComponent, {
+    descendants: true,
+  });
 
   key = signal<any>(this._group._groupId);
 
@@ -41,9 +44,8 @@ export class SidebarNavGroupMenuComponent implements AfterContentInit {
   }
 
   ngAfterContentInit() {
-    const isGroupActive = this._items().filter(
-      itemComponent => itemComponent.active
-    ).length > 0;
+    const isGroupActive =
+      this._items().filter((itemComponent) => itemComponent.active).length > 0;
 
     if (isGroupActive) {
       this._navStore.setGroupActiveKey(this.key());

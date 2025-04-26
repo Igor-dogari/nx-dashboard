@@ -8,16 +8,15 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 @Component({
   selector: 'emr-page-loading-bar',
   exportAs: 'emrPageLoadingBar',
-  imports: [
-    MatProgressBar
-  ],
+  imports: [MatProgressBar],
   templateUrl: './page-loading-bar.component.html',
   styleUrl: './page-loading-bar.component.scss',
+  standalone: true,
   host: {
-    'class': 'emr--page-loading-bar',
+    class: 'emr--page-loading-bar',
     '[class.is-visible]': 'visible',
-    '[class.is-fixed]': 'fixed'
-  }
+    '[class.is-fixed]': 'fixed',
+  },
 })
 export class PageLoadingBarComponent implements OnInit {
   private _router = inject(Router);
@@ -25,8 +24,8 @@ export class PageLoadingBarComponent implements OnInit {
   private _cdr = inject(ChangeDetectorRef);
 
   fixed = input(false, {
-    transform: booleanAttribute
-  })
+    transform: booleanAttribute,
+  });
 
   protected visible = false;
   protected value = 0;
@@ -35,16 +34,19 @@ export class PageLoadingBarComponent implements OnInit {
   ngOnInit(): void {
     this._router.events
       .pipe(takeUntilDestroyed(this._destroyRef))
-      .subscribe(event => {
+      .subscribe((event) => {
         if (event instanceof NavigationStart) {
           this._start();
         }
 
-        if ((event instanceof NavigationError || event instanceof NavigationEnd || event instanceof NavigationCancel)) {
+        if (
+          event instanceof NavigationError ||
+          event instanceof NavigationEnd ||
+          event instanceof NavigationCancel
+        ) {
           this._finish();
         }
-      })
-    ;
+      });
   }
 
   private _start(): void {
@@ -54,15 +56,16 @@ export class PageLoadingBarComponent implements OnInit {
       .pipe(
         takeUntilDestroyed(this._destroyRef),
         take(6),
-        map(_result => {
-          const min = ((_result + 1) * 25) - 25;
+        map((_result) => {
+          const min = (_result + 1) * 25 - 25;
           const max = (_result + 1) * 25;
           const loading = this._getRandom(min, max);
 
           return loading < 100 ? loading : 100;
-        })
-      ).subscribe({
-        next: _result => {
+        }),
+      )
+      .subscribe({
+        next: (_result) => {
           this.value = _result;
           this._cdr.markForCheck();
         },
@@ -73,9 +76,8 @@ export class PageLoadingBarComponent implements OnInit {
         complete: () => {
           this.visible = false;
           this._cdr.markForCheck();
-        }
-      })
-    ;
+        },
+      });
     this.visible = true;
     this.value = 0;
   }
@@ -88,6 +90,6 @@ export class PageLoadingBarComponent implements OnInit {
   }
 
   private _getRandom(min: number, max: number): number {
-    return Math.floor(Math.random() * (max - min) ) + min;
+    return Math.floor(Math.random() * (max - min)) + min;
   }
 }

@@ -11,16 +11,15 @@ export class SidebarNavItem {
 @Component({
   selector: 'emr-sidebar-nav-item,[emr-sidebar-nav-item]',
   exportAs: 'emr-sidebar-nav-item',
-  imports: [
-    MatRipple
-  ],
+  imports: [MatRipple],
   templateUrl: './sidebar-nav-item.component.html',
   styleUrl: './sidebar-nav-item.component.scss',
+  standalone: true,
   host: {
-    'class': 'emr-sidebar-nav-item',
+    class: 'emr-sidebar-nav-item',
     '[class.is-active]': 'forceActive() || active',
-    '(click)': 'click($event)'
-  }
+    '(click)': 'click($event)',
+  },
 })
 export class SidebarNavItemComponent implements SidebarNavItem {
   private _navigation = inject<SidebarNavComponent>(SIDEBAR_NAVIGATION);
@@ -29,13 +28,13 @@ export class SidebarNavItemComponent implements SidebarNavItem {
 
   get api() {
     return {
-      isActive: () => this.active
-    }
+      isActive: () => this.active,
+    };
   }
 
   key = input<any>(Math.random());
   forceActive = input(false, {
-    transform: booleanAttribute
+    transform: booleanAttribute,
   });
 
   click(event: MouseEvent) {

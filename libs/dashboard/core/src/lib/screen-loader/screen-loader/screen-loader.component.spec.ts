@@ -11,7 +11,7 @@ describe('ScreenLoaderComponent', () => {
       imports: [ScreenLoaderComponent]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(ScreenLoaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -34,6 +34,7 @@ import { IncidentsStore } from '@shared';
     class: 'emr-incidents-global',
     '[class.is-active]': 'hasIncidents()',
   },
+  standalone: true,
 })
 export class IncidentsContainerComponent {
   protected _incidentsStore = inject(IncidentsStore);

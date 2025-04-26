@@ -19,10 +19,11 @@ import { NotificationDefDirective, NotificationListComponent, Notification } fro
     MatAnchor,
     MatIcon,
     MatIconButton,
-    MatRipple
-],
+    MatRipple,
+  ],
   templateUrl: './notifications-popover.component.html',
-  styleUrl: './notifications-popover.component.scss'
+  standalone: true,
+  styleUrl: './notifications-popover.component.scss',
 })
 export class NotificationsPopoverComponent {
   notifications: Notification[] = [
@@ -31,38 +32,38 @@ export class NotificationsPopoverComponent {
         id: 1,
         name: 'Justin Hansen',
         username: 'justin.hansen',
-        avatarUrl: 'assets/avatars/5.svg'
+        avatarUrl: 'assets/avatars/5.svg',
       },
       notifier: {
         id: 2,
         name: 'Elma Johnson',
         username: 'elma.johnson',
-        avatarUrl: 'assets/avatars/2.svg'
+        avatarUrl: 'assets/avatars/2.svg',
       },
       payload: {
-        content: 'what did you say?'
+        content: 'what did you say?',
       },
       type: 'mentionedInComment',
-      createdAt: '1 hour ago'
+      createdAt: '1 hour ago',
     },
     {
       actor: {
         id: 3,
         name: 'Johnny Gladden',
         username: 'johnny.gladden',
-        avatarUrl: 'assets/avatars/6.svg'
+        avatarUrl: 'assets/avatars/6.svg',
       },
       notifier: {
         id: 4,
         name: 'Angela Naylor',
         username: 'angela.naylor',
-        avatarUrl: 'assets/avatars/3.svg'
+        avatarUrl: 'assets/avatars/3.svg',
       },
       payload: {
-        folderName: 'My New Project'
+        folderName: 'My New Project',
       },
       type: 'inviteToEditFilesInFolder',
-      createdAt: '2 hours ago'
-    }
+      createdAt: '2 hours ago',
+    },
   ];
 }

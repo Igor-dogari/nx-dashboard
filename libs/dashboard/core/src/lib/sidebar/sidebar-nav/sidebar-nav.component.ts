@@ -26,17 +26,20 @@ import { SidebarNavStore } from '../sidebar.store';
       provide: SIDEBAR_NAVIGATION,
       useExisting: forwardRef(() => SidebarNavComponent),
     },
-    SidebarNavStore
+    SidebarNavStore,
   ],
   host: {
-    'class': 'emr-sidebar-nav',
+    class: 'emr-sidebar-nav',
   },
+  standalone: true,
 })
 export class SidebarNavComponent {
   private _elementRef = inject(ElementRef);
   private _navStore = inject(SidebarNavStore);
 
-  readonly _items = contentChildren(SidebarNavItemComponent, { descendants: true });
+  readonly _items = contentChildren(SidebarNavItemComponent, {
+    descendants: true,
+  });
 
   activeKey = input();
 
@@ -55,7 +58,8 @@ export class SidebarNavComponent {
               if (!this._isScrolledIntoView(itemElement, parentElement)) {
                 const parentRect = parentElement.getBoundingClientRect();
                 const elementRect = itemElement.getBoundingClientRect();
-                parentElement.scrollTop = elementRect.top - parentRect.height / 2;
+                parentElement.scrollTop =
+                  elementRect.top - parentRect.height / 2;
               }
 
               parentElement = null;
@@ -79,12 +83,15 @@ export class SidebarNavComponent {
       return false;
     }
 
-    return Math.ceil(element.scrollHeight) > Math.ceil(element.getBoundingClientRect().height);
+    return (
+      Math.ceil(element.scrollHeight) >
+      Math.ceil(element.getBoundingClientRect().height)
+    );
   }
 
   private _isScrolledIntoView(element: HTMLElement, parent: HTMLElement) {
     const elementRect = element.getBoundingClientRect();
     const parentRect = parent.getBoundingClientRect();
-    return (elementRect.top >= 0) && (elementRect.bottom <= parentRect.height);
+    return elementRect.top >= 0 && elementRect.bottom <= parentRect.height;
   }
 }

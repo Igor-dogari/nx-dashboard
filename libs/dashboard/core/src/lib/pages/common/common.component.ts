@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent, LibSidebarComponent } from '@shared';
 import {
   AnnouncementGlobalComponent,
   IncidentsContainerComponent,
@@ -10,6 +9,7 @@ import {
   LayoutSidebarComponent,
   LayoutTopbarComponent,
 } from '@core';
+import { HeaderComponent, LibSidebarComponent } from '@core/pages';
 
 @Component({
   imports: [
@@ -25,5 +25,6 @@ import {
     AnnouncementGlobalComponent,
   ],
   templateUrl: './common.component.html',
+  standalone: true,
 })
 export class CommonComponent {}

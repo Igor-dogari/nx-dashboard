@@ -1,10 +1,9 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[emrSidebarNavGroupToggleIcon]'
+  standalone: true,
+  selector: '[emrSidebarNavGroupToggleIcon]',
 })
 export class SidebarNavGroupToggleIconDirective {
-
-  constructor() { }
-
+  constructor() {}
 }

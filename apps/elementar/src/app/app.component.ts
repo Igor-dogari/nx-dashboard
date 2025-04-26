@@ -7,14 +7,14 @@ import {
   signal,
 } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { ScreenLoaderComponent } from '@shared';
 import { isPlatformBrowser } from '@angular/common';
 import { filter } from 'rxjs';
-import { PageLoadingBarComponent } from '@core';
 import {
   AnalyticsService,
   EnvironmentService,
   InactivityTrackerService,
+  PageLoadingBarComponent,
+  ScreenLoaderComponent,
   ScreenLoaderService,
   SeoService,
   ThemeManagerService,
@@ -25,6 +25,7 @@ import {
   imports: [RouterOutlet, ScreenLoaderComponent, PageLoadingBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  standalone: true,
 })
 export class AppComponent implements OnInit {
   private _themeManager = inject(ThemeManagerService);

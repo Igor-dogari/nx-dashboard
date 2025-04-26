@@ -15,12 +15,13 @@ let nextId = 0;
   templateUrl: './sidebar-nav-group.component.html',
   styleUrl: './sidebar-nav-group.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true,
   providers: [
     {
       provide: SIDEBAR_NAVIGATION_GROUP,
       useExisting: forwardRef(() => SidebarNavGroupComponent),
-    }
-  ]
+    },
+  ],
 })
 export class SidebarNavGroupComponent implements AfterContentInit {
   private _toggle = contentChild.required(SidebarNavGroupToggleComponent, {

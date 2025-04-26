@@ -40,6 +40,7 @@ import {
     class: 'assistant-search',
     '[class.has-dropdown]': '_isAttached',
   },
+  standalone: true,
 })
 export class AssistantSearchComponent implements OnDestroy {
   private _overlay = inject(Overlay);

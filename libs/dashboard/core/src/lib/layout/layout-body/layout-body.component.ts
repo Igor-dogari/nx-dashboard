@@ -9,12 +9,11 @@ import { CdkScrollable } from '@angular/cdk/overlay';
   exportAs: 'emrLayoutBody',
   templateUrl: './layout-body.component.html',
   styleUrl: './layout-body.component.scss',
-  hostDirectives: [
-    CdkScrollable
-  ],
+  hostDirectives: [CdkScrollable],
+  standalone: true,
   host: {
-    'class': 'emr-layout-body emr-scroll-lg'
-  }
+    class: 'emr-layout-body emr-scroll-lg',
+  },
 })
 export class LayoutBodyComponent implements OnInit {
   private _router = inject(Router);
@@ -22,15 +21,13 @@ export class LayoutBodyComponent implements OnInit {
   private _platformId = inject(PLATFORM_ID);
 
   autoscrollToTop = input(true, {
-    transform: booleanAttribute
+    transform: booleanAttribute,
   });
 
   ngOnInit() {
     // Scroll a page to top if url changed
     this._router.events
-      .pipe(
-        filter(event=> event instanceof NavigationStart)
-      )
+      .pipe(filter((event) => event instanceof NavigationStart))
       .subscribe(() => {
         if (!this.autoscrollToTop()) {
           return;
@@ -42,9 +39,8 @@ export class LayoutBodyComponent implements OnInit {
 
         this._elementRef.nativeElement.scrollTo({
           top: 0,
-          left: 0
+          left: 0,
         });
-      })
-    ;
+      });
   }
 }

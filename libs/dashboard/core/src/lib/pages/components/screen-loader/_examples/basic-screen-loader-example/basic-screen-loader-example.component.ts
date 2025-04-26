@@ -1,15 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { ScreenLoaderComponent } from '@core';
+import { ScreenProgressLoaderComponent } from '@core';
 import { MatButton } from '@angular/material/button';
 
 @Component({
   selector: 'app-basic-screen-loader-example',
-  imports: [
-    ScreenLoaderComponent,
-    MatButton
-  ],
+  imports: [ScreenProgressLoaderComponent, MatButton],
   templateUrl: './basic-screen-loader-example.component.html',
-  styleUrl: './basic-screen-loader-example.component.scss'
+  standalone: true,
+  styleUrl: './basic-screen-loader-example.component.scss',
 })
 export class BasicScreenLoaderExampleComponent {
   opened = signal(false);

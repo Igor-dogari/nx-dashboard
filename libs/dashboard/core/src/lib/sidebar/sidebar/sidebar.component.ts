@@ -5,24 +5,25 @@ import { booleanAttribute, Component, input } from '@angular/core';
   exportAs: 'emrSidebar',
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss',
+  standalone: true,
   host: {
-    'class': 'emr-sidebar',
+    class: 'emr-sidebar',
     '[class.compact]': 'compact()',
     '[class.compact-hover]': '_compactHover',
     '(mouseenter)': 'mouseenter()',
-    '(mouseleave)': 'mouseleave()'
-  }
+    '(mouseleave)': 'mouseleave()',
+  },
 })
 export class SidebarComponent {
   compact = input(false, {
-    transform: booleanAttribute
+    transform: booleanAttribute,
   });
   protected _compactHover = false;
 
   get api() {
     return {
       isCompact: () => this.compact() || this._compactHover,
-    }
+    };
   }
 
   protected mouseenter() {

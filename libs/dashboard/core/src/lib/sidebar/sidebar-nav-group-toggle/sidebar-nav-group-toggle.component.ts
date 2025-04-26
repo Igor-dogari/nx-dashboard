@@ -8,14 +8,13 @@ import { SidebarNavStore } from '../sidebar.store';
   templateUrl: './sidebar-nav-group-toggle.component.html',
   styleUrl: './sidebar-nav-group-toggle.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  hostDirectives: [
-    MatRipple
-  ],
+  hostDirectives: [MatRipple],
+  standalone: true,
   host: {
-    'class': 'emr-sidebar-nav-group-toggle',
+    class: 'emr-sidebar-nav-group-toggle',
     '[class.is-active]': 'active',
-    '(click)': 'toggle($event)'
-  }
+    '(click)': 'toggle($event)',
+  },
 })
 export class SidebarNavGroupToggleComponent {
   private _navStore = inject(SidebarNavStore);

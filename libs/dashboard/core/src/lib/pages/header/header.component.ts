@@ -1,4 +1,4 @@
-import { Component, computed, inject, Input } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatAnchor, MatButton, MatIconButton } from '@angular/material/button';
 import { MatBadge } from '@angular/material/badge';
@@ -8,11 +8,9 @@ import { MatTooltip } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
 import {
   AssistantSearchComponent,
-  NotificationsPopoverComponent,
-} from '@core';
-import {
   DicebearComponent,
   LayoutApiService,
+  NotificationsPopoverComponent,
   PopoverTriggerForDirective,
   SoundEffectDirective,
   ThemeManagerService,
@@ -43,6 +41,7 @@ import {
   host: {
     class: 'block w-full',
   },
+  standalone: true,
 })
 export class HeaderComponent {
   protected _themeManager = inject(ThemeManagerService);

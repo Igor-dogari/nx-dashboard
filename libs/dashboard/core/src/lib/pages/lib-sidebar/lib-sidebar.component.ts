@@ -5,7 +5,6 @@ import { filter } from 'rxjs';
 import { Location } from '@angular/common';
 import { v7 as uuid } from 'uuid';
 import { MatIconButton } from '@angular/material/button';
-import { ToolbarComponent } from '@core';
 import {
   SidebarComponent as EmrSidebarComponent,
   SidebarBodyComponent,
@@ -25,6 +24,7 @@ import {
   SidebarNavGroupMenuComponent,
   SidebarNavItemIconDirective,
   OrderByPipe,
+  ToolbarComponent,
 } from '@core';
 
 @Component({
@@ -59,6 +59,7 @@ import {
     class: 'sidebar',
     '[class.compact]': 'compact',
   },
+  standalone: true,
 })
 export class LibSidebarComponent implements OnInit {
   router = inject(Router);

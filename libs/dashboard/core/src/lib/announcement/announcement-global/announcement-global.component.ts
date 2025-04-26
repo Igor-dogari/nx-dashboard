@@ -11,6 +11,7 @@ import {
   imports: [AnnouncementComponent],
   templateUrl: './announcement-global.component.html',
   styleUrl: './announcement-global.component.scss',
+  standalone: true,
 })
 export class AnnouncementGlobalComponent {
   private _announcementStore = inject(AnnouncementStore);

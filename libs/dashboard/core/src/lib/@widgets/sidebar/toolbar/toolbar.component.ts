@@ -17,6 +17,7 @@ import { DicebearComponent, HorizontalDividerComponent } from '@core';
   ],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.scss',
+  standalone: true,
 })
 export class ToolbarComponent {
   subscription = 'Free';

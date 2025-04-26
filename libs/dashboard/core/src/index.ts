@@ -1,3 +1,4 @@
+export * from './lib/pages/header/header.component';
 export * from './lib/@widgets/header/index';
 export * from './lib/@widgets/notifications/index';
 export * from './lib/@widgets/selects/index';

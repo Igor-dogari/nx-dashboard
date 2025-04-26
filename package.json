@@ -18,8 +18,9 @@
   ],
   "scripts": {
     "ng": "ng",
+    "graph": "npx nx graph",
     "start": "nx serve",
-    "watch": "nx build --watch --configuration development",
+    "affected": "npx nx affected --target=build",
     "test": "nx test",
     "build": "nx build",
     "build:prod": "nx build --configuration production",

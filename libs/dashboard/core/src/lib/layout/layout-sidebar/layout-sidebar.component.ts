@@ -12,6 +12,7 @@ import { LayoutSidebarStore } from '@shared';
     class: 'emr-layout-sidebar',
     '[class.is-hidden]': '!_isShown()',
   },
+  standalone: true,
 })
 export class LayoutSidebarComponent {
   private _parent = inject<LayoutComponent>(LAYOUT);

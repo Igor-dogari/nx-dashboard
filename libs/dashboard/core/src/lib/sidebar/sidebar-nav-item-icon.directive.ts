@@ -1,7 +1,8 @@
 import { Directive, inject, TemplateRef } from '@angular/core';
 
 @Directive({
-  selector: '[emrSidebarNavItemIcon]'
+  standalone: true,
+  selector: '[emrSidebarNavItemIcon]',
 })
 export class SidebarNavItemIconDirective {
   // readonly templateRef = inject(TemplateRef);
