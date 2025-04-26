@@ -17,9 +17,8 @@
     "angular admin template"
   ],
   "scripts": {
-    "ng": "ng",
     "graph": "npx nx graph",
-    "start": "nx serve",
+    "start": "nx run elementar:serve:development",
     "affected": "npx nx affected --target=build",
     "test": "nx test",
     "build": "nx build",
