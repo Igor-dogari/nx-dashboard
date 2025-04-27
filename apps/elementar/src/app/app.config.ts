@@ -11,10 +11,6 @@ import {
   withViewTransitions,
 } from '@angular/router';
 import { routes } from './app.routes';
-import {
-  provideClientHydration,
-  withEventReplay,
-} from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideStore } from '@ngrx/store';
@@ -27,6 +23,7 @@ import {
   PageTitleStrategyService,
 } from '@core';
 import { GlobalStore, LayoutSidebarStore } from '@shared';
+import { provideAuth0 } from '@auth0/auth0-angular';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -36,7 +33,6 @@ export const appConfig: ApplicationConfig = {
       withEnabledBlockingInitialNavigation(),
       withViewTransitions(),
     ),
-    provideClientHydration(withEventReplay()),
     provideAnimationsAsync(),
     provideHttpClient(withFetch()),
     provideStore(),
@@ -50,6 +46,12 @@ export const appConfig: ApplicationConfig = {
         globalStore.setPageTitle(envService.getValue('pageTitle'));
         resolve(true);
       });
+    }),
+    provideAuth0({
+      ...environment.auth,
+      httpInterceptor: {
+        ...environment.httpInterceptor,
+      },
     }),
     {
       provide: ENVIRONMENT,

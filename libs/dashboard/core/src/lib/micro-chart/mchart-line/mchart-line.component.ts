@@ -11,7 +11,6 @@ import {
   PLATFORM_ID,
   TemplateRef,
 } from '@angular/core';
-import { isPlatformServer } from '@angular/common';
 import {
   Selection,
   curveLinear,
@@ -48,7 +47,7 @@ export class MchartLineComponent extends BaseChartTooltip implements OnDestroy, 
   private _initialized = false;
   private _host: any;
   private _svg: any;
-  private _dimensions: DOMRect;
+  private _dimensions!: DOMRect;
   private _hostWidth = 0;
   private _hostHeight = 0;
   private _innerWidth = 0;
@@ -61,8 +60,8 @@ export class MchartLineComponent extends BaseChartTooltip implements OnDestroy, 
     'curveBumpX': curveBumpX,
     'curveStep': curveStep
   };
-  private _resizeObserver: ResizeObserver;
-  private _tooltipDot: HTMLElement;
+  private _resizeObserver!: ResizeObserver;
+  private _tooltipDot!: HTMLElement;
   private _area: any;
   private _line: any;
   private _platformId = inject(PLATFORM_ID);
@@ -115,10 +114,6 @@ export class MchartLineComponent extends BaseChartTooltip implements OnDestroy, 
   }
 
   ngAfterViewChecked() {
-    if (isPlatformServer(this._platformId)) {
-      return;
-    }
-
     if (!this._initialized) {
       const element = this._elementRef.nativeElement as HTMLElement;
       this._dimensions = element.getBoundingClientRect();

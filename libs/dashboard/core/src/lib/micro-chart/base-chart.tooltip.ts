@@ -11,9 +11,9 @@ import { DOCUMENT } from '@angular/common';
 import { OverlayPosition, PositionManager } from '@core';
 
 export abstract class BaseChartTooltip {
-  protected _tooltipOrigin: HTMLElement;
+  protected _tooltipOrigin!: HTMLElement;
   protected _tooltipPortal!: TemplatePortal;
-  protected _overlayRef: OverlayRef;
+  protected _overlayRef!: OverlayRef;
   protected _renderer = inject(Renderer2);
   protected _overlay = inject(Overlay);
   protected _viewContainerRef = inject(ViewContainerRef);

@@ -24,7 +24,7 @@ import { AsyncPipe } from '@angular/common';
 export class AutocompleteFilterExampleComponent {
   myControl = new FormControl('');
   options: string[] = ['One', 'Two', 'Three'];
-  filteredOptions: Observable<string[]>;
+  filteredOptions!: Observable<string[]>;
 
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges.pipe(

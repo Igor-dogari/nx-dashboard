@@ -28,7 +28,7 @@ export interface User {
 export class SeparateControlsAndDisplayValuesExampleComponent {
   myControl = new FormControl<string | User>('');
   options: User[] = [{name: 'Mary'}, {name: 'Shelley'}, {name: 'Igor'}];
-  filteredOptions: Observable<User[]>;
+  filteredOptions!: Observable<User[]>;
 
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges.pipe(

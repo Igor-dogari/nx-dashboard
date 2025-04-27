@@ -1,7 +1,7 @@
 import { DestroyRef, inject, Injectable, PLATFORM_ID } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
-import { DOCUMENT, isPlatformServer } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Meta, Title } from '@angular/platform-browser';
 import { GlobalStore } from '@shared';
@@ -62,10 +62,6 @@ export class SeoService {
 
   trackCanonicalChanges(siteUrl: string): void {
     this._createCanonicalTag(siteUrl);
-
-    if (isPlatformServer(this._platformId)) {
-      return;
-    }
 
     this._router.events
       .pipe(

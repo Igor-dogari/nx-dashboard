@@ -1,7 +1,3 @@
-@if (_isServer) {
-  <ng-content/>
-}
-
 <ng-template #itemsTpl let-items>
   <div class="group">
     @for (item of items; track item; let index = $index) {

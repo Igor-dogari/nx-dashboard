@@ -65,12 +65,7 @@
           "node_modules/prismjs/prism.js",
           "node_modules/prismjs/components/prism-css.min.js",
           "node_modules/prismjs/components/prism-typescript.min.js"
-        ],
-        "server": "apps/elementar/src/main.server.ts",
-        "ssr": {
-          "entry": "apps/elementar/src/server.ts"
-        },
-        "outputMode": "server"
+        ]
       },
       "configurations": {
         "production": {

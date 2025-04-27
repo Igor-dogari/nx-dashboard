@@ -1,1 +1,1 @@
-export * from './index';
+export * from './auth/libAuth.guard';

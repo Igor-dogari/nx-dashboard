@@ -137,7 +137,7 @@ export class OptionGroupsExampleComponent {
     },
   ];
 
-  stateGroupOptions: Observable<StateGroup[]>;
+  stateGroupOptions!: Observable<StateGroup[]>;
 
   ngOnInit() {
     this.stateGroupOptions = this.stateForm.get('stateGroup')!.valueChanges.pipe(

@@ -15,8 +15,8 @@ import { MatProgressSpinner } from '@angular/material/progress-spinner';
   }
 })
 export class ImageUploadingPlaceholderComponent extends AngularNodeViewComponent implements OnInit, OnDestroy {
-  protected src: string;
-  protected error: string;
+  protected src!: string;
+  protected error!: string;
   private _canceled = false;
 
   ngOnInit() {

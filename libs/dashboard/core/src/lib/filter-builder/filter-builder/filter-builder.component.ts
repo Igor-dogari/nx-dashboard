@@ -10,7 +10,7 @@ import {
   viewChildren,
   contentChildren, TemplateRef, input
 } from '@angular/core';
-import { isPlatformServer, NgTemplateOutlet } from '@angular/common';
+import { NgTemplateOutlet } from '@angular/common';
 import { FilterBuilderOperationDefDirective } from '../filter-builder-operation-def.directive';
 import {
   FilterBuilderConditionInterface,
@@ -57,7 +57,6 @@ import { AutoFocusDirective, FocusElementDirective, MenuOptionGroupDirective } f
 export class FilterBuilderComponent implements OnInit, AfterViewInit {
   protected _cdr = inject(ChangeDetectorRef);
   protected _platformId = inject(PLATFORM_ID);
-  protected _isServer = isPlatformServer(this._platformId);
   protected _operationAllowedTypesMap: Map<string, string[]> = new Map();
   private _resetMethodMap: { [prop: string]: (condition: FilterBuilderConditionInterface) => void } = {
     '_resetStringValue': this._resetStringValue,

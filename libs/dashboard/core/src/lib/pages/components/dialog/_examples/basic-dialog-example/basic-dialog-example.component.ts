@@ -19,8 +19,8 @@ import { MatInput } from '@angular/material/input';
   styleUrl: './basic-dialog-example.component.scss'
 })
 export class BasicDialogExampleComponent {
-  animal: string;
-  name: string;
+  animal!: string;
+  name!: string;
 
   constructor(public dialog: MatDialog) {}
 

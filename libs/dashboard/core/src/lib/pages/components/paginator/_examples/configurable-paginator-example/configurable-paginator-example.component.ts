@@ -30,7 +30,7 @@ export class ConfigurablePaginatorExampleComponent {
   showFirstLastButtons = true;
   disabled = false;
 
-  pageEvent: PageEvent;
+  pageEvent!: PageEvent;
 
   handlePageEvent(e: PageEvent) {
     this.pageEvent = e;

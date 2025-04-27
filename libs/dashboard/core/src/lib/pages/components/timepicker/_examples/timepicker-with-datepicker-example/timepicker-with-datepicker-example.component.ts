@@ -24,5 +24,5 @@ import { MatTimepicker, MatTimepickerInput, MatTimepickerToggle } from '@angular
   styleUrl: './timepicker-with-datepicker-example.component.scss'
 })
 export class TimepickerWithDatepickerExampleComponent {
-  value: Date;
+  value!: Date;
 }

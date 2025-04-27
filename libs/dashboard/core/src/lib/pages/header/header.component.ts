@@ -15,6 +15,8 @@ import {
   SoundEffectDirective,
   ThemeManagerService,
 } from '@core';
+import { AuthService } from '@auth0/auth0-angular';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -35,6 +37,7 @@ import {
     SoundEffectDirective,
     NotificationsPopoverComponent,
     PopoverTriggerForDirective,
+    AsyncPipe,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
@@ -44,6 +47,8 @@ import {
   standalone: true,
 })
 export class HeaderComponent {
+  auth = inject(AuthService);
+
   protected _themeManager = inject(ThemeManagerService);
   private _layoutApi = inject(LayoutApiService);
 
@@ -58,4 +63,6 @@ export class HeaderComponent {
       this._layoutApi.showSidebar('root');
     }
   }
+
+  protected readonly document = document;
 }

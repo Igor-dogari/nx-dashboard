@@ -31,7 +31,7 @@ export class SaturationComponent extends BaseComponent {
 
   readonly colorChange = output<Color>();
 
-  protected _hue: Color;
+  protected _hue!: Color;
 
   get backgroundColor(): string {
     return this._hue ? this._hue.toRgbString() : '';

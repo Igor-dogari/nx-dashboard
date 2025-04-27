@@ -16,9 +16,9 @@ export enum ColorType {
 }
 
 export class ColorPickerControl {
-  private modelValue: Color;
-  private hueValue: Color;
-  private initValue: Color;
+  private modelValue!: Color;
+  private hueValue!: Color;
+  private initValue!: Color;
   private readonly valueChanged: Subject<Color> = new Subject();
 
   public readonly presetsVisibilityChanges: BehaviorSubject<boolean> = new BehaviorSubject(true);

@@ -7,7 +7,6 @@ import {
   input, numberAttribute, OnChanges, OnDestroy,
   PLATFORM_ID, SimpleChanges, TemplateRef
 } from '@angular/core';
-import { isPlatformServer } from '@angular/common';
 import {
   arc,
   interpolate,
@@ -35,12 +34,12 @@ export class MchartPieComponent extends BaseChartTooltip implements AfterViewChe
   private _svg: any;
   private _dataContainer: any;
   private _legendContainer: any;
-  private _dimensions: DOMRect;
+  private _dimensions!: DOMRect;
   private _innerWidth = 0;
   private _innerHeight = 0;
   private _hostWidth = 0;
   private _hostHeight = 0;
-  private _resizeObserver: ResizeObserver;
+  private _resizeObserver!: ResizeObserver;
   private _platformId = inject(PLATFORM_ID);
   private _elementRef = inject(ElementRef);
   private _radius = 0;
@@ -98,10 +97,6 @@ export class MchartPieComponent extends BaseChartTooltip implements AfterViewChe
   }
 
   ngAfterViewChecked() {
-    if (isPlatformServer(this._platformId)) {
-      return;
-    }
-
     if (!this._initialized) {
       const element = this._elementRef.nativeElement as HTMLElement;
       this._dimensions = element.getBoundingClientRect();

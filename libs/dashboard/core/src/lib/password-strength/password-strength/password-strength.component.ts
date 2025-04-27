@@ -77,19 +77,19 @@ export class PasswordStrengthComponent implements OnInit, OnChanges, AfterConten
   readonly strengthChanged = output<number>();
 
   criteriaMap: Map<Criteria, RegExp> = new Map<Criteria, RegExp>();
-  containAtLeastMinChars: boolean;
-  containAtLeastOneLowerCaseLetter: boolean;
-  containAtLeastOneUpperCaseLetter: boolean;
-  containAtLeastOneDigit: boolean;
-  containAtLeastOneSpecialChar: boolean;
-  containAtCustomChars: boolean;
+  containAtLeastMinChars!: boolean;
+  containAtLeastOneLowerCaseLetter!: boolean;
+  containAtLeastOneUpperCaseLetter!: boolean;
+  containAtLeastOneDigit!: boolean;
+  containAtLeastOneSpecialChar!: boolean;
+  containAtCustomChars!: boolean;
 
   // TO ACCESS VIA CONTENT CHILD
   passwordFormControl: UntypedFormControl = new UntypedFormControl();
   passwordConfirmationFormControl: UntypedFormControl = new UntypedFormControl();
 
   validatorsArray: ValidatorFn[] = [];
-  Validators: ValidatorFn | null;
+  Validators!: ValidatorFn | null;
   passwordStrengthValidator = new PasswordStrengthValidator();
 
   private _strength = 0;

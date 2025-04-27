@@ -13,7 +13,6 @@ import {
   PLATFORM_ID,
   TemplateRef,
 } from '@angular/core';
-import { isPlatformServer } from '@angular/common';
 import { pointer, scaleBand, scaleLinear, select } from 'd3';
 import { OverlayPosition } from '@core';
 import { fromEvent } from 'rxjs';
@@ -95,10 +94,6 @@ export class MchartBarComponent
   }
 
   ngAfterViewChecked() {
-    if (isPlatformServer(this._platformId)) {
-      return;
-    }
-
     if (!this._initialized) {
       const element = this._elementRef.nativeElement as HTMLElement;
       this._dimensions = element.getBoundingClientRect();

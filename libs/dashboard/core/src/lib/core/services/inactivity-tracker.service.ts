@@ -10,7 +10,7 @@ export class InactivityTrackerService {
   private _destroyRef = inject(DestroyRef);
   private _document = inject(DOCUMENT);
   private _interval = 10000 * 60; // 5 minutes
-  private _timeout: ReturnType<typeof setTimeout>;
+  private _timeout!: ReturnType<typeof setTimeout>;
   private _interactionEvents$ = merge(
     fromEvent(this._document, 'click'),
     fromEvent(this._document, 'keydown'),

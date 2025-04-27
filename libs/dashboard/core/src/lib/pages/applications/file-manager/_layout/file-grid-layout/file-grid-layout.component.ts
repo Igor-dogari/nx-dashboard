@@ -41,8 +41,8 @@ export class FileGridLayoutComponent implements OnInit {
   readonly fileSelected = output<FileSelectedEvent>();
 
   form: FormGroup;
-  selectionModel: SelectionModel<string>;
-  starredModel: SelectionModel<string>;
+  selectionModel!: SelectionModel<string>;
+  starredModel!: SelectionModel<string>;
   groupByList = [
     {
       id: 'name',

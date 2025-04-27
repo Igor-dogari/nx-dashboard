@@ -10,7 +10,6 @@ import {
   signal,
 } from '@angular/core';
 import { ImageResizeHandlerDirective } from '../image-resize-handler.directive';
-import { isPlatformServer } from '@angular/common';
 import { ImageResizedEvent } from '../types';
 import { ImageResizerImageDirective } from '../image-resizer-image.directive';
 
@@ -52,10 +51,6 @@ export class ImageResizerComponent implements AfterContentInit {
   }
 
   ngAfterContentInit() {
-    if (isPlatformServer(this._platformId)) {
-      return;
-    }
-
     this.imageRef().elementRef.nativeElement
       .onload = () => {
         setTimeout(() => {

@@ -33,8 +33,8 @@ export class ResizableContainerComponent implements OnInit {
   private _destroyRef = inject(DestroyRef);
   private _document = inject(DOCUMENT);
   private _resizing = false;
-  private _maxWidth: number;
-  private _clientX: number;
+  private _maxWidth!: number;
+  private _clientX!: number;
 
   readonly handlerRef = viewChild.required<ElementRef>('handler');
 

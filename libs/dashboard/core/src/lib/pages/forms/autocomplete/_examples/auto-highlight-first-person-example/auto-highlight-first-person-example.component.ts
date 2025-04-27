@@ -24,7 +24,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 export class AutoHighlightFirstPersonExampleComponent {
   myControl = new FormControl('');
   options: string[] = ['One', 'Two', 'Three'];
-  filteredOptions: Observable<string[]>;
+  filteredOptions!: Observable<string[]>;
 
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges.pipe(

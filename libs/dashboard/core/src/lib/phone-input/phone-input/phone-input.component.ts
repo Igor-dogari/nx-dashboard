@@ -148,7 +148,7 @@ export class PhoneInputComponent implements OnInit, DoCheck, OnDestroy {
   phoneNumber?: string = '';
   allCountries: Country[] = [];
   preferredCountriesInDropDown: Country[] = [];
-  selectedCountry: Country;
+  selectedCountry!: Country;
   numberInstance?: PhoneNumber;
   value?: any;
   searchCriteria?: string;

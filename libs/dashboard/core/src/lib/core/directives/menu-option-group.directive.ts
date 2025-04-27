@@ -44,7 +44,7 @@ export class MenuOptionGroupDirective implements MatOptionParentComponent, OnIni
   inertGroups = false;
   hideSingleSelectionIndicator = false;
 
-  _selectionModel: SelectionModel<MatOption>;
+  _selectionModel!: SelectionModel<MatOption>;
 
   private _value: any;
 

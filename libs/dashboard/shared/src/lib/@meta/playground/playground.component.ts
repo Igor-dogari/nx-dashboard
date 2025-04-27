@@ -24,9 +24,9 @@ export class PlaygroundComponent {
   exampleUrl = input<string>();
   exampleName = input<string>();
 
-  htmlSrc: string;
-  tsSrc: string;
-  cssSrc: string;
+  htmlSrc!: string;
+  tsSrc!: string;
+  cssSrc!: string;
   alreadyLoaded = false;
 
   readonly _markdownRef = viewChild<any>('markdownRef');

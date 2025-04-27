@@ -2,16 +2,14 @@ import {
   Component,
   ElementRef,
   input,
-  viewChild,
   AfterContentInit,
   inject,
   PLATFORM_ID,
   booleanAttribute,
   OnChanges,
   SimpleChanges,
-  OnDestroy, OnInit
+  OnDestroy
 } from '@angular/core';
-import { isPlatformServer } from '@angular/common';
 
 @Component({
   selector: 'emr-marquee',
@@ -51,10 +49,6 @@ export class MarqueeComponent implements AfterContentInit, OnChanges, OnDestroy 
   }
 
   ngAfterContentInit(): void {
-    if (isPlatformServer(this._platformId)) {
-      return;
-    }
-
     this._intersectionObserver = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         if (!this.isInView) {

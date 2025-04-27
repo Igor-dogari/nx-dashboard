@@ -18,7 +18,7 @@ import {
 export class PinInputDirective implements OnInit {
   private _elementRef = inject(ElementRef);
   private _renderer = inject(Renderer2);
-  private _placeholder: string;
+  private _placeholder!: string;
 
   index = input<number>();
   acceptOnly = input<RegExp>();

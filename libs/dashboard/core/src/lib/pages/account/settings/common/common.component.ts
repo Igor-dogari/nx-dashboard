@@ -27,7 +27,7 @@ export interface NavItem {
 export class CommonComponent implements OnInit {
   router = inject(Router);
   location = inject(Location);
-  activeLinkId: string | null;
+  activeLinkId!: string | null;
   navItems: NavItem[] = [
     {
       name: 'My Profile',

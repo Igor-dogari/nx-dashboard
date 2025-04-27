@@ -5,7 +5,7 @@ import { SidebarNavComponent } from '../sidebar-nav/sidebar-nav.component';
 import { SidebarNavStore } from '../sidebar.store';
 
 export class SidebarNavItem {
-  active: boolean;
+  active!: boolean;
 }
 
 @Component({

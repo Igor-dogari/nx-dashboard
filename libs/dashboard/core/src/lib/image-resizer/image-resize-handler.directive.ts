@@ -8,7 +8,7 @@ import {
   PLATFORM_ID,
   Renderer2
 } from '@angular/core';
-import { DOCUMENT, isPlatformServer } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { fromEvent, throttleTime } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
@@ -24,8 +24,8 @@ export class ImageResizeHandlerDirective {
   private _destroyRef = inject(DestroyRef);
   private _document = inject(DOCUMENT);
   private _resizing = false;
-  private _width: number;
-  private _clientX: number;
+  private _width!: number;
+  private _clientX!: number;
 
   maxWidth = input.required({
     transform: numberAttribute
@@ -39,10 +39,6 @@ export class ImageResizeHandlerDirective {
   readonly dimensionsChanged = output();
 
   ngOnInit() {
-    if (isPlatformServer(this._platformId)) {
-      return;
-    }
-
     const targetElement = this.targetElement();
 
     this._ngZone.runOutsideAngular(() => {

@@ -9,7 +9,7 @@ const LOCAL_STORAGE_KEY = 'emr-admin';
 export class ThemeManagerService {
   private _document = inject(DOCUMENT);
   private _window = this._document.defaultView;
-  private _colorScheme: 'dark' | 'light';
+  private _colorScheme!: 'dark' | 'light';
 
   constructor() {
     afterNextRender(() => {

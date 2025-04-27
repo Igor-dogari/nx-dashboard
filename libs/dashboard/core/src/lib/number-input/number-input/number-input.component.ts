@@ -53,8 +53,8 @@ export class NumberInputComponent implements MatFormFieldControl<any>, ControlVa
     optional: true,
   });
   private _elementRef = inject(ElementRef);
-  readonly disableAutomaticLabeling: boolean;
-  readonly placeholder: string;
+  readonly disableAutomaticLabeling!: boolean;
+  readonly placeholder!: string;
 
   private _input = viewChild.required<ElementRef>('input');
   readonly _decreaseControlRef = contentChild<DecreaseControlDirective>(DecreaseControlDirective);

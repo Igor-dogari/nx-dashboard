@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { libAuthGuard } from '@shared';
 
 export const routes: Routes = [
   {
@@ -8,7 +9,8 @@ export const routes: Routes = [
   },
   {
     path: 'pages',
-    loadChildren: () => import('@core/pages').then(m => m.PagesModule)
+    loadChildren: () => import('@core/pages').then(m => m.PagesModule),
+    canActivate: [libAuthGuard]
   },
   {
     path: 'auth',

@@ -47,7 +47,7 @@ export class AssistantSearchComponent implements OnDestroy {
   private _viewContainerRef = inject(ViewContainerRef);
   private _elementRef = inject(ElementRef);
   protected _isAttached = false;
-  private _overlayRef: OverlayRef;
+  private _overlayRef!: OverlayRef;
   protected searchText = '';
 
   ngOnDestroy(): void {

@@ -1,7 +1,6 @@
 import { booleanAttribute, Component, ElementRef, inject, input, Input, OnInit, PLATFORM_ID } from '@angular/core';
 import { NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs';
-import { isPlatformServer } from '@angular/common';
 import { CdkScrollable } from '@angular/cdk/overlay';
 
 @Component({
@@ -30,10 +29,6 @@ export class LayoutBodyComponent implements OnInit {
       .pipe(filter((event) => event instanceof NavigationStart))
       .subscribe(() => {
         if (!this.autoscrollToTop()) {
-          return;
-        }
-
-        if (isPlatformServer(this._platformId)) {
           return;
         }
 

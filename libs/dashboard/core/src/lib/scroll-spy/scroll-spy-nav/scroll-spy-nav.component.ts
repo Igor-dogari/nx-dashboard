@@ -8,7 +8,7 @@ import {
   PLATFORM_ID,
   contentChildren
 } from '@angular/core';
-import { DOCUMENT, isPlatformServer } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { debounceTime, fromEvent } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { SCROLL_SPY_NAV } from '../types';
@@ -39,14 +39,10 @@ export class ScrollSpyNavComponent implements AfterContentInit {
 
   readonly _items = contentChildren(ScrollSpyOnComponent);
 
-  protected _activeId: string;
-  private _elementToScroll: HTMLElement;
+  protected _activeId!: string;
+  private _elementToScroll!: HTMLElement;
 
   ngAfterContentInit() {
-    if (isPlatformServer(this._platformId)) {
-      return;
-    }
-
     this._elementToScroll = this._document.querySelector('.emr-layout-body:has(:not(.emr-layout-body))') as HTMLElement;
 
     if (this._elementToScroll) {
@@ -91,7 +87,7 @@ export class ScrollSpyNavComponent implements AfterContentInit {
   }
 
   private _findActiveItem() {
-    for (let item of this._items()) {
+    for (const item of this._items()) {
       const targetElement = this._document.querySelector('#' + item.targetId()) as HTMLElement;
 
       if (targetElement) {

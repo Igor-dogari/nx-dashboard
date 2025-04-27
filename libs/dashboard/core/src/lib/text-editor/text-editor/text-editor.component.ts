@@ -62,7 +62,7 @@ export class TextEditorComponent {
   private _imageBubbleMenu = viewChild.required<ElementRef>('imageBubbleMenu');
   private _floatingMenu = viewChild.required<ElementRef>('floatingMenu');
   protected _value = '';
-  protected editor: Editor;
+  protected editor!: Editor;
 
   content = input('');
   extensions = input([]);

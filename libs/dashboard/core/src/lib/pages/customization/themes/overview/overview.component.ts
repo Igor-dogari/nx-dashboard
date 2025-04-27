@@ -18,7 +18,7 @@ export class OverviewComponent {
     'magenta-violet': 'magenta-violet.css',
     'cyan-orange': 'cyan-orange.css',
   };
-  selectedThemeName: string;
+  selectedThemeName!: string;
 
   loadTheme(themeName: string) {
     const head  = this._document.getElementsByTagName('head')[0];

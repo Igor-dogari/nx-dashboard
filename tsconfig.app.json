@@ -10,8 +10,6 @@
   },
   "files": [
     "apps/elementar/src/main.ts",
-    "apps/elementar/src/main.server.ts",
-    "apps/elementar/src/server.ts"
   ],
   "include": [
     "apps/elementar/src/**/*.d.ts"

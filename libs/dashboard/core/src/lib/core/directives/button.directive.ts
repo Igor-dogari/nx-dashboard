@@ -12,7 +12,6 @@ import {
 import { MatProgressSpinner } from '@angular/material/progress-spinner';
 import { ThemePalette } from '@angular/material/core';
 import { MatButton } from '@angular/material/button';
-import { isPlatformServer } from '@angular/common';
 
 @Directive({
   selector: '[emrButtonLoading]',
@@ -36,10 +35,6 @@ export class ButtonDirective implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (!changes['loading']) {
-      return;
-    }
-
-    if (isPlatformServer(this._platformId)) {
       return;
     }
 
