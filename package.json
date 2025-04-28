@@ -17,15 +17,14 @@
     "angular admin template"
   ],
   "scripts": {
-    "graph": "npx nx graph",
-    "start": "nx run elementar:serve:development",
-    "affected": "npx nx affected --target=build",
-    "test": "nx test",
-    "build": "nx build",
-    "build:prod": "nx build --configuration production",
-    "serve:ssr:elementar": "node dist/elementar/server/server.mjs",
-    "changelog": "auto-changelog -p && git add CHANGELOG.md",
-    "prepare": "husky"
+    "graph": "bun nx graph",
+    "start": "bun nx run elementar:serve:development",
+    "affected": "bun nx affected --target=build",
+    "test": "bun nx test",
+    "build": "bun nx build",
+    "build:prod": "bun nx build --configuration production",
+    "prepare": "husky",
+    "generate-index": "bun run libs/dashboard/shared/src/lib/utils/generate-lib-index.ts"
   },
   "private": true,
   "dependencies": {
