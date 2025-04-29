@@ -10,7 +10,7 @@ export const routes: Routes = [
   {
     path: 'pages',
     loadChildren: () => import('@core/pages').then(m => m.PagesModule),
-    canActivate: [libAuthGuard]
+    // canActivate: [libAuthGuard]
   },
   {
     path: 'auth',

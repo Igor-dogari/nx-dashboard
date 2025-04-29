@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Content Fade',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/content-fade-overview.component').then(c => c.ContentFadeOverviewComponent)
   }
 ];
 

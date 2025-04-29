@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Checkbox',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/checkbox-overview.component').then(c => c.CheckboxOverviewComponent)
   }
 ];
 

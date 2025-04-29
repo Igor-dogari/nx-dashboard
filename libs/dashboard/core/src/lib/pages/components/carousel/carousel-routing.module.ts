@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Carousel',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/carousel-overview.component').then(c => c.CarouselOverviewComponent)
   }
 ];
 

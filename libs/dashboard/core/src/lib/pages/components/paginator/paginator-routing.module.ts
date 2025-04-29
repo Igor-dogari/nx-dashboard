@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Paginator',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/paginator-overview.component').then(c => c.PaginatorOverviewComponent)
   }
 ];
 

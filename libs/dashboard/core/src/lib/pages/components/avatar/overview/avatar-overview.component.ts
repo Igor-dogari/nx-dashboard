@@ -1,0 +1,46 @@
+import { Component } from '@angular/core';
+import { PlaygroundComponent } from '@shared';
+import { BasicAvatarExampleComponent } from '../_examples/basic-avatar-example/basic-avatar-example.component';
+import { AvatarSizesExampleComponent } from '../_examples/avatar-sizes-example/avatar-sizes-example.component';
+import {
+  AvatarWithImagesExampleComponent
+} from '../_examples/avatar-with-images-example/avatar-with-images-example.component';
+import {
+  AvatarWithIconsExampleComponent
+} from '../_examples/avatar-with-icons-example/avatar-with-icons-example.component';
+import { GroupedAvatarsExampleComponent } from '../_examples/grouped-avatars-example/grouped-avatars-example.component';
+import {
+  GroupedAndTotalAvatarsExampleComponent
+} from '../_examples/grouped-and-total-avatars-example/grouped-and-total-avatars-example.component';
+import {
+  AvatarPresenceIndicatorExampleComponent
+} from '../_examples/avatar-presence-indicator-example/avatar-presence-indicator-example.component';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
+import {
+  AvatarAutomaticColorExampleComponent
+} from '../_examples/avatar-automatic-color-example/avatar-automatic-color-example.component';
+import { AvatarDicebearExampleComponent } from '../_examples/avatar-dicebear-example/avatar-dicebear-example.component';
+
+@Component({
+    selector: 'app-overview',
+    imports: [
+        PlaygroundComponent,
+        BasicAvatarExampleComponent,
+        AvatarSizesExampleComponent,
+        AvatarWithImagesExampleComponent,
+        AvatarWithIconsExampleComponent,
+        GroupedAvatarsExampleComponent,
+        GroupedAndTotalAvatarsExampleComponent,
+        AvatarPresenceIndicatorExampleComponent,
+        PageComponent,
+        PageContentDirective,
+        AvatarAutomaticColorExampleComponent,
+        AvatarDicebearExampleComponent
+    ],
+    templateUrl: './avatar-overview.component.html',
+    styleUrl: './avatar-overview.component.scss'
+})
+export class AvatarOverviewComponent {
+
+}

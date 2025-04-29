@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Color Picker',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/color-picker-overview.component').then(c => c.ColorPickerOverviewComponent)
   }
 ];
 

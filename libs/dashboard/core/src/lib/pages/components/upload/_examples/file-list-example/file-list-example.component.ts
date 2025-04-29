@@ -1,16 +1,7 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
+import { FileInterface } from '@models';
 import { FileComponent, FileControlComponent, FileListComponent } from '@core';
-
-export interface File {
-  name: string,
-  state: 'uploaded' | 'uploading' | 'error',
-  processing?: boolean,
-  errorMessage?: string,
-  remainingTime?: string,
-  size?: string,
-  progress?: number
-}
 
 @Component({
   selector: 'app-file-list-example',
@@ -24,7 +15,7 @@ export interface File {
   styleUrl: './file-list-example.component.scss'
 })
 export class FileListExampleComponent {
-  fileList: File[] = [
+  fileList: FileInterface[] = [
     {
       name: 'Annual Report.docx',
       state: 'uploaded',

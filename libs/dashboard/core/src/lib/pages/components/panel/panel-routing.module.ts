@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Panel',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/panel-overview.component').then(c => c.PanelOverviewComponent)
   }
 ];
 

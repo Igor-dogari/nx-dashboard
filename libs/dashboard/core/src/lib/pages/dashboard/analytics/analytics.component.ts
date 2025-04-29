@@ -3,6 +3,7 @@ import { WidgetInterface, WidgetConfigInterface } from '@models';
 import { DashboardComponent } from '@core';
 
 @Component({
+  selector: 'app-analytics',
   imports: [DashboardComponent],
   templateUrl: './analytics.component.html',
   styleUrl: './analytics.component.scss',

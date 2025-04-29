@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./common/common.component').then(c => c.CommonComponent),
+    loadComponent: () => import('./common/app-common.component').then(c => c.AppCommonComponent),
     children: [
       {
         path: 'my-profile',
@@ -19,7 +19,7 @@ const routes: Routes = [
       {
         path: 'notifications',
         title: 'Notifications',
-        loadComponent: () => import('./notifications/notifications.component').then(c => c.NotificationsComponent),
+        loadComponent: () => import('./notifications/settings-notifications.component').then(c => c.SettingsNotificationsComponent),
       },
       {
         path: 'billing',

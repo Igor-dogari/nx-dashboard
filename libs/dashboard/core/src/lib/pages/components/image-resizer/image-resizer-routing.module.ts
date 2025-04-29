@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./overview/overview.component').then(m => m.OverviewComponent),
+    loadComponent: () => import('./overview/image-resizer-overview.component').then(m => m.ImageResizerOverviewComponent),
   }
 ];
 

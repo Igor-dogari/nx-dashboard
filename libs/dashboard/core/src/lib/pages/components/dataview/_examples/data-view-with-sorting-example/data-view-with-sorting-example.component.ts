@@ -5,7 +5,7 @@ import { Sort } from '@angular/material/sort';
 import { MatRadioButton, MatRadioGroup } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 
-export interface PeriodicElement {
+interface PeriodicElement {
   name: string;
   position: number;
   weight: number;

@@ -3,7 +3,7 @@ import { CdkDrag, CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk
 import { MatTable, MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 
-export interface PeriodicElement {
+interface PeriodicElement {
   name: string;
   position: number;
   weight: number;

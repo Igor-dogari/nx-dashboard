@@ -2,7 +2,7 @@ import { AfterViewInit, Component, viewChild } from '@angular/core';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 
-export interface PeriodicElement {
+interface PeriodicElement {
   name: string;
   position: number;
   weight: number;

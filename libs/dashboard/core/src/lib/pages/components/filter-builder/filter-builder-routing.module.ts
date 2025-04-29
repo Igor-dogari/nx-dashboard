@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Filter Builder',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/filter-builder-overview.component').then(c => c.FilterBuilderOverviewComponent)
   }
 ];
 

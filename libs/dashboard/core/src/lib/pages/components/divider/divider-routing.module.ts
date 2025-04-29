@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Divider',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/divider-overview.component').then(c => c.DividerOverviewComponent)
   }
 ];
 

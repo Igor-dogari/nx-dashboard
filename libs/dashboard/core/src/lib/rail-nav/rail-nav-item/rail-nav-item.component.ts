@@ -1,6 +1,6 @@
 import { Component, HostListener, inject, input } from '@angular/core';
 import { v7 as uuid } from 'uuid';
-import { RAIL_NAV, RailNavComponent } from '../types';
+import { RAIL_NAV, RailNavComponent } from '@core';
 
 @Component({
   selector: 'emr-rail-nav-item,[emr-rail-nav-item]',

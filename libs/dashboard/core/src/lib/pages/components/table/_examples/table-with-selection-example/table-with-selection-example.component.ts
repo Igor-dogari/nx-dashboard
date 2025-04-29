@@ -3,7 +3,7 @@ import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SelectionModel } from '@angular/cdk/collections';
 
-export interface PeriodicElement {
+interface PeriodicElement {
   name: string;
   position: number;
   weight: number;

@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Number Input',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/number-input-overview.component').then(c => c.NumberInputOverviewComponent)
   }
 ];
 

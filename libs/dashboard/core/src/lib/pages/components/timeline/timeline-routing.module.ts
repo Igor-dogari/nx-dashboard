@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Timeline',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/timeline-overview.component').then(c => c.TimelineOverviewComponent)
   }
 ];
 

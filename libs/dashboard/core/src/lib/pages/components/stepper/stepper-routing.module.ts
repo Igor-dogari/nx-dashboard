@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Stepper',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/stepper-overview.component').then(c => c.StepperOverviewComponent)
   }
 ];
 

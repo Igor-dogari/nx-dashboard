@@ -4,7 +4,7 @@ import {
 } from '@angular/material/table';
 import { CurrencyPipe } from '@angular/common';
 
-export interface Transaction {
+interface Transaction {
   item: string;
   cost: number;
 }

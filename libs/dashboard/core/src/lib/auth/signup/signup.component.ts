@@ -6,6 +6,8 @@ import { RouterLink } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { HorizontalDividerComponent } from '@core';
 import { LogoComponent } from '@core';
+import { NgOptimizedImage } from '@angular/common';
+import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   imports: [
@@ -16,17 +18,23 @@ import { LogoComponent } from '@core';
     RouterLink,
     ReactiveFormsModule,
     HorizontalDividerComponent,
-    LogoComponent
+    LogoComponent,
+    NgOptimizedImage,
   ],
   templateUrl: './signup.component.html',
-  styleUrl: './signup.component.scss'
+  styleUrl: './signup.component.scss',
 })
 export class SignupComponent {
+  public auth = inject(AuthService);
+
   private _formBuilder = inject(FormBuilder);
 
   form = this._formBuilder.group({
     name: this._formBuilder.control('', [Validators.required]),
-    email: this._formBuilder.control('', [Validators.required, Validators.email]),
+    email: this._formBuilder.control('', [
+      Validators.required,
+      Validators.email,
+    ]),
     password: this._formBuilder.control('', [Validators.required]),
   });
 }

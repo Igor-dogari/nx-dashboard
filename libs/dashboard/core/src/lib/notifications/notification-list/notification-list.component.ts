@@ -9,7 +9,7 @@ import {
 import { NgTemplateOutlet } from '@angular/common';
 import { NotificationDefDirective } from '../notification-def.directive';
 import { NotificationControlsDefDirective } from '../notification-controls-def.directive';
-import { Notification } from '../types';
+import { Notification } from '../notification.interface';
 
 @Component({
   selector: 'emr-notification-list',

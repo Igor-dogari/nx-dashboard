@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Pin Input',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/pin-input-overview.component').then(c => c.PinInputOverviewComponent)
   }
 ];
 

@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'List',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/list-overview.component').then(c => c.ListOverviewComponent)
   }
 ];
 

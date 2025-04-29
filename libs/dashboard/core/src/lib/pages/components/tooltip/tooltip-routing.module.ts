@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Tooltip',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/tooltip-overview.component').then(c => c.TooltipOverviewComponent)
   }
 ];
 

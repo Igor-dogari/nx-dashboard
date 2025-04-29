@@ -18,7 +18,7 @@ import { Directionality } from '@angular/cdk/bidi';
 import { TemplatePortal } from '@angular/cdk/portal';
 import { _getEventTarget } from '@angular/cdk/platform';
 import { PopoverTrigger, PopoverPosition } from './types';
-import { PositionManager } from '@core';
+import { OverlayPositionManager } from '@core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Directive({
@@ -123,7 +123,7 @@ export class PopoverTriggerForDirective implements OnInit, OnDestroy {
   private _close() {
     clearTimeout(this._closeTimeout);
     this.closed.emit();
-    this._overlayRef!?.detach();
+    this._overlayRef?.detach();
   }
 
   private _destroyOverlay() {
@@ -181,7 +181,7 @@ export class PopoverTriggerForDirective implements OnInit, OnDestroy {
   }
 
   private _getOverlayPositions(): ConnectedPosition[] {
-    return new PositionManager().build(this.position());
+    return new OverlayPositionManager().build(this.position());
   }
 
   private _setType() {

@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Badge',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/badge-overview.component').then(c => c.BadgeOverviewComponent)
   }
 ];
 

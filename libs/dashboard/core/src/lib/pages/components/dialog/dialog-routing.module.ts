@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Dialog',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/dialog-overview.component').then(c => c.DialogOverviewComponent)
   }
 ];
 

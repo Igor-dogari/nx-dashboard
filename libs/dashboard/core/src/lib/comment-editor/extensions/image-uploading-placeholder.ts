@@ -1,9 +1,9 @@
 import { mergeAttributes, Node } from '@tiptap/core'
 import { Injector } from '@angular/core';
-import { AngularNodeViewRenderer } from './angular-node-view-renderer';
+import { CommentEditorAngularNodeViewRenderer } from './comment-editor-angular-node-view-renderer';
 import {
-  ImageUploadingPlaceholderComponent
-} from './image-uploading-placeholder/image-uploading-placeholder.component';
+  CommentEditorImageUploadingPlaceholderComponent
+} from './image-uploading-placeholder/comment-editor-image-uploading-placeholder.component';
 
 declare module '@tiptap/core' {
   interface Commands<ReturnType> {
@@ -51,7 +51,7 @@ const ImageUploadingPlaceholderExtension = (injector: Injector, options: ImageUp
       }
     },
     addNodeView() {
-      return AngularNodeViewRenderer(ImageUploadingPlaceholderComponent, { injector });
+      return CommentEditorAngularNodeViewRenderer(CommentEditorImageUploadingPlaceholderComponent, { injector });
     },
     parseHTML() {
       return [

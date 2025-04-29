@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Radio',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/radio-overview.component').then(c => c.RadioOverviewComponent)
   }
 ];
 

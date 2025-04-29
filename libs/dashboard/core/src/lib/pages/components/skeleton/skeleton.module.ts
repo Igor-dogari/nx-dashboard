@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SkeletonRoutingModule } from './skeleton-routing.module';
+import { ComponentsSkeletonRoutingModule } from './components-skeleton-routing.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    SkeletonRoutingModule
+    ComponentsSkeletonRoutingModule
   ]
 })
 export class SkeletonModule { }

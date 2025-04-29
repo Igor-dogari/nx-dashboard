@@ -5,7 +5,7 @@ import {
   AlertCloseDirective,
   AlertComponent,
   AlertTitleDirective
-} from 'libs/dashboard/core/src/lib/alert';
+} from '@core';
 
 @Component({
   selector: 'app-alert-actions-example',

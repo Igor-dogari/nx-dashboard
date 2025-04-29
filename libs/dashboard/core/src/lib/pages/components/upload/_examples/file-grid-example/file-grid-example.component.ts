@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { File } from '../file-list-example/file-list-example.component';
+import { FileInterface } from '@models';
 import { FilesGridComponent, GridFileComponent } from '@core';
 
 @Component({
@@ -12,7 +12,7 @@ import { FilesGridComponent, GridFileComponent } from '@core';
   styleUrl: './file-grid-example.component.scss'
 })
 export class FileGridExampleComponent {
-  fileList: File[] = [
+  fileList: FileInterface[] = [
     {
       name: 'Annual Report.docx',
       state: 'uploaded',

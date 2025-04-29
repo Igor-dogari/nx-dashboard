@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Alert',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/alert-overview.component').then(c => c.AlertOverviewComponent)
   }
 ];
 

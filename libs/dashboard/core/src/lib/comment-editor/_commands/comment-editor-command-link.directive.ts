@@ -2,7 +2,7 @@ import { DestroyRef, Directive, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { COMMENT_EDITOR, CommentEditor } from '../types';
-import { LinkDialog } from '../link/link.dialog';
+import { CommentEditorLinkDialog } from '../link/comment-editor-link.dialog';
 
 @Directive({
   selector: '[emrCommentEditorCommandLink]',
@@ -21,7 +21,7 @@ export class CommentEditorCommandLinkDirective {
 
   protected onClick(): void {
     this.setLinkActive = true;
-    const dialogRef = this._dialog.open(LinkDialog, {
+    const dialogRef = this._dialog.open(CommentEditorLinkDialog, {
       data: {
         linkUrl: (this.commentEditor.api.editor().getAttributes('link') as HTMLLinkElement).href
       }

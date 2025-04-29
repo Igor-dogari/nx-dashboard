@@ -6,7 +6,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { MatInput } from '@angular/material/input';
 import { map, Observable, startWith } from 'rxjs';
 
-export interface User {
+interface User {
   name: string;
 }
 

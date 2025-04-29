@@ -2,7 +2,7 @@ import { DestroyRef, Directive, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { TEXT_EDITOR, TextEditor } from '../types';
-import { LinkDialog } from '../link/link.dialog';
+import { TextEditorLinkDialog } from '../link/text-editor-link.dialog';
 
 @Directive({
   selector: '[emrTextEditorCommandLink]',
@@ -21,7 +21,7 @@ export class TextEditorCommandLinkDirective {
 
   protected onClick(): void {
     this.setLinkActive = true;
-    const dialogRef = this._dialog.open(LinkDialog, {
+    const dialogRef = this._dialog.open(TextEditorLinkDialog, {
       data: {
         linkUrl: (this.textEditor.api.editor().getAttributes('link') as HTMLLinkElement).href
       }

@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Command Bar',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/command-bar-overview.component').then(c => c.CommandBarOverviewComponent)
   }
 ];
 

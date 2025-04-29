@@ -8,11 +8,11 @@ const routes: Routes = [
   },
   {
     path: 'skeleton',
-    loadChildren: () => import('./skeleton/skeleton.module').then(m => m.SkeletonModule)
+    loadChildren: () => import('./skeleton/store-skeleton.module').then(m => m.StoreSkeletonModule)
   },
   {
     path: 'sidebar-widgets',
-    loadChildren: () => import('./sidebar-widgets/sidebar.module').then(m => m.SidebarModule)
+    loadChildren: () => import('./sidebar-widgets/sidebar-widgets.module').then(m => m.SidebarWidgetsModule)
   },
   {
     path: 'notifications',

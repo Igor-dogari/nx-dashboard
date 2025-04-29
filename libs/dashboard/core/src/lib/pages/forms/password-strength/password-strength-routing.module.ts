@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Password Strength',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/password-strength-overview.component').then(c => c.PasswordStrengthOverviewComponent)
   }
 ];
 

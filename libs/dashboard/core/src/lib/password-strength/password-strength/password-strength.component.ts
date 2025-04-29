@@ -10,8 +10,8 @@ import {
   SimpleChanges
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR, UntypedFormControl, ValidatorFn, Validators } from '@angular/forms';
-import { Criteria } from '../enum';
-import { PasswordStrengthValidator } from '../validator';
+import { Criteria } from '@core';
+import { PasswordStrengthValidator } from '@core';
 import { RegExpValidator } from '../validator/regexp.class';
 import { MatProgressBar } from '@angular/material/progress-bar';
 

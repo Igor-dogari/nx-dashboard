@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./common/common.component').then(c => c.CommonComponent),
+    loadComponent: () => import('./common/emr-common.component').then(c => c.EmrCommonComponent),
     children: [
       {
         path: '',
@@ -329,7 +329,7 @@ const routes: Routes = [
       },
       {
         path: 'account/notifications',
-        loadComponent: () => import('./account/notifications/notifications.component').then(m => m.NotificationsComponent)
+        loadComponent: () => import('./account/notifications/account-notifications.component').then(m => m.AccountNotificationsComponent)
       },
       {
         path: 'account/settings',

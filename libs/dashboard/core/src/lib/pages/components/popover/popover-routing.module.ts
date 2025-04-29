@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Popover',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/popover-overview.component').then(c => c.PopoverOverviewComponent)
   }
 ];
 

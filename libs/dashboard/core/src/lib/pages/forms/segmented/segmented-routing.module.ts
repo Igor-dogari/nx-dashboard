@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Segmented',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/segmented-overview.component').then(c => c.SegmentedOverviewComponent)
   }
 ];
 

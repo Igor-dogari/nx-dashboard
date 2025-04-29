@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Phone Input',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/phone-input-overview.component').then(c => c.PhoneInputOverviewComponent)
   }
 ];
 

@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Incidents',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/incidents-overview.component').then(c => c.IncidentsOverviewComponent)
   }
 ];
 

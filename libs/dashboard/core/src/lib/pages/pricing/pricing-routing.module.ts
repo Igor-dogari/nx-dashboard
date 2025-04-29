@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: 'basic',
     title: 'Basic Pricing',
-    loadComponent: () => import('./basic/basic.component').then(c => c.BasicComponent)
+    loadComponent: () => import('./basic/pricing-basic.component').then(c => c.PricingBasicComponent)
   },
   {
     path: 'membership-plans',

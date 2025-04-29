@@ -8,7 +8,7 @@ import {
   OverlayRef
 } from '@angular/cdk/overlay';
 import { DOCUMENT } from '@angular/common';
-import { OverlayPosition, PositionManager } from '@core';
+import { OverlayPosition, OverlayPositionManager } from '@core';
 
 export abstract class BaseChartTooltip {
   protected _tooltipOrigin!: HTMLElement;
@@ -97,6 +97,6 @@ export abstract class BaseChartTooltip {
   }
 
   protected _getOverlayPositions(): ConnectedPosition[] {
-    return (new PositionManager()).build(this.getTooltipPosition());
+    return (new OverlayPositionManager()).build(this.getTooltipPosition());
   }
 }

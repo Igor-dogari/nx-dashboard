@@ -14,15 +14,7 @@ export default [
         'error',
         {
           enforceBuildableLibDependency: true,
-          allow: [
-            '@core',
-            '@core/auth',
-            '@core/error',
-            '@core/pages',
-            '@models',
-            '@shared',
-            '^.*/eslint(\\.base)?\\.config\\.[cm]?js$',
-          ],
+          allow: ['@*', '^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
             {
               sourceTag: '*',

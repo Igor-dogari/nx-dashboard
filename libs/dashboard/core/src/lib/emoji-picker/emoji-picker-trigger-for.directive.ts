@@ -21,7 +21,7 @@ import { Directionality } from '@angular/cdk/bidi';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { _getEventTarget } from '@angular/cdk/platform';
 import { TemplatePortal } from '@angular/cdk/portal';
-import { PositionManager } from '@core';
+import { OverlayPositionManager } from '@core';
 import { EMOJI_PICKER_TRIGGER_FOR } from './types';
 
 @Directive({
@@ -67,7 +67,7 @@ export class EmojiPickerTriggerForDirective {
 
   private _close() {
     this.closed.emit();
-    this._overlayRef!?.detach();
+    this._overlayRef?.detach();
   }
 
   private _subscribeToOutsideClicks() {
@@ -124,6 +124,6 @@ export class EmojiPickerTriggerForDirective {
   }
 
   private _getOverlayPositions(): ConnectedPosition[] {
-    return (new PositionManager()).build(this.position());
+    return (new OverlayPositionManager()).build(this.position());
   }
 }

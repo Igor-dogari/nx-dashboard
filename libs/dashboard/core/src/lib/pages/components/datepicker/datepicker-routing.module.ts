@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Date Picker',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/datepicker-overview.component').then(c => c.DatepickerOverviewComponent)
   }
 ];
 

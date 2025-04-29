@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {
   AlertComponent,
   AlertTitleDirective,
-} from 'libs/dashboard/core/src/lib/alert';
+} from '@core';
 
 @Component({
   selector: 'app-alert-with-title-example',

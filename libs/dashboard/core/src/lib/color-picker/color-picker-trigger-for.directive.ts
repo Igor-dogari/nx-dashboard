@@ -18,7 +18,7 @@ import { Directionality } from '@angular/cdk/bidi';
 import { TemplatePortal } from '@angular/cdk/portal';
 import { Subject, takeUntil } from 'rxjs';
 import { _getEventTarget } from '@angular/cdk/platform';
-import { PositionManager } from './position-manager';
+import { ColorPickerPositionManager } from './color-picker-position-manager';
 import { ColorPickerPosition } from './properties';
 
 @Directive({
@@ -87,7 +87,7 @@ export class ColorPickerTriggerForDirective implements OnDestroy{
 
   private _close() {
     this.closed.emit();
-    this._overlayRef!?.detach();
+    this._overlayRef?.detach();
   }
 
   private _destroyOverlay() {
@@ -144,7 +144,7 @@ export class ColorPickerTriggerForDirective implements OnDestroy{
   }
 
   private _getOverlayPositions(): ConnectedPosition[] {
-    return (new PositionManager()).build(this.position());
+    return (new ColorPickerPositionManager()).build(this.position());
   }
 
   private _setType() {

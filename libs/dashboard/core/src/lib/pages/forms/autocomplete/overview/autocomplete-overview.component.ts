@@ -1,0 +1,52 @@
+import { Component } from '@angular/core';
+import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { PlaygroundComponent } from '@shared';
+import { map, Observable, startWith } from 'rxjs';
+import {
+  AutocompleteFilterExampleComponent
+} from '../_examples/autocomplete-filter-example/autocomplete-filter-example.component';
+import {
+  SimpleAutocompleteExampleComponent
+} from '../_examples/simple-autocomplete-example/simple-autocomplete-example.component';
+import {
+  SeparateControlsAndDisplayValuesExampleComponent
+} from '../_examples/separate-controls-and-display-values-example/separate-controls-and-display-values-example.component';
+import {
+  AutoHighlightFirstPersonExampleComponent
+} from '../_examples/auto-highlight-first-person-example/auto-highlight-first-person-example.component';
+import { OptionGroupsExampleComponent } from '../_examples/option-groups-example/option-groups-example.component';
+import { PageComponent } from '@shared';
+import { PageContentDirective } from '@shared';
+
+@Component({
+  imports: [
+    ReactiveFormsModule,
+    PlaygroundComponent,
+    AutocompleteFilterExampleComponent,
+    SimpleAutocompleteExampleComponent,
+    SeparateControlsAndDisplayValuesExampleComponent,
+    AutoHighlightFirstPersonExampleComponent,
+    OptionGroupsExampleComponent,
+    PageComponent,
+    PageContentDirective
+  ],
+  templateUrl: './autocomplete-overview.component.html',
+  styleUrl: './autocomplete-overview.component.scss'
+})
+export class AutocompleteOverviewComponent {
+  myControl = new FormControl('');
+  options: string[] = ['One', 'Two', 'Three'];
+  filteredOptions!: Observable<string[]>;
+
+  ngOnInit() {
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value || '')),
+    );
+  }
+
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+  }
+}

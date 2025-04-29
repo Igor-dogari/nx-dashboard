@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Table',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/table-overview.component').then(c => c.TableOverviewComponent)
   }
 ];
 

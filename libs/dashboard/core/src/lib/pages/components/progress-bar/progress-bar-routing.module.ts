@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Progress Bar',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/progress-bar-overview.component').then(c => c.ProgressBarOverviewComponent)
   }
 ];
 

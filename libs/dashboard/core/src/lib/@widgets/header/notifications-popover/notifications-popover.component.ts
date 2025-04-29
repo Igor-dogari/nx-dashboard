@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InviteToEditFilesInFolderNotification, MentionedInCommentNotification } from '../../notifications';
+import { InviteToEditFilesInFolderNotification, MentionedInCommentNotification } from '@core';
 import { RouterLink } from '@angular/router';
 import { MatAnchor, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';

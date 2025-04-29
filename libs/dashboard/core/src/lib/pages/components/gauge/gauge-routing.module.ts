@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Gauge',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/gauge-overview.component').then(c => c.GaugeOverviewComponent)
   }
 ];
 

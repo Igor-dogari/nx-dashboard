@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Bottom Sheet',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/bottom-sheet-overview.component').then(c => c.BottomSheetOverviewComponent)
   }
 ];
 

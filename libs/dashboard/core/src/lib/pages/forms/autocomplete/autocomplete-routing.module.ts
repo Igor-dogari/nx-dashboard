@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Autocomplete',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/autocomplete-overview.component').then(c => c.AutocompleteOverviewComponent)
   }
 ];
 

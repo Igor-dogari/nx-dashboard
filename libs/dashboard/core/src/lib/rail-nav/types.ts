@@ -7,7 +7,3 @@ export interface RailNavAPI {
   activateItem: (key: any) => void;
   isActive: (key: any) => boolean;
 }
-
-export interface RailNavComponent {
-  api: RailNavAPI;
-}

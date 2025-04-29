@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MyProfileComponent } from '../account/settings/my-profile/my-profile.component';
 import { authGuardFn } from '@auth0/auth0-angular';
+import { MyProfileComponent } from '@core/pages';
 
 const routes: Routes = [
   {
@@ -18,7 +18,27 @@ const routes: Routes = [
     path: 'basic',
     title: 'Basic Dashboard',
     loadComponent: () =>
-      import('./basic/basic.component').then((c) => c.BasicComponent),
+      import('./basic/dashboard-basic.component').then((c) => c.DashboardBasicComponent),
+  },
+  {
+    path: 'ecommerce',
+    title: 'Ecommerce Dashboard',
+    loadComponent: () =>
+      import('./ecommerce/ecommerce.component').then(
+        (c) => c.EcommerceComponent,
+      ),
+  },
+  {
+    path: 'finance',
+    title: 'Finance Dashboard',
+    loadComponent: () =>
+      import('./finance/finance.component').then((c) => c.FinanceComponent),
+  },
+  {
+    path: 'explore',
+    title: 'Explore Dashboard',
+    loadComponent: () =>
+      import('./explore/explore.component').then((c) => c.ExploreComponent),
   },
   {
     path: 'ecommerce',

@@ -24,7 +24,7 @@
     "build": "bun nx build",
     "build:prod": "bun nx build --configuration production",
     "prepare": "husky",
-    "generate-index": "bun run libs/dashboard/shared/src/lib/utils/generate-lib-index.ts"
+    "generate-index": "bun run libs/dashboard/shared/src/lib/utils/generate-all-lib-indexes.ts"
   },
   "private": true,
   "dependencies": {

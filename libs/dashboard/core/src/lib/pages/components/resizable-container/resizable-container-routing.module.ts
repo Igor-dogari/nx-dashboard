@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Resizable Container',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/resizable-container-overview.component').then(c => c.ResizableContainerOverviewComponent)
   }
 ];
 

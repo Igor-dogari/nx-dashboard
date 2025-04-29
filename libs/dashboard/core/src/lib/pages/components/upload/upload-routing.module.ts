@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Upload',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/upload-overview.component').then(c => c.UploadOverviewComponent)
   }
 ];
 

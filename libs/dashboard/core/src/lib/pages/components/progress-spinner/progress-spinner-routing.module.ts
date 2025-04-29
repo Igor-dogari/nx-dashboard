@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     title: 'Progress Spinner',
-    loadComponent: () => import('./overview/overview.component').then(c => c.OverviewComponent)
+    loadComponent: () => import('./overview/progress-spinner-overview.component').then(c => c.ProgressSpinnerOverviewComponent)
   }
 ];
 

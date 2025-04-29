@@ -2,7 +2,7 @@ import { DestroyRef, Directive, inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatDialog } from '@angular/material/dialog';
 import { COMMENT_EDITOR, CommentEditor } from '../types';
-import { YoutubeDialog } from '../youtube/youtube.dialog';
+import { CommentEditorYoutubeDialog } from '../youtube/comment-editor-youtube.dialog';
 
 @Directive({
   selector: '[emrCommentEditorCommandYoutube]',
@@ -19,7 +19,7 @@ export class CommentEditorCommandYoutubeDirective {
   private _destroyRef = inject(DestroyRef);
 
   protected onClick(): void {
-    const dialogRef = this._dialog.open(YoutubeDialog, {
+    const dialogRef = this._dialog.open(CommentEditorYoutubeDialog, {
       data: {
         linkUrl: (this.commentEditor.api.editor().getAttributes('iframe') as HTMLIFrameElement).src
       }
