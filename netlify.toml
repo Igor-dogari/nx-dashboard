@@ -1,0 +1,9 @@
+[build]
+  command = "nx build elementar"
+  publish = "dist/apps/elementar"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+
+  [plugins.inputs]
+  packagePath = "apps/elementar"
