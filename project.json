@@ -2,11 +2,6 @@
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "name": "elementar",
   "projectType": "application",
-  "generators": {
-    "@schematics/angular:component": {
-      "style": "scss"
-    }
-  },
   "sourceRoot": "apps",
   "prefix": "app",
   "targets": {
@@ -46,17 +41,22 @@
         "styles": [
           "apps/elementar/src/styles.scss",
           {
-            "input": "apps/elementar/src/styles/rose-red.scss",
+            "input": "libs/dashboard/core/src/lib/styles/themes/default.scss",
+            "inject": false,
+            "bundleName": "default"
+          },
+          {
+            "input": "libs/dashboard/core/src/lib/styles/themes/rose-red.scss",
             "inject": false,
             "bundleName": "rose-red"
           },
           {
-            "input": "apps/elementar/src/styles/magenta-violet.scss",
+            "input": "libs/dashboard/core/src/lib/styles/themes/magenta-violet.scss",
             "inject": false,
             "bundleName": "magenta-violet"
           },
           {
-            "input": "apps/elementar/src/styles/cyan-orange.scss",
+            "input": "libs/dashboard/core/src/lib/styles/themes/cyan-orange.scss",
             "inject": false,
             "bundleName": "cyan-orange"
           }

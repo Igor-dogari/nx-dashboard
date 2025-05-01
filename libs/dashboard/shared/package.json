@@ -1,12 +1,5 @@
 {
   "name": "dashboard",
   "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^19.2.0",
-    "@angular/core": "^19.2.0"
-  },
-  "sideEffects": false,
-  "dependencies": {
-    "@types/node": "^22.15.2"
-  }
+  "sideEffects": false
 }

@@ -10,7 +10,31 @@
       "executor": "@nx/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "libs/dashboard/shared/ng-package.json"
+        "project": "libs/dashboard/shared/ng-package.json",
+        "styles": [
+          "libs/dashboard/core/src/styles.scss",
+          {
+            "input": "libs/dashboard/core/src/lib/styles/themes/default.scss",
+            "inject": false,
+            "bundleName": "default"
+          },
+          {
+            "input": "libs/dashboard/core/src/lib/styles/themes/rose-red.scss",
+            "inject": false,
+            "bundleName": "rose-red"
+          },
+          {
+            "input": "libs/dashboard/core/src/lib/styles/themes/magenta-violet.scss",
+            "inject": false,
+            "bundleName": "magenta-violet"
+          },
+          {
+            "input": "libs/dashboard/core/src/lib/styles/themes/cyan-orange.scss",
+            "inject": false,
+            "bundleName": "cyan-orange"
+          }
+        ]
+
       },
       "configurations": {
         "production": {

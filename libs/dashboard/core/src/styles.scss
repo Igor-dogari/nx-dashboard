@@ -1,0 +1,6 @@
+@use '../src/lib/styles/themes/default';
+@use 'tailwindcss';
+
+.emr-logo {
+  text-transform: uppercase;
+}
