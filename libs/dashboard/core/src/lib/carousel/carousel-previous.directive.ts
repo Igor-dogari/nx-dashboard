@@ -1,6 +1,6 @@
 import { Directive, HostListener, inject, input, OnInit } from '@angular/core';
 import { CAROUSEL } from './types';
-import { CarouselInterface } from '@shared';
+import { CarouselInterface } from '@core';
 
 @Directive({
   selector: '[emrCarouselPrevious]',

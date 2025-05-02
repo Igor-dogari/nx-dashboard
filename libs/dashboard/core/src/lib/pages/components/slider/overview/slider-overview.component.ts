@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicSliderExampleComponent } from '../_examples/basic-slider-example/basic-slider-example.component';
 import {
   CustomThumbLabelFormattingExampleComponent
@@ -8,8 +8,8 @@ import { RangeSliderExampleComponent } from '../_examples/range-slider-example/r
 import {
   ConfigurableSliderExampleComponent
 } from '../_examples/configurable-slider-example/configurable-slider-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
   selector: 'app-overview',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicChipsExampleComponent } from '../_examples/basic-chips-example/basic-chips-example.component';
 import {
   ChipsWithInputExampleComponent
@@ -13,8 +13,8 @@ import {
 import {
   ChipsDragAndDropExampleComponent
 } from '../_examples/chips-drag-and-drop-example/chips-drag-and-drop-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import { StackedChipsExampleComponent } from '../_examples/stacked-chips-example/stacked-chips-example.component';
 
 @Component({

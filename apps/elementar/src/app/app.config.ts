@@ -22,7 +22,7 @@ import {
   EnvironmentService,
   PageTitleStrategyService,
 } from '@core';
-import { GlobalStore, LayoutSidebarStore } from '@shared';
+import { GlobalStore, LayoutSidebarStore } from '@core';
 import { provideAuth0 } from '@auth0/auth0-angular';
 
 export const appConfig: ApplicationConfig = {

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
-import { PlaygroundComponent } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
+import { PlaygroundComponent } from '@core';
 import { BasicRailNavExampleComponent } from '../_examples/basic-rail-nav-example/basic-rail-nav-example.component';
 import {
   RailNavCustomizationExampleComponent

@@ -16,7 +16,7 @@ import { BreadcrumbItemIconDefDirective } from '../breadcrumb-item-icon-def.dire
 import { BreadcrumbItemIconDirective } from '../breadcrumb-item-icon.directive';
 import { MatIcon } from '@angular/material/icon';
 import { NgTemplateOutlet } from '@angular/common';
-import { Breadcrumb, BreadcrumbsStore } from '@shared';
+import { Breadcrumb, BreadcrumbsStore } from '@core';
 
 @Component({
   selector: 'emr-breadcrumbs-global',

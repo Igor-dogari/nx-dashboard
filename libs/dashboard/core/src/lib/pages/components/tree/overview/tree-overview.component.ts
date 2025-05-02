@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicTreeExampleComponent } from '../_examples/basic-tree-example/basic-tree-example.component';
 import {
   TreeWithDynamicDataExampleComponent
 } from '../_examples/tree-with-dynamic-data-example/tree-with-dynamic-data-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
   selector: 'app-overview',

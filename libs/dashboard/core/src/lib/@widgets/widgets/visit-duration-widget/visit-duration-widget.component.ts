@@ -1,6 +1,6 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { DashboardInterface, DASHBOARD, WidgetInterface } from '@shared';
+import { DashboardInterface, DASHBOARD, WidgetInterface } from '@core';
 
 @Component({
   selector: 'emr-visit-duration-widget',

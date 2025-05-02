@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   BasicButtonToggleExampleComponent
 } from '../_examples/basic-button-toggle-example/basic-button-toggle-example.component';
@@ -9,8 +9,8 @@ import {
 import {
   ButtonToggleAppearanceExampleComponent
 } from '../_examples/button-toggle-appearance-example/button-toggle-appearance-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
     imports: [

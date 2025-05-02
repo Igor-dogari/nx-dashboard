@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
-import { PlaygroundComponent } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
+import { PlaygroundComponent } from '@core';
 import { AvgClickRateExampleComponent } from '../_examples/avg-click-rate-example/avg-click-rate-example.component';
 import { AvgOpenRateExampleComponent } from '../_examples/avg-open-rate-example/avg-open-rate-example.component';
 import {

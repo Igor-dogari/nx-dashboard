@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, DashboardInterface } from '@shared';
+import { DASHBOARD, DashboardInterface } from '@core';
 
 @Component({
   selector: 'app-analytics-conversion-rate-widget',

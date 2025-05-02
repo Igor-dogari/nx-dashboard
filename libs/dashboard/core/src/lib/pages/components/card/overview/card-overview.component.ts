@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicCardExampleComponent } from '../_examples/basic-card-example/basic-card-example.component';
 import { CardActionsExampleComponent } from '../_examples/card-actions-example/card-actions-example.component';
 import {
@@ -8,8 +8,8 @@ import {
 import {
   CardFooterLoadingExampleComponent
 } from '../_examples/card-footer-loading-example/card-footer-loading-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
     selector: 'app-overview',

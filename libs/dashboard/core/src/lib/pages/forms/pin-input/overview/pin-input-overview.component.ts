@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicPinInputExampleComponent } from '../_examples/basic-pin-input-example/basic-pin-input-example.component';
 import {
   PinInputWithPlaceholderExampleComponent
@@ -10,8 +10,8 @@ import {
 import {
   PinInputAcceptCustomSymbolsExampleComponent
 } from '../_examples/pin-input-accept-custom-symbols-example/pin-input-accept-custom-symbols-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
     imports: [

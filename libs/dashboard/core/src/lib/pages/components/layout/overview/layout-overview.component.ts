@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { LayoutHeaderExampleComponent } from '../_examples/layout-header-example/layout-header-example.component';
 import { LayoutSidebarExampleComponent } from '../_examples/layout-sidebar-example/layout-sidebar-example.component';
 import {
@@ -16,8 +16,8 @@ import {
   LayoutWithNestedLayoutsExampleComponent
 } from '../_examples/layout-with-nested-layouts-example/layout-with-nested-layouts-example.component';
 import { LayoutAsideExampleComponent } from '../_examples/layout-aside-example/layout-aside-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
   imports: [

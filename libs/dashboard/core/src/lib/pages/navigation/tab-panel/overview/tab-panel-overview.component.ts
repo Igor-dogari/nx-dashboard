@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   TabPanelWithPanelsInsideExampleComponent
 } from '../_examples/tab-panel-with-panels-inside-example/tab-panel-with-panels-inside-example.component';
 import { BasicTabPanelExampleComponent } from '../_examples/basic-tab-panel-example/basic-tab-panel-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import {
   TabPanelCompactExampleComponent
 } from '../_examples/tab-panel-compact-example/tab-panel-compact-example.component';

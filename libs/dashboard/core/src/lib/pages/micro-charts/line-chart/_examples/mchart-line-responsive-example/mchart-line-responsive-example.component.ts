@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ShuffleArrayPipe } from '@shared';
+import { ShuffleArrayPipe } from '@core';
 import {
   MchartLineComponent,
   MchartTooltipBodyComponent,

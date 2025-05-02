@@ -1,4 +1,4 @@
-import { CarouselApiInterface } from '@shared';
+import { CarouselApiInterface } from '@core';
 
 export interface CarouselInterface {
   api: CarouselApiInterface

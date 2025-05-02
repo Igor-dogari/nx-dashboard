@@ -4,7 +4,7 @@ import { FilterBuilderComponent } from '@core';
 import {
   FilterBuilderFieldDefInterface,
   FilterBuilderGroupInterface,
-} from '@shared';
+} from '@core';
 
 @Component({
   selector: 'app-basic-filter-builder-example',

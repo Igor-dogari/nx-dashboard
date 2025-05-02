@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, WidgetInterface } from '@shared';
+import { DASHBOARD, WidgetInterface } from '@core';
 
 @Component({
   selector: 'emr-bank-credit-card',

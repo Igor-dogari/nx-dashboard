@@ -20,7 +20,7 @@ import {
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
-import { DashboardInterface, DASHBOARD, WidgetInterface } from '@shared';
+import { DashboardInterface, DASHBOARD, WidgetInterface } from '@core';
 import { ThemeManagerService } from '@core';
 
 @Component({

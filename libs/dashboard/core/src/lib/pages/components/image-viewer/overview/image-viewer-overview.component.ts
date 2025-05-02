@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
-import { PlaygroundComponent } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
+import { PlaygroundComponent } from '@core';
 import {
   BasicImageViewerExampleComponent
 } from '../_examples/basic-image-viewer-example/basic-image-viewer-example.component';

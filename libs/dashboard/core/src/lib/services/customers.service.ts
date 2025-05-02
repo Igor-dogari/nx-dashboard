@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { PostInterface } from '@shared';
+import { PostInterface } from '@core';
 import { map } from 'rxjs/operators';
 // import { customers } from './data';
 

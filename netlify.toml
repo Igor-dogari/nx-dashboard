@@ -1,8 +1,0 @@
-[build]
-command = "npx nx build elementar"
-publish = "dist/apps/elementar"
-
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200

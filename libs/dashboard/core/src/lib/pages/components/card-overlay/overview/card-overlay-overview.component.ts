@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
-import { PlaygroundComponent } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
+import { PlaygroundComponent } from '@core';
 import {
   BasicCardOverlayExampleComponent
 } from '../_examples/basic-card-overlay-example/basic-card-overlay-example.component';

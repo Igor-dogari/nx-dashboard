@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WidgetInterface, WidgetConfigInterface } from '@shared';
+import { WidgetInterface, WidgetConfigInterface } from '@core';
 import { DashboardComponent } from '@core';
 
 @Component({

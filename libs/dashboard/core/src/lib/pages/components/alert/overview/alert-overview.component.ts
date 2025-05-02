@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicAlertExampleComponent } from '../_examples/basic-alert-example/basic-alert-example.component';
 import { AlertVariantsExampleComponent } from '../_examples/alert-variants-example/alert-variants-example.component';
 import {
@@ -10,8 +10,8 @@ import {
   AlertWithTitleExampleComponent
 } from '../_examples/alert-with-title-example/alert-with-title-example.component';
 import { AlertActionsExampleComponent } from '../_examples/alert-actions-example/alert-actions-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import { MatDivider } from '@angular/material/divider';
 

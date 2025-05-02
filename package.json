@@ -21,8 +21,8 @@
     "start": "bun nx run elementar:serve:development",
     "affected": "bun nx affected --target=build",
     "test": "bun nx test",
-    "build": "bun nx build",
-    "build:prod": "bun nx build --configuration production",
+    "build": "bun nx run elementar:build --configuration=development",
+    "build:prod": "bun nx run elementar:build --configuration=production",
     "prepare": "husky",
     "generate-index": "bun run libs/dashboard/shared/src/lib/utils/generate-all-lib-indexes.ts"
   },

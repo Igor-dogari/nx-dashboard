@@ -6,7 +6,7 @@ import {
   viewChild
 } from '@angular/core';
 import { CAROUSEL, CAROUSEL_CARD } from '../types';
-import { CarouselApiInterface, CarouselCardInterface } from '@shared';
+import { CarouselApiInterface, CarouselCardInterface } from '@core';
 
 @Component({
   selector: 'emr-carousel',

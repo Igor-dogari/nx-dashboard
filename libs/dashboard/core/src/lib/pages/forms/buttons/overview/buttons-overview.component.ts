@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicButtonsExampleComponent } from '../_examples/basic-buttons-example/basic-buttons-example.component';
 import { RaisedButtonsExampleComponent } from '../_examples/raised-buttons-example/raised-buttons-example.component';
 import { StrokedButtonsExampleComponent } from '../_examples/stroked-buttons-example/stroked-buttons-example.component';
@@ -11,9 +11,9 @@ import {
 } from '../_examples/mini-fab-buttons-example/mini-fab-buttons-example.component';
 import { ButtonLoadingExampleComponent } from '../_examples/button-loading-example/button-loading-example.component';
 import { RouterLink } from '@angular/router';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
-import { PageAsideDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
+import { PageAsideDirective } from '@core';
 import {
   ButtonsWithInteractiveDisabledExampleComponent
 } from '../_examples/buttons-with-interactive-disabled-example/buttons-with-interactive-disabled-example.component';

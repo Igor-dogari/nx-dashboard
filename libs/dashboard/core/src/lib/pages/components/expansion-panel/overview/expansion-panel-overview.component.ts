@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   BasicExpansionPanelExampleComponent
 } from '../_examples/basic-expansion-panel-example/basic-expansion-panel-example.component';
@@ -9,8 +9,8 @@ import {
 import {
   ExpansionPanelAsAccordionExampleComponent
 } from '../_examples/expansion-panel-as-accordion-example/expansion-panel-as-accordion-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
     selector: 'app-overview',

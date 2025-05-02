@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { getState } from '@ngrx/signals';
 import { LogoComponent } from '@core';
-import { GlobalStore, GlobalStoreState } from '@shared';
+import { GlobalStore, GlobalStoreState } from '@core';
 
 @Component({
   selector: 'app-screen-loader',

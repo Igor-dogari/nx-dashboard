@@ -19,7 +19,7 @@ import {
 } from '@ngrx/signals/entities';
 import { withLoading } from './with-loading';
 import { updateState } from '@angular-architects/ngrx-toolkit';
-import { PostInterface } from '@shared';
+import { PostInterface } from '@core';
 
 export interface WithPagedEntityState {
   page: number;

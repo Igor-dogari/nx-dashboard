@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   BasicContentFadeExampleComponent
 } from '../_examples/basic-content-fade-example/basic-content-fade-example.component';
 import {
   ContentFadeCustomWidthExampleComponent
 } from '../_examples/content-fade-custom-width-example/content-fade-custom-width-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import {
   ContentFadeCustomPositionExampleComponent
 } from '../_examples/content-fade-custom-position-example/content-fade-custom-position-example.component';

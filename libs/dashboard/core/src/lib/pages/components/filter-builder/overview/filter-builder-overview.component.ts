@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   BasicFilterBuilderExampleComponent
 } from '../_examples/basic-filter-builder-example/basic-filter-builder-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
     selector: 'app-overview',

@@ -5,7 +5,7 @@ import {
   MchartTooltipComponent,
   MchartTooltipTitleComponent
 } from '@core';
-import { ShuffleArrayPipe } from '@shared';
+import { ShuffleArrayPipe } from '@core';
 
 @Component({
   selector: 'app-mchart-pie-with-tooltip-example',

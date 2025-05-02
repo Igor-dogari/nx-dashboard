@@ -5,7 +5,7 @@ import {
 } from '@core';
 import { MatButton } from '@angular/material/button';
 import { IconComponent } from '@core';
-import { BreadcrumbsStore } from '@shared';
+import { BreadcrumbsStore } from '@core';
 
 @Component({
   selector: 'app-breadcrumbs-global-example',

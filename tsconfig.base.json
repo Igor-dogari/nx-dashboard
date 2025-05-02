@@ -13,7 +13,6 @@
       "@core/auth": ["libs/dashboard/core/src/lib/auth/index.ts"],
       "@core/error": ["libs/dashboard/core/src/lib/error/index.ts"],
       "@core/pages": ["libs/dashboard/core/src/lib/pages/index.ts"],
-      "@shared": ["libs/dashboard/shared/src/index.ts"],
     }
   }
 }

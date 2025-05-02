@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicSnackbarExampleComponent } from '../_examples/basic-snackbar-example/basic-snackbar-example.component';
 import {
   SnackbarWithCustomComponentExampleComponent
@@ -7,8 +7,8 @@ import {
 import {
   ConfigurableSnackbarExampleComponent
 } from '../_examples/configurable-snackbar-example/configurable-snackbar-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
     imports: [

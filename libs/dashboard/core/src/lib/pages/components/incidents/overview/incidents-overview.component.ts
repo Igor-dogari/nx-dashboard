@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicIncidentsExampleComponent } from '../_examples/basic-incidents-example/basic-incidents-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import {
   IncidentsShowHideDynamiclyExampleComponent
 } from '../_examples/incidents-show-hide-dynamicly-example/incidents-show-hide-dynamicly-example.component';

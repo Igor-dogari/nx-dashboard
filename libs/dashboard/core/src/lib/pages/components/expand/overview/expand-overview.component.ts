@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicExpandExampleComponent } from '../_examples/basic-expand-example/basic-expand-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import {
   ExpandShowButtonIfExpandedExampleComponent
 } from '../_examples/expand-show-button-if-expanded-example/expand-show-button-if-expanded-example.component';

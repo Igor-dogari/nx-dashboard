@@ -3,7 +3,7 @@ import { AnnouncementComponent } from '../announcement/announcement.component';
 import {
   Announcement,
   AnnouncementStore,
-} from '@shared';
+} from '@core';
 
 @Component({
   selector: 'emr-announcement-global',

@@ -1,7 +1,7 @@
 import { getState, signalStore, withHooks } from '@ngrx/signals';
 import { effect } from '@angular/core';
 import { withDevtools } from '@angular-architects/ngrx-toolkit';
-import { CustomersService, withLocalStorageSync, withPagedEntities } from '@shared';
+import { CustomersService, withLocalStorageSync, withPagedEntities } from '@core';
 
 export const CustomersStore = signalStore(
   { providedIn: 'root' },

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicTimelineExampleComponent } from '../_examples/basic-timeline-example/basic-timeline-example.component';
 import {
   TimelineTimestampExampleComponent
@@ -7,8 +7,8 @@ import {
 import {
   TimelineWithCutsomIndicatorExampleComponent
 } from '../_examples/timeline-with-cutsom-indicator-example/timeline-with-cutsom-indicator-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
   selector: 'app-overview',

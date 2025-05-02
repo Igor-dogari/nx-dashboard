@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
-import { PlaygroundComponent } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
+import { PlaygroundComponent } from '@core';
 import {
   BasicCommentEditorExampleComponent
 } from '../_examples/basic-comment-editor-example/basic-comment-editor-example.component';

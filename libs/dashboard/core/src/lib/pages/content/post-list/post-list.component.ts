@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
-import { CustomersStore } from '@shared';
-import { PostInterface } from '@shared';
+import { CustomersStore } from '@core';
+import { PostInterface } from '@core';
 import {
   BlockStateComponent,
   BlockStateContentComponent,

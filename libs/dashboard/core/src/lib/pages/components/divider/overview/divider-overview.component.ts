@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicDividerExampleComponent } from '../_examples/basic-divider-example/basic-divider-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import {
   DividerHorizontalAndVerticalExampleComponent
 } from '../_examples/divider-horizontal-and-vertical-example/divider-horizontal-and-vertical-example.component';

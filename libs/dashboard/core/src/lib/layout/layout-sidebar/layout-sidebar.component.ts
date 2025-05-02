@@ -1,7 +1,7 @@
 import { Component, computed, inject } from '@angular/core';
 import { LAYOUT } from '../types';
 import { LayoutComponent } from '../layout/layout.component';
-import { LayoutSidebarStore } from '@shared';
+import { LayoutSidebarStore } from '@core';
 
 @Component({
   selector: 'emr-layout-sidebar',

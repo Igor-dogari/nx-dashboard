@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { FileInterface } from '@shared';
+import { FileInterface } from '@core';
 import { FileComponent, FileControlComponent, FileListComponent } from '@core';
 
 @Component({

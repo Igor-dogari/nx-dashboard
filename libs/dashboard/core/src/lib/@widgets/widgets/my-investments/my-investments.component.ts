@@ -3,7 +3,7 @@ import { MatIcon } from '@angular/material/icon';
 import { MatRipple } from '@angular/material/core';
 import { RouterLink } from '@angular/router';
 import { MatList, MatListItem } from '@angular/material/list';
-import { DASHBOARD, WidgetInterface } from '@shared';
+import { DASHBOARD, WidgetInterface } from '@core';
 
 @Component({
   selector: 'emr-my-investments',

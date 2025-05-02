@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicStepperExampleComponent } from '../_examples/basic-stepper-example/basic-stepper-example.component';
 import {
   StepperVerticalExampleComponent
@@ -16,8 +16,8 @@ import {
 import {
   StepperLabelBottomPositionExampleComponent
 } from '../_examples/stepper-label-bottom-position-example/stepper-label-bottom-position-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
     selector: 'app-overview',

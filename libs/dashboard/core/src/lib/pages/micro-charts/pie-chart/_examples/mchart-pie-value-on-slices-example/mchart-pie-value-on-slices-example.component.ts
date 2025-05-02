@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MchartPieComponent } from '@core';
-import { ShuffleArrayPipe } from '@shared';
+import { ShuffleArrayPipe } from '@core';
 
 @Component({
   selector: 'app-mchart-pie-value-on-slices-example',

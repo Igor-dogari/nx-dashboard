@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { MatButton } from '@angular/material/button';
-import { IncidentsStore } from '@shared';
+import { IncidentsStore } from '@core';
 
 @Component({
   selector: 'app-incidents-show-hide-dynamicly-example',

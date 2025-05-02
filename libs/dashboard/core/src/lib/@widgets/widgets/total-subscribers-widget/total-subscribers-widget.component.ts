@@ -2,7 +2,7 @@ import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatRipple } from '@angular/material/core';
 import { MatTooltip } from '@angular/material/tooltip';
-import { DashboardInterface, DASHBOARD, WidgetInterface } from '@shared';
+import { DashboardInterface, DASHBOARD, WidgetInterface } from '@core';
 
 @Component({
   selector: 'emr-total-subscribers-widget',

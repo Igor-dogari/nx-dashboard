@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
   imports: [

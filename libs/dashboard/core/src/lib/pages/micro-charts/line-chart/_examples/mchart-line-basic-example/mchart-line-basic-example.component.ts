@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MchartLineComponent } from '@core';
-import { ShuffleArrayPipe } from '@shared';
+import { ShuffleArrayPipe } from '@core';
 
 @Component({
   selector: 'app-mchart-line-basic-example',

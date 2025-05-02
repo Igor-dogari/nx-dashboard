@@ -8,7 +8,7 @@ import {
 import {
   WidgetInterface,
   DASHBOARD, WidgetConfigInterface
-} from '@shared';
+} from '@core';
 import { AsyncPipe, NgComponentOutlet } from '@angular/common';
 import { WidgetSkeletonComponent } from '../widget-skeleton/widget-skeleton.component';
 

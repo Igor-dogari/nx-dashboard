@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   BasicPhoneInputExampleComponent
 } from '../_examples/basic-phone-input-example/basic-phone-input-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import {
   PhoneInputOnlyCountriesExampleComponent

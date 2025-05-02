@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BasicTableExampleComponent } from '../_examples/basic-table-example/basic-table-example.component';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   TableWithPaginationExampleComponent
 } from '../_examples/table-with-pagination-example/table-with-pagination-example.component';
@@ -20,8 +20,8 @@ import {
 import {
   TableWithStickyFooterExampleComponent
 } from '../_examples/table-with-sticky-footer-example/table-with-sticky-footer-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import { SortableTableExampleComponent } from '../_examples/sortable-table-example/sortable-table-example.component';
 
 @Component({

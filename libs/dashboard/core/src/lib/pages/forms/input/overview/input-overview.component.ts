@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicInputsExampleComponent } from '../_examples/basic-inputs-example/basic-inputs-example.component';
 import {
   TextareaAutosizeExampleComponent
@@ -13,8 +13,8 @@ import {
 import {
   PrefixesAndSuffixesExampleComponent
 } from '../_examples/prefixes-and-suffixes-example/prefixes-and-suffixes-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
     imports: [

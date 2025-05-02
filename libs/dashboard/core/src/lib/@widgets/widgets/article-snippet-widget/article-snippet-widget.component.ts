@@ -1,7 +1,7 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatRipple } from '@angular/material/core';
 import { DatePipe } from '@angular/common';
-import { DASHBOARD, DashboardInterface, WidgetInterface } from '@shared';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@core';
 
 export interface ArticleSnippetWidget extends WidgetInterface {
   title: string;

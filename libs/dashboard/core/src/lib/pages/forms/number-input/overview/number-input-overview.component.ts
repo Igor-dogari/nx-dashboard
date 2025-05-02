@@ -1,5 +1,5 @@
 import { Component, model } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   BasicNumberInputExampleComponent
 } from '../_examples/basic-number-input-example/basic-number-input-example.component';
@@ -9,8 +9,8 @@ import {
 import {
   NumberInputMinMaxExampleComponent
 } from '../_examples/number-input-min-max-example/number-input-min-max-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
-import { AnnouncementVariant } from '@shared';
+import { AnnouncementVariant } from '@core';
 
 @Component({
   selector: 'emr-announcement',

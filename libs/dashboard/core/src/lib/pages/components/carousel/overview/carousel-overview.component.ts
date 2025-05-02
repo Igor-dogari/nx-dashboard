@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicCarouselExampleComponent } from '../_examples/basic-carousel-example/basic-carousel-example.component';
 import {
   CarouselControlsCustomPositionExampleComponent
 } from '../_examples/carousel-controls-custom-position-example/carousel-controls-custom-position-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import {
   CarouselFadeEffectExampleComponent
 } from '../_examples/carousel-fade-effect-example/carousel-fade-effect-example.component';

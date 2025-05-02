@@ -18,7 +18,7 @@ import {
   FilterBuilderFieldDefInterface,
   FilterBuilderGroupInterface,
   FilterBuilderItemType
-} from '@shared';
+} from '@core';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenuTrigger, MatMenu, MatMenuItem } from '@angular/material/menu';
 import { FormsModule } from '@angular/forms';

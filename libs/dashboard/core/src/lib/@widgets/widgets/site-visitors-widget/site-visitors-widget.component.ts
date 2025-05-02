@@ -1,6 +1,6 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { DASHBOARD, DashboardInterface, WidgetInterface } from '@shared';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@core';
 
 @Component({
   selector: 'emr-site-visitors-widget',

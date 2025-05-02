@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { PageContentDirective } from '@shared';
+import { PageContentDirective } from '@core';
 import {
   BasicEmojiPickerExampleComponent
 } from '../_examples/basic-emoji-picker-example/basic-emoji-picker-example.component';
-import { PlaygroundComponent } from '@shared';
-import { PageComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
+import { PageComponent } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

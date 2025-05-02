@@ -4,7 +4,7 @@ import { filter } from 'rxjs';
 import { DOCUMENT } from '@angular/common';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Meta, Title } from '@angular/platform-browser';
-import { GlobalStore } from '@shared';
+import { GlobalStore } from '@core';
 
 @Injectable({
   providedIn: 'root',

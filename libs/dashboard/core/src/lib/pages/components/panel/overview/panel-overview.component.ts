@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import { BasicPanelExampleComponent } from '../_examples/basic-panel-example/basic-panel-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 import { MatDivider } from '@angular/material/divider';
 
 @Component({

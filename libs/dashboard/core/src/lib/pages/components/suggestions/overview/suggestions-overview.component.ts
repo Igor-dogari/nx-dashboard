@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@shared';
+import { PlaygroundComponent } from '@core';
 import {
   BasicSuggestionsExampleComponent
 } from '../_examples/basic-suggestions-example/basic-suggestions-example.component';
-import { PageComponent } from '@shared';
-import { PageContentDirective } from '@shared';
+import { PageComponent } from '@core';
+import { PageContentDirective } from '@core';
 
 @Component({
   selector: 'app-overview',

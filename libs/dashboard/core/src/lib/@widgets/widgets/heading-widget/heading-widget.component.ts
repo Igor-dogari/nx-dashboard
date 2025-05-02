@@ -1,6 +1,6 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { DASHBOARD, DashboardInterface, WidgetInterface } from '@shared';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@core';
 
 export interface HeadingWidget extends WidgetInterface {
   title: string;
