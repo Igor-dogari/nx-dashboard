@@ -9,9 +9,9 @@ import {
   LayoutSidebarComponent,
   LayoutTopbarComponent,
 } from '@core';
-import { HeaderComponent } from '../header/header.component';
-import { LibSidebarComponent } from '../lib-sidebar/lib-sidebar.component';
-// import { HeaderComponent, LibSidebarComponent } from '@core/pages';
+// import { HeaderComponent } from '../header/header.component';
+// import { LibSidebarComponent } from '../lib-sidebar/lib-sidebar.component';
+import { HeaderComponent, LibSidebarComponent } from '@core/pages';
 
 @Component({
   imports: [
