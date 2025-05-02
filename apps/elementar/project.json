@@ -5,22 +5,20 @@
   "prefix": "app",
   "sourceRoot": "apps/elementar/src",
   "targets": {
-    "lint": {
-      "executor": "@nx/eslint:lint"
-    },
     "build": {
       "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/elementar",
+        "outputPath": "dist/apps/elementar",
         "index": "apps/elementar/src/index.html",
         "browser": "apps/elementar/src/main.ts",
         "polyfills": ["zone.js", "@angular/localize/init"],
-        "tsConfig": "tsconfig.app.json",
+        "tsConfig": "apps/elementar/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "public"
+            "input": "apps/elementar/public"
           },
           {
             "glob": "**/_examples/**",
@@ -42,8 +40,14 @@
         "production": {
           "budgets": [
             {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
               "type": "anyComponentStyle",
-              "maximumWarning": "24kb"
+              "maximumWarning": "24kb",
+              "maximumError": "28kb"
             }
           ],
           "outputHashing": "all",
@@ -73,6 +77,9 @@
         }
       },
       "defaultConfiguration": "development"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
