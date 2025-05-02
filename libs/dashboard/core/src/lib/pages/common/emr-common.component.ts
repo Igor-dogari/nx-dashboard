@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {
   AnnouncementGlobalComponent,
@@ -27,4 +27,13 @@ import { HeaderComponent, LibSidebarComponent } from '@core/pages';
   templateUrl: './emr-common.component.html',
   standalone: true,
 })
-export class EmrCommonComponent {}
+export class EmrCommonComponent implements OnInit {
+
+  constructor() {
+    console.log("=>(emr-common.component.ts:33) constructor");
+  }
+
+  ngOnInit(): void {
+    console.log("=>(emr-common.component.ts:37) ngOnInit");
+  }
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 // import { AvatarComponent } from '@core';
@@ -12,7 +12,7 @@ import { MatIcon } from '@angular/material/icon';
   templateUrl: './my-profile.component.html',
   styleUrl: './my-profile.component.scss',
 })
-export class MyProfileComponent {
+export class MyProfileComponent implements OnInit {
   dateFormats = ['MM/DD/YYYY', 'DD/MM/YYYY', 'YYYY-MM-DD'];
   myProfile = {
     firstName: 'Igor',
@@ -42,4 +42,12 @@ export class MyProfileComponent {
       apartment: 1,
     },
   };
+
+  constructor() {
+    console.log('=>(my-profile.component.ts:48) getProfile');
+  }
+
+  ngOnInit(): void {
+    console.log('=>(my-profile.component.ts:50) onInit');
+  }
 }
