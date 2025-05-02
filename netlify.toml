@@ -1,6 +1,6 @@
 [build]
 command = "nx run elementar:build:production"
-publish = "/opt/build/repo/dist/elementar/browser"
+publish = "dist/elementar/browser"
 
 [[redirects]]
 from = "/*"
