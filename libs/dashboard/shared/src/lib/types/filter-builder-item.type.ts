@@ -1,4 +1,4 @@
-import { FilterBuilderConditionInterface, FilterBuilderGroupInterface } from '@models';
+import { FilterBuilderConditionInterface, FilterBuilderGroupInterface } from '@shared';
 
 export type FilterBuilderItemType =
   | FilterBuilderConditionInterface
