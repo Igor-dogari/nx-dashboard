@@ -4,7 +4,7 @@ import {
   AvatarGroupComponent,
   AvatarTotalComponent,
 } from '@core';
-import { DASHBOARD, DashboardInterface, WidgetInterface } from '@models';
+import { DASHBOARD, DashboardInterface, WidgetInterface } from '@shared';
 
 @Component({
   selector: 'emr-events-widget',

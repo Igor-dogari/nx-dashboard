@@ -1,28 +1,29 @@
 import { inject, Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { lastValueFrom, map, Observable, of } from 'rxjs';
-import { CustomerInterface, PostInterface } from '@models';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { PostInterface } from '@shared';
+import { map } from 'rxjs/operators';
 // import { customers } from './data';
 
-export interface LoadResponse {
-  content: CustomerInterface[];
-  total: number;
-  page: number;
-}
+// export interface LoadResponse {
+//   content: CustomerInterface[];
+//   total: number;
+//   page: number;
+// }
 
 @Injectable({ providedIn: 'root' })
 export class CustomersService {
   // #baseUrl = '/customers';
   #http = inject(HttpClient);
-  // #customerStore = inject(CustomersStore);
 
-  load(page: number): Observable<PostInterface[]> {
+  public load(page: number): Observable<PostInterface[]> {
     // load(page: number): Observable<LoadResponse> {
-    // const customers1 = this.#customerStore.customerEntities();
 
     // return of({ total: Math.ceil(customers.length / 5), page, content: customers });
 
-    return this.#http.get<PostInterface[]>('/assets/mockdata/content-post-list.json');
+    return this.#http
+      .get<PostInterface[]>('public/assets/mockdata/content-post-list.json')
+      .pipe(map((data) => data.length > 0 ? data : []));
     // .subscribe(data => {
     // this.data = data;
     // })
@@ -34,7 +35,7 @@ export class CustomersService {
     //   .pipe(map((store) => ({ ...store, page, content: asd })));
   }
 
-  loadAsPromise(page: number) {
-    return lastValueFrom(this.load(page));
-  }
+  // loadAsPromise(page: number) {
+  //   return lastValueFrom(this.load(page));
+  // }
 }

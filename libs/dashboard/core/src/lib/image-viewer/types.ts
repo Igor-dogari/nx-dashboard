@@ -1,6 +1,6 @@
 import { InjectionToken } from '@angular/core';
 import { PictureRef } from './picture-ref';
-import { PictureOptionsInterface } from '@models';
+import { PictureOptionsInterface } from '@shared';
 
 export const IMAGE_VIEWER = new InjectionToken('IMAGE_VIEWER');
 export const IMAGE_VIEWER_PICTURE_REF = new InjectionToken<PictureRef>(

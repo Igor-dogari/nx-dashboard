@@ -5,7 +5,7 @@ import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
 import { CustomersStore } from '@shared';
-import { PostInterface } from '@models';
+import { PostInterface } from '@shared';
 import {
   BlockStateComponent,
   BlockStateContentComponent,

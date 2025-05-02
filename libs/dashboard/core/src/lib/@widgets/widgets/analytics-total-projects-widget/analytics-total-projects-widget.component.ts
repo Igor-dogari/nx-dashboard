@@ -1,5 +1,5 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import { DASHBOARD, DashboardInterface } from '@models';
+import { DASHBOARD, DashboardInterface } from '@shared';
 import { MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 

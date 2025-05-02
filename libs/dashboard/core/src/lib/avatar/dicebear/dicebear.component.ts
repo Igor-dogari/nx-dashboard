@@ -10,7 +10,7 @@ import { createAvatar } from '@dicebear/core';
 import { identicon, initials } from '@dicebear/collection';
 import { v7 as uuid } from 'uuid';
 import { SafeHtmlPipe } from '@core';
-import { PresetInterface } from '@models';
+import { PresetInterface } from '@shared';
 
 const alreadyLoadedImages: string[] = [];
 const presets: { [prop: string]: PresetInterface } = {

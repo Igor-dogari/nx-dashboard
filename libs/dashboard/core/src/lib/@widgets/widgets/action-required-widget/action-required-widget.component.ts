@@ -4,7 +4,7 @@ import {
   DASHBOARD,
   DashboardInterface,
   WidgetInterface,
-} from '@models';
+} from '@shared';
 import { ActionRequiredComponent } from '@core';
 
 export interface ActionRequiredWidget extends WidgetInterface {

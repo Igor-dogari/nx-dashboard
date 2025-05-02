@@ -1,4 +1,4 @@
-import { FilterBuilderFieldDataSourceItemInterface } from '@models';
+import { FilterBuilderFieldDataSourceItemInterface } from '@shared';
 
 export interface FilterBuilderFieldDefInterface {
   name: string;

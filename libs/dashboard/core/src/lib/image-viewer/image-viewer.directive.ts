@@ -5,7 +5,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { PictureRef } from './picture-ref';
 import { ImageViewerComponent } from './image-viewer/image-viewer.component';
 import { IMAGE_VIEWER_PICTURE_DATA, IMAGE_VIEWER_PICTURE_REF } from './types';
-import { PictureOptionsInterface } from '@models';
+import { PictureOptionsInterface } from '@shared';
 
 @Directive({
   selector: '[emrImageViewer]',

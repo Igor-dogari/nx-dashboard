@@ -4,7 +4,7 @@ import {
   MchartTooltipComponent,
   MchartTooltipTitleComponent
 } from '@core';
-import { DashboardInterface, DASHBOARD, WidgetInterface } from '@models';
+import { DashboardInterface, DASHBOARD, WidgetInterface } from '@shared';
 
 @Component({
   selector: 'emr-total-projects-widget',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { DashboardComponent } from '@core';
-import { WidgetConfigInterface, WidgetInterface } from '@models';
+import { WidgetConfigInterface, WidgetInterface } from '@shared';
 
 @Component({
   selector: 'app-explore',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FileInterface } from '@models';
+import { FileInterface } from '@shared';
 import { FilesGridComponent, GridFileComponent } from '@core';
 
 @Component({

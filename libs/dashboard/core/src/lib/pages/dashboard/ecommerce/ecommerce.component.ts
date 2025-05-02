@@ -13,7 +13,7 @@ import {
   DashboardComponent,
   DashboardStatsWidgetSkeletonComponent,
 } from '@core';
-import { WidgetInterface, WidgetConfigInterface } from '@models';
+import { WidgetInterface, WidgetConfigInterface } from '@shared';
 
 @Component({
   selector: 'app-ecommerce',

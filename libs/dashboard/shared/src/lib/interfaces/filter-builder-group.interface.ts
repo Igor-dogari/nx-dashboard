@@ -1,4 +1,4 @@
-import { FilterBuilderItemType } from '@models';
+import { FilterBuilderItemType } from '@shared';
 
 export interface FilterBuilderGroupInterface {
   logicalOperator?: string;

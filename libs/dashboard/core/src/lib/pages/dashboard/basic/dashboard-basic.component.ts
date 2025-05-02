@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, inject } from '@angular/core';
-import { WidgetInterface, WidgetConfigInterface } from '@models';
+import { WidgetInterface, WidgetConfigInterface } from '@shared';
 import { DashboardComponent } from '@core';
 import { AuthService } from '@auth0/auth0-angular';
 import { catchError, switchMap, take } from 'rxjs/operators';
