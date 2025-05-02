@@ -6,14 +6,7 @@
   "prefix": "app",
   "targets": {
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "apps/elementar/src/**/*.ts",
-          "apps/elementar/src/**/*.html",
-          "apps/elementar/src/**/*.scss"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "build": {
       "executor": "@angular-devkit/build-angular:application",

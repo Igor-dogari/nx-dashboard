@@ -2,7 +2,7 @@
   "name": "core",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/dashboard/core/src",
-  "prefix": "",
+  "prefix": "lib",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -31,14 +31,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "libs/src/**/*.ts",
-          "libs/src/**/*.html",
-          "libs/src/**/*.scss"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     }
   }
 }
