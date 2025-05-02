@@ -861,7 +861,12 @@ export class LibSidebarComponent implements OnInit {
   navItemLinks: any[] = [];
   activeKey: null | string = null;
 
+  constructor() {
+    console.log("=>(lib-sidebar.component.ts:865) constructor", );
+  }
+
   ngOnInit() {
+    console.log("=>(lib-sidebar.component.ts:869) ngOnInit", );
     this.navItems.forEach((navItem) => {
       this.navItemLinks.push(navItem);
 
