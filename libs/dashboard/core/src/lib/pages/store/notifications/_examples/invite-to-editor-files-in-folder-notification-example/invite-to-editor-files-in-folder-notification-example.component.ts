@@ -19,13 +19,13 @@ export class InviteToEditorFilesInFolderNotificationExampleComponent {
         id: 3,
         name: 'Johnny Gladden',
         username: 'johnny.gladden',
-        avatarUrl: 'assets/avatars/1.svg'
+        avatarUrl: '/assets/avatars/1.svg'
       },
       notifier: {
         id: 4,
         name: 'Angela Naylor',
         username: 'angela.naylor',
-        avatarUrl: 'assets/avatars/6.svg'
+        avatarUrl: '/assets/avatars/6.svg'
       },
       payload: {
         folderName: 'My New Project'

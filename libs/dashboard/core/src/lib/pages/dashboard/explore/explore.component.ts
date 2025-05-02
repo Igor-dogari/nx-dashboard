@@ -117,7 +117,7 @@ export class ExploreComponent {
       type: 'article-snippet-widget',
       columns: 4,
       title: 'The Must-Have SEO Checklist for Developers For 2025',
-      imagePreviewUrl: 'assets/widgets/article-snippet-preview.png',
+      imagePreviewUrl: '/assets/widgets/article-snippet-preview.png',
       publishedAt: new Date(),
     },
     {
@@ -125,7 +125,7 @@ export class ExploreComponent {
       type: 'article-snippet-widget',
       columns: 4,
       title: 'Build a Distributed Task Scheduler Using RabbitMQ and Redis',
-      imagePreviewUrl: 'assets/widgets/article-snippet-preview.png',
+      imagePreviewUrl: '/assets/widgets/article-snippet-preview.png',
       publishedAt: new Date(),
     },
     {
@@ -134,7 +134,7 @@ export class ExploreComponent {
       columns: 4,
       title:
         'How to retrieve values from all types of HTML Inputs in JavaScript',
-      imagePreviewUrl: 'assets/widgets/article-snippet-preview.png',
+      imagePreviewUrl: '/assets/widgets/article-snippet-preview.png',
       publishedAt: new Date(),
     },
     {
@@ -142,7 +142,7 @@ export class ExploreComponent {
       type: 'article-snippet-widget',
       columns: 4,
       title: 'Mastering Async/Await and DOM Manipulation',
-      imagePreviewUrl: 'assets/widgets/article-snippet-preview.png',
+      imagePreviewUrl: '/assets/widgets/article-snippet-preview.png',
       publishedAt: new Date(),
     },
     {
@@ -150,7 +150,7 @@ export class ExploreComponent {
       type: 'article-snippet-widget',
       columns: 4,
       title: '20 senior Angular developer interview questions and answers',
-      imagePreviewUrl: 'assets/widgets/article-snippet-preview.png',
+      imagePreviewUrl: '/assets/widgets/article-snippet-preview.png',
       publishedAt: new Date(),
     },
     {
@@ -158,7 +158,7 @@ export class ExploreComponent {
       type: 'article-snippet-widget',
       columns: 4,
       title: 'Master clean code principles and best practices',
-      imagePreviewUrl: 'assets/widgets/article-snippet-preview.png',
+      imagePreviewUrl: '/assets/widgets/article-snippet-preview.png',
       publishedAt: new Date(),
     },
   ];

@@ -21,10 +21,10 @@ export class ScreenLoaderComponent {
   private _globalStore = inject(GlobalStore);
 
   @Input()
-  src = 'assets/screen-loader.svg';
+  src = '/assets/screen-loader.svg';
 
   @Input()
-  srcDark = 'assets/screen-loader-dark.svg';
+  srcDark = '/assets/screen-loader-dark.svg';
 
   @Input()
   loadingText!: string;

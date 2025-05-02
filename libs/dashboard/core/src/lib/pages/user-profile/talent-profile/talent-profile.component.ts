@@ -27,17 +27,17 @@ export class TalentProfileComponent {
   followed = false;
   peopleAlsoViewed: Person[] = [
     {
-      avatarUrl: 'assets/avatars/5.svg',
+      avatarUrl: '/assets/avatars/5.svg',
       name: 'Beaulah Hansmann',
       occupation: 'CEO of amazing company',
     },
     {
-      avatarUrl: 'assets/avatars/6.svg',
+      avatarUrl: '/assets/avatars/6.svg',
       name: 'Laree Alaman',
       occupation: 'CEO of amazing company',
     },
     {
-      avatarUrl: 'assets/avatars/7.svg',
+      avatarUrl: '/assets/avatars/7.svg',
       name: 'Tom Hearron',
       occupation: 'Software engineer',
     },

@@ -19,13 +19,13 @@ export class MentionedInCommentNotificationExampleComponent {
         id: 1,
         name: 'Justin Hansen',
         username: 'justin.hansen',
-        avatarUrl: 'assets/avatars/5.svg'
+        avatarUrl: '/assets/avatars/5.svg'
       },
       notifier: {
         id: 2,
         name: 'Elma Johnson',
         username: 'elma.johnson',
-        avatarUrl: 'assets/avatars/6.svg'
+        avatarUrl: '/assets/avatars/6.svg'
       },
       payload: {
         content: 'what did you say?'

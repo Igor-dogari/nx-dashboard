@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { AvatarComponent } from '@core';
+// import { AvatarComponent } from '@core';
 
 @Component({
-  imports: [MatButton, MatIcon, AvatarComponent],
+  imports: [
+    MatButton,
+    MatIcon,
+    // AvatarComponent
+  ],
   templateUrl: './my-profile.component.html',
   styleUrl: './my-profile.component.scss',
 })
