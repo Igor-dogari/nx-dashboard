@@ -51,3 +51,6 @@ create-schematics.sh
 
 .nx/cache
 .nx/workspace-data
+
+# Local Netlify folder
+.netlify
