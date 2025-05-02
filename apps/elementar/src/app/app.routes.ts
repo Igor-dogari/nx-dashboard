@@ -12,17 +12,17 @@ export const routes: Routes = [
     loadChildren: () => import('@core/pages').then(m => m.PagesModule),
     // canActivate: [libAuthGuard]
   },
-  {
-    path: 'auth',
-    loadChildren: () => import('@core/auth').then(m => m.AuthModule)
-  },
-  {
-    path: 'error',
-    loadChildren: () => import('@core/error').then(m => m.ErrorModule)
-  },
-  {
-    path: '**',
-    title: 'Page Not Found',
-    loadComponent: () => import('@core/error').then(c => c.NotFoundComponent)
-  }
+  // {
+  //   path: 'auth',
+  //   loadChildren: () => import('@core/auth').then(m => m.AuthModule)
+  // },
+  // {
+  //   path: 'error',
+  //   loadChildren: () => import('@core/error').then(m => m.ErrorModule)
+  // },
+  // {
+  //   path: '**',
+  //   title: 'Page Not Found',
+  //   loadComponent: () => import('@core/error').then(c => c.NotFoundComponent)
+  // }
 ];
