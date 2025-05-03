@@ -1,11 +1,14 @@
 import {
-  ApplicationConfig, ErrorHandler,
+  APP_INITIALIZER,
+  ApplicationConfig,
+  ErrorHandler,
   inject,
   provideAppInitializer,
-  provideZoneChangeDetection
+  provideZoneChangeDetection,
 } from '@angular/core';
 import {
   provideRouter,
+  Router,
   TitleStrategy,
   withEnabledBlockingInitialNavigation,
   withViewTransitions,
@@ -24,7 +27,7 @@ import {
 } from '@core';
 import { GlobalStore, LayoutSidebarStore } from '@core';
 import { provideAuth0 } from '@auth0/auth0-angular';
-import { GlobalErrorHandlerService } from './global-error-handler.service';
+import * as Sentry from '@sentry/angular';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -36,7 +39,6 @@ export const appConfig: ApplicationConfig = {
     ),
     provideAnimationsAsync(),
     provideHttpClient(withFetch()),
-    { provide: ErrorHandler, useClass: GlobalErrorHandlerService },
     provideStore(),
     provideNativeDateAdapter(),
     provideAppInitializer(() => {
@@ -66,6 +68,20 @@ export const appConfig: ApplicationConfig = {
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
       useValue: { appearance: 'outline' },
+    },
+    {
+      provide: ErrorHandler,
+      useValue: Sentry.createErrorHandler(),
+    },
+    {
+      provide: Sentry.TraceService,
+      deps: [Router],
+    },
+    {
+      provide: APP_INITIALIZER,
+      useFactory: () => () => {},
+      deps: [Sentry.TraceService],
+      multi: true,
     },
   ],
 };

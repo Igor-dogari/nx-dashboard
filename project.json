@@ -11,6 +11,7 @@
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "options": {
+        "sourceMap": true,
         "outputPath": "dist/elementar",
         "index": "apps/elementar/src/index.html",
         "browser": "apps/elementar/src/main.ts",
