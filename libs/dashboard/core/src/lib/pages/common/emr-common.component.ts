@@ -32,7 +32,14 @@ import { HeaderComponent, LibSidebarComponent } from '@core/pages';
 export class EmrCommonComponent implements OnInit {
 
   constructor() {
-    console.log("=>(emr-common.component.ts:33) constructor");
+    console.log("=>(emr-common.component.ts:5) AnnouncementGlobalComponent", AnnouncementGlobalComponent);
+    console.log("=>(emr-common.component.ts:7) IncidentsContainerComponent", IncidentsContainerComponent);
+    console.log("=>(emr-common.component.ts:9) LayoutBodyComponent", LayoutBodyComponent);
+    console.log("=>(emr-common.component.ts:11) LayoutComponent", LayoutComponent);
+    console.log("=>(emr-common.component.ts:13) LayoutHeaderComponent", LayoutHeaderComponent);
+    console.log("=>(emr-common.component.ts:15) LayoutSidebarComponent", LayoutSidebarComponent);
+    console.log("=>(emr-common.component.ts:17) LayoutTopbarComponent", LayoutTopbarComponent);
+
   }
 
   ngOnInit(): void {

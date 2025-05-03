@@ -57,7 +57,14 @@ export class HeaderComponent implements OnInit {
   });
 
   constructor() {
-    console.log("=>(header.component.ts:60) constructor", );
+    console.log("=>(header.component.ts:11) AssistantSearchComponent", AssistantSearchComponent);
+    console.log("=>(header.component.ts:13) DicebearComponent", DicebearComponent);
+    console.log("=>(header.component.ts:15) LayoutApiService", LayoutApiService);
+    console.log("=>(header.component.ts:17) NotificationsPopoverComponent", NotificationsPopoverComponent);
+    console.log("=>(header.component.ts:19) PopoverTriggerForDirective", PopoverTriggerForDirective);
+    console.log("=>(header.component.ts:21) SoundEffectDirective", SoundEffectDirective);
+    console.log("=>(header.component.ts:23) ThemeManagerService", ThemeManagerService);
+
   }
 
   ngOnInit(): void {
