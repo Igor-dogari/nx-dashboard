@@ -10,7 +10,6 @@
       "executor": "@nx/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "sourceMap": true,
         "project": "libs/dashboard/core/ng-package.json"
       },
       "configurations": {

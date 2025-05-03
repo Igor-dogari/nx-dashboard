@@ -9,7 +9,6 @@
       "executor": "@angular-devkit/build-angular:application",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "sourceMap": true,
         "outputPath": "dist/apps/elementar",
         "index": "apps/elementar/src/index.html",
         "browser": "apps/elementar/src/main.ts",
