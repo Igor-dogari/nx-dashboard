@@ -13,6 +13,7 @@ import { MatButton, MatIconButton } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import {
   AvatarComponent,
+  CheckImports,
   SuggestionBlockComponent,
   SuggestionComponent,
   SuggestionIconDirective,
@@ -20,6 +21,7 @@ import {
   SuggestionThumbDirective,
 } from '@core';
 
+@CheckImports()
 @Component({
   selector: 'emr-assistant-search',
   imports: [

@@ -1,4 +1,4 @@
-import { Component, computed, inject, OnInit } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatAnchor, MatButton, MatIconButton } from '@angular/material/button';
 import { MatBadge } from '@angular/material/badge';
@@ -8,6 +8,7 @@ import { MatTooltip } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
 import {
   AssistantSearchComponent,
+  CheckImports,
   DicebearComponent,
   LayoutApiService,
   NotificationsPopoverComponent,
@@ -18,6 +19,7 @@ import {
 import { AuthService } from '@auth0/auth0-angular';
 import { AsyncPipe } from '@angular/common';
 
+@CheckImports()
 @Component({
   selector: 'app-header',
   imports: [
@@ -46,7 +48,7 @@ import { AsyncPipe } from '@angular/common';
   },
   standalone: true,
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   auth = inject(AuthService);
 
   protected _themeManager = inject(ThemeManagerService);
@@ -55,21 +57,6 @@ export class HeaderComponent implements OnInit {
   sidebarShown = computed(() => {
     return this._layoutApi.isSidebarShown('root');
   });
-
-  constructor() {
-    console.log("=>(header.component.ts:11) AssistantSearchComponent", AssistantSearchComponent);
-    console.log("=>(header.component.ts:13) DicebearComponent", DicebearComponent);
-    console.log("=>(header.component.ts:15) LayoutApiService", LayoutApiService);
-    console.log("=>(header.component.ts:17) NotificationsPopoverComponent", NotificationsPopoverComponent);
-    console.log("=>(header.component.ts:19) PopoverTriggerForDirective", PopoverTriggerForDirective);
-    console.log("=>(header.component.ts:21) SoundEffectDirective", SoundEffectDirective);
-    console.log("=>(header.component.ts:23) ThemeManagerService", ThemeManagerService);
-
-  }
-
-  ngOnInit(): void {
-    console.log("=>(header.component.ts:64) ngOnInit", );
-  }
 
   toggleSidebar(): void {
     if (this.sidebarShown()) {

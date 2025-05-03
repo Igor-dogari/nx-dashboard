@@ -10,8 +10,9 @@ import { IncidentTitleComponent } from '../incident-title/incident-title.compone
 import { IncidentCloseDirective } from '../incident-close.directive';
 import { IncidentComponent } from '../incident/incident.component';
 import { IncidentsListComponent } from '../incidents-list/incidents-list.component';
-import { IncidentsStore } from '@core';
+import { CheckImports, IncidentsStore } from '@core';
 
+@CheckImports()
 @Component({
   selector: 'emr-incidents-container,emr-incidents-global',
   exportAs: 'emrIncidentsGlobal',

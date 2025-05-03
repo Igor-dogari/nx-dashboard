@@ -25,8 +25,10 @@ import {
   SidebarNavItemIconDirective,
   OrderByPipe,
   ToolbarComponent,
+  CheckImports,
 } from '@core';
 
+@CheckImports()
 @Component({
   selector: 'lib-sidebar',
   imports: [
@@ -861,31 +863,7 @@ export class LibSidebarComponent implements OnInit {
   navItemLinks: any[] = [];
   activeKey: null | string = null;
 
-  constructor() {
-    console.log("=>(lib-sidebar.component.ts:10) EmrSidebarComponent", EmrSidebarComponent);
-    console.log("=>(lib-sidebar.component.ts:12) SidebarBodyComponent", SidebarBodyComponent);
-    console.log("=>(lib-sidebar.component.ts:14) SidebarCompactViewModeDirective", SidebarCompactViewModeDirective);
-    console.log("=>(lib-sidebar.component.ts:16) SidebarFooterComponent", SidebarFooterComponent);
-    console.log("=>(lib-sidebar.component.ts:18) SidebarFullViewModeDirective", SidebarFullViewModeDirective);
-    console.log("=>(lib-sidebar.component.ts:20) SidebarHeaderComponent", SidebarHeaderComponent);
-    console.log("=>(lib-sidebar.component.ts:22) SidebarNavComponent", SidebarNavComponent);
-    console.log("=>(lib-sidebar.component.ts:24) DicebearComponent", DicebearComponent);
-    console.log("=>(lib-sidebar.component.ts:26) LogoComponent", LogoComponent);
-    console.log("=>(lib-sidebar.component.ts:28) SidebarNavGroupComponent", SidebarNavGroupComponent);
-    console.log("=>(lib-sidebar.component.ts:30) SidebarNavItemComponent", SidebarNavItemComponent);
-    console.log("=>(lib-sidebar.component.ts:32) SidebarNavHeadingComponent", SidebarNavHeadingComponent);
-    console.log("=>(lib-sidebar.component.ts:34) SidebarNavItemBadgeDirective", SidebarNavItemBadgeDirective);
-    console.log("=>(lib-sidebar.component.ts:36) SidebarNavGroupToggleIconDirective", SidebarNavGroupToggleIconDirective);
-    console.log("=>(lib-sidebar.component.ts:38) SidebarNavGroupToggleComponent", SidebarNavGroupToggleComponent);
-    console.log("=>(lib-sidebar.component.ts:40) SidebarNavGroupMenuComponent", SidebarNavGroupMenuComponent);
-    console.log("=>(lib-sidebar.component.ts:42) SidebarNavItemIconDirective", SidebarNavItemIconDirective);
-    console.log("=>(lib-sidebar.component.ts:44) OrderByPipe", OrderByPipe);
-    console.log("=>(lib-sidebar.component.ts:46) ToolbarComponent", ToolbarComponent);
-
-  }
-
   ngOnInit() {
-    console.log("=>(lib-sidebar.component.ts:869) ngOnInit", );
     this.navItems.forEach((navItem) => {
       this.navItemLinks.push(navItem);
 

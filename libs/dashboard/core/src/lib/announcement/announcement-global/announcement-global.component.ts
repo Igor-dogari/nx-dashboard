@@ -1,10 +1,8 @@
 import { Component, computed, inject, output } from '@angular/core';
 import { AnnouncementComponent } from '../announcement/announcement.component';
-import {
-  Announcement,
-  AnnouncementStore,
-} from '@core';
+import { Announcement, AnnouncementStore, CheckImports } from '@core';
 
+@CheckImports()
 @Component({
   selector: 'emr-announcement-global',
   exportAs: 'emrAnnouncementGlobal',

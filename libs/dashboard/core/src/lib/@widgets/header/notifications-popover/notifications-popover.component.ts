@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InviteToEditFilesInFolderNotification, MentionedInCommentNotification } from '@core';
+import { CheckImports, InviteToEditFilesInFolderNotification, MentionedInCommentNotification } from '@core';
 import { RouterLink } from '@angular/router';
 import { MatAnchor, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
@@ -7,6 +7,7 @@ import { MatRipple } from '@angular/material/core';
 import { PopoverComponent } from '@core';
 import { NotificationDefDirective, NotificationListComponent, Notification } from '@core';
 
+@CheckImports()
 @Component({
   selector: 'emr-notifications-popover',
   imports: [
