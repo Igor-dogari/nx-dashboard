@@ -4,28 +4,28 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicCommentEditorExampleComponent
-} from '../_examples/basic-comment-editor-example/basic-comment-editor-example.component';
+} from '@core/pages';
 import {
   CommentEditorWithToolbarExampleComponent
-} from '../_examples/comment-editor-with-toolbar-example/comment-editor-with-toolbar-example.component';
+} from '@core/pages';
 import {
   CommentEditorWithFullViewModeExampleComponent
-} from '../_examples/comment-editor-with-full-view-mode-example/comment-editor-with-full-view-mode-example.component';
+} from '@core/pages';
 import {
   CommentEditorWithUploadErrorExampleComponent
-} from '../_examples/comment-editor-with-upload-error-example/comment-editor-with-upload-error-example.component';
+} from '@core/pages';
 import {
   CommentEditorWithCustomIconsExampleComponent
-} from '../_examples/comment-editor-with-custom-icons-example/comment-editor-with-custom-icons-example.component';
+} from '@core/pages';
 import {
   CommentEditorCancelButtonAlwaysVisibleExampleComponent
-} from '../_examples/comment-editor-cancel-button-always-visible-example/comment-editor-cancel-button-always-visible-example.component';
+} from '@core/pages';
 import {
   CommentEditorCustomButtonLabelsExampleComponent
-} from '../_examples/comment-editor-custom-button-labels-example/comment-editor-custom-button-labels-example.component';
+} from '@core/pages';
 import {
   CommentEditorWithMaxContentHeightExampleComponent
-} from '../_examples/comment-editor-with-max-content-height-example/comment-editor-with-max-content-height-example.component';
+} from '@core/pages';
 
 @Component({
   selector: 'app-overview',

@@ -4,16 +4,16 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   MchartPieBasicExampleComponent
-} from '../_examples/mchart-pie-basic-example/mchart-pie-basic-example.component';
+} from '@core/pages';
 import {
   MchartPieWithLegendExampleComponent
-} from '../_examples/mchart-pie-with-legend-example/mchart-pie-with-legend-example.component';
+} from '@core/pages';
 import {
   MchartPieValueOnSlicesExampleComponent
-} from '../_examples/mchart-pie-value-on-slices-example/mchart-pie-value-on-slices-example.component';
+} from '@core/pages';
 import {
   MchartPieWithTooltipExampleComponent
-} from '../_examples/mchart-pie-with-tooltip-example/mchart-pie-with-tooltip-example.component';
+} from '@core/pages';
 
 @Component({
   selector: 'app-overview',

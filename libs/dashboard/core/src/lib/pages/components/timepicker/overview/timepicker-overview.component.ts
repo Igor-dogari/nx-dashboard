@@ -4,13 +4,13 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicTimepickerExampleComponent
-} from '../_examples/basic-timepicker-example/basic-timepicker-example.component';
+} from '@core/pages';
 import {
   TimepickerWithDatepickerExampleComponent
-} from '../_examples/timepicker-with-datepicker-example/timepicker-with-datepicker-example.component';
+} from '@core/pages';
 import {
   TimepickerCustomToggleIconExampleComponent
-} from '../_examples/timepicker-custom-toggle-icon-example/timepicker-custom-toggle-icon-example.component';
+} from '@core/pages';
 
 @Component({
   selector: 'app-overview',

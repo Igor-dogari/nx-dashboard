@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BasicDatepickerExampleComponent } from './basic-datepicker-example.component';
+import { BasicDatepickerExampleComponent } from '@core/pages';
 
 describe('BasicDatepickerExampleComponent', () => {
   let component: BasicDatepickerExampleComponent;
@@ -11,7 +11,7 @@ describe('BasicDatepickerExampleComponent', () => {
       imports: [BasicDatepickerExampleComponent]
     })
     .compileComponents();
-    
+
     fixture = TestBed.createComponent(BasicDatepickerExampleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

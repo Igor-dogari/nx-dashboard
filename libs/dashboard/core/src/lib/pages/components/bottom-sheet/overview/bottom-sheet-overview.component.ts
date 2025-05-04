@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicBottomSheetExampleComponent
-} from '../_examples/basic-bottom-sheet-example/basic-bottom-sheet-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

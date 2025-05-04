@@ -36,7 +36,7 @@ export const appConfig: ApplicationConfig = {
     ),
     provideAnimationsAsync(),
     provideHttpClient(withFetch()),
-    { provide: ErrorHandler, useClass: GlobalErrorHandlerService },
+    // { provide: ErrorHandler, useClass: GlobalErrorHandlerService },
     provideStore(),
     provideNativeDateAdapter(),
     provideAppInitializer(() => {

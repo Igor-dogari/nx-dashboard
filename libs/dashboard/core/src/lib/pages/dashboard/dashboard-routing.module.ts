@@ -10,64 +10,54 @@ const routes: Routes = [
     redirectTo: 'basic',
   },
   {
-    path: 'basic',
+    path: 'profile',
     component: MyProfileComponent,
-    // canActivate: [authGuardFn],
+    canActivate: [authGuardFn],
   },
-  // {
-  //   path: 'basic',
-  //   title: 'Basic Dashboard',
-  //   loadComponent: () =>
-  //     import('./basic/dashboard-basic.component').then((c) => c.DashboardBasicComponent),
-  // },
-  // {
-  //   path: 'ecommerce',
-  //   title: 'Ecommerce Dashboard',
-  //   loadComponent: () =>
-  //     import('./ecommerce/ecommerce.component').then(
-  //       (c) => c.EcommerceComponent,
-  //     ),
-  // },
-  // {
-  //   path: 'finance',
-  //   title: 'Finance Dashboard',
-  //   loadComponent: () =>
-  //     import('./finance/finance.component').then((c) => c.FinanceComponent),
-  // },
-  // {
-  //   path: 'explore',
-  //   title: 'Explore Dashboard',
-  //   loadComponent: () =>
-  //     import('./explore/explore.component').then((c) => c.ExploreComponent),
-  // },
-  // {
-  //   path: 'ecommerce',
-  //   title: 'Ecommerce Dashboard',
-  //   loadComponent: () =>
-  //     import('./ecommerce/ecommerce.component').then(
-  //       (c) => c.EcommerceComponent,
-  //     ),
-  // },
-  // {
-  //   path: 'finance',
-  //   title: 'Finance Dashboard',
-  //   loadComponent: () =>
-  //     import('./finance/finance.component').then((c) => c.FinanceComponent),
-  // },
-  // {
-  //   path: 'explore',
-  //   title: 'Explore Dashboard',
-  //   loadComponent: () =>
-  //     import('./explore/explore.component').then((c) => c.ExploreComponent),
-  // },
-  // {
-  //   path: 'analytics',
-  //   title: 'Analytics',
-  //   loadComponent: () =>
-  //     import('./analytics/analytics.component').then(
-  //       (c) => c.AnalyticsComponent,
-  //     ),
-  // },
+  {
+    path: 'basic',
+    title: 'Basic Dashboard',
+    loadComponent: () =>
+      import('@core/pages').then((c) => c.DashboardBasicComponent),
+  },
+  {
+    path: 'ecommerce',
+    title: 'Ecommerce Dashboard',
+    loadComponent: () =>
+      import('@core/pages').then((c) => c.EcommerceComponent),
+  },
+  {
+    path: 'finance',
+    title: 'Finance Dashboard',
+    loadComponent: () => import('@core/pages').then((c) => c.FinanceComponent),
+  },
+  {
+    path: 'explore',
+    title: 'Explore Dashboard',
+    loadComponent: () => import('@core/pages').then((c) => c.ExploreComponent),
+  },
+  {
+    path: 'ecommerce',
+    title: 'Ecommerce Dashboard',
+    loadComponent: () =>
+      import('@core/pages').then((c) => c.EcommerceComponent),
+  },
+  {
+    path: 'finance',
+    title: 'Finance Dashboard',
+    loadComponent: () => import('@core/pages').then((c) => c.FinanceComponent),
+  },
+  {
+    path: 'explore',
+    title: 'Explore Dashboard',
+    loadComponent: () => import('@core/pages').then((c) => c.ExploreComponent),
+  },
+  {
+    path: 'analytics',
+    title: 'Analytics',
+    loadComponent: () =>
+      import('@core/pages').then((c) => c.AnalyticsComponent),
+  },
 ];
 
 @NgModule({

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { CircleFlagsExampleComponent } from '../_examples/circle-flags-example/circle-flags-example.component';
+import { CircleFlagsExampleComponent } from '@core/pages';
 import {
   MaterialSymbolsIconsExampleComponent
-} from '../_examples/material-symbols-icons-example/material-symbols-icons-example.component';
-import { PhosphorIconsExampleComponent } from '../_examples/phosphor-icons-example/phosphor-icons-example.component';
+} from '@core/pages';
+import { PhosphorIconsExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

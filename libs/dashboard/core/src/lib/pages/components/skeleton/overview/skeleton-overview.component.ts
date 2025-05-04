@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicSkeletonExampleComponent } from '../_examples/basic-skeleton-example/basic-skeleton-example.component';
+import { BasicSkeletonExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

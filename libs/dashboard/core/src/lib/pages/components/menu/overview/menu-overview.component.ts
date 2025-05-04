@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicMenuExampleComponent } from '../_examples/basic-menu-example/basic-menu-example.component';
-import { MenuWithIconsExampleComponent } from '../_examples/menu-with-icons-example/menu-with-icons-example.component';
-import { NestedMenuExampleComponent } from '../_examples/nested-menu-example/nested-menu-example.component';
+import { BasicMenuExampleComponent } from '@core/pages';
+import { MenuWithIconsExampleComponent } from '@core/pages';
+import { NestedMenuExampleComponent } from '@core/pages';
 import {
   MenuPositioningExampleComponent
-} from '../_examples/menu-positioning-example/menu-positioning-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

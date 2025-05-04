@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicResizableContainerExampleComponent
-} from '../_examples/basic-resizable-container-example/basic-resizable-container-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

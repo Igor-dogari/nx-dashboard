@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicIncidentsExampleComponent } from '../_examples/basic-incidents-example/basic-incidents-example.component';
+import { BasicIncidentsExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   IncidentsShowHideDynamiclyExampleComponent
-} from '../_examples/incidents-show-hide-dynamicly-example/incidents-show-hide-dynamicly-example.component';
+} from '@core/pages';
 
 @Component({
   imports: [

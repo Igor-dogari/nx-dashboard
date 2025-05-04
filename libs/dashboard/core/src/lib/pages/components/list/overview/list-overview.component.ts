@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicListExampleComponent } from '../_examples/basic-list-example/basic-list-example.component';
+import { BasicListExampleComponent } from '@core/pages';
 import {
   ListWithSectionsExampleComponent
-} from '../_examples/list-with-sections-example/list-with-sections-example.component';
+} from '@core/pages';
 import {
   ListWithSelectionExampleComponent
-} from '../_examples/list-with-selection-example/list-with-selection-example.component';
+} from '@core/pages';
 import {
   ListWithSingleSelectionExampleComponent
-} from '../_examples/list-with-single-selection-example/list-with-single-selection-example.component';
-import { ListVariantsExampleComponent } from '../_examples/list-variants-example/list-variants-example.component';
+} from '@core/pages';
+import { ListVariantsExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

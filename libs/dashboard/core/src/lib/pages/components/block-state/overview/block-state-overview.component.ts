@@ -4,19 +4,19 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicBlockStateExampleComponent
-} from '../_examples/basic-block-state-example/basic-block-state-example.component';
+} from '@core/pages';
 import {
   BlockStateWithImageExampleComponent
-} from '../_examples/block-state-with-image-example/block-state-with-image-example.component';
+} from '@core/pages';
 import {
   BlockStateWithIconExampleComponent
-} from '../_examples/block-state-with-icon-example/block-state-with-icon-example.component';
+} from '@core/pages';
 import {
   BlockStateWithActionsExampleComponent
-} from '../_examples/block-state-with-actions-example/block-state-with-actions-example.component';
+} from '@core/pages';
 import {
   BlockStateWithCustomIconExampleComponent
-} from '../_examples/block-state-with-custom-icon-example/block-state-with-custom-icon-example.component';
+} from '@core/pages';
 
 @Component({
   imports: [

@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicColorPickerExampleComponent
-} from '../_examples/basic-color-picker-example/basic-color-picker-example.component';
+} from '@core/pages';
 import {
   ColorPickerWithPopoverExampleComponent
-} from '../_examples/color-picker-with-popover-example/color-picker-with-popover-example.component';
+} from '@core/pages';
 import {
   InputWithColorPickerExampleComponent
-} from '../_examples/input-with-color-picker-example/input-with-color-picker-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

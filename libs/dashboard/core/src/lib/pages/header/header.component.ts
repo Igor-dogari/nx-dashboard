@@ -1,4 +1,4 @@
-import { Component, computed, inject, OnInit } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatAnchor, MatButton, MatIconButton } from '@angular/material/button';
 import { MatBadge } from '@angular/material/badge';
@@ -46,7 +46,7 @@ import { AsyncPipe } from '@angular/common';
   },
   standalone: true,
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   auth = inject(AuthService);
 
   protected _themeManager = inject(ThemeManagerService);
@@ -55,14 +55,6 @@ export class HeaderComponent implements OnInit {
   sidebarShown = computed(() => {
     return this._layoutApi.isSidebarShown('root');
   });
-
-  constructor() {
-    console.log("=>(header.component.ts:60) constructor", );
-  }
-
-  ngOnInit(): void {
-    console.log("=>(header.component.ts:64) ngOnInit", );
-  }
 
   toggleSidebar(): void {
     if (this.sidebarShown()) {

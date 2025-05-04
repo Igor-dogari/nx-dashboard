@@ -4,13 +4,13 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicImageViewerExampleComponent
-} from '../_examples/basic-image-viewer-example/basic-image-viewer-example.component';
+} from '@core/pages';
 import {
   ImageViewerWithCaptionAndDescriptionExampleComponent
-} from '../_examples/image-viewer-with-caption-and-description-example/image-viewer-with-caption-and-description-example.component';
+} from '@core/pages';
 import {
   ImageViewerWithTitleExampleComponent
-} from '../_examples/image-viewer-with-title-example/image-viewer-with-title-example.component';
+} from '@core/pages';
 import { MatDivider } from '@angular/material/divider';
 
 @Component({

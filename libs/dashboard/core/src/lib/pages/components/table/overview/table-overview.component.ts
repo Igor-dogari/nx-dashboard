@@ -1,28 +1,28 @@
 import { Component } from '@angular/core';
-import { BasicTableExampleComponent } from '../_examples/basic-table-example/basic-table-example.component';
+import { BasicTableExampleComponent } from '@core/pages';
 import { PlaygroundComponent } from '@core';
 import {
   TableWithPaginationExampleComponent
-} from '../_examples/table-with-pagination-example/table-with-pagination-example.component';
-import { TableWithSortExampleComponent } from '../_examples/table-with-sort-example/table-with-sort-example.component';
+} from '@core/pages';
+import { TableWithSortExampleComponent } from '@core/pages';
 import {
   TableWithFilteringExampleComponent
-} from '../_examples/table-with-filtering-example/table-with-filtering-example.component';
+} from '@core/pages';
 import {
   TableWithSelectionExampleComponent
-} from '../_examples/table-with-selection-example/table-with-selection-example.component';
+} from '@core/pages';
 import {
   TableWithFixedColumnsExampleComponent
-} from '../_examples/table-with-fixed-columns-example/table-with-fixed-columns-example.component';
+} from '@core/pages';
 import {
   TableWithStickyHeaderExampleComponent
-} from '../_examples/table-with-sticky-header-example/table-with-sticky-header-example.component';
+} from '@core/pages';
 import {
   TableWithStickyFooterExampleComponent
-} from '../_examples/table-with-sticky-footer-example/table-with-sticky-footer-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
-import { SortableTableExampleComponent } from '../_examples/sortable-table-example/sortable-table-example.component';
+import { SortableTableExampleComponent } from '@core/pages';
 
 @Component({
     selector: 'app-overview',

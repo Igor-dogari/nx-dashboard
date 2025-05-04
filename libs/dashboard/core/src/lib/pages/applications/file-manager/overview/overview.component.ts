@@ -8,11 +8,11 @@ import { MatCheckbox } from '@angular/material/checkbox';
 import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
 import { MatDivider } from '@angular/material/divider';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
-import { FileLargeGridLayoutComponent } from '../_layout/file-large-grid-layout/file-large-grid-layout.component';
-import { FileListLayoutComponent } from '../_layout/file-list-layout/file-list-layout.component';
-import { FileLargeListLayoutComponent } from '../_layout/file-large-list-layout/file-large-list-layout.component';
-import { FileGridLayoutComponent } from '../_layout/file-grid-layout/file-grid-layout.component';
-import { File, FileSelectedEvent } from '../types';
+import { FileLargeGridLayoutComponent } from '@core/pages';
+import { FileListLayoutComponent } from '@core/pages';
+import { FileLargeListLayoutComponent } from '@core/pages';
+import { FileGridLayoutComponent } from '@core/pages';
+import { File, FileSelectedEvent } from '@core/pages';
 import { AvatarComponent, MenuOptionGroupDirective } from '@core';
 
 @Component({

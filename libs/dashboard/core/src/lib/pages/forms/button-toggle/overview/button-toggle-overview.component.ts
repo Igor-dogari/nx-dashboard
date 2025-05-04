@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicButtonToggleExampleComponent
-} from '../_examples/basic-button-toggle-example/basic-button-toggle-example.component';
+} from '@core/pages';
 import {
   ButtonToggleSelectionModeExampleComponent
-} from '../_examples/button-toggle-selection-mode-example/button-toggle-selection-mode-example.component';
+} from '@core/pages';
 import {
   ButtonToggleAppearanceExampleComponent
-} from '../_examples/button-toggle-appearance-example/button-toggle-appearance-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

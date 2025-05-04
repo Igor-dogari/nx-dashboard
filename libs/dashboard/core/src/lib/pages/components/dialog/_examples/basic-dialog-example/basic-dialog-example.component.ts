@@ -3,7 +3,7 @@ import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import { MatButton } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
-import { BasicDialog } from '../basic/basic.dialog';
+import { BasicDialog } from '@core/pages';
 import { MatInput } from '@angular/material/input';
 
 @Component({

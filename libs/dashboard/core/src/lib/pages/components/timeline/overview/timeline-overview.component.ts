@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicTimelineExampleComponent } from '../_examples/basic-timeline-example/basic-timeline-example.component';
+import { BasicTimelineExampleComponent } from '@core/pages';
 import {
   TimelineTimestampExampleComponent
-} from '../_examples/timeline-timestamp-example/timeline-timestamp-example.component';
+} from '@core/pages';
 import {
   TimelineWithCutsomIndicatorExampleComponent
-} from '../_examples/timeline-with-cutsom-indicator-example/timeline-with-cutsom-indicator-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicPhoneInputExampleComponent
-} from '../_examples/basic-phone-input-example/basic-phone-input-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import {
   PhoneInputOnlyCountriesExampleComponent
-} from '../_examples/phone-input-only-countries-example/phone-input-only-countries-example.component';
+} from '@core/pages';
 import {
   PhoneInputPreferredCountriesExampleComponent
-} from '../_examples/phone-input-preferred-countries-example/phone-input-preferred-countries-example.component';
+} from '@core/pages';
 
 @Component({
   imports: [

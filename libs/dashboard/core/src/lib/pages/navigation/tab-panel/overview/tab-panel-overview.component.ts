@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   TabPanelWithPanelsInsideExampleComponent
-} from '../_examples/tab-panel-with-panels-inside-example/tab-panel-with-panels-inside-example.component';
-import { BasicTabPanelExampleComponent } from '../_examples/basic-tab-panel-example/basic-tab-panel-example.component';
+} from '@core/pages';
+import { BasicTabPanelExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   TabPanelCompactExampleComponent
-} from '../_examples/tab-panel-compact-example/tab-panel-compact-example.component';
+} from '@core/pages';
 
 @Component({
     selector: 'app-overview',

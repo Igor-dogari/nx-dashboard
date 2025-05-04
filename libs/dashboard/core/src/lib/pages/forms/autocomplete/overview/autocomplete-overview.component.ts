@@ -4,17 +4,17 @@ import { PlaygroundComponent } from '@core';
 import { map, Observable, startWith } from 'rxjs';
 import {
   AutocompleteFilterExampleComponent
-} from '../_examples/autocomplete-filter-example/autocomplete-filter-example.component';
+} from '@core/pages';
 import {
   SimpleAutocompleteExampleComponent
-} from '../_examples/simple-autocomplete-example/simple-autocomplete-example.component';
+} from '@core/pages';
 import {
   SeparateControlsAndDisplayValuesExampleComponent
-} from '../_examples/separate-controls-and-display-values-example/separate-controls-and-display-values-example.component';
+} from '@core/pages';
 import {
   AutoHighlightFirstPersonExampleComponent
-} from '../_examples/auto-highlight-first-person-example/auto-highlight-first-person-example.component';
-import { OptionGroupsExampleComponent } from '../_examples/option-groups-example/option-groups-example.component';
+} from '@core/pages';
+import { OptionGroupsExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

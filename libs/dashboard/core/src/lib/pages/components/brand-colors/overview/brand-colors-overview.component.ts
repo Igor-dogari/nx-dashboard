@@ -4,16 +4,16 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicBrandColorsExampleComponent
-} from '../_examples/basic-brand-colors-example/basic-brand-colors-example.component';
+} from '@core/pages';
 import {
   BrandColorsCustomColorsExampleComponent
-} from '../_examples/brand-colors-custom-colors-example/brand-colors-custom-colors-example.component';
+} from '@core/pages';
 import {
   BrandColorsAsFormControlExampleComponent
-} from '../_examples/brand-colors-as-form-control-example/brand-colors-as-form-control-example.component';
+} from '@core/pages';
 import {
   BrandColorsDisabledExampleComponent
-} from '../_examples/brand-colors-disabled-example/brand-colors-disabled-example.component';
+} from '@core/pages';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

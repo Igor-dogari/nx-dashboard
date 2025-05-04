@@ -1,5 +1,5 @@
 import { Component, inject, input, InputSignal, OnInit, output } from '@angular/core';
-import { File, FileSelectedEvent } from '../../types';
+import { File, FileSelectedEvent } from '@core/pages';
 import { MatOption } from '@angular/material/autocomplete';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatIcon } from '@angular/material/icon';
@@ -65,7 +65,7 @@ export class FileGridLayoutComponent implements OnInit {
       name: 'Size'
     }
   ];
-  sortBy: string = 'asc';
+  sortBy = 'asc';
 
   get groupByName(): string {
     return <string>this.groupByList.find(groupItem => groupItem.id === this.form.value['groupBy'])?.name;

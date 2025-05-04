@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicCommandBarExampleComponent
-} from '../_examples/basic-command-bar-example/basic-command-bar-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

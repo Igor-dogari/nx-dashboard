@@ -4,20 +4,20 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   GoToPremiumWidgetExampleComponent
-} from '../_examples/go-to-premium-widget-example/go-to-premium-widget-example.component';
-import { ToolbarWidgetExampleComponent } from '../_examples/toolbar-widget-example/toolbar-widget-example.component';
+} from '@core/pages';
+import { ToolbarWidgetExampleComponent } from '@core/pages';
 import {
   ToolbarAWidgetExampleComponent
-} from '../_examples/toolbar-a-widget-example/toolbar-a-widget-example.component';
+} from '@core/pages';
 import {
   UpgradeNowWidgetExampleComponent
-} from '../_examples/upgrade-now-widget-example/upgrade-now-widget-example.component';
+} from '@core/pages';
 import {
   UpgradeToProWidgetExampleComponent
-} from '../_examples/upgrade-to-pro-widget-example/upgrade-to-pro-widget-example.component';
+} from '@core/pages';
 import {
   UsedSpaceWidgetExampleComponent
-} from '../_examples/used-space-widget-example/used-space-widget-example.component';
+} from '@core/pages';
 
 @Component({
     imports: [

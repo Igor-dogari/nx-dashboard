@@ -2,31 +2,31 @@ import { Component } from '@angular/core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
-import { BasicDataviewExampleComponent } from '../_examples/basic-dataview-example/basic-dataview-example.component';
+import { BasicDataviewExampleComponent } from '@core/pages';
 import {
   DataviewWithSelectionExampleComponent
-} from '../_examples/dataview-with-selection-example/dataview-with-selection-example.component';
+} from '@core/pages';
 import {
   DataViewWithPaginationExampleComponent
-} from '../_examples/data-view-with-pagination-example/data-view-with-pagination-example.component';
+} from '@core/pages';
 import {
   DataViewWithSortingExampleComponent
-} from '../_examples/data-view-with-sorting-example/data-view-with-sorting-example.component';
+} from '@core/pages';
 import {
   DataViewHlHeaderExampleComponent
-} from '../_examples/data-view-hl-header-example/data-view-hl-header-example.component';
+} from '@core/pages';
 import {
   DataViewCustomCellRenderersExampleComponent
-} from '../_examples/data-view-custom-cell-renderers-example/data-view-custom-cell-renderers-example.component';
+} from '@core/pages';
 import {
   DataViewWithActionBarExampleComponent
-} from '../_examples/data-view-with-action-bar-example/data-view-with-action-bar-example.component';
+} from '@core/pages';
 import {
   DataViewFilterDataExampleComponent
-} from '../_examples/data-view-filter-data-example/data-view-filter-data-example.component';
+} from '@core/pages';
 import {
   DataViewLoadingStateExampleComponent
-} from '../_examples/data-view-loading-state-example/data-view-loading-state-example.component';
+} from '@core/pages';
 
 @Component({
   selector: 'app-overview',

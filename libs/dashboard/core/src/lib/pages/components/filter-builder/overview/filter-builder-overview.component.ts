@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicFilterBuilderExampleComponent
-} from '../_examples/basic-filter-builder-example/basic-filter-builder-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

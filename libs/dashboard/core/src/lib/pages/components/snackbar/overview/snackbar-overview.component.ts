@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicSnackbarExampleComponent } from '../_examples/basic-snackbar-example/basic-snackbar-example.component';
+import { BasicSnackbarExampleComponent } from '@core/pages';
 import {
   SnackbarWithCustomComponentExampleComponent
-} from '../_examples/snackbar-with-custom-component-example/snackbar-with-custom-component-example.component';
+} from '@core/pages';
 import {
   ConfigurableSnackbarExampleComponent
-} from '../_examples/configurable-snackbar-example/configurable-snackbar-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

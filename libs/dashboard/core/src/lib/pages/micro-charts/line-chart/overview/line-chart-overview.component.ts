@@ -4,25 +4,25 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   MchartLineWithTooltipExampleComponent
-} from '../_examples/mchart-line-with-tooltip-example/mchart-line-with-tooltip-example.component';
+} from '@core/pages';
 import {
   MchartLineBasicExampleComponent
-} from '../_examples/mchart-line-basic-example/mchart-line-basic-example.component';
+} from '@core/pages';
 import {
   MchartLineCustomCurveExampleComponent
-} from '../_examples/mchart-line-custom-curve-example/mchart-line-custom-curve-example.component';
+} from '@core/pages';
 import {
   MchartLineWithAreaExampleComponent
-} from '../_examples/mchart-line-with-area-example/mchart-line-with-area-example.component';
+} from '@core/pages';
 import {
   MchartLineCompactExampleComponent
-} from '../_examples/mchart-line-compact-example/mchart-line-compact-example.component';
+} from '@core/pages';
 import {
   MchartLineWithMarkersExampleComponent
-} from '../_examples/mchart-line-with-markers-example/mchart-line-with-markers-example.component';
+} from '@core/pages';
 import {
   MchartLineResponsiveExampleComponent
-} from '../_examples/mchart-line-responsive-example/mchart-line-responsive-example.component';
+} from '@core/pages';
 
 @Component({
   selector: 'app-overview',

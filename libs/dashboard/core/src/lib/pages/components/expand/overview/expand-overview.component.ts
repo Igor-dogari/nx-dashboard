@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicExpandExampleComponent } from '../_examples/basic-expand-example/basic-expand-example.component';
+import { BasicExpandExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   ExpandShowButtonIfExpandedExampleComponent
-} from '../_examples/expand-show-button-if-expanded-example/expand-show-button-if-expanded-example.component';
+} from '@core/pages';
 import {
   ExpandCustomButtonLabelsExampleComponent
-} from '../_examples/expand-custom-button-labels-example/expand-custom-button-labels-example.component';
+} from '@core/pages';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { MatButton } from '@angular/material/button';
-import { DialogWithConfirmationComponent } from '../dialog-with-confirmation/dialog-with-confirmation.component';
+import { DialogWithConfirmationComponent } from '@core/pages';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 @Component({

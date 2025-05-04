@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { BasicSidebarExampleComponent } from '../_examples/basic-sidebar-example/basic-sidebar-example.component';
+import { BasicSidebarExampleComponent } from '@core/pages';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import { PageComponent } from '@core';
-import { SidebarCompactExampleComponent } from '../_examples/sidebar-compact-example/sidebar-compact-example.component';
+import { SidebarCompactExampleComponent } from '@core/pages';
 import {
   SidebarWithCustomIconsExampleComponent
-} from '../_examples/sidebar-with-custom-icons-example/sidebar-with-custom-icons-example.component';
+} from '@core/pages';
 
 @Component({
   imports: [

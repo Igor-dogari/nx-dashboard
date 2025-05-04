@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicDialogExampleComponent } from '../_examples/basic-dialog-example/basic-dialog-example.component';
+import { BasicDialogExampleComponent } from '@core/pages';
 import {
   DialogScrollableContentExampleComponent
-} from '../_examples/dialog-scrollable-content-example/dialog-scrollable-content-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

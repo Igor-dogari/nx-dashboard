@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { PageContentDirective } from '@core';
 import {
   BasicEmojiPickerExampleComponent
-} from '../_examples/basic-emoji-picker-example/basic-emoji-picker-example.component';
+} from '@core/pages';
 import { PlaygroundComponent } from '@core';
 import { PageComponent } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';

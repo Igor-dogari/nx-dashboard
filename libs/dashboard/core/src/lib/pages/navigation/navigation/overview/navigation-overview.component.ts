@@ -2,27 +2,27 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicNavigationExampleComponent
-} from '../_examples/basic-navigation-example/basic-navigation-example.component';
+} from '@core/pages';
 import {
   NavigationWithHeadingExampleComponent
-} from '../_examples/navigation-with-heading-example/navigation-with-heading-example.component';
+} from '@core/pages';
 import {
   NavigationWithDividerExampleComponent
-} from '../_examples/navigation-with-divider-example/navigation-with-divider-example.component';
+} from '@core/pages';
 import {
   NavigationWithIconsExampleComponent
-} from '../_examples/navigation-with-icons-example/navigation-with-icons-example.component';
+} from '@core/pages';
 import {
   NavigationWithNestedMenuExampleComponent
-} from '../_examples/navigation-with-nested-menu-example/navigation-with-nested-menu-example.component';
+} from '@core/pages';
 import {
   NavigationSecondaryThemeExampleComponent
-} from '../_examples/navigation-secondary-theme-example/navigation-secondary-theme-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   NavigationWithBadgesExampleComponent
-} from '../_examples/navigation-with-badges-example/navigation-with-badges-example.component';
+} from '@core/pages';
 
 @Component({
     selector: 'app-overview',

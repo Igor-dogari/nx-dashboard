@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
-import { BasicRailNavExampleComponent } from '../_examples/basic-rail-nav-example/basic-rail-nav-example.component';
+import { BasicRailNavExampleComponent } from '@core/pages';
 import {
   RailNavCustomizationExampleComponent
-} from '../_examples/rail-nav-customization-example/rail-nav-customization-example.component';
+} from '@core/pages';
 
 @Component({
     imports: [

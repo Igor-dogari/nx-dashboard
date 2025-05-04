@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { LayoutHeaderExampleComponent } from '../_examples/layout-header-example/layout-header-example.component';
-import { LayoutSidebarExampleComponent } from '../_examples/layout-sidebar-example/layout-sidebar-example.component';
+import { LayoutHeaderExampleComponent } from '@core/pages';
+import { LayoutSidebarExampleComponent } from '@core/pages';
 import {
   LayoutHeaderWithSidebarExampleComponent
-} from '../_examples/layout-header-with-sidebar-example/layout-header-with-sidebar-example.component';
+} from '@core/pages';
 import {
   LayoutHeaderWithTopbarExampleComponent
-} from '../_examples/layout-header-with-topbar-example/layout-header-with-topbar-example.component';
-import { LayoutFooterExampleComponent } from '../_examples/layout-footer-example/layout-footer-example.component';
+} from '@core/pages';
+import { LayoutFooterExampleComponent } from '@core/pages';
 import {
   LayoutHeaderWithFooterExampleComponent
-} from '../_examples/layout-header-with-footer-example/layout-header-with-footer-example.component';
+} from '@core/pages';
 import {
   LayoutWithNestedLayoutsExampleComponent
-} from '../_examples/layout-with-nested-layouts-example/layout-with-nested-layouts-example.component';
-import { LayoutAsideExampleComponent } from '../_examples/layout-aside-example/layout-aside-example.component';
+} from '@core/pages';
+import { LayoutAsideExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

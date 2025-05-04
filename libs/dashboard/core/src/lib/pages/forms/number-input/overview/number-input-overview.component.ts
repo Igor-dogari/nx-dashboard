@@ -1,14 +1,14 @@
-import { Component, model } from '@angular/core';
+import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicNumberInputExampleComponent
-} from '../_examples/basic-number-input-example/basic-number-input-example.component';
+} from '@core/pages';
 import {
   NumberInputCustomControlsExampleComponent
-} from '../_examples/number-input-custom-controls-example/number-input-custom-controls-example.component';
+} from '@core/pages';
 import {
   NumberInputMinMaxExampleComponent
-} from '../_examples/number-input-min-max-example/number-input-min-max-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicToolbarExampleComponent } from '../_examples/basic-toolbar-example/basic-toolbar-example.component';
+import { BasicToolbarExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicContentFadeExampleComponent
-} from '../_examples/basic-content-fade-example/basic-content-fade-example.component';
+} from '@core/pages';
 import {
   ContentFadeCustomWidthExampleComponent
-} from '../_examples/content-fade-custom-width-example/content-fade-custom-width-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   ContentFadeCustomPositionExampleComponent
-} from '../_examples/content-fade-custom-position-example/content-fade-custom-position-example.component';
+} from '@core/pages';
 
 @Component({
   selector: 'app-overview',

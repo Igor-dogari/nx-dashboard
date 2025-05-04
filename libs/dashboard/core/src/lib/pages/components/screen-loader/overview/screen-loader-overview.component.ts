@@ -4,7 +4,7 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicScreenLoaderExampleComponent
-} from '../_examples/basic-screen-loader-example/basic-screen-loader-example.component';
+} from '@core/pages';
 
 @Component({
   imports: [

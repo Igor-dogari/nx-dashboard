@@ -63,8 +63,8 @@ export const withPagedEntities = (
             tap(() => state.setLoading(true)),
             switchMap((page) => loader.load(page)),
             tap(() => state.setLoading(false)),
-            tapResponse({
-              next: (response) => {
+            tapResponse<PostInterface[]>({
+              next: (response: PostInterface[]) => {
                 // const start = (response.page - 1) * 5;
                 // const end = start + 5;
                 // patchState(state, removeAllEntities(customerConfig));

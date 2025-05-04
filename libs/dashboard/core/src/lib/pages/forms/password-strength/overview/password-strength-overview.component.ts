@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicPasswordStrengthExampleComponent
-} from '../_examples/basic-password-strength-example/basic-password-strength-example.component';
+} from '@core/pages';
 import {
   PasswordStrengthInfoExampleComponent
-} from '../_examples/password-strength-info-example/password-strength-info-example.component';
+} from '@core/pages';
 import {
   PasswordToggleVisibilityExampleComponent
-} from '../_examples/password-toggle-visibility-example/password-toggle-visibility-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

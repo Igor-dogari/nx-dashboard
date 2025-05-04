@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicSliderExampleComponent } from '../_examples/basic-slider-example/basic-slider-example.component';
+import { BasicSliderExampleComponent } from '@core/pages';
 import {
   CustomThumbLabelFormattingExampleComponent
-} from '../_examples/custom-thumb-label-formatting-example/custom-thumb-label-formatting-example.component';
-import { RangeSliderExampleComponent } from '../_examples/range-slider-example/range-slider-example.component';
+} from '@core/pages';
+import { RangeSliderExampleComponent } from '@core/pages';
 import {
   ConfigurableSliderExampleComponent
-} from '../_examples/configurable-slider-example/configurable-slider-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

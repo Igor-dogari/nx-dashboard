@@ -1,26 +1,26 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicAvatarExampleComponent } from '../_examples/basic-avatar-example/basic-avatar-example.component';
-import { AvatarSizesExampleComponent } from '../_examples/avatar-sizes-example/avatar-sizes-example.component';
+import { BasicAvatarExampleComponent } from '@core/pages';
+import { AvatarSizesExampleComponent } from '@core/pages';
 import {
   AvatarWithImagesExampleComponent
-} from '../_examples/avatar-with-images-example/avatar-with-images-example.component';
+} from '@core/pages';
 import {
   AvatarWithIconsExampleComponent
-} from '../_examples/avatar-with-icons-example/avatar-with-icons-example.component';
-import { GroupedAvatarsExampleComponent } from '../_examples/grouped-avatars-example/grouped-avatars-example.component';
+} from '@core/pages';
+import { GroupedAvatarsExampleComponent } from '@core/pages';
 import {
   GroupedAndTotalAvatarsExampleComponent
-} from '../_examples/grouped-and-total-avatars-example/grouped-and-total-avatars-example.component';
+} from '@core/pages';
 import {
   AvatarPresenceIndicatorExampleComponent
-} from '../_examples/avatar-presence-indicator-example/avatar-presence-indicator-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   AvatarAutomaticColorExampleComponent
-} from '../_examples/avatar-automatic-color-example/avatar-automatic-color-example.component';
-import { AvatarDicebearExampleComponent } from '../_examples/avatar-dicebear-example/avatar-dicebear-example.component';
+} from '@core/pages';
+import { AvatarDicebearExampleComponent } from '@core/pages';
 
 @Component({
     selector: 'app-overview',

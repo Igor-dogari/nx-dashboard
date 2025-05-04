@@ -4,7 +4,7 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicCookiePopupExampleComponent
-} from '../_examples/basic-cookie-popup-example/basic-cookie-popup-example.component';
+} from '@core/pages';
 
 @Component({
   imports: [

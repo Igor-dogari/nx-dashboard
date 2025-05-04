@@ -1,3 +1,5 @@
+
+
 export * from './pages.module';
 export * from './dashboard/dashboard.module';
 export * from './dashboard/basic/dashboard-basic.component';
@@ -78,7 +80,6 @@ export * from './navigation/tab-panel/tab-panel.module';
 export * from './navigation/navigation/navigation.module';
 export * from './navigation/rail-nav/rail-nav.module';
 export * from './user-profile/user-profile.module';
-export * from './account/notifications/account-notifications.component';
 export * from './account/settings/my-profile/my-profile.component';
 export * from './account/settings/settings.module';
 export * from './store/store.module';
@@ -379,7 +380,6 @@ export * from './customization/colors/overview/colors-overview.component';
 export * from './customization/themes/overview/themes-overview.component';
 export * from './customization/typography/typography.component';
 export * from './dashboard/analytics/analytics.component';
-// export * from './dashboard/basic/dashboard-basic.component';
 export * from './dashboard/ecommerce/ecommerce.component';
 export * from './dashboard/explore/explore.component';
 export * from './dashboard/finance/finance.component';

@@ -2,19 +2,19 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicDatepickerExampleComponent
-} from '../_examples/basic-datepicker-example/basic-datepicker-example.component';
+} from '@core/pages';
 import {
   DatepickerCustomIconExampleComponent
-} from '../_examples/datepicker-custom-icon-example/datepicker-custom-icon-example.component';
+} from '@core/pages';
 import {
   DatepickerWithCustomHeaderExampleComponent
-} from '../_examples/datepicker-with-custom-header-example/datepicker-with-custom-header-example.component';
+} from '@core/pages';
 import {
   DatepickerActionsButtonExampleComponent
-} from '../_examples/datepicker-actions-button-example/datepicker-actions-button-example.component';
+} from '@core/pages';
 import {
   BasicDateRangePickerExampleComponent
-} from '../_examples/basic-date-range-picker-example/basic-date-range-picker-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

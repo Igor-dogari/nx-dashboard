@@ -4,7 +4,7 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicActionRequiredExampleComponent
-} from '../_examples/basic-action-required-example/basic-action-required-example.component';
+} from '@core/pages';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

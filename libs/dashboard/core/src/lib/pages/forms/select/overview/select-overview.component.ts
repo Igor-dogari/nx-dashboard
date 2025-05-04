@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicSelectExampleComponent } from '../_examples/basic-select-example/basic-select-example.component';
-import { GetSetValueExampleComponent } from '../_examples/get-set-value-example/get-set-value-example.component';
+import { BasicSelectExampleComponent } from '@core/pages';
+import { GetSetValueExampleComponent } from '@core/pages';
 import {
   FormFieldFeaturesExampleComponent
-} from '../_examples/form-field-features-example/form-field-features-example.component';
-import { SelectDisabledExampleComponent } from '../_examples/disabled-example/select-disabled-example.component';
-import { ResettingValueExampleComponent } from '../_examples/resetting-value-example/resetting-value-example.component';
+} from '@core/pages';
+import { SelectDisabledExampleComponent } from '@core/pages';
+import { ResettingValueExampleComponent } from '@core/pages';
 import {
   GroupsOfOptionsExampleComponent
-} from '../_examples/groups-of-options-example/groups-of-options-example.component';
+} from '@core/pages';
 import {
   MultipleSelectionExampleComponent
-} from '../_examples/multiple-selection-example/multiple-selection-example.component';
-import { CustomTriggerExampleComponent } from '../_examples/custom-trigger-example/custom-trigger-example.component';
+} from '@core/pages';
+import { CustomTriggerExampleComponent } from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicInputsExampleComponent } from '../_examples/basic-inputs-example/basic-inputs-example.component';
+import { BasicInputsExampleComponent } from '@core/pages';
 import {
   TextareaAutosizeExampleComponent
-} from '../_examples/textarea-autosize-example/textarea-autosize-example.component';
-import { ClearButtonExampleComponent } from '../_examples/clear-button-example/clear-button-example.component';
-import { InputDisabledExampleComponent } from '../_examples/disabled-example/input-disabled-example.component';
-import { ErrorMessagesExampleComponent } from '../_examples/error-messages-example/error-messages-example.component';
+} from '@core/pages';
+import { ClearButtonExampleComponent } from '@core/pages';
+import { InputDisabledExampleComponent } from '@core/pages';
+import { ErrorMessagesExampleComponent } from '@core/pages';
 import {
   InputWithHintsExampleComponent
-} from '../_examples/input-with-hints-example/input-with-hints-example.component';
+} from '@core/pages';
 import {
   PrefixesAndSuffixesExampleComponent
-} from '../_examples/prefixes-and-suffixes-example/prefixes-and-suffixes-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

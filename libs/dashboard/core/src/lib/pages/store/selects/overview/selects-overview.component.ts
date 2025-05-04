@@ -4,7 +4,7 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   WorkspaceSelectExampleComponent
-} from '../_examples/workspace-select-example/workspace-select-example.component';
+} from '@core/pages';
 
 @Component({
   imports: [

@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicProgressBarExampleComponent
-} from '../_examples/basic-progress-bar-example/basic-progress-bar-example.component';
+} from '@core/pages';
 import {
   IntermediateProgressBarExampleComponent
-} from '../_examples/intermediate-progress-bar-example/intermediate-progress-bar-example.component';
+} from '@core/pages';
 import {
   BufferProgressBarExampleComponent
-} from '../_examples/buffer-progress-bar-example/buffer-progress-bar-example.component';
+} from '@core/pages';
 import {
   QueryProgressBarExampleComponent
-} from '../_examples/query-progress-bar-example/query-progress-bar-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

@@ -3,7 +3,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { provideNativeDateAdapter } from '@angular/material/core';
-import { CustomHeaderComponent } from '../custom-header/custom-header.component';
+import { CustomHeaderComponent } from '@core/pages';
 
 @Component({
   selector: 'app-datepicker-with-custom-header-example',

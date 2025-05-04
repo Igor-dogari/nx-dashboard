@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicCardExampleComponent } from '../_examples/basic-card-example/basic-card-example.component';
-import { CardActionsExampleComponent } from '../_examples/card-actions-example/card-actions-example.component';
+import { BasicCardExampleComponent } from '@core/pages';
+import { CardActionsExampleComponent } from '@core/pages';
 import {
   CardMultipleSectionsExampleComponent
-} from '../_examples/card-multiple-sections-example/card-multiple-sections-example.component';
+} from '@core/pages';
 import {
   CardFooterLoadingExampleComponent
-} from '../_examples/card-footer-loading-example/card-footer-loading-example.component';
+} from '@core/pages';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

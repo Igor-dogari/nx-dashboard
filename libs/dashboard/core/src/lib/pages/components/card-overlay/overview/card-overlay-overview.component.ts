@@ -4,13 +4,13 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicCardOverlayExampleComponent
-} from '../_examples/basic-card-overlay-example/basic-card-overlay-example.component';
+} from '@core/pages';
 import {
   CardOverlayWithTranslateExampleComponent
-} from '../_examples/card-overlay-with-translate-example/card-overlay-with-translate-example.component';
+} from '@core/pages';
 import {
   CardOverlayWithBlurExampleComponent
-} from '../_examples/card-overlay-with-blur-example/card-overlay-with-blur-example.component';
+} from '@core/pages';
 import { MatDivider } from '@angular/material/divider';
 
 @Component({
