@@ -3,44 +3,44 @@ import { Component } from '@angular/core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
-import { AvgClickRateExampleComponent } from '@core/pages';
-import { AvgOpenRateExampleComponent } from '@core/pages';
+import { AvgClickRateExampleComponent } from '@core';
+import { AvgOpenRateExampleComponent } from '@core';
 import {
   BankAccountCardExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BankCreditCardExampleComponent
-} from '@core/pages';
-import { CurrentPlanExampleComponent } from '@core/pages';
+} from '@core';
+import { CurrentPlanExampleComponent } from '@core';
 import {
   CustomerSatisfactionExampleComponent
-} from '@core/pages';
-import { EventsExampleComponent } from '@core/pages';
-import { ExchangeExampleComponent } from '@core/pages';
-import { MyInvestmentsExampleComponent } from '@core/pages';
+} from '@core';
+import { EventsExampleComponent } from '@core';
+import { ExchangeExampleComponent } from '@core';
+import { MyInvestmentsExampleComponent } from '@core';
 import {
   PaymentInformationExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   PurchasesByChannelsExampleComponent
-} from '@core/pages';
-import { SiteVisitorsExampleComponent } from '@core/pages';
+} from '@core';
+import { SiteVisitorsExampleComponent } from '@core';
 import {
   TasksInProgressExampleComponent
-} from '@core/pages';
-import { TeamExampleComponent } from '@core/pages';
-import { TodaySalesExampleComponent } from '@core/pages';
-import { TodosExampleComponent } from '@core/pages';
-import { TotalProjectsExampleComponent } from '@core/pages';
-import { TotalRevenueExampleComponent } from '@core/pages';
+} from '@core';
+import { TeamExampleComponent } from '@core';
+import { TodaySalesExampleComponent } from '@core';
+import { TodosExampleComponent } from '@core';
+import { TotalProjectsExampleComponent } from '@core';
+import { TotalRevenueExampleComponent } from '@core';
 import {
   TotalSubscribersExampleComponent
-} from '@core/pages';
-import { TotalTasksExampleComponent } from '@core/pages';
-import { TransactionsExampleComponent } from '@core/pages';
-import { UniqueVisitorsExampleComponent } from '@core/pages';
-import { VisitDurationExampleComponent } from '@core/pages';
-import { VisitInsightsExampleComponent } from '@core/pages';
+} from '@core';
+import { TotalTasksExampleComponent } from '@core';
+import { TransactionsExampleComponent } from '@core';
+import { UniqueVisitorsExampleComponent } from '@core';
+import { VisitDurationExampleComponent } from '@core';
+import { VisitInsightsExampleComponent } from '@core';
 
 @Component({
   imports: [

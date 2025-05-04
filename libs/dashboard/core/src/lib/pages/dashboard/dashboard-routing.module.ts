@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { authGuardFn } from '@auth0/auth0-angular';
-import { MyProfileComponent } from '@core/pages';
+import { MyProfileComponent } from '@core';
 
 const routes: Routes = [
   {
@@ -18,45 +18,45 @@ const routes: Routes = [
     path: 'basic',
     title: 'Basic Dashboard',
     loadComponent: () =>
-      import('@core/pages').then((c) => c.DashboardBasicComponent),
+      import('@core').then((c) => c.DashboardBasicComponent),
   },
   {
     path: 'ecommerce',
     title: 'Ecommerce Dashboard',
     loadComponent: () =>
-      import('@core/pages').then((c) => c.EcommerceComponent),
+      import('@core').then((c) => c.EcommerceComponent),
   },
   {
     path: 'finance',
     title: 'Finance Dashboard',
-    loadComponent: () => import('@core/pages').then((c) => c.FinanceComponent),
+    loadComponent: () => import('@core').then((c) => c.FinanceComponent),
   },
   {
     path: 'explore',
     title: 'Explore Dashboard',
-    loadComponent: () => import('@core/pages').then((c) => c.ExploreComponent),
+    loadComponent: () => import('@core').then((c) => c.ExploreComponent),
   },
   {
     path: 'ecommerce',
     title: 'Ecommerce Dashboard',
     loadComponent: () =>
-      import('@core/pages').then((c) => c.EcommerceComponent),
+      import('@core').then((c) => c.EcommerceComponent),
   },
   {
     path: 'finance',
     title: 'Finance Dashboard',
-    loadComponent: () => import('@core/pages').then((c) => c.FinanceComponent),
+    loadComponent: () => import('@core').then((c) => c.FinanceComponent),
   },
   {
     path: 'explore',
     title: 'Explore Dashboard',
-    loadComponent: () => import('@core/pages').then((c) => c.ExploreComponent),
+    loadComponent: () => import('@core').then((c) => c.ExploreComponent),
   },
   {
     path: 'analytics',
     title: 'Analytics',
     loadComponent: () =>
-      import('@core/pages').then((c) => c.AnalyticsComponent),
+      import('@core').then((c) => c.AnalyticsComponent),
   },
 ];
 

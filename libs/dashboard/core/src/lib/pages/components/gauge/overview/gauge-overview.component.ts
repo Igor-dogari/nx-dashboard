@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicGaugeExampleComponent } from '@core/pages';
+import { BasicGaugeExampleComponent } from '@core';
 import {
   GaugeWithValueExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   GaugeCustomSizeExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   GaugeCustomStrokeWidthExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

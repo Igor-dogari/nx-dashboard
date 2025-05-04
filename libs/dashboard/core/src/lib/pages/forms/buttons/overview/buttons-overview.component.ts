@@ -1,25 +1,25 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicButtonsExampleComponent } from '@core/pages';
-import { RaisedButtonsExampleComponent } from '@core/pages';
-import { StrokedButtonsExampleComponent } from '@core/pages';
-import { FlatButtonsExampleComponent } from '@core/pages';
-import { IconButtonsExampleComponent } from '@core/pages';
-import { FabButtonsExampleComponent } from '@core/pages';
+import { BasicButtonsExampleComponent } from '@core';
+import { RaisedButtonsExampleComponent } from '@core';
+import { StrokedButtonsExampleComponent } from '@core';
+import { FlatButtonsExampleComponent } from '@core';
+import { IconButtonsExampleComponent } from '@core';
+import { FabButtonsExampleComponent } from '@core';
 import {
   MiniFabButtonsExampleComponent
-} from '@core/pages';
-import { ButtonLoadingExampleComponent } from '@core/pages';
+} from '@core';
+import { ButtonLoadingExampleComponent } from '@core';
 import { RouterLink } from '@angular/router';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PageAsideDirective } from '@core';
 import {
   ButtonsWithInteractiveDisabledExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ButtonsExtendedFabExampleComponent
-} from '@core/pages';
+} from '@core';
 import { ScrollSpyNavComponent, ScrollSpyOnComponent, ScrollSpyTitleComponent } from '@core';
 import {
   BreadcrumbItemComponent,

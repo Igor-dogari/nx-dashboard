@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { PrimaryColorsExampleComponent } from '@core/pages';
+import { PrimaryColorsExampleComponent } from '@core';
 import {
   SecondaryColorsExampleComponent
-} from '@core/pages';
-import { TertiaryColorsExampleComponent } from '@core/pages';
-import { ErrorColorsExampleComponent } from '@core/pages';
-import { SurfaceColorsExampleComponent } from '@core/pages';
-import { OutlineColorsExampleComponent } from '@core/pages';
-import { InverseColorsExampleComponent } from '@core/pages';
-import { NeutralColorsExampleComponent } from '@core/pages';
+} from '@core';
+import { TertiaryColorsExampleComponent } from '@core';
+import { ErrorColorsExampleComponent } from '@core';
+import { SurfaceColorsExampleComponent } from '@core';
+import { OutlineColorsExampleComponent } from '@core';
+import { InverseColorsExampleComponent } from '@core';
+import { NeutralColorsExampleComponent } from '@core';
 import {
   NeutralVariantColorsExampleComponent
-} from '@core/pages';
-import { OtherColorsExampleComponent } from '@core/pages';
+} from '@core';
+import { OtherColorsExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
-import { BasicThumbnailMakerComponent } from '@core/pages';
+import { BasicThumbnailMakerComponent } from '@core';
 import {
   ThumbnailMakerWithHelperTextExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ThumbnailMakerWithFileSelectExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   selector: 'app-overview',

@@ -4,22 +4,22 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   MchartBarBasicExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartBarCustomRadiusExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartBarWithBarHighlightExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartBarResponsiveExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartBarFillGradientExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartBarWithTooltipExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
     selector: 'app-overview',

@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('@core/pages').then(c => c.EmrCommonComponent),
+    loadComponent: () => import('@core').then(c => c.EmrCommonComponent),
     children: [
       {
         path: '',
@@ -13,351 +13,351 @@ const routes: Routes = [
       },
       {
         path: 'dashboard',
-        loadChildren: () => import('@core/pages').then(m => m.DashboardModule)
+        loadChildren: () => import('@core').then(m => m.DashboardModule)
       },
       {
         path: 'customization',
-        loadChildren: () => import('@core/pages').then(m => m.CustomizationModule)
+        loadChildren: () => import('@core').then(m => m.CustomizationModule)
       },
       {
         path: 'forms/password-strength',
-        loadChildren: () => import('@core/pages').then(m => m.PasswordStrengthModule)
+        loadChildren: () => import('@core').then(m => m.PasswordStrengthModule)
       },
       {
         path: 'forms/autocomplete',
-        loadChildren: () => import('@core/pages').then(m => m.AutocompleteModule)
+        loadChildren: () => import('@core').then(m => m.AutocompleteModule)
       },
       {
         path: 'forms/buttons',
-        loadChildren: () => import('@core/pages').then(m => m.ButtonsModule)
+        loadChildren: () => import('@core').then(m => m.ButtonsModule)
       },
       {
         path: 'forms/input',
-        loadChildren: () => import('@core/pages').then(m => m.InputModule)
+        loadChildren: () => import('@core').then(m => m.InputModule)
       },
       {
         path: 'forms/phone-input',
-        loadChildren: () => import('@core/pages').then(m => m.PhoneInputModule)
+        loadChildren: () => import('@core').then(m => m.PhoneInputModule)
       },
       {
         path: 'forms/slide-toggle',
-        loadChildren: () => import('@core/pages').then(m => m.SlideToggleModule)
+        loadChildren: () => import('@core').then(m => m.SlideToggleModule)
       },
       {
         path: 'forms/checkbox',
-        loadChildren: () => import('@core/pages').then(m => m.CheckboxModule)
+        loadChildren: () => import('@core').then(m => m.CheckboxModule)
       },
       {
         path: 'forms/radio',
-        loadChildren: () => import('@core/pages').then(m => m.RadioModule)
+        loadChildren: () => import('@core').then(m => m.RadioModule)
       },
       {
         path: 'forms/select',
-        loadChildren: () => import('@core/pages').then(m => m.SelectModule)
+        loadChildren: () => import('@core').then(m => m.SelectModule)
       },
       {
         path: 'forms/segmented',
-        loadChildren: () => import('@core/pages').then(m => m.SegmentedModule)
+        loadChildren: () => import('@core').then(m => m.SegmentedModule)
       },
       {
         path: 'forms/pin-input',
-        loadChildren: () => import('@core/pages').then(m => m.PinInputModule)
+        loadChildren: () => import('@core').then(m => m.PinInputModule)
       },
       {
         path: 'forms/button-toggle',
-        loadChildren: () => import('@core/pages').then(m => m.ButtonToggleModule)
+        loadChildren: () => import('@core').then(m => m.ButtonToggleModule)
       },
       {
         path: 'forms/number-input',
-        loadChildren: () => import('@core/pages').then(m => m.NumberInputModule)
+        loadChildren: () => import('@core').then(m => m.NumberInputModule)
       },
       {
         path: 'components/cookie-popup',
-        loadChildren: () => import('@core/pages').then(m => m.CookiePopupModule)
+        loadChildren: () => import('@core').then(m => m.CookiePopupModule)
       },
       {
         path: 'components/action-required',
-        loadChildren: () => import('@core/pages').then(m => m.ActionRequiredModule)
+        loadChildren: () => import('@core').then(m => m.ActionRequiredModule)
       },
       {
         path: 'components/avatar',
-        loadChildren: () => import('@core/pages').then(m => m.AvatarModule)
+        loadChildren: () => import('@core').then(m => m.AvatarModule)
       },
       {
         path: 'components/timeline',
-        loadChildren: () => import('@core/pages').then(m => m.TimelineModule)
+        loadChildren: () => import('@core').then(m => m.TimelineModule)
       },
       {
         path: 'components/badge',
-        loadChildren: () => import('@core/pages').then(m => m.BadgeModule)
+        loadChildren: () => import('@core').then(m => m.BadgeModule)
       },
       {
         path: 'components/sidebar',
-        loadChildren: () => import('@core/pages').then(m => m.SidebarModule)
+        loadChildren: () => import('@core').then(m => m.SidebarModule)
       },
       {
         path: 'components/bottom-sheet',
-        loadChildren: () => import('@core/pages').then(m => m.BottomSheetModule)
+        loadChildren: () => import('@core').then(m => m.BottomSheetModule)
       },
       {
         path: 'components/card',
-        loadChildren: () => import('@core/pages').then(m => m.CardModule)
+        loadChildren: () => import('@core').then(m => m.CardModule)
       },
       {
         path: 'components/card-overlay',
-        loadChildren: () => import('@core/pages').then(m => m.CardOverlayModule)
+        loadChildren: () => import('@core').then(m => m.CardOverlayModule)
       },
       {
         path: 'components/carousel',
-        loadChildren: () => import('@core/pages').then(m => m.CarouselModule)
+        loadChildren: () => import('@core').then(m => m.CarouselModule)
       },
       {
         path: 'components/chips',
-        loadChildren: () => import('@core/pages').then(m => m.ChipsModule)
+        loadChildren: () => import('@core').then(m => m.ChipsModule)
       },
       {
         path: 'components/chips',
-        loadChildren: () => import('@core/pages').then(m => m.ChipsModule)
+        loadChildren: () => import('@core').then(m => m.ChipsModule)
       },
       {
         path: 'components/emoji-picker',
-        loadChildren: () => import('@core/pages').then(m => m.EmojiPickerModule)
+        loadChildren: () => import('@core').then(m => m.EmojiPickerModule)
       },
       {
         path: 'components/datepicker',
-        loadChildren: () => import('@core/pages').then(m => m.DatepickerModule)
+        loadChildren: () => import('@core').then(m => m.DatepickerModule)
       },
       {
         path: 'components/timepicker',
-        loadChildren: () => import('@core/pages').then(m => m.TimepickerModule)
+        loadChildren: () => import('@core').then(m => m.TimepickerModule)
       },
       {
         path: 'components/icon',
-        loadChildren: () => import('@core/pages').then(m => m.IconModule)
+        loadChildren: () => import('@core').then(m => m.IconModule)
       },
       {
         path: 'components/dialog',
-        loadChildren: () => import('@core/pages').then(m => m.DialogModule)
+        loadChildren: () => import('@core').then(m => m.DialogModule)
       },
       {
         path: 'components/divider',
-        loadChildren: () => import('@core/pages').then(m => m.DividerModule)
+        loadChildren: () => import('@core').then(m => m.DividerModule)
       },
       {
         path: 'components/content-fade',
-        loadChildren: () => import('@core/pages').then(m => m.ContentFadeModule)
+        loadChildren: () => import('@core').then(m => m.ContentFadeModule)
       },
       {
         path: 'components/expansion-panel',
-        loadChildren: () => import('@core/pages').then(m => m.ExpansionPanelModule)
+        loadChildren: () => import('@core').then(m => m.ExpansionPanelModule)
       },
       {
         path: 'components/list',
-        loadChildren: () => import('@core/pages').then(m => m.ListModule)
+        loadChildren: () => import('@core').then(m => m.ListModule)
       },
       {
         path: 'components/menu',
-        loadChildren: () => import('@core/pages').then(m => m.MenuModule)
+        loadChildren: () => import('@core').then(m => m.MenuModule)
       },
       {
         path: 'components/paginator',
-        loadChildren: () => import('@core/pages').then(m => m.PaginatorModule)
+        loadChildren: () => import('@core').then(m => m.PaginatorModule)
       },
       {
         path: 'components/progress-bar',
-        loadChildren: () => import('@core/pages').then(m => m.ProgressBarModule)
+        loadChildren: () => import('@core').then(m => m.ProgressBarModule)
       },
       {
         path: 'components/resizable-container',
-        loadChildren: () => import('@core/pages').then(m => m.ResizableContainerModule)
+        loadChildren: () => import('@core').then(m => m.ResizableContainerModule)
       },
       {
         path: 'components/gauge',
-        loadChildren: () => import('@core/pages').then(m => m.GaugeModule)
+        loadChildren: () => import('@core').then(m => m.GaugeModule)
       },
       {
         path: 'components/progress-spinner',
-        loadChildren: () => import('@core/pages').then(m => m.ProgressSpinnerModule)
+        loadChildren: () => import('@core').then(m => m.ProgressSpinnerModule)
       },
       {
         path: 'components/slider',
-        loadChildren: () => import('@core/pages').then(m => m.SliderModule)
+        loadChildren: () => import('@core').then(m => m.SliderModule)
       },
       {
         path: 'components/thumbnail-maker',
-        loadChildren: () => import('@core/pages').then(m => m.ThumbnailMakerModule)
+        loadChildren: () => import('@core').then(m => m.ThumbnailMakerModule)
       },
       {
         path: 'components/expand',
-        loadChildren: () => import('@core/pages').then(m => m.ExpandModule)
+        loadChildren: () => import('@core').then(m => m.ExpandModule)
       },
       {
         path: 'components/snackbar',
-        loadChildren: () => import('@core/pages').then(m => m.SnackbarModule)
+        loadChildren: () => import('@core').then(m => m.SnackbarModule)
       },
       {
         path: 'components/comment-editor',
-        loadChildren: () => import('@core/pages').then(m => m.CommentEditorModule)
+        loadChildren: () => import('@core').then(m => m.CommentEditorModule)
       },
       {
         path: 'components/table',
-        loadChildren: () => import('@core/pages').then(m => m.TableModule)
+        loadChildren: () => import('@core').then(m => m.TableModule)
       },
       {
         path: 'components/dataview',
-        loadChildren: () => import('@core/pages').then(m => m.DataviewModule)
+        loadChildren: () => import('@core').then(m => m.DataviewModule)
       },
       {
         path: 'components/stepper',
-        loadChildren: () => import('@core/pages').then(m => m.StepperModule)
+        loadChildren: () => import('@core').then(m => m.StepperModule)
       },
       {
         path: 'components/tabs',
-        loadChildren: () => import('@core/pages').then(m => m.TabsModule)
+        loadChildren: () => import('@core').then(m => m.TabsModule)
       },
       {
         path: 'components/toolbar',
-        loadChildren: () => import('@core/pages').then(m => m.ToolbarModule)
+        loadChildren: () => import('@core').then(m => m.ToolbarModule)
       },
       {
         path: 'components/tooltip',
-        loadChildren: () => import('@core/pages').then(m => m.TooltipModule)
+        loadChildren: () => import('@core').then(m => m.TooltipModule)
       },
       {
         path: 'components/tree',
-        loadChildren: () => import('@core/pages').then(m => m.TreeModule)
+        loadChildren: () => import('@core').then(m => m.TreeModule)
       },
       {
         path: 'components/skeleton',
-        loadChildren: () => import('@core/pages').then(m => m.SkeletonModule)
+        loadChildren: () => import('@core').then(m => m.SkeletonModule)
       },
       {
         path: 'components/alert',
-        loadChildren: () => import('@core/pages').then(m => m.AlertModule)
+        loadChildren: () => import('@core').then(m => m.AlertModule)
       },
       {
         path: 'components/popover',
-        loadChildren: () => import('@core/pages').then(m => m.PopoverModule)
+        loadChildren: () => import('@core').then(m => m.PopoverModule)
       },
       {
         path: 'components/color-picker',
-        loadChildren: () => import('@core/pages').then(m => m.ColorPickerModule)
+        loadChildren: () => import('@core').then(m => m.ColorPickerModule)
       },
       {
         path: 'components/brand-colors',
-        loadChildren: () => import('@core/pages').then(m => m.BrandColorsModule)
+        loadChildren: () => import('@core').then(m => m.BrandColorsModule)
       },
       {
         path: 'components/upload',
-        loadChildren: () => import('@core/pages').then(m => m.UploadModule)
+        loadChildren: () => import('@core').then(m => m.UploadModule)
       },
       {
         path: 'components/command-bar',
-        loadChildren: () => import('@core/pages').then(m => m.CommandBarModule)
+        loadChildren: () => import('@core').then(m => m.CommandBarModule)
       },
       {
         path: 'components/filter-builder',
-        loadChildren: () => import('@core/pages').then(m => m.FilterBuilderModule)
+        loadChildren: () => import('@core').then(m => m.FilterBuilderModule)
       },
       {
         path: 'components/panel',
-        loadChildren: () => import('@core/pages').then(m => m.PanelModule)
+        loadChildren: () => import('@core').then(m => m.PanelModule)
       },
       {
         path: 'components/incidents',
-        loadChildren: () => import('@core/pages').then(m => m.IncidentsModule)
+        loadChildren: () => import('@core').then(m => m.IncidentsModule)
       },
       {
         path: 'components/layout',
-        loadChildren: () => import('@core/pages').then(m => m.LayoutModule)
+        loadChildren: () => import('@core').then(m => m.LayoutModule)
       },
       {
         path: 'components/suggestions',
-        loadChildren: () => import('@core/pages').then(m => m.SuggestionsModule)
+        loadChildren: () => import('@core').then(m => m.SuggestionsModule)
       },
       {
         path: 'components/announcement',
-        loadChildren: () => import('@core/pages').then(m => m.AnnouncementModule)
+        loadChildren: () => import('@core').then(m => m.AnnouncementModule)
       },
       {
         path: 'components/block-state',
-        loadChildren: () => import('@core/pages').then(m => m.BlockStateModule)
+        loadChildren: () => import('@core').then(m => m.BlockStateModule)
       },
       {
         path: 'components/confirm',
-        loadChildren: () => import('@core/pages').then(m => m.ConfirmModule)
+        loadChildren: () => import('@core').then(m => m.ConfirmModule)
       },
       {
         path: 'components/image-viewer',
-        loadChildren: () => import('@core/pages').then(m => m.ImageViewerModule)
+        loadChildren: () => import('@core').then(m => m.ImageViewerModule)
       },
       {
         path: 'components/image-resizer',
-        loadChildren: () => import('@core/pages').then(m => m.ImageResizerModule)
+        loadChildren: () => import('@core').then(m => m.ImageResizerModule)
       },
       {
         path: 'components/marquee',
-        loadChildren: () => import('@core/pages').then(m => m.MarqueeModule)
+        loadChildren: () => import('@core').then(m => m.MarqueeModule)
       },
       {
         path: 'components/text-editor',
-        loadChildren: () => import('@core/pages').then(m => m.TextEditorModule)
+        loadChildren: () => import('@core').then(m => m.TextEditorModule)
       },
       {
         path: 'components/screen-loader',
-        loadChildren: () => import('@core/pages').then(m => m.ScreenLoaderModule)
+        loadChildren: () => import('@core').then(m => m.ScreenLoaderModule)
       },
       {
         path: 'navigation/breadcrumbs',
-        loadChildren: () => import('@core/pages').then(m => m.BreadcrumbsModule)
+        loadChildren: () => import('@core').then(m => m.BreadcrumbsModule)
       },
       {
         path: 'navigation/tab-panel',
-        loadChildren: () => import('@core/pages').then(m => m.TabPanelModule)
+        loadChildren: () => import('@core').then(m => m.TabPanelModule)
       },
       {
         path: 'navigation/navigation',
-        loadChildren: () => import('@core/pages').then(m => m.NavigationModule)
+        loadChildren: () => import('@core').then(m => m.NavigationModule)
       },
       {
         path: 'navigation/rail-nav',
-        loadChildren: () => import('@core/pages').then(m => m.RailNavModule)
+        loadChildren: () => import('@core').then(m => m.RailNavModule)
       },
       {
         path: 'user-profile',
-        loadChildren: () => import('@core/pages').then(m => m.UserProfileModule)
+        loadChildren: () => import('@core').then(m => m.UserProfileModule)
       },
       {
         path: 'account/notifications',
-        loadComponent: () => import('@core/pages').then(m => m.AccountNotificationsComponent)
+        loadComponent: () => import('@core').then(m => m.AccountNotificationsComponent)
       },
       {
         path: 'account/settings',
-        loadChildren: () => import('@core/pages').then(m => m.SettingsModule)
+        loadChildren: () => import('@core').then(m => m.SettingsModule)
       },
       {
         path: 'store',
-        loadChildren: () => import('@core/pages').then(m => m.StoreModule)
+        loadChildren: () => import('@core').then(m => m.StoreModule)
       },
       {
         path: 'pricing',
-        loadChildren: () => import('@core/pages').then(m => m.PricingModule)
+        loadChildren: () => import('@core').then(m => m.PricingModule)
       },
       {
         path: 'applications',
-        loadChildren: () => import('@core/pages').then(m => m.ApplicationsModule)
+        loadChildren: () => import('@core').then(m => m.ApplicationsModule)
       },
       {
         path: 'micro-charts',
-        loadChildren: () => import('@core/pages').then(m => m.MicroChartsModule)
+        loadChildren: () => import('@core').then(m => m.MicroChartsModule)
       },
       {
         path: 'content',
-        loadChildren: () => import('@core/pages').then(m => m.ContentModule)
+        loadChildren: () => import('@core').then(m => m.ContentModule)
       },
       {
         path: 'service-pages',
-        loadChildren: () => import('@core/pages').then(m => m.ServicePagesModule)
+        loadChildren: () => import('@core').then(m => m.ServicePagesModule)
       }
     ]
   }

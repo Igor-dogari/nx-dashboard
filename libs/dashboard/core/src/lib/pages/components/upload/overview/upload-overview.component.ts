@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicUploadExampleComponent } from '@core/pages';
-import { UploadAreaExampleComponent } from '@core/pages';
-import { FileListExampleComponent } from '@core/pages';
-import { FileGridExampleComponent } from '@core/pages';
+import { BasicUploadExampleComponent } from '@core';
+import { UploadAreaExampleComponent } from '@core';
+import { FileListExampleComponent } from '@core';
+import { FileGridExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

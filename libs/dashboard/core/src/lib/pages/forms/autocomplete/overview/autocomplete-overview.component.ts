@@ -4,17 +4,17 @@ import { PlaygroundComponent } from '@core';
 import { map, Observable, startWith } from 'rxjs';
 import {
   AutocompleteFilterExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   SimpleAutocompleteExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   SeparateControlsAndDisplayValuesExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   AutoHighlightFirstPersonExampleComponent
-} from '@core/pages';
-import { OptionGroupsExampleComponent } from '@core/pages';
+} from '@core';
+import { OptionGroupsExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

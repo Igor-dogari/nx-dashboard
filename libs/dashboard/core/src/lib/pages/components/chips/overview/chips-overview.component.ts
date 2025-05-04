@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicChipsExampleComponent } from '@core/pages';
+import { BasicChipsExampleComponent } from '@core';
 import {
   ChipsWithInputExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ChipsAutocompleteExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ChipsWithIconsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ChipsDragAndDropExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
-import { StackedChipsExampleComponent } from '@core/pages';
+import { StackedChipsExampleComponent } from '@core';
 
 @Component({
   imports: [

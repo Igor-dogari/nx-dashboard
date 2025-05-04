@@ -2,24 +2,24 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicBreadcrumbsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BreadcrumbsWithDatasourceExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BreadcrumbsWithIconsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BreadcrumbsWithTitlesExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   BreadcrumbsWithLastItemAsLinkExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BreadcrumbsGlobalExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   imports: [

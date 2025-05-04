@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicTreeExampleComponent } from '@core/pages';
+import { BasicTreeExampleComponent } from '@core';
 import {
   TreeWithDynamicDataExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

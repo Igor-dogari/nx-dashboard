@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { BasicPopoverExampleComponent } from '@core/pages';
+import { BasicPopoverExampleComponent } from '@core';
 import { PlaygroundComponent } from '@core';
-import { PopoverHoverExampleComponent } from '@core/pages';
+import { PopoverHoverExampleComponent } from '@core';
 import {
   PopoverWithCustomPositionExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';

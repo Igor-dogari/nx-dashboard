@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicStepperExampleComponent } from '@core/pages';
+import { BasicStepperExampleComponent } from '@core';
 import {
   StepperVerticalExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   StepperHeaderPositionExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   StepperWithErrorsStateExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   StepperResponsiveExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   StepperLabelBottomPositionExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

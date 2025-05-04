@@ -24,7 +24,7 @@ import {
 } from '@core';
 import { GlobalStore, LayoutSidebarStore } from '@core';
 import { provideAuth0 } from '@auth0/auth0-angular';
-import { GlobalErrorHandlerService } from './global-error-handler.service';
+// import { GlobalErrorHandlerService } from './global-error-handler.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [

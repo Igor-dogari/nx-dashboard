@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicTooltipExampleComponent } from '@core/pages';
+import { BasicTooltipExampleComponent } from '@core';
 import {
   TooltipWithACustomPositionExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

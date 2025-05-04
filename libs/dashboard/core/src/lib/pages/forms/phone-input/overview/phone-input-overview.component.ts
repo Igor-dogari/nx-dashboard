@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicPhoneInputExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 import {
   PhoneInputOnlyCountriesExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   PhoneInputPreferredCountriesExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   imports: [

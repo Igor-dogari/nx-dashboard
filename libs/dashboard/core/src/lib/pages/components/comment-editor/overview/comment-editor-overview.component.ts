@@ -4,28 +4,28 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicCommentEditorExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   CommentEditorWithToolbarExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   CommentEditorWithFullViewModeExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   CommentEditorWithUploadErrorExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   CommentEditorWithCustomIconsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   CommentEditorCancelButtonAlwaysVisibleExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   CommentEditorCustomButtonLabelsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   CommentEditorWithMaxContentHeightExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   selector: 'app-overview',

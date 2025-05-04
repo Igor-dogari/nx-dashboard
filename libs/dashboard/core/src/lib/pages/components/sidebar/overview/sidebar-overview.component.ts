@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { BasicSidebarExampleComponent } from '@core/pages';
+import { BasicSidebarExampleComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import { PageComponent } from '@core';
-import { SidebarCompactExampleComponent } from '@core/pages';
+import { SidebarCompactExampleComponent } from '@core';
 import {
   SidebarWithCustomIconsExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   imports: [

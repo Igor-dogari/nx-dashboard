@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   TabPanelWithPanelsInsideExampleComponent
-} from '@core/pages';
-import { BasicTabPanelExampleComponent } from '@core/pages';
+} from '@core';
+import { BasicTabPanelExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   TabPanelCompactExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
     selector: 'app-overview',

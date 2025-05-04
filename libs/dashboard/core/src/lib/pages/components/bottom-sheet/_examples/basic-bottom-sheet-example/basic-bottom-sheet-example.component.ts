@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
-import { BottomSheetExampleComponent } from '@core/pages';
+import { BottomSheetExampleComponent } from '@core';
 
 @Component({
   selector: 'app-basic-bottom-sheet-example',

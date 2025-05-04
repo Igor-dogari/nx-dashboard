@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicContentFadeExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ContentFadeCustomWidthExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   ContentFadeCustomPositionExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   selector: 'app-overview',

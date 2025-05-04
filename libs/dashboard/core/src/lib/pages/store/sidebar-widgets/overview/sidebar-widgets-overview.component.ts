@@ -4,20 +4,20 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   GoToPremiumWidgetExampleComponent
-} from '@core/pages';
-import { ToolbarWidgetExampleComponent } from '@core/pages';
+} from '@core';
+import { ToolbarWidgetExampleComponent } from '@core';
 import {
   ToolbarAWidgetExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   UpgradeNowWidgetExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   UpgradeToProWidgetExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   UsedSpaceWidgetExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
     imports: [

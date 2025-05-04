@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicAlertExampleComponent } from '@core/pages';
-import { AlertVariantsExampleComponent } from '@core/pages';
+import { BasicAlertExampleComponent } from '@core';
+import { AlertVariantsExampleComponent } from '@core';
 import {
   AlertWithBorderExampleComponent
-} from '@core/pages';
-import { AlertWithIconExampleComponent } from '@core/pages';
+} from '@core';
+import { AlertWithIconExampleComponent } from '@core';
 import {
   AlertWithTitleExampleComponent
-} from '@core/pages';
-import { AlertActionsExampleComponent } from '@core/pages';
+} from '@core';
+import { AlertActionsExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';

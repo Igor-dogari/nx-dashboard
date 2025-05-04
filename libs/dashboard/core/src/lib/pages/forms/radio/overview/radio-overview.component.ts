@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicRadioExampleComponent } from '@core/pages';
+import { BasicRadioExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

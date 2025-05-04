@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
-import { DashboardCardsExampleComponent } from '@core/pages';
-import { DashboardChartExampleComponent } from '@core/pages';
-import { DashboardExampleComponent } from '@core/pages';
+import { DashboardCardsExampleComponent } from '@core';
+import { DashboardChartExampleComponent } from '@core';
+import { DashboardExampleComponent } from '@core';
 
 @Component({
     imports: [

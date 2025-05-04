@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicSelectExampleComponent } from '@core/pages';
-import { GetSetValueExampleComponent } from '@core/pages';
+import { BasicSelectExampleComponent } from '@core';
+import { GetSetValueExampleComponent } from '@core';
 import {
   FormFieldFeaturesExampleComponent
-} from '@core/pages';
-import { SelectDisabledExampleComponent } from '@core/pages';
-import { ResettingValueExampleComponent } from '@core/pages';
+} from '@core';
+import { SelectDisabledExampleComponent } from '@core';
+import { ResettingValueExampleComponent } from '@core';
 import {
   GroupsOfOptionsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MultipleSelectionExampleComponent
-} from '@core/pages';
-import { CustomTriggerExampleComponent } from '@core/pages';
+} from '@core';
+import { CustomTriggerExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

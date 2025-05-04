@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicSliderExampleComponent } from '@core/pages';
+import { BasicSliderExampleComponent } from '@core';
 import {
   CustomThumbLabelFormattingExampleComponent
-} from '@core/pages';
-import { RangeSliderExampleComponent } from '@core/pages';
+} from '@core';
+import { RangeSliderExampleComponent } from '@core';
 import {
   ConfigurableSliderExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

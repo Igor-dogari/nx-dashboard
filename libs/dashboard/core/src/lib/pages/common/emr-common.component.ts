@@ -9,8 +9,8 @@ import {
   LayoutSidebarComponent,
   LayoutTopbarComponent,
 } from '@core';
-import { HeaderComponent, LibSidebarComponent } from '@core/pages';
-import * as core from '@core/pages';
+import { HeaderComponent, LibSidebarComponent } from '@core';
+import * as core from '@core';
 import * as core1 from '@core';
 
 @Component({
@@ -32,7 +32,8 @@ import * as core1 from '@core';
 export class EmrCommonComponent {
   constructor() {
     const we = Object.values(core).map((cmp) => {
-      const dep = Object.values(cmp)[1]?.dependencies;
+      const depqwe = Object.values(cmp)[1] as any;
+      const dep = depqwe?.dependencies;
       return {
         name: cmp,
         dependencies: dep,

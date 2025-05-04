@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicInputsExampleComponent } from '@core/pages';
+import { BasicInputsExampleComponent } from '@core';
 import {
   TextareaAutosizeExampleComponent
-} from '@core/pages';
-import { ClearButtonExampleComponent } from '@core/pages';
-import { InputDisabledExampleComponent } from '@core/pages';
-import { ErrorMessagesExampleComponent } from '@core/pages';
+} from '@core';
+import { ClearButtonExampleComponent } from '@core';
+import { InputDisabledExampleComponent } from '@core';
+import { ErrorMessagesExampleComponent } from '@core';
 import {
   InputWithHintsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   PrefixesAndSuffixesExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

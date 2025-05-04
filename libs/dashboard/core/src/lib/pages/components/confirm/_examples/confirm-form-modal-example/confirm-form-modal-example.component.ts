@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { MatButton } from '@angular/material/button';
-import { DialogWithConfirmationComponent } from '@core/pages';
+import { DialogWithConfirmationComponent } from '@core';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 @Component({

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { PageContentDirective } from '@core';
 import {
   BasicEmojiPickerExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PlaygroundComponent } from '@core';
 import { PageComponent } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';

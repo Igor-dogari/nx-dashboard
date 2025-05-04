@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicTabsExampleComponent } from '@core/pages';
+import { BasicTabsExampleComponent } from '@core';
 import {
   TabsWithAlignedLabelsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   TabsWithCustomLabelTemplateExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   TabsWithHeadersOnTheBottomExampleComponent
-} from '@core/pages';
-import { PaginatedTabsExampleComponent } from '@core/pages';
+} from '@core';
+import { PaginatedTabsExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
-import { SortableTabsExampleComponent } from '@core/pages';
+import { SortableTabsExampleComponent } from '@core';
 
 @Component({
     imports: [

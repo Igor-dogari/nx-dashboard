@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicProgressBarExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   IntermediateProgressBarExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BufferProgressBarExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   QueryProgressBarExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

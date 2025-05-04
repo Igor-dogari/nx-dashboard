@@ -4,16 +4,16 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicBrandColorsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BrandColorsCustomColorsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BrandColorsAsFormControlExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BrandColorsDisabledExampleComponent
-} from '@core/pages';
+} from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

@@ -4,10 +4,10 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   InviteToEditorFilesInFolderNotificationExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MentionedInCommentNotificationExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   imports: [

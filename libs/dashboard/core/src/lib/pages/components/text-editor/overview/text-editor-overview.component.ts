@@ -4,10 +4,10 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicTextEditorExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   TextEditorFloatingMenuExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   selector: 'app-overview',

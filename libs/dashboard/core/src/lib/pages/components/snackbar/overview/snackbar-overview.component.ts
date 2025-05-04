@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicSnackbarExampleComponent } from '@core/pages';
+import { BasicSnackbarExampleComponent } from '@core';
 import {
   SnackbarWithCustomComponentExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ConfigurableSnackbarExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicProgressSpinnerExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ConfigurableSpinnerExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

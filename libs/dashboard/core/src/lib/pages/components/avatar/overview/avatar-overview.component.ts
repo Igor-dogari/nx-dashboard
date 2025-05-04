@@ -1,26 +1,26 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicAvatarExampleComponent } from '@core/pages';
-import { AvatarSizesExampleComponent } from '@core/pages';
+import { BasicAvatarExampleComponent } from '@core';
+import { AvatarSizesExampleComponent } from '@core';
 import {
   AvatarWithImagesExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   AvatarWithIconsExampleComponent
-} from '@core/pages';
-import { GroupedAvatarsExampleComponent } from '@core/pages';
+} from '@core';
+import { GroupedAvatarsExampleComponent } from '@core';
 import {
   GroupedAndTotalAvatarsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   AvatarPresenceIndicatorExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   AvatarAutomaticColorExampleComponent
-} from '@core/pages';
-import { AvatarDicebearExampleComponent } from '@core/pages';
+} from '@core';
+import { AvatarDicebearExampleComponent } from '@core';
 
 @Component({
     selector: 'app-overview',

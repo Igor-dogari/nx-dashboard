@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicPinInputExampleComponent } from '@core/pages';
+import { BasicPinInputExampleComponent } from '@core';
 import {
   PinInputWithPlaceholderExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   PinInputLengthExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   PinInputAcceptCustomSymbolsExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

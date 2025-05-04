@@ -1,28 +1,28 @@
 import { Component } from '@angular/core';
-import { BasicTableExampleComponent } from '@core/pages';
+import { BasicTableExampleComponent } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   TableWithPaginationExampleComponent
-} from '@core/pages';
-import { TableWithSortExampleComponent } from '@core/pages';
+} from '@core';
+import { TableWithSortExampleComponent } from '@core';
 import {
   TableWithFilteringExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   TableWithSelectionExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   TableWithFixedColumnsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   TableWithStickyHeaderExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   TableWithStickyFooterExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
-import { SortableTableExampleComponent } from '@core/pages';
+import { SortableTableExampleComponent } from '@core';
 
 @Component({
     selector: 'app-overview',

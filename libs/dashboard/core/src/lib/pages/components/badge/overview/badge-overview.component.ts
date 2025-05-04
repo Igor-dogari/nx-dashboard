@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicBadgesExampleComponent } from '@core/pages';
+import { BasicBadgesExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

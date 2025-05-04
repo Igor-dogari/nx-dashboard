@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicDividerExampleComponent } from '@core/pages';
+import { BasicDividerExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   DividerHorizontalAndVerticalExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
     imports: [

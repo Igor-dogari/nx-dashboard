@@ -5,7 +5,7 @@ import { AuthService } from '@auth0/auth0-angular';
 import { catchError, switchMap, take } from 'rxjs/operators';
 import { interval, of } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
-import { SignupComponent } from '@core/auth';
+import { SignupComponent } from '@core';
 import { Router } from '@angular/router';
 
 @Component({

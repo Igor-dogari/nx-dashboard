@@ -2,31 +2,31 @@ import { Component } from '@angular/core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
-import { BasicDataviewExampleComponent } from '@core/pages';
+import { BasicDataviewExampleComponent } from '@core';
 import {
   DataviewWithSelectionExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   DataViewWithPaginationExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   DataViewWithSortingExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   DataViewHlHeaderExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   DataViewCustomCellRenderersExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   DataViewWithActionBarExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   DataViewFilterDataExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   DataViewLoadingStateExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   selector: 'app-overview',

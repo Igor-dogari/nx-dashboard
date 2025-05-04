@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicSlideToggleExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   SlideToggleWithFormsExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

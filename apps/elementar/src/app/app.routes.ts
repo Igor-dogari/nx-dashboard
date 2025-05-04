@@ -4,25 +4,26 @@ import { libAuthGuard } from '@core';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'pages/dashboard/basic',
+    // redirectTo: 'pages/dashboard/basic',
+    redirectTo: 'auth/signup',
     pathMatch: 'full'
   },
-  {
-    path: 'pages',
-    loadChildren: () => import('@core/pages').then(m => m.PagesModule),
-    // canActivate: [libAuthGuard]
-  },
+  // {
+  //   path: 'pages',
+  //   loadChildren: () => import('@core').then(m => m.PagesModule),
+  //   // canActivate: [libAuthGuard]
+  // },
   {
     path: 'auth',
-    loadChildren: () => import('@core/auth').then(m => m.AuthModule)
+    loadChildren: () => import('@core').then(m => m.AuthModule)
   },
   {
     path: 'error',
-    loadChildren: () => import('@core/error').then(m => m.ErrorModule)
+    loadChildren: () => import('@core').then(m => m.ErrorModule)
   },
-  {
-    path: '**',
-    title: 'Page Not Found',
-    loadComponent: () => import('@core/error').then(c => c.NotFoundComponent)
-  }
+  // {
+  //   path: '**',
+  //   title: 'Page Not Found',
+  //   loadComponent: () => import('@core').then(c => c.NotFoundComponent)
+  // }
 ];

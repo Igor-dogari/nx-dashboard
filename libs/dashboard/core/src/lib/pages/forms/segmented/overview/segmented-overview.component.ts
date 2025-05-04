@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicSegmentedExampleComponent } from '@core/pages';
-import { SegmentedSizesExampleComponent } from '@core/pages';
+import { BasicSegmentedExampleComponent } from '@core';
+import { SegmentedSizesExampleComponent } from '@core';
 import {
   SegmentedDisabledExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   SegmentedWithIconsExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   SegmentedIconsOnlyExampleComponent
-} from '@core/pages';
+} from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

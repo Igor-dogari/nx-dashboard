@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogScrollableContentDialog } from '@core/pages';
+import { DialogScrollableContentDialog } from '@core';
 
 @Component({
   selector: 'app-dialog-scrollable-content-example',

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicPaginatorExampleComponent } from '@core/pages';
+import { BasicPaginatorExampleComponent } from '@core';
 import {
   ConfigurablePaginatorExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

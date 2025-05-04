@@ -1,21 +1,21 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { LayoutHeaderExampleComponent } from '@core/pages';
-import { LayoutSidebarExampleComponent } from '@core/pages';
+import { LayoutHeaderExampleComponent } from '@core';
+import { LayoutSidebarExampleComponent } from '@core';
 import {
   LayoutHeaderWithSidebarExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   LayoutHeaderWithTopbarExampleComponent
-} from '@core/pages';
-import { LayoutFooterExampleComponent } from '@core/pages';
+} from '@core';
+import { LayoutFooterExampleComponent } from '@core';
 import {
   LayoutHeaderWithFooterExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   LayoutWithNestedLayoutsExampleComponent
-} from '@core/pages';
-import { LayoutAsideExampleComponent } from '@core/pages';
+} from '@core';
+import { LayoutAsideExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

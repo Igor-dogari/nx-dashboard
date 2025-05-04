@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { CircleFlagsExampleComponent } from '@core/pages';
+import { CircleFlagsExampleComponent } from '@core';
 import {
   MaterialSymbolsIconsExampleComponent
-} from '@core/pages';
-import { PhosphorIconsExampleComponent } from '@core/pages';
+} from '@core';
+import { PhosphorIconsExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

@@ -4,19 +4,19 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicBlockStateExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BlockStateWithImageExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BlockStateWithIconExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BlockStateWithActionsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   BlockStateWithCustomIconExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   imports: [

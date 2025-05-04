@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
-import { BasicMarqueeExampleComponent } from '@core/pages';
-import { MarqueeReverseExampleComponent } from '@core/pages';
+import { BasicMarqueeExampleComponent } from '@core';
+import { MarqueeReverseExampleComponent } from '@core';
 import {
   MarqueePauseOnHoverExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
     selector: 'app-overview',

@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicAnnouncementExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   AnnouncementWithIconsExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   ShowHideAnnouncementDynamicallyComponent
-} from '@core/pages';
+} from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

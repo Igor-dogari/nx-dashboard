@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicListExampleComponent } from '@core/pages';
+import { BasicListExampleComponent } from '@core';
 import {
   ListWithSectionsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ListWithSelectionExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ListWithSingleSelectionExampleComponent
-} from '@core/pages';
-import { ListVariantsExampleComponent } from '@core/pages';
+} from '@core';
+import { ListVariantsExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

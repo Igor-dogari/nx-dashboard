@@ -4,25 +4,25 @@ import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
 import {
   MchartLineWithTooltipExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartLineBasicExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartLineCustomCurveExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartLineWithAreaExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartLineCompactExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartLineWithMarkersExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   MchartLineResponsiveExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   selector: 'app-overview',

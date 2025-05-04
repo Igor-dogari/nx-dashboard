@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicExpandExampleComponent } from '@core/pages';
+import { BasicExpandExampleComponent } from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   ExpandShowButtonIfExpandedExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   ExpandCustomButtonLabelsExampleComponent
-} from '@core/pages';
+} from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
 
 @Component({

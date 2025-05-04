@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { PlaygroundComponent } from '@core';
-import { BasicConfirmExampleComponent } from '@core/pages';
+import { BasicConfirmExampleComponent } from '@core';
 import {
   ConfirmFormModalExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
     imports: [

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { MatInput } from '@angular/material/input';
 import { MatButton } from '@angular/material/button';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { SnackbarComponentExampleComponent } from '@core/pages';
+import { SnackbarComponentExampleComponent } from '@core';
 
 @Component({
     selector: 'app-snackbar-with-custom-component-example',

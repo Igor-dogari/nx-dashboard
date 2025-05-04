@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicCarouselExampleComponent } from '@core/pages';
+import { BasicCarouselExampleComponent } from '@core';
 import {
   CarouselControlsCustomPositionExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   CarouselFadeEffectExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
   imports: [

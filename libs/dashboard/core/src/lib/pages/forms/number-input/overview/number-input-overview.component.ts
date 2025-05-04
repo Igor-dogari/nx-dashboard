@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicNumberInputExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   NumberInputCustomControlsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   NumberInputMinMaxExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';

@@ -1,5 +1,5 @@
 import { Component, inject, input, InputSignal, OnInit, output } from '@angular/core';
-import { File, FileSelectedEvent } from '@core/pages';
+import { File, FileSelectedEvent } from '@core';
 import { MatOption } from '@angular/material/autocomplete';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MatIcon } from '@angular/material/icon';

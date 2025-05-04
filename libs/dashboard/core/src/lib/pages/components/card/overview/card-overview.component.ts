@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
-import { BasicCardExampleComponent } from '@core/pages';
-import { CardActionsExampleComponent } from '@core/pages';
+import { BasicCardExampleComponent } from '@core';
+import { CardActionsExampleComponent } from '@core';
 import {
   CardMultipleSectionsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   CardFooterLoadingExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 

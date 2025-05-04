@@ -2,27 +2,27 @@ import { Component } from '@angular/core';
 import { PlaygroundComponent } from '@core';
 import {
   BasicNavigationExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   NavigationWithHeadingExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   NavigationWithDividerExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   NavigationWithIconsExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   NavigationWithNestedMenuExampleComponent
-} from '@core/pages';
+} from '@core';
 import {
   NavigationSecondaryThemeExampleComponent
-} from '@core/pages';
+} from '@core';
 import { PageComponent } from '@core';
 import { PageContentDirective } from '@core';
 import {
   NavigationWithBadgesExampleComponent
-} from '@core/pages';
+} from '@core';
 
 @Component({
     selector: 'app-overview',
