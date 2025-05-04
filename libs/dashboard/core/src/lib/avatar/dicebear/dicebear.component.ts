@@ -9,7 +9,7 @@ import { AVATAR_ACCESSOR, AvatarPresenceIndicator } from '../types';
 import { createAvatar } from '@dicebear/core';
 import { identicon, initials } from '@dicebear/collection';
 import { v7 as uuid } from 'uuid';
-import { SafeHtmlPipe } from '@core';
+import { CheckImports, SafeHtmlPipe } from '@core';
 import { PresetInterface } from '@core';
 
 const alreadyLoadedImages: string[] = [];
@@ -37,6 +37,7 @@ const presets: { [prop: string]: PresetInterface } = {
   },
 };
 
+@CheckImports()
 @Component({
   selector: 'emr-dicebear,[emr-dicebear]',
   exportAs: 'emrDicebear',

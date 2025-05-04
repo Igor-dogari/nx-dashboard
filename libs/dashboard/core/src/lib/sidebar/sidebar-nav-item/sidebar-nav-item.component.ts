@@ -3,11 +3,13 @@ import { MatRipple } from '@angular/material/core';
 import { SIDEBAR_NAVIGATION } from '../types';
 import { SidebarNavComponent } from '../sidebar-nav/sidebar-nav.component';
 import { SidebarNavStore } from '../sidebar.store';
+import { CheckImports } from '../../utils/check-imports.decorator';
 
 export class SidebarNavItem {
   active!: boolean;
 }
 
+@CheckImports()
 @Component({
   selector: 'emr-sidebar-nav-item,[emr-sidebar-nav-item]',
   exportAs: 'emr-sidebar-nav-item',

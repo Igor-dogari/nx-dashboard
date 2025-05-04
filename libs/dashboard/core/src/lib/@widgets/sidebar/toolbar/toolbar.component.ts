@@ -3,8 +3,13 @@ import { MatBadge } from '@angular/material/badge';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
 import { MatTooltip } from '@angular/material/tooltip';
-import { DicebearComponent, HorizontalDividerComponent } from '@core';
+import {
+  CheckImports,
+  DicebearComponent,
+  HorizontalDividerComponent,
+} from '@core';
 
+@CheckImports()
 @Component({
   selector: 'emr-sidebar-toolbar',
   imports: [

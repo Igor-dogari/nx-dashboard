@@ -8,6 +8,7 @@ import { MatTooltip } from '@angular/material/tooltip';
 import { RouterLink } from '@angular/router';
 import {
   AssistantSearchComponent,
+  CheckImports,
   DicebearComponent,
   LayoutApiService,
   NotificationsPopoverComponent,
@@ -18,6 +19,7 @@ import {
 import { AuthService } from '@auth0/auth0-angular';
 import { AsyncPipe } from '@angular/common';
 
+@CheckImports()
 @Component({
   selector: 'app-header',
   imports: [

@@ -428,6 +428,7 @@ export * from './lib/store/layout.store';
 
 
 // export * from './lib/utils/generate-all-lib-indexes';
+export * from './lib/utils/check-imports.decorator';
 
 export * from './lib/consts/dashboard';
 

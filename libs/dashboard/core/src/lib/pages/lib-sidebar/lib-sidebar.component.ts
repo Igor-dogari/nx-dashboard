@@ -25,8 +25,10 @@ import {
   SidebarNavItemIconDirective,
   OrderByPipe,
   ToolbarComponent,
+  CheckImports,
 } from '@core';
 
+@CheckImports()
 @Component({
   selector: 'lib-sidebar',
   imports: [
@@ -862,7 +864,6 @@ export class LibSidebarComponent implements OnInit {
   activeKey: null | string = null;
 
   ngOnInit() {
-    console.log("=>(lib-sidebar.component.ts:869) ngOnInit", );
     this.navItems.forEach((navItem) => {
       this.navItemLinks.push(navItem);
 
