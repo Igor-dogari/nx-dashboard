@@ -10,15 +10,16 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 import { filter } from 'rxjs';
 import {
-  AnalyticsService,
-  EnvironmentService,
-  InactivityTrackerService,
   PageLoadingBarComponent,
   ScreenLoaderComponent,
+} from '@core/components';
+import {
+  AnalyticsService, EnvironmentService,
+  InactivityTrackerService,
   ScreenLoaderService,
   SeoService,
-  ThemeManagerService,
-} from '@core';
+  ThemeManagerService
+} from '@core/services';
 
 @Component({
   selector: 'app-root',

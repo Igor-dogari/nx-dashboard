@@ -21,8 +21,8 @@ import {
   ENVIRONMENT,
   EnvironmentService,
   PageTitleStrategyService,
-} from '@core';
-import { GlobalStore, LayoutSidebarStore } from '@core';
+} from '@core/services';
+import { GlobalStore, LayoutSidebarStore } from '@core/store';
 import { provideAuth0 } from '@auth0/auth0-angular';
 // import { GlobalErrorHandlerService } from './global-error-handler.service';
 

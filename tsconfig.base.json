@@ -11,9 +11,19 @@
     "baseUrl": ".",
     "paths": {
       "@core": ["libs/dashboard/core/src/index.ts"],
-//      "@core/auth": ["libs/dashboard/core/src/lib/auth/index.ts"],
-//      "@core/error": ["libs/dashboard/core/src/lib/error/index.ts"],
-//      "@core": ["libs/dashboard/core/src/lib/pages/index.ts"],
+      "@core/auth": ["libs/dashboard/core/src/lib/auth/index.ts"],
+      "@core/error": ["libs/dashboard/core/src/lib/error/index.ts"],
+      "@core/directives": ["libs/dashboard/core/src/lib/directives/index.ts"],
+      "@core/pipes": ["libs/dashboard/core/src/lib/pipes/index.ts"],
+      "@core/components": ["libs/dashboard/core/src/lib/components/index.ts"],
+      "@core/models": ["libs/dashboard/core/src/lib/models/index.ts"],
+      "@core/modules": ["libs/dashboard/core/src/lib/modules/index.ts"],
+      "@core/utils": ["libs/dashboard/core/src/lib/utils/index.ts"],
+      "@core/services": ["libs/dashboard/core/src/lib/services/index.ts"],
+      "@core/consts": ["libs/dashboard/core/src/lib/consts/index.ts"],
+      "@core/class": ["libs/dashboard/core/src/lib/class/index.ts"],
+      "@core/store": ["libs/dashboard/core/src/lib/store/index.ts"],
+      "@core/enums": ["libs/dashboard/core/src/lib/enums/index.ts"]
     }
   }
 }

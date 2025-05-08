@@ -15,7 +15,7 @@
     "jest.config.ts",
     "src/**/*.test.ts"
   ],
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*.ts", "src/lib/models/navigation copy/navigation.types.ts"],
   "references": [
     {
       "path": "./tsconfig.lib.json"

@@ -25,7 +25,16 @@
     "build:prod": "bun nx run elementar:build:production",
     "build:preview": "bun nx run elementar:build:production && bunx serve .\\dist\\apps\\elementar\\browser",
     "prepare": "husky",
-    "generate-index": "bun run libs/dashboard/core/src/lib/utils/generate-all-lib-indexes.ts"
+    "generate-index": "bun run libs/dashboard/core/src/lib/utils/generate-all-lib-indexes.ts",
+    "affected:apps": "nx affected:apps",
+    "affected:libs": "nx affected:libs",
+    "affected:build": "nx affected:build",
+    "affected:e2e": "nx affected:e2e",
+    "affected:test": "nx affected:test",
+    "affected:lint": "nx affected:lint",
+    "affected:dep-graph": "nx affected:dep-graph",
+    "update": "nx migrate latest",
+    "dep-graph": "nx dep-graph"
   },
   "private": true,
   "dependencies": {
