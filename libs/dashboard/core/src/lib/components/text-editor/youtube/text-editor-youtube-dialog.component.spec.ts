@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextEditorYoutubeDialog } from './text-editor-youtube.dialog';
+import { TextEditorYoutubeDialogComponent } from './text-editor-youtube-dialog.component';
 
 describe('YoutubeDialog', () => {
-  let component: TextEditorYoutubeDialog;
-  let fixture: ComponentFixture<TextEditorYoutubeDialog>;
+  let component: TextEditorYoutubeDialogComponent;
+  let fixture: ComponentFixture<TextEditorYoutubeDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TextEditorYoutubeDialog]
+      imports: [TextEditorYoutubeDialogComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TextEditorYoutubeDialog);
+    fixture = TestBed.createComponent(TextEditorYoutubeDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

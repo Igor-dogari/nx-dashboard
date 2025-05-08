@@ -2,7 +2,7 @@
   "name": "elementar",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "",
   "sourceRoot": "apps/elementar/src",
   "targets": {
     "build": {

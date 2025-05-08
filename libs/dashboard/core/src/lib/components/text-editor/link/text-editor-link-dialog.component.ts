@@ -25,10 +25,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule
   ],
-  templateUrl: './text-editor-link.dialog.html',
-  styleUrl: './text-editor-link.dialog.scss'
+  templateUrl: './text-editor-link-dialog.component.html',
+  styleUrl: './text-editor-link-dialog.component.scss'
 })
-export class TextEditorLinkDialog {
+export class TextEditorLinkDialogComponent {
   private _dialogRef = inject(MatDialogRef);
   private _data = inject(MAT_DIALOG_DATA);
   linkUrl = this._data.linkUrl || '';

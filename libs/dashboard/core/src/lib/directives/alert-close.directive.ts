@@ -1,5 +1,6 @@
 import { Directive, HostListener, inject } from '@angular/core';
-import { ALERT, AlertComponent } from '@core/components';
+import { AlertComponent } from '@core/components';
+import { ALERT } from '@core/models';
 
 @Directive({
   selector: '[emrAlertClose]',

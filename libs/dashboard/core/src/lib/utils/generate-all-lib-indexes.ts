@@ -61,7 +61,7 @@
 //     if (stat.isDirectory()) {
 //       findFilesRecursively(filePath, fileList);
 //     } else if (
-//       file.endsWith('.ts') &&
+//       file.endsWith('component.ts') &&
 //       !file.endsWith('.spec.ts') &&
 //       !file.endsWith('.stories.ts')
 //     ) {

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextEditorLinkDialog } from './text-editor-link.dialog';
+import { TextEditorLinkDialogComponent } from './text-editor-link-dialog.component';
 
 describe('LinkDialog', () => {
-  let component: TextEditorLinkDialog;
-  let fixture: ComponentFixture<TextEditorLinkDialog>;
+  let component: TextEditorLinkDialogComponent;
+  let fixture: ComponentFixture<TextEditorLinkDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TextEditorLinkDialog]
+      imports: [TextEditorLinkDialogComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TextEditorLinkDialog);
+    fixture = TestBed.createComponent(TextEditorLinkDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

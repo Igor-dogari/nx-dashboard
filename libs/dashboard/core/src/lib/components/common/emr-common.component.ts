@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {
-  // AnnouncementGlobalComponent,
+  AnnouncementGlobalComponent,
   HeaderComponent,
-  IncidentsContainerComponent,
+  // IncidentsContainerComponent,
   LayoutBodyComponent,
   LayoutComponent,
   LayoutHeaderComponent,
@@ -11,7 +11,7 @@ import {
   LayoutTopbarComponent,
   LibSidebarComponent,
 } from '@core/components';
-import { AnnouncementGlobalComponent } from '../announcement/announcement-global/announcement-global.component';
+import { IncidentsContainerComponent } from 'libs/dashboard/core/src/lib/components/incidents/incidents-container/incidents-container.component';
 
 @Component({
   imports: [
@@ -23,7 +23,7 @@ import { AnnouncementGlobalComponent } from '../announcement/announcement-global
     // LayoutSidebarComponent,
     // LayoutHeaderComponent,
     // LayoutTopbarComponent,
-    // IncidentsContainerComponent,
+    IncidentsContainerComponent,
     AnnouncementGlobalComponent,
   ],
   templateUrl: './emr-common.component.html',

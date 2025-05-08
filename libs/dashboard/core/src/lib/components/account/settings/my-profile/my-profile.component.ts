@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-// import { AvatarComponent } from '../../../avatar/avatar/avatar.component';
-import { AvatarComponent } from '@core/components';
+import { AvatarComponent } from '../../../avatar/avatar/avatar.component';
+// import { AvatarComponent } from '@core/components';
 
 @Component({
   imports: [

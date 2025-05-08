@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { AnnouncementComponent } from '@core/components';
+import { AnnouncementComponent } from '../../announcement/announcement.component';
+// import { AnnouncementComponent } from '@core/components';
 
 @Component({
   selector: 'app-announcement-with-icons-example',

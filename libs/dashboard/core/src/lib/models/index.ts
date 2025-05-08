@@ -47,4 +47,5 @@ export * from './sidebar/sidebar.types';
 export * from './applications/file-manager/file-manager.types';
 export * from './layout/layout.types';
 export * from './logo/logo.types';
+export * from './alert/alert.properties';
 

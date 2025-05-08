@@ -25,10 +25,10 @@ import { MatInput } from '@angular/material/input';
     MatLabel,
     ReactiveFormsModule
   ],
-  templateUrl: './text-editor-youtube.dialog.html',
-  styleUrl: './text-editor-youtube.dialog.scss'
+  templateUrl: './text-editor-youtube-dialog.component.html',
+  styleUrl: './text-editor-youtube-dialog.component.scss'
 })
-export class TextEditorYoutubeDialog {
+export class TextEditorYoutubeDialogComponent {
   private _dialogRef = inject(MatDialogRef);
   private _data = inject(MAT_DIALOG_DATA);
   linkUrl = this._data.linkUrl || '';

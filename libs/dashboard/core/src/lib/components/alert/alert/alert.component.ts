@@ -15,7 +15,7 @@ import {
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import { ALERT, AlertVariant } from '../alert.properties';
+import { ALERT, AlertVariant } from '@core/models';
 import { AlertIconDirective } from '@core/directives';
 import { CommonModule, NgTemplateOutlet } from '@angular/common';
 
