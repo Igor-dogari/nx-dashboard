@@ -3,10 +3,58 @@ command = "nx run elementar:build:production"
 publish = "dist/apps/elementar/browser"
 
 [[redirects]]
-from = "/pages/dashboard/*"
+from = "/pages/*"
 to = "/index.html"
 status = 200
 force = true
+
+#[[redirects]]
+#from = "/pages/dashboard/*"
+#to = "/index.html"
+#status = 200
+#force = true
+
+#[[redirects]]
+#from = "/pages/customization/*"
+#to = "/index.html"
+#status = 200
+#force = true
+#
+#[[redirects]]
+#from = "/pages/navigation/*"
+#to = "/index.html"
+#status = 200
+#force = true
+#
+#[[redirects]]
+#from = "/pages/forms/*"
+#to = "/index.html"
+#status = 200
+#force = true
+#
+#[[redirects]]
+#from = "/pages/components/*"
+#to = "/index.html"
+#status = 200
+#force = true
+#
+#[[redirects]]
+#from = "/pages/micro-charts/*"
+#to = "/index.html"
+#status = 200
+#force = true
+#
+#[[redirects]]
+#from = "/pages/store/*"
+#to = "/index.html"
+#status = 200
+#force = true
+#
+#[[redirects]]
+#from = "/pages/applications/*"
+#to = "/index.html"
+#status = 200
+#force = true
 
 [[redirects]]
 from = "/main.js"
