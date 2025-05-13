@@ -2,26 +2,26 @@
 command = "nx run elementar:build:production"
 publish = "dist/apps/elementar/browser"
 
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/main-*.js"
-to = "/main-*.js"
-status = 200
-force = false
-
-[[redirects]]
-from = "/runtime-*.js"
-to = "/runtime-*.js"
-status = 200
-force = false
-
-[[redirects]]
-from = "/polyfills-*.js"
-to = "/polyfills-*.js"
-status = 200
-force = false
+#[[redirects]]
+#from = "/*"
+#to = "/index.html"
+#status = 200
+#force = true
+#
+#[[redirects]]
+#from = "/main-*.js"
+#to = "/main-*.js"
+#status = 200
+#force = false
+#
+#[[redirects]]
+#from = "/runtime-*.js"
+#to = "/runtime-*.js"
+#status = 200
+#force = false
+#
+#[[redirects]]
+#from = "/polyfills-*.js"
+#to = "/polyfills-*.js"
+#status = 200
+#force = false
