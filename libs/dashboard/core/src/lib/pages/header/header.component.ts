@@ -47,10 +47,10 @@ import { AsyncPipe } from '@angular/common';
   standalone: true,
 })
 export class HeaderComponent {
-  auth = inject(AuthService);
-
+  public auth = inject(AuthService);
   protected _themeManager = inject(ThemeManagerService);
   private _layoutApi = inject(LayoutApiService);
+  protected readonly document = document;
 
   sidebarShown = computed(() => {
     return this._layoutApi.isSidebarShown('root');
@@ -63,6 +63,4 @@ export class HeaderComponent {
       this._layoutApi.showSidebar('root');
     }
   }
-
-  protected readonly document = document;
 }
