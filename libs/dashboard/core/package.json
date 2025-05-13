@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/elementarlabs/elementar/issues"
   },
-  "homepage": "https://elementarui.com",
+  "homepage": "https://elementar.netlify.app/",
   "keywords": [
     "elementar",
     "angular admin",
