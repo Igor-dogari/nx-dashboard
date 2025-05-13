@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { InviteToEditFilesInFolderNotification } from '@core';
-import { NotificationDefDirective, NotificationListComponent, Notification } from '@core';
+import { InviteToEditFilesInFolderNotification } from 'libs/dashboard/core/src/lib/@widgets/notifications/invite-to-edit-files-in-folder/invite-to-edit-files-in-folder.notification';
+import { NotificationDefDirective } from 'libs/dashboard/core/src/lib/notifications/notification-def.directive';
+import { NotificationListComponent } from 'libs/dashboard/core/src/lib/notifications/notification-list/notification-list.component';
+import { Notification } from 'libs/dashboard/core/src/lib/notifications/notification.interface';
 
 @Component({
   selector: 'app-invite-to-editor-files-in-folder-notification-example',

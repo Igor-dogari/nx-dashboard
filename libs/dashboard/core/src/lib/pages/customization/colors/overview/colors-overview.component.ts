@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlaygroundComponent } from '@core';
+import { PageComponent, PageContentDirective, PlaygroundComponent } from '@core';
 import { PrimaryColorsExampleComponent } from '../_examples/primary-colors-example/primary-colors-example.component';
 import {
   SecondaryColorsExampleComponent
@@ -14,8 +14,6 @@ import {
   NeutralVariantColorsExampleComponent
 } from '../_examples/neutral-variant-colors-example/neutral-variant-colors-example.component';
 import { OtherColorsExampleComponent } from '../_examples/other-colors-example/other-colors-example.component';
-import { PageComponent } from '@core';
-import { PageContentDirective } from '@core';
 
 @Component({
   selector: 'app-overview',

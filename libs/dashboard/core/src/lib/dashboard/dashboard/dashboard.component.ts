@@ -5,12 +5,11 @@ import {
   OnInit,
   signal
 } from '@angular/core';
-import {
-  WidgetInterface,
-  DASHBOARD, WidgetConfigInterface
-} from '@core';
 import { AsyncPipe, NgComponentOutlet } from '@angular/common';
 import { WidgetSkeletonComponent } from '../widget-skeleton/widget-skeleton.component';
+import { DASHBOARD } from '../../consts';
+import { WidgetConfigInterface } from '../../interfaces/widget-config.interface';
+import { WidgetInterface } from '../../interfaces/widget.interface';
 
 @Component({
   selector: 'emr-dashboard',

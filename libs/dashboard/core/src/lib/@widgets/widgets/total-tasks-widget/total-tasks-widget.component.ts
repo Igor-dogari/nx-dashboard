@@ -1,11 +1,12 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import {
-  MchartLineComponent,
-  MchartTooltipBodyComponent,
-  MchartTooltipComponent,
-  MchartTooltipTitleComponent
-} from '@core';
-import { DashboardInterface, DASHBOARD, WidgetInterface } from '@core';
+import { MchartTooltipBodyComponent } from '../../../micro-chart/mchart-tooltip-body/mchart-tooltip-body.component';
+import { MchartTooltipComponent } from '../../../micro-chart/mchart-tooltip/mchart-tooltip.component';
+import { MchartTooltipTitleComponent } from '../../../micro-chart/mchart-tooltip-title/mchart-tooltip-title.component';
+import { MchartLineComponent } from '../../../micro-chart/mchart-line/mchart-line.component';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
+
 
 @Component({
   selector: 'emr-total-tasks-widget',

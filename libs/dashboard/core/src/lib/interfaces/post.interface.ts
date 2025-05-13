@@ -1,10 +1,10 @@
 import { UserInterface } from './user.interface';
 
 export interface PostInterface {
-  id: string;
+  id: number;
   title: string;
   author: UserInterface;
   status: string;
-  createdAt: Date;
-  publishedAt?: Date;
+  createdAt: string;
+  publishedAt?: string;
 }

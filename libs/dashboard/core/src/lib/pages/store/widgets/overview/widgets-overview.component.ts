@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-
-import { PageComponent } from '@core';
-import { PageContentDirective } from '@core';
-import { PlaygroundComponent } from '@core';
 import { AvgClickRateExampleComponent } from '../_examples/avg-click-rate-example/avg-click-rate-example.component';
 import { AvgOpenRateExampleComponent } from '../_examples/avg-open-rate-example/avg-open-rate-example.component';
 import {
@@ -41,6 +37,7 @@ import { TransactionsExampleComponent } from '../_examples/transactions-example/
 import { UniqueVisitorsExampleComponent } from '../_examples/unique-visitors-example/unique-visitors-example.component';
 import { VisitDurationExampleComponent } from '../_examples/visit-duration-example/visit-duration-example.component';
 import { VisitInsightsExampleComponent } from '../_examples/visit-insights-example/visit-insights-example.component';
+import { PageComponent, PageContentDirective, PlaygroundComponent } from '@core';
 
 @Component({
   imports: [

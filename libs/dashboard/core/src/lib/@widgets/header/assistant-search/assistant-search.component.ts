@@ -11,14 +11,12 @@ import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { TemplatePortal } from '@angular/cdk/portal';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
-import {
-  AvatarComponent,
-  SuggestionBlockComponent,
-  SuggestionComponent,
-  SuggestionIconDirective,
-  SuggestionsComponent,
-  SuggestionThumbDirective,
-} from '@core';
+import { SuggestionsComponent } from '../../../suggestions/suggestions/suggestions.component';
+import { SuggestionBlockComponent } from '../../../suggestions/suggestion-block/suggestion-block.component';
+import { SuggestionComponent } from '../../../suggestions/suggestion/suggestion.component';
+import { SuggestionIconDirective } from '../../../suggestions/suggestion-icon.directive';
+import { SuggestionThumbDirective } from '../../../suggestions/suggestion-thumb.directive';
+import { AvatarComponent } from '../../../avatar/avatar/avatar.component';
 
 @Component({
   selector: 'emr-assistant-search',

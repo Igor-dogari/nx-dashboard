@@ -1,8 +1,10 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatButton, MatIconButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
-import { AvatarComponent } from '@core';
-import { DASHBOARD, DashboardInterface, WidgetInterface } from '@core';
+import { AvatarComponent } from '../../../avatar/avatar/avatar.component';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
 
 @Component({
   selector: 'emr-tasks-in-progress-widget',

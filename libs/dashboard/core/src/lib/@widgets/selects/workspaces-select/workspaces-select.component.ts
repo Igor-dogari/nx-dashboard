@@ -3,7 +3,8 @@ import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton } from '@angular/material/button';
 import { MatRipple } from '@angular/material/core';
-import { DicebearComponent, HorizontalDividerComponent } from '@core';
+import { DicebearComponent } from '../../../avatar/dicebear/dicebear.component';
+import { HorizontalDividerComponent } from '../../../divider/horizontal-divider/horizontal-divider.component';
 
 @Component({
   selector: 'app-workspaces-select',

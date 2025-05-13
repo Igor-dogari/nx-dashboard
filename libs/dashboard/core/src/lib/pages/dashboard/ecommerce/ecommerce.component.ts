@@ -12,8 +12,8 @@ import {
   DashboardChartWidgetSkeletonComponent,
   DashboardComponent,
   DashboardStatsWidgetSkeletonComponent,
+  WidgetConfigInterface, WidgetInterface
 } from '@core';
-import { WidgetInterface, WidgetConfigInterface } from '@core';
 
 @Component({
   selector: 'app-ecommerce',

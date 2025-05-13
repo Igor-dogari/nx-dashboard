@@ -19,8 +19,10 @@ import {
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { LineChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
-import { DashboardInterface, DASHBOARD, WidgetInterface } from '@core';
-import { ThemeManagerService } from '@core';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
+import { ThemeManagerService } from '../../../core/services/theme-manager.service';
 
 @Component({
   selector: 'emr-visitor-insights-widget',

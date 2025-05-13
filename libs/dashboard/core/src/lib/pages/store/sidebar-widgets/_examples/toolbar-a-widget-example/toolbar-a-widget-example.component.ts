@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToolbarAComponent } from '@core';
+import { ToolbarAComponent } from 'libs/dashboard/core/src/lib/@widgets/sidebar/toolbar-a/toolbar.component';
 
 @Component({
     selector: 'app-toolbar-a-widget-example',

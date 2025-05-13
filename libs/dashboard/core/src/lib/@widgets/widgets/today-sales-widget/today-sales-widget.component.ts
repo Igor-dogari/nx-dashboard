@@ -1,7 +1,9 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton } from '@angular/material/button';
-import { DASHBOARD, DashboardInterface, WidgetInterface } from '@core';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
 
 @Component({
   selector: 'emr-today-sales-widget',

@@ -5,7 +5,9 @@ import { MatRipple } from '@angular/material/core';
 import { MatButton } from '@angular/material/button';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { DASHBOARD, DashboardInterface, WidgetInterface } from '@core';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
 
 @Component({
   selector: 'emr-exchange-widget',
@@ -26,8 +28,8 @@ export class ExchangeWidgetComponent implements OnInit {
 
   widget = input<WidgetInterface>();
 
-  conversionFromRate: number = 1.3275;
-  conversionToRate: number = 0.7532;
+  conversionFromRate = 1.3275;
+  conversionToRate = 0.7532;
   currentConversionRate = 1.3275;
   currencyFrom = 'GPB';
   currencyTo = 'USD';

@@ -1,10 +1,6 @@
 import { Component } from '@angular/core';
-import { PageComponent } from '@core';
-import { PageContentDirective } from '@core';
-import { PlaygroundComponent } from '@core';
-import {
-  WorkspaceSelectExampleComponent
-} from '../_examples/workspace-select-example/workspace-select-example.component';
+import { WorkspaceSelectExampleComponent } from '../_examples/workspace-select-example/workspace-select-example.component';
+import { PageComponent, PageContentDirective, PlaygroundComponent } from '@core';
 
 @Component({
   imports: [

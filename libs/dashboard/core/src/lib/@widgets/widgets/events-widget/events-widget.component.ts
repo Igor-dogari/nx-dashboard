@@ -1,10 +1,10 @@
 import { Component, inject, input, OnInit } from '@angular/core';
-import {
-  AvatarComponent,
-  AvatarGroupComponent,
-  AvatarTotalComponent,
-} from '@core';
-import { DASHBOARD, DashboardInterface, WidgetInterface } from '@core';
+import { AvatarGroupComponent } from '../../../avatar/avatar-group/avatar-group.component';
+import { AvatarComponent } from '../../../avatar/avatar/avatar.component';
+import { AvatarTotalComponent } from '../../../avatar/avatar-total/avatar-total.component';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
 
 @Component({
   selector: 'emr-events-widget',

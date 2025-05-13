@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GoToPremiumComponent } from '@core';
+import { GoToPremiumComponent } from 'libs/dashboard/core/src/lib/@widgets/sidebar/go-to-premium/go-to-premium.component';
 
 @Component({
     selector: 'app-go-to-premium-widget-example',

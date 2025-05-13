@@ -14,6 +14,7 @@ import {
   SidebarHeaderComponent,
   SidebarNavComponent,
   DicebearComponent,
+  ToolbarComponent,
   LogoComponent,
   SidebarNavGroupComponent,
   SidebarNavItemComponent,
@@ -24,7 +25,6 @@ import {
   SidebarNavGroupMenuComponent,
   SidebarNavItemIconDirective,
   OrderByPipe,
-  ToolbarComponent,
 } from '@core';
 
 @Component({

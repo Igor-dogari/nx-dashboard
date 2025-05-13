@@ -20,8 +20,10 @@ import {
 } from 'echarts/components';
 import { LabelLayout, UniversalTransition } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
-import { DashboardInterface, DASHBOARD, WidgetInterface } from '@core';
-import { ThemeManagerService } from '@core';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
+import { ThemeManagerService } from '../../../core/services/theme-manager.service';
 
 @Component({
   selector: 'emr-purchases-by-channels-widget',

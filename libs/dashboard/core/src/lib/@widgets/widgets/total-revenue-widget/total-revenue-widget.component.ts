@@ -1,6 +1,8 @@
 import { Component, inject, input, OnInit } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
-import { DashboardInterface, DASHBOARD, WidgetInterface } from '@core';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
 
 @Component({
   selector: 'emr-total-revenue-widget',

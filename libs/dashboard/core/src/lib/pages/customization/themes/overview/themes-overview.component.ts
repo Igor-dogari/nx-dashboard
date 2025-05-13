@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { PageComponent } from '@core';
-import { PageContentDirective } from '@core';
+import { PageComponent, PageContentDirective } from '@core';
 
 @Component({
   imports: [

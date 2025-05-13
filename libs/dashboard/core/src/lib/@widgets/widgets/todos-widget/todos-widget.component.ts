@@ -18,7 +18,10 @@ import {
   CdkDropList,
   moveItemInArray
 } from '@angular/cdk/drag-drop';
-import { DASHBOARD, DashboardInterface, WidgetInterface, WidgetComponentInterface } from '@core';
+import { WidgetComponentInterface } from '../../../interfaces/widget-component.interface';
+import { DashboardInterface } from '../../../interfaces/dashboard.interface';
+import { DASHBOARD } from '../../../consts';
+import { WidgetInterface } from '../../../interfaces/widget.interface';
 
 export interface TodoTask {
   name: string;

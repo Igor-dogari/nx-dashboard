@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UpgradeToProComponent } from '@core';
+import { UpgradeToProComponent } from 'libs/dashboard/core/src/lib/@widgets/sidebar/upgrade-to-pro/upgrade-to-pro.component';
 
 @Component({
     selector: 'app-upgrade-to-pro-widget-example',
