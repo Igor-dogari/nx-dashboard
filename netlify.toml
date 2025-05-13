@@ -3,13 +3,13 @@ command = "nx run elementar:build:production"
 publish = "dist/apps/elementar/browser"
 
 [[redirects]]
-from = "/pages/*"
+from = "/*"
 to = "/index.html"
 status = 200
 force = true
 
 [[redirects]]
-from = "/*"
-to = "/index.html"
+from = "/browser/*"
+to = "/browser/*"
 status = 200
-force = true
+force = false
