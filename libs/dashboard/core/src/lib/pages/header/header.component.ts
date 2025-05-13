@@ -33,7 +33,7 @@ import { AsyncPipe } from '@angular/common';
     MatTooltip,
     RouterLink,
     AssistantSearchComponent,
-    MatAnchor,
+    // MatAnchor,
     SoundEffectDirective,
     NotificationsPopoverComponent,
     PopoverTriggerForDirective,
