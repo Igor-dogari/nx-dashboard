@@ -177,15 +177,11 @@ export class DashboardBasicComponent implements AfterViewInit {
           if (isAuthenticated) {
             return of(true);
           } else {
-
             return interval(5000).pipe(
               take(1), // 🔁 retry once if failed
               switchMap(() => this.openDialog()),
               catchError((err) => {
-                console.error(
-                  '❌ loginWithRedirect failed:',
-                  err,
-                );
+                console.error('❌ loginWithRedirect failed:', err);
                 return of(false);
               }),
             );
@@ -203,13 +199,15 @@ export class DashboardBasicComponent implements AfterViewInit {
 
   public openDialog() {
     const dialogRef = this.dialog.open(SignupComponent, {
-      width: '700px', // Medium size
-      height: '400px', // Medium size
+      width: '700px',
+      height: '400px',
       disableClose: true, // optional: force user to use Close button
     });
 
-    return dialogRef.afterClosed().pipe(switchMap(() =>
-      this.router.navigate(['/']) // ⬅️ redirect after dialog closes
-    ));
+    return dialogRef.afterClosed().pipe(
+      switchMap(
+        () => this.router.navigate(['/']), // ⬅️ redirect after dialog closes
+      ),
+    );
   }
 }

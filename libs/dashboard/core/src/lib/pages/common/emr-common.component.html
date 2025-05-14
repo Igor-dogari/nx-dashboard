@@ -11,6 +11,7 @@
       <app-header/>
     </emr-layout-header>
     <emr-layout-body>
+      <app-customizer (optionsChange)="updateOptions($event)" />
       <router-outlet/>
     </emr-layout-body>
   </emr-layout>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {
   AnnouncementGlobalComponent,
@@ -10,6 +10,9 @@ import {
   LayoutTopbarComponent,
 } from '@core';
 import { HeaderComponent, LibSidebarComponent } from '@core/pages';
+import { CustomizerComponent } from '../components/customizer/customizer.component';
+import { AppSettings } from '../../interfaces/settings.interface';
+import { SettingsService } from '../../services/settings.service';
 
 @Component({
   imports: [
@@ -23,8 +26,19 @@ import { HeaderComponent, LibSidebarComponent } from '@core/pages';
     LayoutTopbarComponent,
     IncidentsContainerComponent,
     AnnouncementGlobalComponent,
+    CustomizerComponent,
   ],
   templateUrl: './emr-common.component.html',
   standalone: true,
 })
-export class EmrCommonComponent {}
+export class EmrCommonComponent {
+  private readonly settings = inject(SettingsService);
+  private options = this.settings.options;
+
+  updateOptions(options: AppSettings) {
+    this.options = options;
+    this.settings.setOptions(options);
+    this.settings.setDirection();
+    this.settings.setTheme();
+  }
+}
