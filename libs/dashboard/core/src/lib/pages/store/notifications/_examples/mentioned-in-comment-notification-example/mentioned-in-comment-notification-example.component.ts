@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { MentionedInCommentNotification } from 'libs/dashboard/core/src/lib/@widgets/notifications/mentioned-in-comment/mentioned-in-comment.notification';
-import { NotificationDefDirective } from 'libs/dashboard/core/src/lib/notifications/notification-def.directive';
-import { NotificationListComponent } from 'libs/dashboard/core/src/lib/notifications/notification-list/notification-list.component';
-import { Notification } from 'libs/dashboard/core/src/lib/notifications/notification.interface';
+import { MentionedInCommentNotification, NotificationDefDirective, NotificationListComponent, Notification } from '@core';
 
 @Component({
   selector: 'app-mentioned-in-comment-notification-example',

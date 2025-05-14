@@ -1,5 +1,5 @@
 <mat-icon class="font-icon search-icon">search</mat-icon>
-<input class="w-1/3 sm:w-full" type="text" [(ngModel)]="searchText" placeholder="Recommend to search: My orders"
+<input class="w-24 sm:w-full" type="text" [(ngModel)]="searchText" placeholder="Search recommendation: My orders"
        (focus)="focus($event, suggestionDropdown)">
 @if (searchText) {
   <div class="absolute end-1 w-max">

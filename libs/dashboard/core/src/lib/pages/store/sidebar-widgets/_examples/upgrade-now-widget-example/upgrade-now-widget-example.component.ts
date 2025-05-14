@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { UpgradeNowComponent } from 'libs/dashboard/core/src/lib/@widgets/sidebar/upgrade-now/upgrade-now.component';
+import { UpgradeNowComponent } from '@core';
 
 @Component({
     selector: 'app-upgrade-now-widget-example',

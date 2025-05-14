@@ -1,18 +1,22 @@
 <div class="h-14 w-full px-5 bg-background sm:px-10 sm:h-20">
   <div class="h-full flex items-center border-b border-b-default gap-7">
-    <div class="flex items-center gap-3 -ms-3">
-      <button mat-icon-button (click)="toggleSidebar()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <emr-assistant-search />
+    <div class="flex items-center gap-3 -ms-3 relative">
+      <div class="relative">
+        <button mat-icon-button (click)="toggleSidebar()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div class="relative w-24 sm:relative sm:w-auto">
+        <emr-assistant-search />
+      </div>
     </div>
-    <div class="sm:ms-auto flex items-center gap-3">
-<!--      <a-->
-<!--        mat-stroked-button-->
-<!--        href="https://github.com/elementarlabs/elementar"-->
-<!--        target="_blank"-->
-<!--        >Github</a-->
-<!--      >-->
+    <div class="ms-auto flex items-center gap-0 sm:gap-3">
+      <!--      <a-->
+      <!--        mat-stroked-button-->
+      <!--        href="https://github.com/elementarlabs/elementar"-->
+      <!--        target="_blank"-->
+      <!--        >Github</a-->
+      <!--      >-->
       <button
         mat-icon-button
         [matMenuTriggerFor]="appsMenu"
@@ -184,7 +188,10 @@
 </ng-template>
 
 <mat-menu xPosition="before" #accountMenu="matMenu">
-  <div class="flex items-center px-4 pb-4 pt-2 gap-3" routerLink="/pages/dashboard/profile">
+  <div
+    class="flex items-center px-4 pb-4 pt-2 gap-3"
+    routerLink="/pages/dashboard/profile"
+  >
     <emr-dicebear key="PS" class="size-14" />
 
     @if (auth.isAuthenticated$ | async) {
@@ -192,8 +199,7 @@
         <div class="flex items-center gap-2">
           {{ (auth.user$ | async)?.name }}
           <div
-            class="border border-default flex items-center border-neutral-900 dark:border-neutral-200 h-5
-            leading-3 px-2 rounded-full font-bold text-4xs uppercase text-neutral-500 dark:text-neutral-200"
+            class="border border-default flex items-center border-neutral-900 dark:border-neutral-200 h-5 leading-3 px-2 rounded-full font-bold text-4xs uppercase text-neutral-500 dark:text-neutral-200"
           >
             Free
           </div>
@@ -207,8 +213,7 @@
         <div class="flex items-center gap-2">
           Igor Dogari
           <div
-            class="border border-default flex items-center border-neutral-900 dark:border-neutral-200 h-5
-            leading-3 px-2 rounded-full font-bold text-4xs uppercase text-neutral-500 dark:text-neutral-200"
+            class="border border-default flex items-center border-neutral-900 dark:border-neutral-200 h-5 leading-3 px-2 rounded-full font-bold text-4xs uppercase text-neutral-500 dark:text-neutral-200"
           >
             Free
           </div>
@@ -253,8 +258,8 @@
     <button
       mat-menu-item
       (click)="
-      auth.logout({ logoutParams: { returnTo: document.location.origin } })
-    "
+        auth.logout({ logoutParams: { returnTo: document.location.origin } })
+      "
     >
       <mat-icon>logout</mat-icon>
       <span>Logout</span>
