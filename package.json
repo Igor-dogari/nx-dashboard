@@ -81,6 +81,7 @@
     "d3": "^7.9.0",
     "echarts": "^5.5.0",
     "emojibase-data": "^16.0.2",
+    "flowbite": "^3.1.2",
     "iconify-icon": "^2.3.0",
     "libphonenumber-js": "^1.11.15",
     "marked": "^15.0.2",
